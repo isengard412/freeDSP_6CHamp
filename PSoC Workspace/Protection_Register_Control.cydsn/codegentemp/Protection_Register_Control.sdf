@@ -1,0 +1,21 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2016-08-02T15:16:50Z")
+ (DESIGN "Protection_Register_Control")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 3.3 SP2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Protection_Register_Control")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT Protection_IN\(0\)_PAD Protection_IN\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Protection_CLK\(0\)_PAD Protection_CLK\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Protection_CLR\(0\)_PAD Protection_CLR\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

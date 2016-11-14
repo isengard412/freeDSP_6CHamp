@@ -1,0 +1,86 @@
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/CortexM3/ARM_GCC_493/Debug/ILI9341.o : C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Clock.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/DC.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/DC_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/LED.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/LED_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Reset.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Reset_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/SPIM.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/SPIM_PVT.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cmFunc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cmInstr.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/miso.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/miso_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/mosi.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/mosi_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/project.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/sclk.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/sclk_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/ss.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/ss_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/ILI9341.c C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/ILI9341.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/spimaster.h 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Clock.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyDmac.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/DC.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/DC_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/LED.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/LED_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Reset.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Reset_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/SPIM.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/SPIM_PVT.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cmFunc.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cmInstr.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/miso.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/miso_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/mosi.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/mosi_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/sclk.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/sclk_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/ss.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/ss_aliases.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/ILI9341.c : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/ILI9341.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/spimaster.h : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/CortexM3/ARM_GCC_493/Debug/main.o : C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Clock.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/DC.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/DC_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/LED.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/LED_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Reset.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/Reset_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/SPIM.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/SPIM_PVT.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cmFunc.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/core_cmInstr.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/miso.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/miso_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/mosi.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/mosi_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/project.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/sclk.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/sclk_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/ss.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/Generated_Source/PSoC5/ss_aliases.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/ILI9341.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/main.c C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/main.h C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/spimaster.h 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/main.c : 
+
+C:/Users/Lukas\ Creutzburg/Documents/PSoC\ Creator/Workspace01/Display.cydsn/main.h : 
+

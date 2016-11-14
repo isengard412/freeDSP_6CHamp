@@ -1,0 +1,969 @@
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"main.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	samples
+  19              		.bss
+  20              		.align	2
+  21              		.type	samples, %object
+  22              		.size	samples, 30
+  23              	samples:
+  24 0000 00000000 		.space	30
+  24      00000000 
+  24      00000000 
+  24      00000000 
+  24      00000000 
+  25              		.global	sampleIndex
+  26              		.type	sampleIndex, %object
+  27              		.size	sampleIndex, 1
+  28              	sampleIndex:
+  29 001e 00       		.space	1
+  30              		.comm	currentSample,2,2
+  31              		.global	sampleAvailable
+  32              		.type	sampleAvailable, %object
+  33              		.size	sampleAvailable, 1
+  34              	sampleAvailable:
+  35 001f 00       		.space	1
+  36              		.section	.text.Volume_Interrupt,"ax",%progbits
+  37              		.align	2
+  38              		.global	Volume_Interrupt
+  39              		.thumb
+  40              		.thumb_func
+  41              		.type	Volume_Interrupt, %function
+  42              	Volume_Interrupt:
+  43              	.LFB63:
+  44              		.file 1 ".\\main.c"
+   1:.\main.c      **** /*******************************************************************************
+   2:.\main.c      **** * File: main.c
+   3:.\main.c      **** *
+   4:.\main.c      **** * Version: 2.2
+   5:.\main.c      **** *
+   6:.\main.c      **** * Description:
+   7:.\main.c      **** *   This is a basic design source code.
+   8:.\main.c      **** *
+   9:.\main.c      **** * Note:
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 2
+
+
+  10:.\main.c      **** *  Pin_Vin pin (P0[4]) should be connected to the VR.
+  11:.\main.c      **** *  Verify that VR_PWR(J11) is jumpered to ON.
+  12:.\main.c      **** *
+  13:.\main.c      **** * Hardware Dependency:
+  14:.\main.c      **** *  CY8CKIT-001 DVK
+  15:.\main.c      **** *
+  16:.\main.c      **** ********************************************************************************
+  17:.\main.c      **** * Copyright 2013, Cypress Semiconductor Corporation. All rights reserved.
+  18:.\main.c      **** * This software is owned by Cypress Semiconductor Corporation and is protected
+  19:.\main.c      **** * by and subject to worldwide patent and copyright laws and treaties.
+  20:.\main.c      **** * Therefore, you may use this software only as provided in the license agreement
+  21:.\main.c      **** * accompanying the software package from which you obtained this software.
+  22:.\main.c      **** * CYPRESS AND ITS SUPPLIERS MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  23:.\main.c      **** * WITH REGARD TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT,
+  24:.\main.c      **** * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+  25:.\main.c      **** *******************************************************************************/
+  26:.\main.c      **** 
+  27:.\main.c      **** #include <device.h>
+  28:.\main.c      **** 
+  29:.\main.c      **** #define ADC_NUMBER_SAMPLES (15)
+  30:.\main.c      **** 
+  31:.\main.c      **** /* Initialize array elements to zero. */
+  32:.\main.c      **** int16 samples[ADC_NUMBER_SAMPLES] = {0};
+  33:.\main.c      **** 
+  34:.\main.c      **** /* Defining and initializing the index */
+  35:.\main.c      **** int8 sampleIndex = 0u;
+  36:.\main.c      **** 
+  37:.\main.c      **** /* Sample read from ADC */
+  38:.\main.c      **** volatile int16 currentSample;
+  39:.\main.c      **** 
+  40:.\main.c      **** /* Indicator for when sample is available */
+  41:.\main.c      **** volatile uint8 sampleAvailable = 0u;
+  42:.\main.c      **** 
+  43:.\main.c      **** 
+  44:.\main.c      **** /*******************************************************************************
+  45:.\main.c      **** * Function Name: InterruptHandler
+  46:.\main.c      **** ********************************************************************************
+  47:.\main.c      **** *
+  48:.\main.c      **** * Summary:
+  49:.\main.c      **** *   The Interrupt Service Routine for isr_1.
+  50:.\main.c      **** *
+  51:.\main.c      **** * Parameters:
+  52:.\main.c      **** *   None.
+  53:.\main.c      **** *
+  54:.\main.c      **** * Return:
+  55:.\main.c      **** *   void.
+  56:.\main.c      **** *
+  57:.\main.c      **** *******************************************************************************/
+  58:.\main.c      **** CY_ISR(Volume_Interrupt)
+  59:.\main.c      **** {
+  45              		.loc 1 59 0
+  46              		.cfi_startproc
+  47              		@ args = 0, pretend = 0, frame = 0
+  48              		@ frame_needed = 1, uses_anonymous_args = 0
+  49 0000 80B5     		push	{r7, lr}
+  50              		.cfi_def_cfa_offset 8
+  51              		.cfi_offset 7, -8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 3
+
+
+  52              		.cfi_offset 14, -4
+  53 0002 00AF     		add	r7, sp, #0
+  54              		.cfi_def_cfa_register 7
+  60:.\main.c      ****     /* Get the result */
+  61:.\main.c      ****     currentSample = Volume_ADC_GetResult16();
+  55              		.loc 1 61 0
+  56 0004 FFF7FEFF 		bl	Volume_ADC_GetResult16
+  57 0008 0346     		mov	r3, r0
+  58 000a 1A46     		mov	r2, r3
+  59 000c 024B     		ldr	r3, .L2
+  60 000e 1A80     		strh	r2, [r3]	@ movhi
+  62:.\main.c      ****     sampleAvailable = 1u;
+  61              		.loc 1 62 0
+  62 0010 024B     		ldr	r3, .L2+4
+  63 0012 0122     		movs	r2, #1
+  64 0014 1A70     		strb	r2, [r3]
+  63:.\main.c      **** }
+  65              		.loc 1 63 0
+  66 0016 80BD     		pop	{r7, pc}
+  67              	.L3:
+  68              		.align	2
+  69              	.L2:
+  70 0018 00000000 		.word	currentSample
+  71 001c 00000000 		.word	sampleAvailable
+  72              		.cfi_endproc
+  73              	.LFE63:
+  74              		.size	Volume_Interrupt, .-Volume_Interrupt
+  75              		.section	.text.main,"ax",%progbits
+  76              		.align	2
+  77              		.global	main
+  78              		.thumb
+  79              		.thumb_func
+  80              		.type	main, %function
+  81              	main:
+  82              	.LFB64:
+  64:.\main.c      **** 
+  65:.\main.c      **** 
+  66:.\main.c      **** /*******************************************************************************
+  67:.\main.c      **** * Function Name: main
+  68:.\main.c      **** ********************************************************************************
+  69:.\main.c      **** *
+  70:.\main.c      **** * Summary:
+  71:.\main.c      **** * Main function performs following functions:
+  72:.\main.c      **** * 1: Start the LCD
+  73:.\main.c      **** * 2: Start ADC DelSig and its interrupt
+  74:.\main.c      **** * 3: Start the Timer
+  75:.\main.c      **** * 4: Testing for sample available from ADC
+  76:.\main.c      **** * 5: Storing the sample into the array
+  77:.\main.c      **** * 6: Calculate and show average voltage
+  78:.\main.c      **** *
+  79:.\main.c      **** * Parameters:
+  80:.\main.c      **** *  None.
+  81:.\main.c      **** *
+  82:.\main.c      **** * Return:
+  83:.\main.c      **** *  None.
+  84:.\main.c      **** *
+  85:.\main.c      **** *******************************************************************************/
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 4
+
+
+  86:.\main.c      **** int main()
+  87:.\main.c      **** {
+  83              		.loc 1 87 0
+  84              		.cfi_startproc
+  85              		@ args = 0, pretend = 0, frame = 16
+  86              		@ frame_needed = 1, uses_anonymous_args = 0
+  87 0000 80B5     		push	{r7, lr}
+  88              		.cfi_def_cfa_offset 8
+  89              		.cfi_offset 7, -8
+  90              		.cfi_offset 14, -4
+  91 0002 84B0     		sub	sp, sp, #16
+  92              		.cfi_def_cfa_offset 24
+  93 0004 00AF     		add	r7, sp, #0
+  94              		.cfi_def_cfa_register 7
+  88:.\main.c      ****     int8 i;
+  89:.\main.c      ****     int16 voltageMv;
+  90:.\main.c      ****     int32 sampleAverage;
+  91:.\main.c      **** 
+  92:.\main.c      ****     /* Start the ADC */
+  93:.\main.c      ****     Volume_ADC_Start();
+  95              		.loc 1 93 0
+  96 0006 FFF7FEFF 		bl	Volume_ADC_Start
+  94:.\main.c      **** 
+  95:.\main.c      ****     /* Start the embedded in the DelSig Interrupt and change the vector to the InterruptHandler */
+  96:.\main.c      ****     Volume_ADC_IRQ_StartEx(Volume_Interrupt);
+  97              		.loc 1 96 0
+  98 000a 2648     		ldr	r0, .L9
+  99 000c FFF7FEFF 		bl	Volume_ADC_IRQ_StartEx
+  97:.\main.c      **** 
+  98:.\main.c      ****     /* Start the Timer which will start the ADC conversion */
+  99:.\main.c      ****     ADC_Timer_Start();
+ 100              		.loc 1 99 0
+ 101 0010 FFF7FEFF 		bl	ADC_Timer_Start
+ 100:.\main.c      **** 
+ 101:.\main.c      ****     CyGlobalIntEnable;
+ 102              		.loc 1 101 0
+ 103              	@ 101 ".\main.c" 1
+ 104 0014 62B6     		CPSIE   i
+ 105              	@ 0 "" 2
+ 106              		.thumb
+ 107              	.L8:
+ 102:.\main.c      **** 
+ 103:.\main.c      ****     for(;;)
+ 104:.\main.c      ****     {
+ 105:.\main.c      ****         /* Check whether ADC conversion complete or not */
+ 106:.\main.c      ****         if (sampleAvailable)
+ 108              		.loc 1 106 0
+ 109 0016 244B     		ldr	r3, .L9+4
+ 110 0018 1B78     		ldrb	r3, [r3]
+ 111 001a DBB2     		uxtb	r3, r3
+ 112 001c 002B     		cmp	r3, #0
+ 113 001e 3FD0     		beq	.L5
+ 107:.\main.c      ****         {
+ 108:.\main.c      ****             sampleAvailable = 0u;
+ 114              		.loc 1 108 0
+ 115 0020 214B     		ldr	r3, .L9+4
+ 116 0022 0022     		movs	r2, #0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 5
+
+
+ 117 0024 1A70     		strb	r2, [r3]
+ 109:.\main.c      **** 
+ 110:.\main.c      ****             /* storing the sample into the array, based on the index */
+ 111:.\main.c      ****             samples[sampleIndex++] = currentSample;
+ 118              		.loc 1 111 0
+ 119 0026 214B     		ldr	r3, .L9+8
+ 120 0028 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 121 002a DBB2     		uxtb	r3, r3
+ 122 002c DAB2     		uxtb	r2, r3
+ 123 002e 0132     		adds	r2, r2, #1
+ 124 0030 D2B2     		uxtb	r2, r2
+ 125 0032 D1B2     		uxtb	r1, r2
+ 126 0034 1D4A     		ldr	r2, .L9+8
+ 127 0036 1170     		strb	r1, [r2]
+ 128 0038 5BB2     		sxtb	r3, r3
+ 129 003a 1D4A     		ldr	r2, .L9+12
+ 130 003c 1288     		ldrh	r2, [r2]	@ movhi
+ 131 003e 91B2     		uxth	r1, r2
+ 132 0040 1C4A     		ldr	r2, .L9+16
+ 133 0042 22F81310 		strh	r1, [r2, r3, lsl #1]	@ movhi
+ 112:.\main.c      **** 
+ 113:.\main.c      ****             /* Calculate average result */
+ 114:.\main.c      ****             if (sampleIndex == ADC_NUMBER_SAMPLES)
+ 134              		.loc 1 114 0
+ 135 0046 194B     		ldr	r3, .L9+8
+ 136 0048 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 137 004a 5BB2     		sxtb	r3, r3
+ 138 004c 0F2B     		cmp	r3, #15
+ 139 004e 27D1     		bne	.L5
+ 115:.\main.c      ****             {
+ 116:.\main.c      ****                 sampleAverage = 0u;
+ 140              		.loc 1 116 0
+ 141 0050 0023     		movs	r3, #0
+ 142 0052 BB60     		str	r3, [r7, #8]
+ 117:.\main.c      ****                 for (i = 0u; i < ADC_NUMBER_SAMPLES; i++)
+ 143              		.loc 1 117 0
+ 144 0054 0023     		movs	r3, #0
+ 145 0056 FB73     		strb	r3, [r7, #15]
+ 146 0058 0DE0     		b	.L6
+ 147              	.L7:
+ 118:.\main.c      ****                 {
+ 119:.\main.c      ****                     sampleAverage += samples[i];
+ 148              		.loc 1 119 0 discriminator 3
+ 149 005a 97F90F30 		ldrsb	r3, [r7, #15]
+ 150 005e 154A     		ldr	r2, .L9+16
+ 151 0060 32F81330 		ldrh	r3, [r2, r3, lsl #1]
+ 152 0064 1BB2     		sxth	r3, r3
+ 153 0066 BA68     		ldr	r2, [r7, #8]
+ 154 0068 1344     		add	r3, r3, r2
+ 155 006a BB60     		str	r3, [r7, #8]
+ 117:.\main.c      ****                 for (i = 0u; i < ADC_NUMBER_SAMPLES; i++)
+ 156              		.loc 1 117 0 discriminator 3
+ 157 006c FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+ 158 006e DBB2     		uxtb	r3, r3
+ 159 0070 0133     		adds	r3, r3, #1
+ 160 0072 DBB2     		uxtb	r3, r3
+ 161 0074 FB73     		strb	r3, [r7, #15]
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 6
+
+
+ 162              	.L6:
+ 117:.\main.c      ****                 for (i = 0u; i < ADC_NUMBER_SAMPLES; i++)
+ 163              		.loc 1 117 0 is_stmt 0 discriminator 1
+ 164 0076 97F90F30 		ldrsb	r3, [r7, #15]
+ 165 007a 0E2B     		cmp	r3, #14
+ 166 007c EDDD     		ble	.L7
+ 120:.\main.c      ****                 }    
+ 121:.\main.c      ****                 sampleAverage /= ADC_NUMBER_SAMPLES;
+ 167              		.loc 1 121 0 is_stmt 1
+ 168 007e BB68     		ldr	r3, [r7, #8]
+ 169 0080 0D4A     		ldr	r2, .L9+20
+ 170 0082 82FB0312 		smull	r1, r2, r2, r3
+ 171 0086 1A44     		add	r2, r2, r3
+ 172 0088 D210     		asrs	r2, r2, #3
+ 173 008a DB17     		asrs	r3, r3, #31
+ 174 008c D31A     		subs	r3, r2, r3
+ 175 008e BB60     		str	r3, [r7, #8]
+ 122:.\main.c      ****                 sampleIndex = 0u;
+ 176              		.loc 1 122 0
+ 177 0090 064B     		ldr	r3, .L9+8
+ 178 0092 0022     		movs	r2, #0
+ 179 0094 1A70     		strb	r2, [r3]
+ 123:.\main.c      **** 
+ 124:.\main.c      ****                 /* Convert results to mV */
+ 125:.\main.c      ****                 voltageMv = Volume_ADC_CountsTo_mVolts(sampleAverage);
+ 180              		.loc 1 125 0
+ 181 0096 B868     		ldr	r0, [r7, #8]
+ 182 0098 FFF7FEFF 		bl	Volume_ADC_CountsTo_mVolts
+ 183 009c 0346     		mov	r3, r0
+ 184 009e FB80     		strh	r3, [r7, #6]	@ movhi
+ 185              	.L5:
+ 126:.\main.c      ****             }
+ 127:.\main.c      ****         }
+ 128:.\main.c      ****     }
+ 186              		.loc 1 128 0
+ 187 00a0 B9E7     		b	.L8
+ 188              	.L10:
+ 189 00a2 00BF     		.align	2
+ 190              	.L9:
+ 191 00a4 00000000 		.word	Volume_Interrupt
+ 192 00a8 00000000 		.word	sampleAvailable
+ 193 00ac 00000000 		.word	sampleIndex
+ 194 00b0 00000000 		.word	currentSample
+ 195 00b4 00000000 		.word	samples
+ 196 00b8 89888888 		.word	-2004318071
+ 197              		.cfi_endproc
+ 198              	.LFE64:
+ 199              		.size	main, .-main
+ 200              		.text
+ 201              	.Letext0:
+ 202              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 203              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 204              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 205              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 206              		.section	.debug_info,"",%progbits
+ 207              	.Ldebug_info0:
+ 208 0000 8C010000 		.4byte	0x18c
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 7
+
+
+ 209 0004 0400     		.2byte	0x4
+ 210 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 211 000a 04       		.byte	0x4
+ 212 000b 01       		.uleb128 0x1
+ 213 000c 24000000 		.4byte	.LASF26
+ 214 0010 01       		.byte	0x1
+ 215 0011 D2000000 		.4byte	.LASF27
+ 216 0015 C0010000 		.4byte	.LASF28
+ 217 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 218 001d 00000000 		.4byte	0
+ 219 0021 00000000 		.4byte	.Ldebug_line0
+ 220 0025 02       		.uleb128 0x2
+ 221 0026 01       		.byte	0x1
+ 222 0027 06       		.byte	0x6
+ 223 0028 B8000000 		.4byte	.LASF0
+ 224 002c 02       		.uleb128 0x2
+ 225 002d 01       		.byte	0x1
+ 226 002e 08       		.byte	0x8
+ 227 002f C4000000 		.4byte	.LASF1
+ 228 0033 02       		.uleb128 0x2
+ 229 0034 02       		.byte	0x2
+ 230 0035 05       		.byte	0x5
+ 231 0036 8C010000 		.4byte	.LASF2
+ 232 003a 02       		.uleb128 0x2
+ 233 003b 02       		.byte	0x2
+ 234 003c 07       		.byte	0x7
+ 235 003d 5C010000 		.4byte	.LASF3
+ 236 0041 03       		.uleb128 0x3
+ 237 0042 11000000 		.4byte	.LASF9
+ 238 0046 02       		.byte	0x2
+ 239 0047 3F       		.byte	0x3f
+ 240 0048 4C000000 		.4byte	0x4c
+ 241 004c 02       		.uleb128 0x2
+ 242 004d 04       		.byte	0x4
+ 243 004e 05       		.byte	0x5
+ 244 004f 1B000000 		.4byte	.LASF4
+ 245 0053 02       		.uleb128 0x2
+ 246 0054 04       		.byte	0x4
+ 247 0055 07       		.byte	0x7
+ 248 0056 E1000000 		.4byte	.LASF5
+ 249 005a 02       		.uleb128 0x2
+ 250 005b 08       		.byte	0x8
+ 251 005c 05       		.byte	0x5
+ 252 005d 6F010000 		.4byte	.LASF6
+ 253 0061 02       		.uleb128 0x2
+ 254 0062 08       		.byte	0x8
+ 255 0063 07       		.byte	0x7
+ 256 0064 34010000 		.4byte	.LASF7
+ 257 0068 04       		.uleb128 0x4
+ 258 0069 04       		.byte	0x4
+ 259 006a 05       		.byte	0x5
+ 260 006b 696E7400 		.ascii	"int\000"
+ 261 006f 02       		.uleb128 0x2
+ 262 0070 04       		.byte	0x4
+ 263 0071 07       		.byte	0x7
+ 264 0072 17010000 		.4byte	.LASF8
+ 265 0076 03       		.uleb128 0x3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 8
+
+
+ 266 0077 4B010000 		.4byte	.LASF10
+ 267 007b 03       		.byte	0x3
+ 268 007c 2C       		.byte	0x2c
+ 269 007d 41000000 		.4byte	0x41
+ 270 0081 05       		.uleb128 0x5
+ 271 0082 96010000 		.4byte	.LASF11
+ 272 0086 04       		.byte	0x4
+ 273 0087 9201     		.2byte	0x192
+ 274 0089 2C000000 		.4byte	0x2c
+ 275 008d 05       		.uleb128 0x5
+ 276 008e 12010000 		.4byte	.LASF12
+ 277 0092 04       		.byte	0x4
+ 278 0093 9501     		.2byte	0x195
+ 279 0095 25000000 		.4byte	0x25
+ 280 0099 05       		.uleb128 0x5
+ 281 009a DB000000 		.4byte	.LASF13
+ 282 009e 04       		.byte	0x4
+ 283 009f 9601     		.2byte	0x196
+ 284 00a1 33000000 		.4byte	0x33
+ 285 00a5 05       		.uleb128 0x5
+ 286 00a6 F3000000 		.4byte	.LASF14
+ 287 00aa 04       		.byte	0x4
+ 288 00ab 9701     		.2byte	0x197
+ 289 00ad 4C000000 		.4byte	0x4c
+ 290 00b1 02       		.uleb128 0x2
+ 291 00b2 04       		.byte	0x4
+ 292 00b3 04       		.byte	0x4
+ 293 00b4 B2000000 		.4byte	.LASF15
+ 294 00b8 02       		.uleb128 0x2
+ 295 00b9 08       		.byte	0x8
+ 296 00ba 04       		.byte	0x4
+ 297 00bb 06010000 		.4byte	.LASF16
+ 298 00bf 02       		.uleb128 0x2
+ 299 00c0 01       		.byte	0x1
+ 300 00c1 08       		.byte	0x8
+ 301 00c2 87010000 		.4byte	.LASF17
+ 302 00c6 06       		.uleb128 0x6
+ 303 00c7 81000000 		.4byte	0x81
+ 304 00cb 02       		.uleb128 0x2
+ 305 00cc 04       		.byte	0x4
+ 306 00cd 07       		.byte	0x7
+ 307 00ce 53010000 		.4byte	.LASF18
+ 308 00d2 07       		.uleb128 0x7
+ 309 00d3 00000000 		.4byte	.LASF29
+ 310 00d7 01       		.byte	0x1
+ 311 00d8 3A       		.byte	0x3a
+ 312 00d9 00000000 		.4byte	.LFB63
+ 313 00dd 20000000 		.4byte	.LFE63-.LFB63
+ 314 00e1 01       		.uleb128 0x1
+ 315 00e2 9C       		.byte	0x9c
+ 316 00e3 08       		.uleb128 0x8
+ 317 00e4 0D010000 		.4byte	.LASF30
+ 318 00e8 01       		.byte	0x1
+ 319 00e9 56       		.byte	0x56
+ 320 00ea 68000000 		.4byte	0x68
+ 321 00ee 00000000 		.4byte	.LFB64
+ 322 00f2 BC000000 		.4byte	.LFE64-.LFB64
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 9
+
+
+ 323 00f6 01       		.uleb128 0x1
+ 324 00f7 9C       		.byte	0x9c
+ 325 00f8 25010000 		.4byte	0x125
+ 326 00fc 09       		.uleb128 0x9
+ 327 00fd 6900     		.ascii	"i\000"
+ 328 00ff 01       		.byte	0x1
+ 329 0100 58       		.byte	0x58
+ 330 0101 8D000000 		.4byte	0x8d
+ 331 0105 02       		.uleb128 0x2
+ 332 0106 91       		.byte	0x91
+ 333 0107 77       		.sleb128 -9
+ 334 0108 0A       		.uleb128 0xa
+ 335 0109 7D010000 		.4byte	.LASF19
+ 336 010d 01       		.byte	0x1
+ 337 010e 59       		.byte	0x59
+ 338 010f 99000000 		.4byte	0x99
+ 339 0113 02       		.uleb128 0x2
+ 340 0114 91       		.byte	0x91
+ 341 0115 6E       		.sleb128 -18
+ 342 0116 0A       		.uleb128 0xa
+ 343 0117 AA010000 		.4byte	.LASF20
+ 344 011b 01       		.byte	0x1
+ 345 011c 5A       		.byte	0x5a
+ 346 011d A5000000 		.4byte	0xa5
+ 347 0121 02       		.uleb128 0x2
+ 348 0122 91       		.byte	0x91
+ 349 0123 70       		.sleb128 -16
+ 350 0124 00       		.byte	0
+ 351 0125 0B       		.uleb128 0xb
+ 352 0126 F9000000 		.4byte	.LASF21
+ 353 012a 05       		.byte	0x5
+ 354 012b 9606     		.2byte	0x696
+ 355 012d 31010000 		.4byte	0x131
+ 356 0131 06       		.uleb128 0x6
+ 357 0132 76000000 		.4byte	0x76
+ 358 0136 0C       		.uleb128 0xc
+ 359 0137 99000000 		.4byte	0x99
+ 360 013b 46010000 		.4byte	0x146
+ 361 013f 0D       		.uleb128 0xd
+ 362 0140 CB000000 		.4byte	0xcb
+ 363 0144 0E       		.byte	0xe
+ 364 0145 00       		.byte	0
+ 365 0146 0E       		.uleb128 0xe
+ 366 0147 B8010000 		.4byte	.LASF22
+ 367 014b 01       		.byte	0x1
+ 368 014c 20       		.byte	0x20
+ 369 014d 36010000 		.4byte	0x136
+ 370 0151 05       		.uleb128 0x5
+ 371 0152 03       		.byte	0x3
+ 372 0153 00000000 		.4byte	samples
+ 373 0157 0E       		.uleb128 0xe
+ 374 0158 12020000 		.4byte	.LASF23
+ 375 015c 01       		.byte	0x1
+ 376 015d 23       		.byte	0x23
+ 377 015e 8D000000 		.4byte	0x8d
+ 378 0162 05       		.uleb128 0x5
+ 379 0163 03       		.byte	0x3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 10
+
+
+ 380 0164 00000000 		.4byte	sampleIndex
+ 381 0168 0E       		.uleb128 0xe
+ 382 0169 9C010000 		.4byte	.LASF24
+ 383 016d 01       		.byte	0x1
+ 384 016e 26       		.byte	0x26
+ 385 016f 79010000 		.4byte	0x179
+ 386 0173 05       		.uleb128 0x5
+ 387 0174 03       		.byte	0x3
+ 388 0175 00000000 		.4byte	currentSample
+ 389 0179 06       		.uleb128 0x6
+ 390 017a 99000000 		.4byte	0x99
+ 391 017e 0E       		.uleb128 0xe
+ 392 017f 24010000 		.4byte	.LASF25
+ 393 0183 01       		.byte	0x1
+ 394 0184 29       		.byte	0x29
+ 395 0185 C6000000 		.4byte	0xc6
+ 396 0189 05       		.uleb128 0x5
+ 397 018a 03       		.byte	0x3
+ 398 018b 00000000 		.4byte	sampleAvailable
+ 399 018f 00       		.byte	0
+ 400              		.section	.debug_abbrev,"",%progbits
+ 401              	.Ldebug_abbrev0:
+ 402 0000 01       		.uleb128 0x1
+ 403 0001 11       		.uleb128 0x11
+ 404 0002 01       		.byte	0x1
+ 405 0003 25       		.uleb128 0x25
+ 406 0004 0E       		.uleb128 0xe
+ 407 0005 13       		.uleb128 0x13
+ 408 0006 0B       		.uleb128 0xb
+ 409 0007 03       		.uleb128 0x3
+ 410 0008 0E       		.uleb128 0xe
+ 411 0009 1B       		.uleb128 0x1b
+ 412 000a 0E       		.uleb128 0xe
+ 413 000b 55       		.uleb128 0x55
+ 414 000c 17       		.uleb128 0x17
+ 415 000d 11       		.uleb128 0x11
+ 416 000e 01       		.uleb128 0x1
+ 417 000f 10       		.uleb128 0x10
+ 418 0010 17       		.uleb128 0x17
+ 419 0011 00       		.byte	0
+ 420 0012 00       		.byte	0
+ 421 0013 02       		.uleb128 0x2
+ 422 0014 24       		.uleb128 0x24
+ 423 0015 00       		.byte	0
+ 424 0016 0B       		.uleb128 0xb
+ 425 0017 0B       		.uleb128 0xb
+ 426 0018 3E       		.uleb128 0x3e
+ 427 0019 0B       		.uleb128 0xb
+ 428 001a 03       		.uleb128 0x3
+ 429 001b 0E       		.uleb128 0xe
+ 430 001c 00       		.byte	0
+ 431 001d 00       		.byte	0
+ 432 001e 03       		.uleb128 0x3
+ 433 001f 16       		.uleb128 0x16
+ 434 0020 00       		.byte	0
+ 435 0021 03       		.uleb128 0x3
+ 436 0022 0E       		.uleb128 0xe
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 11
+
+
+ 437 0023 3A       		.uleb128 0x3a
+ 438 0024 0B       		.uleb128 0xb
+ 439 0025 3B       		.uleb128 0x3b
+ 440 0026 0B       		.uleb128 0xb
+ 441 0027 49       		.uleb128 0x49
+ 442 0028 13       		.uleb128 0x13
+ 443 0029 00       		.byte	0
+ 444 002a 00       		.byte	0
+ 445 002b 04       		.uleb128 0x4
+ 446 002c 24       		.uleb128 0x24
+ 447 002d 00       		.byte	0
+ 448 002e 0B       		.uleb128 0xb
+ 449 002f 0B       		.uleb128 0xb
+ 450 0030 3E       		.uleb128 0x3e
+ 451 0031 0B       		.uleb128 0xb
+ 452 0032 03       		.uleb128 0x3
+ 453 0033 08       		.uleb128 0x8
+ 454 0034 00       		.byte	0
+ 455 0035 00       		.byte	0
+ 456 0036 05       		.uleb128 0x5
+ 457 0037 16       		.uleb128 0x16
+ 458 0038 00       		.byte	0
+ 459 0039 03       		.uleb128 0x3
+ 460 003a 0E       		.uleb128 0xe
+ 461 003b 3A       		.uleb128 0x3a
+ 462 003c 0B       		.uleb128 0xb
+ 463 003d 3B       		.uleb128 0x3b
+ 464 003e 05       		.uleb128 0x5
+ 465 003f 49       		.uleb128 0x49
+ 466 0040 13       		.uleb128 0x13
+ 467 0041 00       		.byte	0
+ 468 0042 00       		.byte	0
+ 469 0043 06       		.uleb128 0x6
+ 470 0044 35       		.uleb128 0x35
+ 471 0045 00       		.byte	0
+ 472 0046 49       		.uleb128 0x49
+ 473 0047 13       		.uleb128 0x13
+ 474 0048 00       		.byte	0
+ 475 0049 00       		.byte	0
+ 476 004a 07       		.uleb128 0x7
+ 477 004b 2E       		.uleb128 0x2e
+ 478 004c 00       		.byte	0
+ 479 004d 3F       		.uleb128 0x3f
+ 480 004e 19       		.uleb128 0x19
+ 481 004f 03       		.uleb128 0x3
+ 482 0050 0E       		.uleb128 0xe
+ 483 0051 3A       		.uleb128 0x3a
+ 484 0052 0B       		.uleb128 0xb
+ 485 0053 3B       		.uleb128 0x3b
+ 486 0054 0B       		.uleb128 0xb
+ 487 0055 27       		.uleb128 0x27
+ 488 0056 19       		.uleb128 0x19
+ 489 0057 11       		.uleb128 0x11
+ 490 0058 01       		.uleb128 0x1
+ 491 0059 12       		.uleb128 0x12
+ 492 005a 06       		.uleb128 0x6
+ 493 005b 40       		.uleb128 0x40
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 12
+
+
+ 494 005c 18       		.uleb128 0x18
+ 495 005d 9642     		.uleb128 0x2116
+ 496 005f 19       		.uleb128 0x19
+ 497 0060 00       		.byte	0
+ 498 0061 00       		.byte	0
+ 499 0062 08       		.uleb128 0x8
+ 500 0063 2E       		.uleb128 0x2e
+ 501 0064 01       		.byte	0x1
+ 502 0065 3F       		.uleb128 0x3f
+ 503 0066 19       		.uleb128 0x19
+ 504 0067 03       		.uleb128 0x3
+ 505 0068 0E       		.uleb128 0xe
+ 506 0069 3A       		.uleb128 0x3a
+ 507 006a 0B       		.uleb128 0xb
+ 508 006b 3B       		.uleb128 0x3b
+ 509 006c 0B       		.uleb128 0xb
+ 510 006d 49       		.uleb128 0x49
+ 511 006e 13       		.uleb128 0x13
+ 512 006f 11       		.uleb128 0x11
+ 513 0070 01       		.uleb128 0x1
+ 514 0071 12       		.uleb128 0x12
+ 515 0072 06       		.uleb128 0x6
+ 516 0073 40       		.uleb128 0x40
+ 517 0074 18       		.uleb128 0x18
+ 518 0075 9642     		.uleb128 0x2116
+ 519 0077 19       		.uleb128 0x19
+ 520 0078 01       		.uleb128 0x1
+ 521 0079 13       		.uleb128 0x13
+ 522 007a 00       		.byte	0
+ 523 007b 00       		.byte	0
+ 524 007c 09       		.uleb128 0x9
+ 525 007d 34       		.uleb128 0x34
+ 526 007e 00       		.byte	0
+ 527 007f 03       		.uleb128 0x3
+ 528 0080 08       		.uleb128 0x8
+ 529 0081 3A       		.uleb128 0x3a
+ 530 0082 0B       		.uleb128 0xb
+ 531 0083 3B       		.uleb128 0x3b
+ 532 0084 0B       		.uleb128 0xb
+ 533 0085 49       		.uleb128 0x49
+ 534 0086 13       		.uleb128 0x13
+ 535 0087 02       		.uleb128 0x2
+ 536 0088 18       		.uleb128 0x18
+ 537 0089 00       		.byte	0
+ 538 008a 00       		.byte	0
+ 539 008b 0A       		.uleb128 0xa
+ 540 008c 34       		.uleb128 0x34
+ 541 008d 00       		.byte	0
+ 542 008e 03       		.uleb128 0x3
+ 543 008f 0E       		.uleb128 0xe
+ 544 0090 3A       		.uleb128 0x3a
+ 545 0091 0B       		.uleb128 0xb
+ 546 0092 3B       		.uleb128 0x3b
+ 547 0093 0B       		.uleb128 0xb
+ 548 0094 49       		.uleb128 0x49
+ 549 0095 13       		.uleb128 0x13
+ 550 0096 02       		.uleb128 0x2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 13
+
+
+ 551 0097 18       		.uleb128 0x18
+ 552 0098 00       		.byte	0
+ 553 0099 00       		.byte	0
+ 554 009a 0B       		.uleb128 0xb
+ 555 009b 34       		.uleb128 0x34
+ 556 009c 00       		.byte	0
+ 557 009d 03       		.uleb128 0x3
+ 558 009e 0E       		.uleb128 0xe
+ 559 009f 3A       		.uleb128 0x3a
+ 560 00a0 0B       		.uleb128 0xb
+ 561 00a1 3B       		.uleb128 0x3b
+ 562 00a2 05       		.uleb128 0x5
+ 563 00a3 49       		.uleb128 0x49
+ 564 00a4 13       		.uleb128 0x13
+ 565 00a5 3F       		.uleb128 0x3f
+ 566 00a6 19       		.uleb128 0x19
+ 567 00a7 3C       		.uleb128 0x3c
+ 568 00a8 19       		.uleb128 0x19
+ 569 00a9 00       		.byte	0
+ 570 00aa 00       		.byte	0
+ 571 00ab 0C       		.uleb128 0xc
+ 572 00ac 01       		.uleb128 0x1
+ 573 00ad 01       		.byte	0x1
+ 574 00ae 49       		.uleb128 0x49
+ 575 00af 13       		.uleb128 0x13
+ 576 00b0 01       		.uleb128 0x1
+ 577 00b1 13       		.uleb128 0x13
+ 578 00b2 00       		.byte	0
+ 579 00b3 00       		.byte	0
+ 580 00b4 0D       		.uleb128 0xd
+ 581 00b5 21       		.uleb128 0x21
+ 582 00b6 00       		.byte	0
+ 583 00b7 49       		.uleb128 0x49
+ 584 00b8 13       		.uleb128 0x13
+ 585 00b9 2F       		.uleb128 0x2f
+ 586 00ba 0B       		.uleb128 0xb
+ 587 00bb 00       		.byte	0
+ 588 00bc 00       		.byte	0
+ 589 00bd 0E       		.uleb128 0xe
+ 590 00be 34       		.uleb128 0x34
+ 591 00bf 00       		.byte	0
+ 592 00c0 03       		.uleb128 0x3
+ 593 00c1 0E       		.uleb128 0xe
+ 594 00c2 3A       		.uleb128 0x3a
+ 595 00c3 0B       		.uleb128 0xb
+ 596 00c4 3B       		.uleb128 0x3b
+ 597 00c5 0B       		.uleb128 0xb
+ 598 00c6 49       		.uleb128 0x49
+ 599 00c7 13       		.uleb128 0x13
+ 600 00c8 3F       		.uleb128 0x3f
+ 601 00c9 19       		.uleb128 0x19
+ 602 00ca 02       		.uleb128 0x2
+ 603 00cb 18       		.uleb128 0x18
+ 604 00cc 00       		.byte	0
+ 605 00cd 00       		.byte	0
+ 606 00ce 00       		.byte	0
+ 607              		.section	.debug_aranges,"",%progbits
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 14
+
+
+ 608 0000 24000000 		.4byte	0x24
+ 609 0004 0200     		.2byte	0x2
+ 610 0006 00000000 		.4byte	.Ldebug_info0
+ 611 000a 04       		.byte	0x4
+ 612 000b 00       		.byte	0
+ 613 000c 0000     		.2byte	0
+ 614 000e 0000     		.2byte	0
+ 615 0010 00000000 		.4byte	.LFB63
+ 616 0014 20000000 		.4byte	.LFE63-.LFB63
+ 617 0018 00000000 		.4byte	.LFB64
+ 618 001c BC000000 		.4byte	.LFE64-.LFB64
+ 619 0020 00000000 		.4byte	0
+ 620 0024 00000000 		.4byte	0
+ 621              		.section	.debug_ranges,"",%progbits
+ 622              	.Ldebug_ranges0:
+ 623 0000 00000000 		.4byte	.LFB63
+ 624 0004 20000000 		.4byte	.LFE63
+ 625 0008 00000000 		.4byte	.LFB64
+ 626 000c BC000000 		.4byte	.LFE64
+ 627 0010 00000000 		.4byte	0
+ 628 0014 00000000 		.4byte	0
+ 629              		.section	.debug_line,"",%progbits
+ 630              	.Ldebug_line0:
+ 631 0000 90010000 		.section	.debug_str,"MS",%progbits,1
+ 631      02004901 
+ 631      00000201 
+ 631      FB0E0D00 
+ 631      01010101 
+ 632              	.LASF29:
+ 633 0000 566F6C75 		.ascii	"Volume_Interrupt\000"
+ 633      6D655F49 
+ 633      6E746572 
+ 633      72757074 
+ 633      00
+ 634              	.LASF9:
+ 635 0011 5F5F696E 		.ascii	"__int32_t\000"
+ 635      7433325F 
+ 635      7400
+ 636              	.LASF4:
+ 637 001b 6C6F6E67 		.ascii	"long int\000"
+ 637      20696E74 
+ 637      00
+ 638              	.LASF26:
+ 639 0024 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 639      4320342E 
+ 639      392E3320 
+ 639      32303135 
+ 639      30333033 
+ 640 0057 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 640      20726576 
+ 640      6973696F 
+ 640      6E203232 
+ 640      31323230 
+ 641 008a 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 641      66756E63 
+ 641      74696F6E 
+ 641      2D736563 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 15
+
+
+ 641      74696F6E 
+ 642              	.LASF15:
+ 643 00b2 666C6F61 		.ascii	"float\000"
+ 643      7400
+ 644              	.LASF0:
+ 645 00b8 7369676E 		.ascii	"signed char\000"
+ 645      65642063 
+ 645      68617200 
+ 646              	.LASF1:
+ 647 00c4 756E7369 		.ascii	"unsigned char\000"
+ 647      676E6564 
+ 647      20636861 
+ 647      7200
+ 648              	.LASF27:
+ 649 00d2 2E5C6D61 		.ascii	".\\main.c\000"
+ 649      696E2E63 
+ 649      00
+ 650              	.LASF13:
+ 651 00db 696E7431 		.ascii	"int16\000"
+ 651      3600
+ 652              	.LASF5:
+ 653 00e1 6C6F6E67 		.ascii	"long unsigned int\000"
+ 653      20756E73 
+ 653      69676E65 
+ 653      6420696E 
+ 653      7400
+ 654              	.LASF14:
+ 655 00f3 696E7433 		.ascii	"int32\000"
+ 655      3200
+ 656              	.LASF21:
+ 657 00f9 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 657      52784275 
+ 657      66666572 
+ 657      00
+ 658              	.LASF16:
+ 659 0106 646F7562 		.ascii	"double\000"
+ 659      6C6500
+ 660              	.LASF30:
+ 661 010d 6D61696E 		.ascii	"main\000"
+ 661      00
+ 662              	.LASF12:
+ 663 0112 696E7438 		.ascii	"int8\000"
+ 663      00
+ 664              	.LASF8:
+ 665 0117 756E7369 		.ascii	"unsigned int\000"
+ 665      676E6564 
+ 665      20696E74 
+ 665      00
+ 666              	.LASF25:
+ 667 0124 73616D70 		.ascii	"sampleAvailable\000"
+ 667      6C654176 
+ 667      61696C61 
+ 667      626C6500 
+ 668              	.LASF7:
+ 669 0134 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 669      206C6F6E 
+ 669      6720756E 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 16
+
+
+ 669      7369676E 
+ 669      65642069 
+ 670              	.LASF10:
+ 671 014b 696E7433 		.ascii	"int32_t\000"
+ 671      325F7400 
+ 672              	.LASF18:
+ 673 0153 73697A65 		.ascii	"sizetype\000"
+ 673      74797065 
+ 673      00
+ 674              	.LASF3:
+ 675 015c 73686F72 		.ascii	"short unsigned int\000"
+ 675      7420756E 
+ 675      7369676E 
+ 675      65642069 
+ 675      6E7400
+ 676              	.LASF6:
+ 677 016f 6C6F6E67 		.ascii	"long long int\000"
+ 677      206C6F6E 
+ 677      6720696E 
+ 677      7400
+ 678              	.LASF19:
+ 679 017d 766F6C74 		.ascii	"voltageMv\000"
+ 679      6167654D 
+ 679      7600
+ 680              	.LASF17:
+ 681 0187 63686172 		.ascii	"char\000"
+ 681      00
+ 682              	.LASF2:
+ 683 018c 73686F72 		.ascii	"short int\000"
+ 683      7420696E 
+ 683      7400
+ 684              	.LASF11:
+ 685 0196 75696E74 		.ascii	"uint8\000"
+ 685      3800
+ 686              	.LASF24:
+ 687 019c 63757272 		.ascii	"currentSample\000"
+ 687      656E7453 
+ 687      616D706C 
+ 687      6500
+ 688              	.LASF20:
+ 689 01aa 73616D70 		.ascii	"sampleAverage\000"
+ 689      6C654176 
+ 689      65726167 
+ 689      6500
+ 690              	.LASF22:
+ 691 01b8 73616D70 		.ascii	"samples\000"
+ 691      6C657300 
+ 692              	.LASF28:
+ 693 01c0 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
+ 693      73657273 
+ 693      5C4C756B 
+ 693      61732043 
+ 693      72657574 
+ 694 01ef 725C576F 		.ascii	"r\\Workspace01\\Volume_Control.cydsn\000"
+ 694      726B7370 
+ 694      61636530 
+ 694      315C566F 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccxWjrwR.s 			page 17
+
+
+ 694      6C756D65 
+ 695              	.LASF23:
+ 696 0212 73616D70 		.ascii	"sampleIndex\000"
+ 696      6C65496E 
+ 696      64657800 
+ 697              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
