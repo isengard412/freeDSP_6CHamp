@@ -1,6 +1,6 @@
--- Project:   C:\Users\Lukas Creutzburg\Documents\PSoC Creator\Workspace01\Protection_Register_Control.cydsn\Protection_Register_Control.cyprj
--- Generated: 08/02/2016 17:16:50
--- PSoC Creator  3.3 SP2
+-- Project:   C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Protection_Register_Control.cydsn\Protection_Register_Control.cyprj
+-- Generated: 11/16/2016 12:46:01
+-- PSoC Creator  4.0
 
 ENTITY Protection_Register_Control IS
     PORT(

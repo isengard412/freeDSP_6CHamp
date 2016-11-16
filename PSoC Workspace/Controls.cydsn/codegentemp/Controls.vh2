@@ -2,7 +2,7 @@
 --	Conversion of Controls.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Nov 14 17:59:35 2016
+--	Wed Nov 16 12:45:15 2016
 --
 
 USE cypress.cypress.all;

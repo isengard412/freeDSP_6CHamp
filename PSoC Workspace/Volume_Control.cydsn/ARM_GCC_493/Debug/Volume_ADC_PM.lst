@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 1
 
 
    1              		.syntax unified
@@ -33,57 +33,57 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
   30              		.type	Volume_ADC_SaveConfig, %function
   31              	Volume_ADC_SaveConfig:
   32              	.LFB0:
-  33              		.file 1 ".\\Generated_Source\\PSoC5\\Volume_ADC_PM.c"
-   1:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * File Name: Volume_ADC_PM.c
-   3:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Version 3.20
-   4:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-   5:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Description:
-   6:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  This file provides the power manager source code to the API for the
-   7:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Delta-Sigma ADC Component.
-   8:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-   9:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Note:
-  10:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  11:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
-  12:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
-  13:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
-  14:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  15:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * the software package with which this file was provided.
-  16:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
-  17:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  18:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** #include "Volume_ADC.h"
-  19:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  20:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** static Volume_ADC_BACKUP_STRUCT Volume_ADC_backup =
-  21:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** {
-  22:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_DISABLED,
-  23:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_CFG1_DEC_CR
-  24:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** };
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 2
+  33              		.file 1 "Generated_Source\\PSoC5\\Volume_ADC_PM.c"
+   1:Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/Volume_ADC_PM.c **** * File Name: Volume_ADC_PM.c
+   3:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Version 3.20
+   4:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+   5:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Description:
+   6:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  This file provides the power manager source code to the API for the
+   7:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Delta-Sigma ADC Component.
+   8:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+   9:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Note:
+  10:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  11:Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
+  12:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  13:Generated_Source\PSoC5/Volume_ADC_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  14:Generated_Source\PSoC5/Volume_ADC_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  15:Generated_Source\PSoC5/Volume_ADC_PM.c **** * the software package with which this file was provided.
+  16:Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
+  17:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  18:Generated_Source\PSoC5/Volume_ADC_PM.c **** #include "Volume_ADC.h"
+  19:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  20:Generated_Source\PSoC5/Volume_ADC_PM.c **** static Volume_ADC_BACKUP_STRUCT Volume_ADC_backup =
+  21:Generated_Source\PSoC5/Volume_ADC_PM.c **** {
+  22:Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_DISABLED,
+  23:Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_CFG1_DEC_CR
+  24:Generated_Source\PSoC5/Volume_ADC_PM.c **** };
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 2
 
 
-  25:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  26:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  27:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
-  28:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_SaveConfig
-  29:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
-  30:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  31:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
-  32:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Save the register configuration which are not retention.
-  33:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  34:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
-  35:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
-  36:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  37:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
-  38:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
-  39:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  40:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
-  41:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  This global structure variable is used to store
-  42:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  configuration registers which are non retention whenever user wants to go
-  43:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  sleep mode by calling Sleep() API.
-  44:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  45:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
-  46:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_SaveConfig(void) 
-  47:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** {
+  25:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  26:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  27:Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
+  28:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_SaveConfig
+  29:Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
+  30:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  31:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
+  32:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Save the register configuration which are not retention.
+  33:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  34:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
+  35:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+  36:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  37:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
+  38:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+  39:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  40:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
+  41:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  This global structure variable is used to store
+  42:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  configuration registers which are non retention whenever user wants to go
+  43:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  sleep mode by calling Sleep() API.
+  44:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  45:Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
+  46:Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_SaveConfig(void) 
+  47:Generated_Source\PSoC5/Volume_ADC_PM.c **** {
   34              		.loc 1 47 0
   35              		.cfi_startproc
   36              		@ args = 0, pretend = 0, frame = 0
@@ -94,14 +94,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
   41              		.cfi_offset 7, -4
   42 0002 00AF     		add	r7, sp, #0
   43              		.cfi_def_cfa_register 7
-  48:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_backup.deccr = Volume_ADC_DEC_CR_REG;
+  48:Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_backup.deccr = Volume_ADC_DEC_CR_REG;
   44              		.loc 1 48 0
   45 0004 044B     		ldr	r3, .L2
   46 0006 1B78     		ldrb	r3, [r3]
   47 0008 DAB2     		uxtb	r2, r3
   48 000a 044B     		ldr	r3, .L2+4
   49 000c 5A70     		strb	r2, [r3, #1]
-  49:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** }
+  49:Generated_Source\PSoC5/Volume_ADC_PM.c **** }
   50              		.loc 1 49 0
   51 000e BD46     		mov	sp, r7
   52              		.cfi_def_cfa_register 13
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
   63              		.cfi_endproc
   64              	.LFE0:
   65              		.size	Volume_ADC_SaveConfig, .-Volume_ADC_SaveConfig
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 3
 
 
   66              		.section	.text.Volume_ADC_RestoreConfig,"ax",%progbits
@@ -129,29 +129,29 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
   71              		.type	Volume_ADC_RestoreConfig, %function
   72              	Volume_ADC_RestoreConfig:
   73              	.LFB1:
-  50:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  51:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  52:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
-  53:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_RestoreConfig
-  54:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
-  55:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  56:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
-  57:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Restore the register configurations which are not retention.
-  58:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  59:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
-  60:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
-  61:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  62:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
-  63:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
-  64:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  65:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
-  66:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  This global structure variable is used to restore
-  67:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  configuration registers which are non retention whenever user wants to switch
-  68:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  to active power mode by calling Wakeup() API.
-  69:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  70:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
-  71:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_RestoreConfig(void) 
-  72:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** {
+  50:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  51:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  52:Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
+  53:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_RestoreConfig
+  54:Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
+  55:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  56:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
+  57:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Restore the register configurations which are not retention.
+  58:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  59:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
+  60:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+  61:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  62:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
+  63:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+  64:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  65:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
+  66:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  This global structure variable is used to restore
+  67:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  configuration registers which are non retention whenever user wants to switch
+  68:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  to active power mode by calling Wakeup() API.
+  69:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  70:Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
+  71:Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_RestoreConfig(void) 
+  72:Generated_Source\PSoC5/Volume_ADC_PM.c **** {
   74              		.loc 1 72 0
   75              		.cfi_startproc
   76              		@ args = 0, pretend = 0, frame = 0
@@ -162,13 +162,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
   81              		.cfi_offset 7, -4
   82 0002 00AF     		add	r7, sp, #0
   83              		.cfi_def_cfa_register 7
-  73:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_DEC_CR_REG = Volume_ADC_backup.deccr;
+  73:Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_DEC_CR_REG = Volume_ADC_backup.deccr;
   84              		.loc 1 73 0
   85 0004 034B     		ldr	r3, .L5
   86 0006 044A     		ldr	r2, .L5+4
   87 0008 5278     		ldrb	r2, [r2, #1]	@ zero_extendqisi2
   88 000a 1A70     		strb	r2, [r3]
-  74:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** }
+  74:Generated_Source\PSoC5/Volume_ADC_PM.c **** }
   89              		.loc 1 74 0
   90 000c BD46     		mov	sp, r7
   91              		.cfi_def_cfa_register 13
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
   95              		.cfi_def_cfa_offset 0
   96 0012 7047     		bx	lr
   97              	.L6:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 4
 
 
   98              		.align	2
@@ -196,28 +196,28 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  110              		.type	Volume_ADC_Sleep, %function
  111              	Volume_ADC_Sleep:
  112              	.LFB2:
-  75:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  76:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
-  77:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
-  78:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_Sleep
-  79:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
-  80:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  81:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
-  82:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Stops the operation of the block and saves the user configuration.
-  83:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  84:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
-  85:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
-  86:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  87:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
-  88:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
-  89:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  90:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
-  91:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  The structure field 'enableState' is modified
-  92:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  depending on the enable state of the block before entering to sleep mode.
-  93:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
-  94:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
-  95:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_Sleep(void) 
-  96:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** {
+  75:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  76:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+  77:Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
+  78:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_Sleep
+  79:Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
+  80:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  81:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
+  82:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Stops the operation of the block and saves the user configuration.
+  83:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  84:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
+  85:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+  86:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  87:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
+  88:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+  89:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  90:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
+  91:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  The structure field 'enableState' is modified
+  92:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  depending on the enable state of the block before entering to sleep mode.
+  93:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+  94:Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
+  95:Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_Sleep(void) 
+  96:Generated_Source\PSoC5/Volume_ADC_PM.c **** {
  113              		.loc 1 96 0
  114              		.cfi_startproc
  115              		@ args = 0, pretend = 0, frame = 0
@@ -228,8 +228,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  120              		.cfi_offset 14, -4
  121 0002 00AF     		add	r7, sp, #0
  122              		.cfi_def_cfa_register 7
-  97:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Save ADC enable state */
-  98:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     if((Volume_ADC_ACT_PWR_DEC_EN == (Volume_ADC_PWRMGR_DEC_REG & Volume_ADC_ACT_PWR_DEC_EN)) &&
+  97:Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Save ADC enable state */
+  98:Generated_Source\PSoC5/Volume_ADC_PM.c ****     if((Volume_ADC_ACT_PWR_DEC_EN == (Volume_ADC_PWRMGR_DEC_REG & Volume_ADC_ACT_PWR_DEC_EN)) &&
  123              		.loc 1 98 0
  124 0004 134B     		ldr	r3, .L11
  125 0006 1B78     		ldrb	r3, [r3]
@@ -237,8 +237,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  127 000a 03F00103 		and	r3, r3, #1
  128 000e 002B     		cmp	r3, #0
  129 0010 1AD0     		beq	.L8
-  99:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****        (Volume_ADC_ACT_PWR_DSM_EN == (Volume_ADC_PWRMGR_DSM_REG & Volume_ADC_ACT_PWR_DSM_EN)))
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 5
+  99:Generated_Source\PSoC5/Volume_ADC_PM.c ****        (Volume_ADC_ACT_PWR_DSM_EN == (Volume_ADC_PWRMGR_DSM_REG & Volume_ADC_ACT_PWR_DSM_EN)))
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 5
 
 
  130              		.loc 1 99 0 discriminator 1
@@ -246,18 +246,18 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  132 0014 1B78     		ldrb	r3, [r3]
  133 0016 DBB2     		uxtb	r3, r3
  134 0018 03F01003 		and	r3, r3, #16
-  98:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****        (Volume_ADC_ACT_PWR_DSM_EN == (Volume_ADC_PWRMGR_DSM_REG & Volume_ADC_ACT_PWR_DSM_EN)))
+  98:Generated_Source\PSoC5/Volume_ADC_PM.c ****        (Volume_ADC_ACT_PWR_DSM_EN == (Volume_ADC_PWRMGR_DSM_REG & Volume_ADC_ACT_PWR_DSM_EN)))
  135              		.loc 1 98 0 discriminator 1
  136 001c 002B     		cmp	r3, #0
  137 001e 13D0     		beq	.L8
- 100:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     {
- 101:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         /* Component is enabled */
- 102:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_backup.enableState = Volume_ADC_ENABLED;
+ 100:Generated_Source\PSoC5/Volume_ADC_PM.c ****     {
+ 101:Generated_Source\PSoC5/Volume_ADC_PM.c ****         /* Component is enabled */
+ 102:Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_backup.enableState = Volume_ADC_ENABLED;
  138              		.loc 1 102 0
  139 0020 0D4B     		ldr	r3, .L11+4
  140 0022 0122     		movs	r2, #1
  141 0024 1A70     		strb	r2, [r3]
- 103:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         if((Volume_ADC_DEC_CR_REG & Volume_ADC_DEC_START_CONV) != 0u)
+ 103:Generated_Source\PSoC5/Volume_ADC_PM.c ****         if((Volume_ADC_DEC_CR_REG & Volume_ADC_DEC_START_CONV) != 0u)
  142              		.loc 1 103 0
  143 0026 0D4B     		ldr	r3, .L11+8
  144 0028 1B78     		ldrb	r3, [r3]
@@ -265,9 +265,9 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  146 002c 03F00103 		and	r3, r3, #1
  147 0030 002B     		cmp	r3, #0
  148 0032 06D0     		beq	.L9
- 104:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         {   
- 105:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****             /* Conversion is started */
- 106:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****             Volume_ADC_backup.enableState |= Volume_ADC_STARTED;
+ 104:Generated_Source\PSoC5/Volume_ADC_PM.c ****         {   
+ 105:Generated_Source\PSoC5/Volume_ADC_PM.c ****             /* Conversion is started */
+ 106:Generated_Source\PSoC5/Volume_ADC_PM.c ****             Volume_ADC_backup.enableState |= Volume_ADC_STARTED;
  149              		.loc 1 106 0
  150 0034 084B     		ldr	r3, .L11+4
  151 0036 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -276,34 +276,34 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  154 003e 064B     		ldr	r3, .L11+4
  155 0040 1A70     		strb	r2, [r3]
  156              	.L9:
- 107:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         }
- 108:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 		
- 109:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         /* Stop the configuration */
- 110:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_Stop();
+ 107:Generated_Source\PSoC5/Volume_ADC_PM.c ****         }
+ 108:Generated_Source\PSoC5/Volume_ADC_PM.c **** 		
+ 109:Generated_Source\PSoC5/Volume_ADC_PM.c ****         /* Stop the configuration */
+ 110:Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_Stop();
  157              		.loc 1 110 0
  158 0042 FFF7FEFF 		bl	Volume_ADC_Stop
  159 0046 02E0     		b	.L10
  160              	.L8:
- 111:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     }
- 112:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     else
- 113:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     {
- 114:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         /* Component is disabled */
- 115:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_backup.enableState = Volume_ADC_DISABLED;
+ 111:Generated_Source\PSoC5/Volume_ADC_PM.c ****     }
+ 112:Generated_Source\PSoC5/Volume_ADC_PM.c ****     else
+ 113:Generated_Source\PSoC5/Volume_ADC_PM.c ****     {
+ 114:Generated_Source\PSoC5/Volume_ADC_PM.c ****         /* Component is disabled */
+ 115:Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_backup.enableState = Volume_ADC_DISABLED;
  161              		.loc 1 115 0
  162 0048 034B     		ldr	r3, .L11+4
  163 004a 0022     		movs	r2, #0
  164 004c 1A70     		strb	r2, [r3]
  165              	.L10:
- 116:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     }
- 117:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
- 118:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Save the user configuration */
- 119:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_SaveConfig();
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 6
+ 116:Generated_Source\PSoC5/Volume_ADC_PM.c ****     }
+ 117:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+ 118:Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Save the user configuration */
+ 119:Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_SaveConfig();
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 6
 
 
  166              		.loc 1 119 0
  167 004e FFF7FEFF 		bl	Volume_ADC_SaveConfig
- 120:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** }
+ 120:Generated_Source\PSoC5/Volume_ADC_PM.c **** }
  168              		.loc 1 120 0
  169 0052 80BD     		pop	{r7, pc}
  170              	.L12:
@@ -323,28 +323,28 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  184              		.type	Volume_ADC_Wakeup, %function
  185              	Volume_ADC_Wakeup:
  186              	.LFB3:
- 121:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
- 122:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
- 123:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
- 124:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_Wakeup
- 125:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
- 126:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
- 127:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
- 128:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Restores the user configuration and enables the power to the block.
- 129:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
- 130:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
- 131:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
- 132:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
- 133:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
- 134:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
- 135:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
- 136:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
- 137:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  The structure field 'enableState' is used to
- 138:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *  restore the enable state of block after wakeup from sleep mode.
- 139:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *
- 140:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
- 141:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_Wakeup(void) 
- 142:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** {
+ 121:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+ 122:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+ 123:Generated_Source\PSoC5/Volume_ADC_PM.c **** /*******************************************************************************
+ 124:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Function Name: Volume_ADC_Wakeup
+ 125:Generated_Source\PSoC5/Volume_ADC_PM.c **** ********************************************************************************
+ 126:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+ 127:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Summary:
+ 128:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Restores the user configuration and enables the power to the block.
+ 129:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+ 130:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Parameters:
+ 131:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+ 132:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+ 133:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Return:
+ 134:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  None
+ 135:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+ 136:Generated_Source\PSoC5/Volume_ADC_PM.c **** * Global variables:
+ 137:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  Volume_ADC_backup:  The structure field 'enableState' is used to
+ 138:Generated_Source\PSoC5/Volume_ADC_PM.c **** *  restore the enable state of block after wakeup from sleep mode.
+ 139:Generated_Source\PSoC5/Volume_ADC_PM.c **** *
+ 140:Generated_Source\PSoC5/Volume_ADC_PM.c **** *******************************************************************************/
+ 141:Generated_Source\PSoC5/Volume_ADC_PM.c **** void Volume_ADC_Wakeup(void) 
+ 142:Generated_Source\PSoC5/Volume_ADC_PM.c **** {
  187              		.loc 1 142 0
  188              		.cfi_startproc
  189              		@ args = 0, pretend = 0, frame = 0
@@ -355,40 +355,40 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  194              		.cfi_offset 14, -4
  195 0002 00AF     		add	r7, sp, #0
  196              		.cfi_def_cfa_register 7
- 143:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Restore the configuration */
- 144:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_RestoreConfig();
+ 143:Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Restore the configuration */
+ 144:Generated_Source\PSoC5/Volume_ADC_PM.c ****     Volume_ADC_RestoreConfig();
  197              		.loc 1 144 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 7
 
 
  198 0004 FFF7FEFF 		bl	Volume_ADC_RestoreConfig
- 145:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** 
- 146:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Enables the component operation */
- 147:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     if(Volume_ADC_backup.enableState != Volume_ADC_DISABLED)
+ 145:Generated_Source\PSoC5/Volume_ADC_PM.c **** 
+ 146:Generated_Source\PSoC5/Volume_ADC_PM.c ****     /* Enables the component operation */
+ 147:Generated_Source\PSoC5/Volume_ADC_PM.c ****     if(Volume_ADC_backup.enableState != Volume_ADC_DISABLED)
  199              		.loc 1 147 0
  200 0008 074B     		ldr	r3, .L15
  201 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  202 000c 002B     		cmp	r3, #0
  203 000e 09D0     		beq	.L13
- 148:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     {
- 149:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_Enable();
+ 148:Generated_Source\PSoC5/Volume_ADC_PM.c ****     {
+ 149:Generated_Source\PSoC5/Volume_ADC_PM.c ****         Volume_ADC_Enable();
  204              		.loc 1 149 0
  205 0010 FFF7FEFF 		bl	Volume_ADC_Enable
- 150:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         if((Volume_ADC_backup.enableState & Volume_ADC_STARTED) != 0u)
+ 150:Generated_Source\PSoC5/Volume_ADC_PM.c ****         if((Volume_ADC_backup.enableState & Volume_ADC_STARTED) != 0u)
  206              		.loc 1 150 0
  207 0014 044B     		ldr	r3, .L15
  208 0016 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  209 0018 03F00203 		and	r3, r3, #2
  210 001c 002B     		cmp	r3, #0
  211 001e 01D0     		beq	.L13
- 151:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         {
- 152:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****             Volume_ADC_StartConvert();
+ 151:Generated_Source\PSoC5/Volume_ADC_PM.c ****         {
+ 152:Generated_Source\PSoC5/Volume_ADC_PM.c ****             Volume_ADC_StartConvert();
  212              		.loc 1 152 0
  213 0020 FFF7FEFF 		bl	Volume_ADC_StartConvert
  214              	.L13:
- 153:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****         }
- 154:.\Generated_Source\PSoC5/Volume_ADC_PM.c ****     } /* Do nothing if component was disable before */
- 155:.\Generated_Source\PSoC5/Volume_ADC_PM.c **** }
+ 153:Generated_Source\PSoC5/Volume_ADC_PM.c ****         }
+ 154:Generated_Source\PSoC5/Volume_ADC_PM.c ****     } /* Do nothing if component was disable before */
+ 155:Generated_Source\PSoC5/Volume_ADC_PM.c **** }
  215              		.loc 1 155 0
  216 0024 80BD     		pop	{r7, pc}
  217              	.L16:
@@ -400,8 +400,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  223              		.size	Volume_ADC_Wakeup, .-Volume_ADC_Wakeup
  224              		.text
  225              	.Letext0:
- 226              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
- 227              		.file 3 ".\\Generated_Source\\PSoC5\\Volume_ADC.h"
+ 226              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 227              		.file 3 "Generated_Source\\PSoC5\\Volume_ADC.h"
  228              		.section	.debug_info,"",%progbits
  229              	.Ldebug_info0:
  230 0000 22010000 		.4byte	0x122
@@ -409,36 +409,36 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  232 0006 00000000 		.4byte	.Ldebug_abbrev0
  233 000a 04       		.byte	0x4
  234 000b 01       		.uleb128 0x1
- 235 000c 9C010000 		.4byte	.LASF22
+ 235 000c A6010000 		.4byte	.LASF22
  236 0010 01       		.byte	0x1
- 237 0011 48010000 		.4byte	.LASF23
- 238 0015 A4000000 		.4byte	.LASF24
+ 237 0011 F6000000 		.4byte	.LASF23
+ 238 0015 3C010000 		.4byte	.LASF24
  239 0019 00000000 		.4byte	.Ldebug_ranges0+0
  240 001d 00000000 		.4byte	0
  241 0021 00000000 		.4byte	.Ldebug_line0
  242 0025 02       		.uleb128 0x2
  243 0026 01       		.byte	0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 8
 
 
  244 0027 06       		.byte	0x6
- 245 0028 84010000 		.4byte	.LASF0
+ 245 0028 30010000 		.4byte	.LASF0
  246 002c 02       		.uleb128 0x2
  247 002d 01       		.byte	0x1
  248 002e 08       		.byte	0x8
- 249 002f F6000000 		.4byte	.LASF1
+ 249 002f A4000000 		.4byte	.LASF1
  250 0033 02       		.uleb128 0x2
  251 0034 02       		.byte	0x2
  252 0035 05       		.byte	0x5
- 253 0036 2A020000 		.4byte	.LASF2
+ 253 0036 34020000 		.4byte	.LASF2
  254 003a 02       		.uleb128 0x2
  255 003b 02       		.byte	0x2
  256 003c 07       		.byte	0x7
- 257 003d 71010000 		.4byte	.LASF3
+ 257 003d 1D010000 		.4byte	.LASF3
  258 0041 02       		.uleb128 0x2
  259 0042 04       		.byte	0x4
  260 0043 05       		.byte	0x5
- 261 0044 09010000 		.4byte	.LASF4
+ 261 0044 B7000000 		.4byte	.LASF4
  262 0048 02       		.uleb128 0x2
  263 0049 04       		.byte	0x4
  264 004a 07       		.byte	0x7
@@ -467,18 +467,18 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  287 0077 02       		.uleb128 0x2
  288 0078 04       		.byte	0x4
  289 0079 04       		.byte	0x4
- 290 007a 96010000 		.4byte	.LASF9
+ 290 007a A0010000 		.4byte	.LASF9
  291 007e 02       		.uleb128 0x2
  292 007f 08       		.byte	0x8
  293 0080 04       		.byte	0x4
- 294 0081 41010000 		.4byte	.LASF10
+ 294 0081 EF000000 		.4byte	.LASF10
  295 0085 02       		.uleb128 0x2
  296 0086 01       		.byte	0x1
  297 0087 08       		.byte	0x8
- 298 0088 04010000 		.4byte	.LASF11
+ 298 0088 B2000000 		.4byte	.LASF11
  299 008c 04       		.uleb128 0x4
- 300 008d 34020000 		.4byte	.LASF13
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 9
+ 300 008d 3E020000 		.4byte	.LASF13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 9
 
 
  301 0091 02       		.byte	0x2
@@ -489,20 +489,20 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  306 009d 02       		.uleb128 0x2
  307 009e 04       		.byte	0x4
  308 009f 07       		.byte	0x7
- 309 00a0 39020000 		.4byte	.LASF14
+ 309 00a0 43020000 		.4byte	.LASF14
  310 00a4 06       		.uleb128 0x6
  311 00a5 02       		.byte	0x2
  312 00a6 03       		.byte	0x3
  313 00a7 28       		.byte	0x28
  314 00a8 C5000000 		.4byte	0xc5
  315 00ac 07       		.uleb128 0x7
- 316 00ad 35010000 		.4byte	.LASF15
+ 316 00ad E3000000 		.4byte	.LASF15
  317 00b1 03       		.byte	0x3
  318 00b2 2A       		.byte	0x2a
  319 00b3 6B000000 		.4byte	0x6b
  320 00b7 00       		.byte	0
  321 00b8 07       		.uleb128 0x7
- 322 00b9 90010000 		.4byte	.LASF16
+ 322 00b9 9A010000 		.4byte	.LASF16
  323 00bd 03       		.byte	0x3
  324 00be 2B       		.byte	0x2b
  325 00bf 6B000000 		.4byte	0x6b
@@ -530,7 +530,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  347 00f0 01       		.uleb128 0x1
  348 00f1 9C       		.byte	0x9c
  349 00f2 0A       		.uleb128 0xa
- 350 00f3 24010000 		.4byte	.LASF20
+ 350 00f3 D2000000 		.4byte	.LASF20
  351 00f7 01       		.byte	0x1
  352 00f8 5F       		.byte	0x5f
  353 00f9 00000000 		.4byte	.LFB2
@@ -538,10 +538,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  355 0101 01       		.uleb128 0x1
  356 0102 9C       		.byte	0x9c
  357 0103 0A       		.uleb128 0xa
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 10
 
 
- 358 0104 12010000 		.4byte	.LASF21
+ 358 0104 C0000000 		.4byte	.LASF21
  359 0108 01       		.byte	0x1
  360 0109 8D       		.byte	0x8d
  361 010a 00000000 		.4byte	.LFB3
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  412 0024 0B       		.uleb128 0xb
  413 0025 03       		.uleb128 0x3
  414 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 11
 
 
  415 0027 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  469 005d 0E       		.uleb128 0xe
  470 005e 3A       		.uleb128 0x3a
  471 005f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 12
 
 
  472 0060 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  526 0098 00       		.byte	0
  527 0099 03       		.uleb128 0x3
  528 009a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 13
 
 
  529 009b 3A       		.uleb128 0x3a
@@ -764,8 +764,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  569 0024 00000000 		.4byte	0
  570              		.section	.debug_line,"",%progbits
  571              	.Ldebug_line0:
- 572 0000 BD000000 		.section	.debug_str,"MS",%progbits,1
- 572      02005C00 
+ 572 0000 BB000000 		.section	.debug_str,"MS",%progbits,1
+ 572      02005A00 
  572      00000201 
  572      FB0E0D00 
  572      01010101 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  576 000e 566F6C75 		.ascii	"Volume_ADC_SaveConfig\000"
  576      6D655F41 
  576      44435F53 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 14
 
 
  576      61766543 
@@ -821,101 +821,101 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 1
  590      44435F62 
  590      61636B75 
  590      7000
- 591              	.LASF24:
- 592 00a4 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 592      73657273 
- 592      5C4C756B 
- 592      61732043 
- 592      72657574 
- 593 00d3 725C576F 		.ascii	"r\\Workspace01\\Volume_Control.cydsn\000"
- 593      726B7370 
- 593      61636530 
- 593      315C566F 
- 593      6C756D65 
- 594              	.LASF1:
- 595 00f6 756E7369 		.ascii	"unsigned char\000"
- 595      676E6564 
- 595      20636861 
- 595      7200
- 596              	.LASF11:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 15
+ 591              	.LASF1:
+ 592 00a4 756E7369 		.ascii	"unsigned char\000"
+ 592      676E6564 
+ 592      20636861 
+ 592      7200
+ 593              	.LASF11:
+ 594 00b2 63686172 		.ascii	"char\000"
+ 594      00
+ 595              	.LASF4:
+ 596 00b7 6C6F6E67 		.ascii	"long int\000"
+ 596      20696E74 
+ 596      00
+ 597              	.LASF21:
+ 598 00c0 566F6C75 		.ascii	"Volume_ADC_Wakeup\000"
+ 598      6D655F41 
+ 598      44435F57 
+ 598      616B6575 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 15
 
 
- 597 0104 63686172 		.ascii	"char\000"
- 597      00
- 598              	.LASF4:
- 599 0109 6C6F6E67 		.ascii	"long int\000"
- 599      20696E74 
- 599      00
- 600              	.LASF21:
- 601 0112 566F6C75 		.ascii	"Volume_ADC_Wakeup\000"
- 601      6D655F41 
- 601      44435F57 
- 601      616B6575 
- 601      7000
- 602              	.LASF20:
- 603 0124 566F6C75 		.ascii	"Volume_ADC_Sleep\000"
- 603      6D655F41 
- 603      44435F53 
- 603      6C656570 
- 603      00
- 604              	.LASF15:
- 605 0135 656E6162 		.ascii	"enableState\000"
- 605      6C655374 
- 605      61746500 
- 606              	.LASF10:
- 607 0141 646F7562 		.ascii	"double\000"
- 607      6C6500
- 608              	.LASF23:
- 609 0148 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Volume_ADC_PM.c\000"
- 609      6E657261 
- 609      7465645F 
- 609      536F7572 
- 609      63655C50 
- 610              	.LASF3:
- 611 0171 73686F72 		.ascii	"short unsigned int\000"
- 611      7420756E 
- 611      7369676E 
- 611      65642069 
- 611      6E7400
- 612              	.LASF0:
- 613 0184 7369676E 		.ascii	"signed char\000"
- 613      65642063 
- 613      68617200 
+ 598      7000
+ 599              	.LASF20:
+ 600 00d2 566F6C75 		.ascii	"Volume_ADC_Sleep\000"
+ 600      6D655F41 
+ 600      44435F53 
+ 600      6C656570 
+ 600      00
+ 601              	.LASF15:
+ 602 00e3 656E6162 		.ascii	"enableState\000"
+ 602      6C655374 
+ 602      61746500 
+ 603              	.LASF10:
+ 604 00ef 646F7562 		.ascii	"double\000"
+ 604      6C6500
+ 605              	.LASF23:
+ 606 00f6 47656E65 		.ascii	"Generated_Source\\PSoC5\\Volume_ADC_PM.c\000"
+ 606      72617465 
+ 606      645F536F 
+ 606      75726365 
+ 606      5C50536F 
+ 607              	.LASF3:
+ 608 011d 73686F72 		.ascii	"short unsigned int\000"
+ 608      7420756E 
+ 608      7369676E 
+ 608      65642069 
+ 608      6E7400
+ 609              	.LASF0:
+ 610 0130 7369676E 		.ascii	"signed char\000"
+ 610      65642063 
+ 610      68617200 
+ 611              	.LASF24:
+ 612 013c 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 612      73657273 
+ 612      5C4C756B 
+ 612      61732043 
+ 612      72657574 
+ 613 016a 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Volume_Control.cydsn\000"
+ 613      5F364348 
+ 613      616D705C 
+ 613      50536F43 
+ 613      20576F72 
  614              	.LASF16:
- 615 0190 64656363 		.ascii	"deccr\000"
+ 615 019a 64656363 		.ascii	"deccr\000"
  615      7200
  616              	.LASF9:
- 617 0196 666C6F61 		.ascii	"float\000"
+ 617 01a0 666C6F61 		.ascii	"float\000"
  617      7400
  618              	.LASF22:
- 619 019c 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 619 01a6 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  619      4320342E 
  619      392E3320 
  619      32303135 
  619      30333033 
- 620 01cf 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 620 01d9 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  620      20726576 
  620      6973696F 
  620      6E203232 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccvBxQw9.s 			page 16
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccmeseTw.s 			page 16
 
 
  620      31323230 
- 621 0202 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 621 020c 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
  621      66756E63 
  621      74696F6E 
  621      2D736563 
  621      74696F6E 
  622              	.LASF2:
- 623 022a 73686F72 		.ascii	"short int\000"
+ 623 0234 73686F72 		.ascii	"short int\000"
  623      7420696E 
  623      7400
  624              	.LASF13:
- 625 0234 72656738 		.ascii	"reg8\000"
+ 625 023e 72656738 		.ascii	"reg8\000"
  625      00
  626              	.LASF14:
- 627 0239 73697A65 		.ascii	"sizetype\000"
+ 627 0243 73697A65 		.ascii	"sizetype\000"
  627      74797065 
  627      00
  628              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

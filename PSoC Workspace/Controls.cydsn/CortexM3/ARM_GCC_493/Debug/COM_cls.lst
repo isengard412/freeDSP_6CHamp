@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 1
 
 
    1              		.syntax unified
@@ -29,14 +29,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
   26              		.file 1 "Generated_Source\\PSoC5\\COM_cls.c"
    1:Generated_Source\PSoC5/COM_cls.c **** /***************************************************************************//**
    2:Generated_Source\PSoC5/COM_cls.c **** * \file COM_cls.c
-   3:Generated_Source\PSoC5/COM_cls.c **** * \version 3.0
+   3:Generated_Source\PSoC5/COM_cls.c **** * \version 3.10
    4:Generated_Source\PSoC5/COM_cls.c **** *
    5:Generated_Source\PSoC5/COM_cls.c **** * \brief
    6:Generated_Source\PSoC5/COM_cls.c **** *  This file contains the USB Class request handler.
    7:Generated_Source\PSoC5/COM_cls.c **** *
    8:Generated_Source\PSoC5/COM_cls.c **** ********************************************************************************
    9:Generated_Source\PSoC5/COM_cls.c **** * \copyright
-  10:Generated_Source\PSoC5/COM_cls.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  10:Generated_Source\PSoC5/COM_cls.c **** * Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
   11:Generated_Source\PSoC5/COM_cls.c **** * You may use this file only in accordance with the license, terms, conditions,
   12:Generated_Source\PSoC5/COM_cls.c **** * disclaimers, and limitations in the end user license agreement accompanying
   13:Generated_Source\PSoC5/COM_cls.c **** * the software package with which this file was provided.
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
   29:Generated_Source\PSoC5/COM_cls.c **** /*******************************************************************************
   30:Generated_Source\PSoC5/COM_cls.c **** * Function Name: COM_DispatchClassRqst
   31:Generated_Source\PSoC5/COM_cls.c **** ****************************************************************************//**
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 2
 
 
   32:Generated_Source\PSoC5/COM_cls.c **** *  This routine dispatches class specific requests depend on interface class.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
   59:Generated_Source\PSoC5/COM_cls.c ****             */
   60:Generated_Source\PSoC5/COM_cls.c ****             interfaceNumber = COM_EP[COM_wIndexLoReg & COM_DIR_UNUSED].interface;
   54              		.loc 1 60 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 3
 
 
   55 001c 0B4B     		ldr	r3, .L12
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
   90:Generated_Source\PSoC5/COM_cls.c ****         case COM_CLASS_CDC:
   91:Generated_Source\PSoC5/COM_cls.c ****             requestHandled = COM_DispatchCDCClassRqst();
   80              		.loc 1 91 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 4
 
 
   81 0040 FFF7FEFF 		bl	COM_DispatchCDCClassRqst
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
   91 0048 08BD     		pop	{r3, pc}
   92              	.L13:
   93 004a 00BF     		.align	2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 5
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 5
 
 
   94              	.L12:
@@ -263,7 +263,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  113 000c 42010000 		.4byte	.LASF31
  114 0010 01       		.byte	0x1
  115 0011 E2000000 		.4byte	.LASF32
- 116 0015 59000000 		.4byte	.LASF33
+ 116 0015 13000000 		.4byte	.LASF33
  117 0019 00000000 		.4byte	.Ldebug_ranges0+0
  118 001d 00000000 		.4byte	0
  119 0021 00000000 		.4byte	.Ldebug_line0
@@ -274,7 +274,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  124 002c 02       		.uleb128 0x2
  125 002d 01       		.byte	0x1
  126 002e 08       		.byte	0x8
- 127 002f 4B000000 		.4byte	.LASF1
+ 127 002f 97000000 		.4byte	.LASF1
  128 0033 02       		.uleb128 0x2
  129 0034 02       		.byte	0x2
  130 0035 05       		.byte	0x5
@@ -282,7 +282,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  132 003a 02       		.uleb128 0x2
  133 003b 02       		.byte	0x2
  134 003c 07       		.byte	0x7
- 135 003d 13000000 		.4byte	.LASF3
+ 135 003d 87020000 		.4byte	.LASF3
  136 0041 02       		.uleb128 0x2
  137 0042 04       		.byte	0x4
  138 0043 05       		.byte	0x5
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  148 0056 02       		.uleb128 0x2
  149 0057 08       		.byte	0x8
  150 0058 07       		.byte	0x7
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 6
 
 
  151 0059 F0010000 		.4byte	.LASF7
@@ -323,7 +323,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  170 0083 02       		.uleb128 0x2
  171 0084 04       		.byte	0x4
  172 0085 04       		.byte	0x4
- 173 0086 3C000000 		.4byte	.LASF11
+ 173 0086 88000000 		.4byte	.LASF11
  174 008a 02       		.uleb128 0x2
  175 008b 08       		.byte	0x8
  176 008c 04       		.byte	0x4
@@ -358,12 +358,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  205 00c4 03       		.byte	0x3
  206 00c5 91       		.byte	0x91
  207 00c6 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 7
 
 
  208 00ca 02       		.byte	0x2
  209 00cb 06       		.uleb128 0x6
- 210 00cc 42000000 		.4byte	.LASF18
+ 210 00cc 8E000000 		.4byte	.LASF18
  211 00d0 03       		.byte	0x3
  212 00d1 92       		.byte	0x92
  213 00d2 6B000000 		.4byte	0x6b
@@ -410,7 +410,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  254 0122 C5       		.byte	0xc5
  255 0123 34010000 		.4byte	0x134
  256 0127 06       		.uleb128 0x6
- 257 0128 26000000 		.4byte	.LASF25
+ 257 0128 72000000 		.4byte	.LASF25
  258 012c 03       		.byte	0x3
  259 012d C7       		.byte	0xc7
  260 012e 34010000 		.4byte	0x134
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  262 0133 00       		.byte	0
  263 0134 08       		.uleb128 0x8
  264 0135 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 8
 
 
  265 0139 44010000 		.4byte	0x144
@@ -442,7 +442,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  283 0163 9C       		.byte	0x9c
  284 0164 90010000 		.4byte	0x190
  285 0168 0B       		.uleb128 0xb
- 286 0169 2D000000 		.4byte	.LASF27
+ 286 0169 79000000 		.4byte	.LASF27
  287 016d 01       		.byte	0x1
  288 016e 2B       		.byte	0x2b
  289 016f 6B000000 		.4byte	0x6b
@@ -475,10 +475,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  316 01b4 08       		.byte	0x8
  317 01b5 00       		.byte	0
  318 01b6 0D       		.uleb128 0xd
- 319 01b7 87020000 		.4byte	.LASF30
+ 319 01b7 6B000000 		.4byte	.LASF30
  320 01bb 04       		.byte	0x4
  321 01bc 79       		.byte	0x79
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 9
 
 
  322 01bd C1010000 		.4byte	0x1c1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  376 002b 00       		.byte	0
  377 002c 03       		.uleb128 0x3
  378 002d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 10
 
 
  379 002e 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  433 0064 01       		.uleb128 0x1
  434 0065 13       		.uleb128 0x13
  435 0066 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 11
 
 
  436 0067 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  490 00a0 00       		.byte	0
  491 00a1 11       		.uleb128 0x11
  492 00a2 01       		.uleb128 0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 12
 
 
  493 00a3 31       		.uleb128 0x31
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  547 00d9 0B       		.uleb128 0xb
  548 00da 27       		.uleb128 0x27
  549 00db 19       		.uleb128 0x19
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 13
 
 
  550 00dc 49       		.uleb128 0x49
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  604              	.Ldebug_line0:
  605 0000 82000000 		.section	.debug_str,"MS",%progbits,1
  605      02005A00 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 14
 
 
  605      00000201 
@@ -790,43 +790,40 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  607      72666163 
  607      65436C61 
  607      737300
- 608              	.LASF3:
- 609 0013 73686F72 		.ascii	"short unsigned int\000"
- 609      7420756E 
- 609      7369676E 
- 609      65642069 
- 609      6E7400
- 610              	.LASF25:
- 611 0026 65704461 		.ascii	"epData\000"
- 611      746100
- 612              	.LASF27:
- 613 002d 72657175 		.ascii	"requestHandled\000"
- 613      65737448 
- 613      616E646C 
- 613      656400
- 614              	.LASF11:
- 615 003c 666C6F61 		.ascii	"float\000"
- 615      7400
- 616              	.LASF18:
- 617 0042 6570546F 		.ascii	"epToggle\000"
- 617      67676C65 
- 617      00
- 618              	.LASF1:
- 619 004b 756E7369 		.ascii	"unsigned char\000"
- 619      676E6564 
- 619      20636861 
- 619      7200
- 620              	.LASF33:
- 621 0059 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 621      73657273 
- 621      5C4C756B 
- 621      61732043 
- 621      72657574 
- 622 0088 725C576F 		.ascii	"r\\Workspace01\\Controls.cydsn\000"
- 622      726B7370 
- 622      61636530 
- 622      315C436F 
- 622      6E74726F 
+ 608              	.LASF33:
+ 609 0013 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 609      73657273 
+ 609      5C4C756B 
+ 609      61732043 
+ 609      72657574 
+ 610 0041 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 610      5F364348 
+ 610      616D705C 
+ 610      50536F43 
+ 610      20576F72 
+ 611              	.LASF30:
+ 612 006b 434F4D5F 		.ascii	"COM_EP\000"
+ 612      455000
+ 613              	.LASF25:
+ 614 0072 65704461 		.ascii	"epData\000"
+ 614      746100
+ 615              	.LASF27:
+ 616 0079 72657175 		.ascii	"requestHandled\000"
+ 616      65737448 
+ 616      616E646C 
+ 616      656400
+ 617              	.LASF11:
+ 618 0088 666C6F61 		.ascii	"float\000"
+ 618      7400
+ 619              	.LASF18:
+ 620 008e 6570546F 		.ascii	"epToggle\000"
+ 620      67676C65 
+ 620      00
+ 621              	.LASF1:
+ 622 0097 756E7369 		.ascii	"unsigned char\000"
+ 622      676E6564 
+ 622      20636861 
+ 622      7200
  623              	.LASF5:
  624 00a5 6C6F6E67 		.ascii	"long unsigned int\000"
  624      20756E73 
@@ -838,12 +835,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  626      00
  627              	.LASF28:
  628 00bc 696E7465 		.ascii	"interfaceNumber\000"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 15
-
-
  628      72666163 
  628      654E756D 
  628      62657200 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 15
+
+
  629              	.LASF34:
  630 00cc 434F4D5F 		.ascii	"COM_DispatchClassRqst\000"
  630      44697370 
@@ -898,12 +895,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  649              	.LASF24:
  650 01d0 545F434F 		.ascii	"T_COM_EP_CTL_BLOCK\000"
  650      4D5F4550 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 16
-
-
  650      5F43544C 
  650      5F424C4F 
  650      434B00
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 16
+
+
  651              	.LASF8:
  652 01e3 756E7369 		.ascii	"unsigned int\000"
  652      676E6564 
@@ -958,15 +955,18 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 1
  676      44697370 
  676      61746368 
  676      43444343 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccVfuW5G.s 			page 17
-
-
  676      6C617373 
  677              	.LASF0:
  678 027b 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc0ZFliW.s 			page 17
+
+
  678      65642063 
  678      68617200 
- 679              	.LASF30:
- 680 0287 434F4D5F 		.ascii	"COM_EP\000"
- 680      455000
+ 679              	.LASF3:
+ 680 0287 73686F72 		.ascii	"short unsigned int\000"
+ 680      7420756E 
+ 680      7369676E 
+ 680      65642069 
+ 680      6E7400
  681              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

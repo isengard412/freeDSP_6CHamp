@@ -4,9 +4,9 @@
 
 #Version:            1.1
 
-#Build Date:         Apr 25 2016 12:55:34
+#Build Date:         Apr 29 2016 09:00:55
 
-#File Generated:     Aug 2 2016 17:16:47
+#File Generated:     Nov 16 2016 12:45:58
 
 #Purpose:            
 
@@ -14,16 +14,16 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\bin/sjplacer.exe --proj-name Protection_Register_Control --netlist-vh2 Protection_Register_Control_p.vh2 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/arch/p35_udb4x6.ark --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file Protection_Register_Control_p.lib --sdc-file Protection_Register_Control.sdc --io-pcf Protection_Register_Control.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\bin/sjplacer.exe --proj-name Protection_Register_Control --netlist-vh2 Protection_Register_Control_p.vh2 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file Protection_Register_Control_p.lib --sdc-file Protection_Register_Control.sdc --io-pcf Protection_Register_Control.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
-Build Date : Apr 25 2016	12:53:53
+Build Date : Apr 29 2016	08:58:44
 
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - Protection_Register_Control_p.vh2
-Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/arch/p35_udb4x6.ark
+Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark
 Package                   - 
 Defparam file             - 
 SDC file                  - Protection_Register_Control.sdc
@@ -34,7 +34,7 @@ IO Placement file         - Protection_Register_Control.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "Protection_Register_Control_p.vh2"
-D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\dev/arch/p35_udb4x6.ark"
+D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design
@@ -90,5 +90,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.7 sec.
+I2076: Total run-time: 0.6 sec.
 

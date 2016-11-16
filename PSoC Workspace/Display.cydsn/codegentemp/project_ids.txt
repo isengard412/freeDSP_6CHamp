@@ -1,8 +1,0 @@
-C:\Users\Lukas Creutzburg\Documents\PSoC Creator\Workspace01\PSoC4_1_Project.cydsn\PSoC4_1_Project.cyprj|c532f4b4-df0b-42b0-a98d-5b4f5076e178
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c079e255-bbb7-4c01-ab62-98e6d30ae6f4
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|440ad3ef-ef75-4e05-86cb-98e1ad9fa5c9
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|683c0593-c132-476e-954e-a8e234c2791f
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|85d4cd88-f7b2-4ac1-b633-8868a0339a28
-C:\Users\Lukas Creutzburg\Documents\PSoC Creator\Workspace01\Volume_Control.cydsn\Volume_Control.cyprj|ca7cfb44-fb3a-4e58-bdbb-d3dea5be2981
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|ae4699b6-c187-47d5-ad61-addf5195d105
-C:\Users\Lukas Creutzburg\Documents\PSoC Creator\Workspace01\Display.cydsn\Display.cyprj|51ddfc79-7496-4cdc-b29a-c3dcbd213fd0

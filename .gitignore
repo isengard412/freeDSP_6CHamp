@@ -45,3 +45,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignored
+PSoC Workspace\Archive
+PSoC Workspace\Backup
+.codegentemp
+.CortexM3
+.ARM_GCC_493

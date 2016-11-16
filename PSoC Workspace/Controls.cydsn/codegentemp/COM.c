@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file COM.c
-* \version 3.0
+* \version 3.10
 *
 * \brief
 *  This file contains the global USBFS API functions.
@@ -12,7 +12,7 @@
 *
 ********************************************************************************
 * \copyright
-* Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+* Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -21,6 +21,7 @@
 #include "COM_pvt.h"
 #include "COM_cydmac.h"
 #include "COM_hid.h"
+#include "COM_Dp.h"
 
 
 /***************************************
@@ -749,6 +750,12 @@ void COM_Stop(void)
     /* Clear power active and standby mode templates. */
     COM_PM_ACT_CFG_REG  &= (uint8) ~COM_PM_ACT_EN_FSUSB;
     COM_PM_STBY_CFG_REG &= (uint8) ~COM_PM_STBY_EN_FSUSB;
+
+    /* Ensure single-ended disable bits are high (PRT15.INP_DIS[7:6])
+     * (input receiver disabled). */
+    COM_DM_INP_DIS_REG |= (uint8) COM_DM_MASK;
+    COM_DP_INP_DIS_REG |= (uint8) COM_DP_MASK;
+
 #endif /* (CY_PSOC4) */
 
     CyExitCriticalSection(enableInterrupts);
@@ -798,6 +805,13 @@ void COM_Stop(void)
     #if (COM_EP8_ISR_ACTIVE)
         CyIntDisable(COM_EP_8_VECT_NUM);
     #endif /* (COM_EP8_ISR_ACTIVE) */
+
+    #if (COM_DP_ISR_ACTIVE)
+        /* Clear active mode Dp interrupt source history. */
+        (void) COM_Dp_ClearInterrupt();
+        CyIntClearPending(COM_DP_INTC_VECT_NUM);
+    #endif /* (COM_DP_ISR_ACTIVE). */
+
 #endif /* (CY_PSOC4) */
 
     /* Reset component internal variables. */
@@ -1441,13 +1455,11 @@ void COM_LoadInEP(uint8 epNumber, const uint8 pData[], uint16 length)
 
                 /* Configure DMA descriptor. */
                 COM_CyDmaSetConfiguration(channelNum, COM_DMA_DESCR1, COM_DMA_COMMON_CFG  |
-                                                        CYDMA_BYTE | CYDMA_ELEMENT_WORD | CYDMA_INC_SRC_ADDR | CYDMA_CHAIN);
+                                                        CYDMA_BYTE | CYDMA_ELEMENT_WORD | CYDMA_INC_SRC_ADDR | CYDMA_INVALIDATE | CYDMA_CHAIN);
 
                 /* Enable interrupt from DMA channel. */
                 COM_CyDmaSetInterruptMask(channelNum);
 
-                /* Validate descriptor 1. It will not be invalided during operation. */
-                COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
 
                 /* Enable DMA channel: configuration complete. */
                 COM_CyDmaChEnable(channelNum);
@@ -1526,9 +1538,6 @@ void COM_LoadInEP(uint8 epNumber, const uint8 pData[], uint16 length)
                     COM_DmaEpLastBurstEl[epNumber] |= (0u != (COM_DmaEpBurstCnt[epNumber] & 0x1u)) ?
                                                                             COM_DMA_DESCR0_MASK : COM_DMA_DESCR1_MASK;
 
-                    /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
-                    COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
-
                     /* Restore DMA settings for current transfer. */
                     COM_CyDmaChDisable(channelNum);
 
@@ -1544,6 +1553,15 @@ void COM_LoadInEP(uint8 epNumber, const uint8 pData[], uint16 length)
                     /* Validate descriptor 0 and command to start with it. */
                     COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR0);
                     COM_CyDmaSetDescriptor0Next(channelNum);
+
+                    /* Validate descriptor 1. */
+                    if (COM_DmaEpBurstCnt[epNumber] > 1u)
+                    {
+                        COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1); 
+                    }                   
+
+                    /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
+                    COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
 
                     /* Enable DMA channel: configuration complete. */
                     COM_CyDmaChEnable(channelNum);
@@ -1738,12 +1756,12 @@ uint16 COM_ReadOutEP(uint8 epNumber, uint8 pData[], uint16 length)
             COM_DmaEpLastBurstEl[epNumber] |= (0u != (COM_DmaEpBurstCnt[epNumber] & 0x1u)) ?
                                                                     COM_DMA_DESCR0_MASK : COM_DMA_DESCR1_MASK;
 
-            /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
-            COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
-
             /* Store address of buffer and burst counter for endpoint. */
             COM_DmaEpBufferAddrBackup[epNumber] = (uint32) pData;
             COM_DmaEpBurstCntBackup[epNumber]   = COM_DmaEpBurstCnt[epNumber];
+
+            /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
+            COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
 
             /* Disable DMA channel: start configuration. */
             COM_CyDmaChDisable(channelNum);
@@ -1761,14 +1779,18 @@ uint16 COM_ReadOutEP(uint8 epNumber, uint8 pData[], uint16 length)
 
             /* Configure DMA descriptor. */
             COM_CyDmaSetConfiguration(channelNum, COM_DMA_DESCR1, COM_DMA_COMMON_CFG  | lengthDescr1 |
-                                                    CYDMA_BYTE | CYDMA_WORD_ELEMENT | CYDMA_INC_DST_ADDR | CYDMA_CHAIN);
+                                                    CYDMA_BYTE | CYDMA_WORD_ELEMENT | CYDMA_INC_DST_ADDR | CYDMA_INVALIDATE | CYDMA_CHAIN);
 
             /* Enable interrupt from DMA channel. */
             COM_CyDmaSetInterruptMask(channelNum);
 
             /* Validate DMA descriptor 0 and 1. */
             COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR0);
-            COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+
+            if (COM_DmaEpBurstCntBackup[epNumber] > 1u)
+            {
+                COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+            }
 
             /* Enable DMA channel: configuration complete. */
             COM_CyDmaChEnable(channelNum);
@@ -1944,13 +1966,10 @@ void COM_LoadInEP16(uint8 epNumber, const uint8 pData[], uint16 length)
 
                 /* Configure DMA descriptor. */
                 COM_CyDmaSetConfiguration(channelNum, COM_DMA_DESCR1, COM_DMA_COMMON_CFG  |
-                                                        CYDMA_HALFWORD | CYDMA_ELEMENT_WORD | CYDMA_INC_SRC_ADDR | CYDMA_CHAIN);
+                                                        CYDMA_HALFWORD | CYDMA_ELEMENT_WORD | CYDMA_INC_SRC_ADDR | CYDMA_INVALIDATE | CYDMA_CHAIN);
 
                 /* Enable interrupt from DMA channel. */
                 COM_CyDmaSetInterruptMask(channelNum);
-
-                /* Validate descriptor 1. It will not be invalided during operation. */
-                COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
 
                 /* Enable DMA channel: configuration complete. */
                 COM_CyDmaChEnable(channelNum);
@@ -1987,9 +2006,6 @@ void COM_LoadInEP16(uint8 epNumber, const uint8 pData[], uint16 length)
                     COM_DmaEpLastBurstEl[epNumber] |= (0u != (COM_DmaEpBurstCnt[epNumber] & 0x1u)) ?
                                                                             COM_DMA_DESCR0_MASK : COM_DMA_DESCR1_MASK;
 
-                    /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
-                    COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
-
                     /* Restore DMA settings for current transfer. */
                     COM_CyDmaChDisable(channelNum);
 
@@ -2005,6 +2021,15 @@ void COM_LoadInEP16(uint8 epNumber, const uint8 pData[], uint16 length)
                     /* Validate descriptor 0 and command to start with it. */
                     COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR0);
                     COM_CyDmaSetDescriptor0Next(channelNum);
+
+                    /* Validate descriptor 1. */
+                    if (COM_DmaEpBurstCnt[epNumber] > 1u)
+                    {
+                        COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+                    }
+
+                    /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
+                    COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
 
                     /* Enable DMA channel: configuration complete. */
                     COM_CyDmaChEnable(channelNum);
@@ -2174,12 +2199,12 @@ uint16 COM_ReadOutEP16(uint8 epNumber, uint8 pData[], uint16 length)
             /* Mark that 16-bits access to data register is performed. */
             COM_DmaEpLastBurstEl[epNumber] |= COM_DMA_DESCR_16BITS;
 
-            /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
-            COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
-
             /* Store address of buffer and burst counter for endpoint. */
             COM_DmaEpBufferAddrBackup[epNumber] = (uint32) pData;
             COM_DmaEpBurstCntBackup[epNumber]   = COM_DmaEpBurstCnt[epNumber];
+
+            /* Adjust burst counter taking to account: 2 valid descriptors and interrupt trigger after valid descriptor were executed. */
+            COM_DmaEpBurstCnt[epNumber] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCnt[epNumber]);
 
             /* Disable DMA channel: start configuration. */
             COM_CyDmaChDisable(channelNum);
@@ -2197,14 +2222,18 @@ uint16 COM_ReadOutEP16(uint8 epNumber, uint8 pData[], uint16 length)
 
             /* Configure DMA descriptor 1. */
             COM_CyDmaSetConfiguration(channelNum, COM_DMA_DESCR1, COM_DMA_COMMON_CFG  | lengthDescr1 |
-                                                    CYDMA_HALFWORD | CYDMA_WORD_ELEMENT | CYDMA_INC_DST_ADDR | CYDMA_CHAIN);
+                                                    CYDMA_HALFWORD | CYDMA_WORD_ELEMENT | CYDMA_INC_DST_ADDR | CYDMA_INVALIDATE | CYDMA_CHAIN);
 
             /* Enable interrupt from DMA channel. */
             COM_CyDmaSetInterruptMask(channelNum);
 
             /* Validate DMA descriptor 0 and 1. */
             COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR0);
-            COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+            
+            if (COM_DmaEpBurstCntBackup[epNumber] > 1u)
+            {
+                COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+            }
 
             /* Enable DMA channel: configuration complete. */
             COM_CyDmaChEnable(channelNum);

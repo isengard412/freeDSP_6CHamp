@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
   55 001b 40       		.byte	64
   56 001c 05       		.byte	5
   57 001d 0B       		.byte	11
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 2
 
 
   58 001e 01       		.byte	1
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  112 0054 04       		.byte	4
  113 0055 48       		.byte	72
  114 0056 01       		.byte	1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 3
 
 
  115 0057 40       		.byte	64
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  169 008d 04       		.byte	4
  170 008e E2       		.byte	-30
  171 008f 0E       		.byte	14
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 4
 
 
  172 0090 E6       		.byte	-26
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  226 00c6 C0       		.byte	-64
  227 00c7 C0       		.byte	-64
  228 00c8 CC       		.byte	-52
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 5
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 5
 
 
  229 00c9 F0       		.byte	-16
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  283 00ff 20       		.byte	32
  284 0100 E2       		.byte	-30
  285 0101 40       		.byte	64
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 6
 
 
  286 0102 7C       		.byte	124
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  340 0138 AB       		.byte	-85
  341 0139 10       		.byte	16
  342 013a D0       		.byte	-48
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 7
 
 
  343 013b 01       		.byte	1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  397 0171 00       		.byte	0
  398 0172 00       		.byte	0
  399 0173 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 8
 
 
  400 0174 0C       		.byte	12
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  454 01aa 03       		.byte	3
  455 01ab 3B       		.byte	59
  456 01ac 38       		.byte	56
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 9
 
 
  457 01ad 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  508      00000000 
  508      00000000 
  509              		.text
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 10
 
 
  510              	.Letext0:
@@ -551,43 +551,43 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  517 0006 00000000 		.4byte	.Ldebug_abbrev0
  518 000a 04       		.byte	0x4
  519 000b 01       		.uleb128 0x1
- 520 000c 6E000000 		.4byte	.LASF18
+ 520 000c C6000000 		.4byte	.LASF18
  521 0010 01       		.byte	0x1
- 522 0011 D0010000 		.4byte	.LASF19
- 523 0015 78010000 		.4byte	.LASF20
+ 522 0011 DC010000 		.4byte	.LASF19
+ 523 0015 00000000 		.4byte	.LASF20
  524 0019 00000000 		.4byte	.Ldebug_line0
  525 001d 02       		.uleb128 0x2
  526 001e 01       		.byte	0x1
  527 001f 06       		.byte	0x6
- 528 0020 C4010000 		.4byte	.LASF0
+ 528 0020 D0010000 		.4byte	.LASF0
  529 0024 02       		.uleb128 0x2
  530 0025 01       		.byte	0x1
  531 0026 08       		.byte	0x8
- 532 0027 12000000 		.4byte	.LASF1
+ 532 0027 6A000000 		.4byte	.LASF1
  533 002b 02       		.uleb128 0x2
  534 002c 02       		.byte	0x2
  535 002d 05       		.byte	0x5
- 536 002e 5F010000 		.4byte	.LASF2
+ 536 002e B7010000 		.4byte	.LASF2
  537 0032 02       		.uleb128 0x2
  538 0033 02       		.byte	0x2
  539 0034 07       		.byte	0x7
- 540 0035 32000000 		.4byte	.LASF3
+ 540 0035 8A000000 		.4byte	.LASF3
  541 0039 02       		.uleb128 0x2
  542 003a 04       		.byte	0x4
  543 003b 05       		.byte	0x5
- 544 003c 6F010000 		.4byte	.LASF4
+ 544 003c C7010000 		.4byte	.LASF4
  545 0040 02       		.uleb128 0x2
  546 0041 04       		.byte	0x4
  547 0042 07       		.byte	0x7
- 548 0043 20000000 		.4byte	.LASF5
+ 548 0043 78000000 		.4byte	.LASF5
  549 0047 02       		.uleb128 0x2
  550 0048 08       		.byte	0x8
  551 0049 05       		.byte	0x5
- 552 004a 4C010000 		.4byte	.LASF6
+ 552 004a A4010000 		.4byte	.LASF6
  553 004e 02       		.uleb128 0x2
  554 004f 08       		.byte	0x8
  555 0050 07       		.byte	0x7
- 556 0051 09010000 		.4byte	.LASF7
+ 556 0051 61010000 		.4byte	.LASF7
  557 0055 03       		.uleb128 0x3
  558 0056 04       		.byte	0x4
  559 0057 05       		.byte	0x5
@@ -595,10 +595,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  561 005c 02       		.uleb128 0x2
  562 005d 04       		.byte	0x4
  563 005e 07       		.byte	0x7
- 564 005f FC000000 		.4byte	.LASF8
+ 564 005f 54010000 		.4byte	.LASF8
  565 0063 04       		.uleb128 0x4
- 566 0064 69010000 		.4byte	.LASF21
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 11
+ 566 0064 C1010000 		.4byte	.LASF21
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 11
 
 
  567 0068 02       		.byte	0x2
@@ -607,15 +607,15 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  570 006f 02       		.uleb128 0x2
  571 0070 04       		.byte	0x4
  572 0071 04       		.byte	0x4
- 573 0072 0C000000 		.4byte	.LASF9
+ 573 0072 64000000 		.4byte	.LASF9
  574 0076 02       		.uleb128 0x2
  575 0077 08       		.byte	0x8
  576 0078 04       		.byte	0x4
- 577 0079 45000000 		.4byte	.LASF10
+ 577 0079 9D000000 		.4byte	.LASF10
  578 007d 02       		.uleb128 0x2
  579 007e 01       		.byte	0x1
  580 007f 08       		.byte	0x8
- 581 0080 5A010000 		.4byte	.LASF11
+ 581 0080 B2010000 		.4byte	.LASF11
  582 0084 05       		.uleb128 0x5
  583 0085 63000000 		.4byte	0x63
  584 0089 95000000 		.4byte	0x95
@@ -626,9 +626,9 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  589 0095 02       		.uleb128 0x2
  590 0096 04       		.byte	0x4
  591 0097 07       		.byte	0x7
- 592 0098 43010000 		.4byte	.LASF12
+ 592 0098 9B010000 		.4byte	.LASF12
  593 009c 07       		.uleb128 0x7
- 594 009d 5C000000 		.4byte	.LASF13
+ 594 009d B4000000 		.4byte	.LASF13
  595 00a1 01       		.byte	0x1
  596 00a2 1F       		.byte	0x1f
  597 00a3 AD000000 		.4byte	0xad
@@ -645,7 +645,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  608 00c0 03       		.byte	0x3
  609 00c1 00       		.byte	0
  610 00c2 07       		.uleb128 0x7
- 611 00c3 4C000000 		.4byte	.LASF14
+ 611 00c3 A4000000 		.4byte	.LASF14
  612 00c7 01       		.byte	0x1
  613 00c8 63       		.byte	0x63
  614 00c9 D3000000 		.4byte	0xd3
@@ -655,10 +655,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  618 00d3 08       		.uleb128 0x8
  619 00d4 B2000000 		.4byte	0xb2
  620 00d8 07       		.uleb128 0x7
- 621 00d9 35010000 		.4byte	.LASF15
+ 621 00d9 8D010000 		.4byte	.LASF15
  622 00dd 01       		.byte	0x1
  623 00de 71       		.byte	0x71
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 12
 
 
  624 00df E9000000 		.4byte	0xe9
@@ -675,7 +675,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  635 00fc FF       		.byte	0xff
  636 00fd 00       		.byte	0
  637 00fe 07       		.uleb128 0x7
- 638 00ff 20010000 		.4byte	.LASF16
+ 638 00ff 78010000 		.4byte	.LASF16
  639 0103 01       		.byte	0x1
  640 0104 7F       		.byte	0x7f
  641 0105 0F010000 		.4byte	0x10f
@@ -692,7 +692,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  652 0122 0B       		.byte	0xb
  653 0123 00       		.byte	0
  654 0124 07       		.uleb128 0x7
- 655 0125 00000000 		.4byte	.LASF17
+ 655 0125 58000000 		.4byte	.LASF17
  656 0129 01       		.byte	0x1
  657 012a AC       		.byte	0xac
  658 012b 35010000 		.4byte	0x135
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  678 000b 10       		.uleb128 0x10
  679 000c 17       		.uleb128 0x17
  680 000d 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 13
 
 
  681 000e 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  735 0044 07       		.uleb128 0x7
  736 0045 34       		.uleb128 0x34
  737 0046 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 14
 
 
  738 0047 03       		.uleb128 0x3
@@ -829,128 +829,128 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 1
  781      00000201 
  781      FB0E0D00 
  781      01010101 
- 782              	.LASF17:
- 783 0000 63795F6D 		.ascii	"cy_metadata\000"
- 783      65746164 
- 783      61746100 
- 784              	.LASF9:
- 785 000c 666C6F61 		.ascii	"float\000"
- 785      7400
- 786              	.LASF1:
- 787 0012 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 15
+ 782              	.LASF20:
+ 783 0000 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 783      73657273 
+ 783      5C4C756B 
+ 783      61732043 
+ 783      72657574 
+ 784 002e 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 784      5F364348 
+ 784      616D705C 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 15
 
 
- 787      676E6564 
- 787      20636861 
- 787      7200
- 788              	.LASF5:
- 789 0020 6C6F6E67 		.ascii	"long unsigned int\000"
- 789      20756E73 
- 789      69676E65 
- 789      6420696E 
- 789      7400
- 790              	.LASF3:
- 791 0032 73686F72 		.ascii	"short unsigned int\000"
- 791      7420756E 
- 791      7369676E 
- 791      65642069 
- 791      6E7400
- 792              	.LASF10:
- 793 0045 646F7562 		.ascii	"double\000"
- 793      6C6500
- 794              	.LASF14:
- 795 004c 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 795      6574615F 
- 795      63757374 
- 795      6E766C00 
- 796              	.LASF13:
- 797 005c 63795F6D 		.ascii	"cy_meta_configecc\000"
- 797      6574615F 
- 797      636F6E66 
- 797      69676563 
- 797      6300
- 798              	.LASF18:
- 799 006e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 799      4320342E 
- 799      392E3320 
- 799      32303135 
- 799      30333033 
- 800 00a1 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 800      20726576 
- 800      6973696F 
- 800      6E203232 
- 800      31323230 
- 801 00d4 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 801      66756E63 
- 801      74696F6E 
- 801      2D736563 
- 801      74696F6E 
- 802              	.LASF8:
- 803 00fc 756E7369 		.ascii	"unsigned int\000"
- 803      676E6564 
- 803      20696E74 
- 803      00
- 804              	.LASF7:
- 805 0109 6C6F6E67 		.ascii	"long long unsigned int\000"
- 805      206C6F6E 
- 805      6720756E 
- 805      7369676E 
- 805      65642069 
- 806              	.LASF16:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc2ItcWY.s 			page 16
+ 784      50536F43 
+ 784      20576F72 
+ 785              	.LASF17:
+ 786 0058 63795F6D 		.ascii	"cy_metadata\000"
+ 786      65746164 
+ 786      61746100 
+ 787              	.LASF9:
+ 788 0064 666C6F61 		.ascii	"float\000"
+ 788      7400
+ 789              	.LASF1:
+ 790 006a 756E7369 		.ascii	"unsigned char\000"
+ 790      676E6564 
+ 790      20636861 
+ 790      7200
+ 791              	.LASF5:
+ 792 0078 6C6F6E67 		.ascii	"long unsigned int\000"
+ 792      20756E73 
+ 792      69676E65 
+ 792      6420696E 
+ 792      7400
+ 793              	.LASF3:
+ 794 008a 73686F72 		.ascii	"short unsigned int\000"
+ 794      7420756E 
+ 794      7369676E 
+ 794      65642069 
+ 794      6E7400
+ 795              	.LASF10:
+ 796 009d 646F7562 		.ascii	"double\000"
+ 796      6C6500
+ 797              	.LASF14:
+ 798 00a4 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 798      6574615F 
+ 798      63757374 
+ 798      6E766C00 
+ 799              	.LASF13:
+ 800 00b4 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 800      6574615F 
+ 800      636F6E66 
+ 800      69676563 
+ 800      6300
+ 801              	.LASF18:
+ 802 00c6 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 802      4320342E 
+ 802      392E3320 
+ 802      32303135 
+ 802      30333033 
+ 803 00f9 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 803      20726576 
+ 803      6973696F 
+ 803      6E203232 
+ 803      31323230 
+ 804 012c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 804      66756E63 
+ 804      74696F6E 
+ 804      2D736563 
+ 804      74696F6E 
+ 805              	.LASF8:
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccRhXI5B.s 			page 16
 
 
- 807 0120 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 807      6574615F 
- 807      666C6173 
- 807      6870726F 
- 807      74656374 
- 808              	.LASF15:
- 809 0135 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 809      6574615F 
- 809      776F6E76 
- 809      6C00
- 810              	.LASF12:
- 811 0143 73697A65 		.ascii	"sizetype\000"
- 811      74797065 
- 811      00
- 812              	.LASF6:
- 813 014c 6C6F6E67 		.ascii	"long long int\000"
- 813      206C6F6E 
- 813      6720696E 
- 813      7400
- 814              	.LASF11:
- 815 015a 63686172 		.ascii	"char\000"
- 815      00
- 816              	.LASF2:
- 817 015f 73686F72 		.ascii	"short int\000"
- 817      7420696E 
- 817      7400
- 818              	.LASF21:
- 819 0169 75696E74 		.ascii	"uint8\000"
- 819      3800
- 820              	.LASF4:
- 821 016f 6C6F6E67 		.ascii	"long int\000"
- 821      20696E74 
- 821      00
- 822              	.LASF20:
- 823 0178 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 823      73657273 
- 823      5C4C756B 
- 823      61732043 
- 823      72657574 
- 824 01a7 725C576F 		.ascii	"r\\Workspace01\\Controls.cydsn\000"
- 824      726B7370 
- 824      61636530 
- 824      315C436F 
- 824      6E74726F 
+ 806 0154 756E7369 		.ascii	"unsigned int\000"
+ 806      676E6564 
+ 806      20696E74 
+ 806      00
+ 807              	.LASF7:
+ 808 0161 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 808      206C6F6E 
+ 808      6720756E 
+ 808      7369676E 
+ 808      65642069 
+ 809              	.LASF16:
+ 810 0178 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 810      6574615F 
+ 810      666C6173 
+ 810      6870726F 
+ 810      74656374 
+ 811              	.LASF15:
+ 812 018d 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 812      6574615F 
+ 812      776F6E76 
+ 812      6C00
+ 813              	.LASF12:
+ 814 019b 73697A65 		.ascii	"sizetype\000"
+ 814      74797065 
+ 814      00
+ 815              	.LASF6:
+ 816 01a4 6C6F6E67 		.ascii	"long long int\000"
+ 816      206C6F6E 
+ 816      6720696E 
+ 816      7400
+ 817              	.LASF11:
+ 818 01b2 63686172 		.ascii	"char\000"
+ 818      00
+ 819              	.LASF2:
+ 820 01b7 73686F72 		.ascii	"short int\000"
+ 820      7420696E 
+ 820      7400
+ 821              	.LASF21:
+ 822 01c1 75696E74 		.ascii	"uint8\000"
+ 822      3800
+ 823              	.LASF4:
+ 824 01c7 6C6F6E67 		.ascii	"long int\000"
+ 824      20696E74 
+ 824      00
  825              	.LASF0:
- 826 01c4 7369676E 		.ascii	"signed char\000"
+ 826 01d0 7369676E 		.ascii	"signed char\000"
  826      65642063 
  826      68617200 
  827              	.LASF19:
- 828 01d0 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 828 01dc 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
  828      72617465 
  828      645F536F 
  828      75726365 

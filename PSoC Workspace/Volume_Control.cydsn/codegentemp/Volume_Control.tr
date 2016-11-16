@@ -19,7 +19,7 @@
                     1::Clock Frequency Summary
 ===================================================================== 
 Number of clocks: 11
-Clock: ADC_Clock                           | Frequency: 94.05 MHz  | Target: 0.03 MHz    | 
+Clock: ADC_Clock                           | Frequency: 89.03 MHz  | Target: 0.03 MHz    | 
 Clock: CyBUS_CLK                           | N/A                   | Target: 24.00 MHz   | 
 Clock: CyILO                               | N/A                   | Target: 0.00 MHz    | 
 Clock: CyIMO                               | N/A                   | Target: 3.00 MHz    | 
@@ -42,7 +42,7 @@ Clock: \Volume_ADC:DSM\/dec_clock          | N/A                   | Target: 100
 
 Launch Clock  Capture Clock  Constraint(R-R)  Slack(R-R)  Constraint(R-F)  Slack(R-F)  Constraint(F-F)  Slack(F-F)  Constraint(F-R)  Slack(F-R)  
 ------------  -------------  ---------------  ----------  ---------------  ----------  ---------------  ----------  ---------------  ----------  
-ADC_Clock     ADC_Clock      3.90417e+007     39031034    N/A              N/A         N/A              N/A         N/A              N/A         
+ADC_Clock     ADC_Clock      3.90417e+007     39030434    N/A              N/A         N/A              N/A         N/A              N/A         
 
  =====================================================================
                     End of Clock Relationship Summary
@@ -67,8 +67,8 @@ Port Name  Setup to Clk  Clock Name:Phase
 
 Port Name        Clock to Out  Clock Name:Phase  
 ---------------  ------------  ----------------  
-Volume_0(0)_PAD  26705         CyBUS_CLK:R       
-Volume_1(0)_PAD  26473         CyBUS_CLK:R       
+Volume_0(0)_PAD  25524         CyBUS_CLK:R       
+Volume_1(0)_PAD  25958         CyBUS_CLK:R       
 
 
                          3.3::Pad to Pad
@@ -86,14 +86,14 @@ Port Name (Source)  Port Name (Destination)  Delay
 4.1::Critical Path Report for ADC_Clock
 ***************************************
 Clock: ADC_Clock
-Frequency: 94.05 MHz | Target: 0.03 MHz
+Frequency: 89.03 MHz | Target: 0.03 MHz
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb
 Path End       : \ADC_Timer:TimerUDB:rstSts:stsreg\/status_0
 Capture Clock  : \ADC_Timer:TimerUDB:rstSts:stsreg\/clock
-Path slack     : 39031034p
+Path slack     : 39030434p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -104,9 +104,9 @@ End-of-path required time (ps)                     39041167
 
 Launch Clock Arrival Time                       0
 + Clock path delay                          0
-+ Data path delay                       10132
++ Data path delay                       10733
 -------------------------------------   ----- 
-End-of-path arrival time (ps)           10132
+End-of-path arrival time (ps)           10733
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -117,10 +117,10 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                     model name     delay     AT     slack  edge  Fanout
 -------------------------------------------  -------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39031034  RISE       1
-\ADC_Timer:TimerUDB:status_tc\/main_1        macrocell1      2241   4531  39031034  RISE       1
-\ADC_Timer:TimerUDB:status_tc\/q             macrocell1      3350   7881  39031034  RISE       1
-\ADC_Timer:TimerUDB:rstSts:stsreg\/status_0  statusicell1    2251  10132  39031034  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39030434  RISE       1
+\ADC_Timer:TimerUDB:status_tc\/main_1        macrocell1      2778   5068  39030434  RISE       1
+\ADC_Timer:TimerUDB:status_tc\/q             macrocell1      3350   8418  39030434  RISE       1
+\ADC_Timer:TimerUDB:rstSts:stsreg\/status_0  statusicell1    2314  10733  39030434  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -147,7 +147,7 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Path Begin     : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb
 Path End       : \ADC_Timer:TimerUDB:rstSts:stsreg\/status_0
 Capture Clock  : \ADC_Timer:TimerUDB:rstSts:stsreg\/clock
-Path slack     : 39031034p
+Path slack     : 39030434p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -158,9 +158,9 @@ End-of-path required time (ps)                     39041167
 
 Launch Clock Arrival Time                       0
 + Clock path delay                          0
-+ Data path delay                       10132
++ Data path delay                       10733
 -------------------------------------   ----- 
-End-of-path arrival time (ps)           10132
+End-of-path arrival time (ps)           10733
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -171,10 +171,10 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                     model name     delay     AT     slack  edge  Fanout
 -------------------------------------------  -------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39031034  RISE       1
-\ADC_Timer:TimerUDB:status_tc\/main_1        macrocell1      2241   4531  39031034  RISE       1
-\ADC_Timer:TimerUDB:status_tc\/q             macrocell1      3350   7881  39031034  RISE       1
-\ADC_Timer:TimerUDB:rstSts:stsreg\/status_0  statusicell1    2251  10132  39031034  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39030434  RISE       1
+\ADC_Timer:TimerUDB:status_tc\/main_1        macrocell1      2778   5068  39030434  RISE       1
+\ADC_Timer:TimerUDB:status_tc\/q             macrocell1      3350   8418  39030434  RISE       1
+\ADC_Timer:TimerUDB:rstSts:stsreg\/status_0  statusicell1    2314  10733  39030434  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -197,7 +197,7 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Path Begin     : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb
 Path End       : \ADC_Timer:TimerUDB:rstSts:stsreg\/status_0
 Capture Clock  : \ADC_Timer:TimerUDB:rstSts:stsreg\/clock
-Path slack     : 39031034p
+Path slack     : 39030434p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -208,9 +208,9 @@ End-of-path required time (ps)                     39041167
 
 Launch Clock Arrival Time                       0
 + Clock path delay                          0
-+ Data path delay                       10132
++ Data path delay                       10733
 -------------------------------------   ----- 
-End-of-path arrival time (ps)           10132
+End-of-path arrival time (ps)           10733
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -221,10 +221,10 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                     model name     delay     AT     slack  edge  Fanout
 -------------------------------------------  -------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39031034  RISE       1
-\ADC_Timer:TimerUDB:status_tc\/main_1        macrocell1      2241   4531  39031034  RISE       1
-\ADC_Timer:TimerUDB:status_tc\/q             macrocell1      3350   7881  39031034  RISE       1
-\ADC_Timer:TimerUDB:rstSts:stsreg\/status_0  statusicell1    2251  10132  39031034  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39030434  RISE       1
+\ADC_Timer:TimerUDB:status_tc\/main_1        macrocell1      2778   5068  39030434  RISE       1
+\ADC_Timer:TimerUDB:status_tc\/q             macrocell1      3350   8418  39030434  RISE       1
+\ADC_Timer:TimerUDB:rstSts:stsreg\/status_0  statusicell1    2314  10733  39030434  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -239,7 +239,7 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Path Begin     : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb
 Path End       : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/cs_addr_0
 Capture Clock  : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/clock
-Path slack     : 39031094p
+Path slack     : 39030545p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -250,9 +250,9 @@ End-of-path required time (ps)                     39035607
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       4513
++ Data path delay                       5062
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           4513
+End-of-path arrival time (ps)           5062
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -263,8 +263,8 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                       model name     delay     AT     slack  edge  Fanout
 ---------------------------------------------  -------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb    datapathcell1   2290   2290  39031034  RISE       1
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/cs_addr_0  datapathcell1   2223   4513  39031094  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb    datapathcell1   2290   2290  39030434  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/cs_addr_0  datapathcell1   2772   5062  39030545  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -279,7 +279,7 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Path Begin     : \ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\/control_7
 Path End       : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/cs_addr_1
 Capture Clock  : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/clock
-Path slack     : 39031706p
+Path slack     : 39031581p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -290,9 +290,9 @@ End-of-path required time (ps)                     39035607
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3901
++ Data path delay                       4025
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3901
+End-of-path arrival time (ps)           4025
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -303,8 +303,8 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                                 model name     delay     AT     slack  edge  Fanout
 -------------------------------------------------------  -------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\/control_7  controlcell1    1210   1210  39031660  RISE       1
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/cs_addr_1            datapathcell1   2691   3901  39031706  RISE       1
+\ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\/control_7  controlcell1    1210   1210  39031481  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/cs_addr_1            datapathcell1   2815   4025  39031581  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -319,7 +319,7 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Path Begin     : \ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb
 Path End       : Net_13/main_1
 Capture Clock  : Net_13/clock_0
-Path slack     : 39033625p
+Path slack     : 39033088p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -330,9 +330,9 @@ End-of-path required time (ps)                     39038157
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       4531
++ Data path delay                       5068
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           4531
+End-of-path arrival time (ps)           5068
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -343,8 +343,8 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                     model name     delay     AT     slack  edge  Fanout
 -------------------------------------------  -------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39031034  RISE       1
-Net_13/main_1                                macrocell2      2241   4531  39033625  RISE       1
+\ADC_Timer:TimerUDB:sT8:timerdp:u0\/z0_comb  datapathcell1   2290   2290  39030434  RISE       1
+Net_13/main_1                                macrocell2      2778   5068  39033088  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -359,7 +359,7 @@ Net_13/clock_0                                             macrocell2          0
 Path Begin     : \ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\/control_7
 Path End       : Net_13/main_0
 Capture Clock  : Net_13/clock_0
-Path slack     : 39034251p
+Path slack     : 39034136p
 
 Capture Clock Arrival Time                                0
 + Clock path delay                                        0
@@ -370,9 +370,9 @@ End-of-path required time (ps)                     39038157
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3905
++ Data path delay                       4021
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3905
+End-of-path arrival time (ps)           4021
  
 Launch Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
@@ -383,8 +383,8 @@ ClockBlock/dclk_glb_1                                      clockblockcell      0
 Data path
 pin name                                                 model name    delay     AT     slack  edge  Fanout
 -------------------------------------------------------  ------------  -----  -----  --------  ----  ------
-\ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\/control_7  controlcell1   1210   1210  39031660  RISE       1
-Net_13/main_0                                            macrocell2     2695   3905  39034251  RISE       1
+\ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\/control_7  controlcell1   1210   1210  39031481  RISE       1
+Net_13/main_0                                            macrocell2     2811   4021  39034136  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 1
 
 
    1              		.syntax unified
@@ -30,54 +30,54 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
   27              		.type	ADC_Timer_SaveConfig, %function
   28              	ADC_Timer_SaveConfig:
   29              	.LFB0:
-  30              		.file 1 ".\\Generated_Source\\PSoC5\\ADC_Timer_PM.c"
-   1:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
-   2:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * File Name: ADC_Timer_PM.c
-   3:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Version 2.70
-   4:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-   5:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  Description:
-   6:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *     This file provides the power management source code to API for the
-   7:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *     Timer.
-   8:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-   9:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *   Note:
-  10:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *     None
-  11:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  12:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************
-  13:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
-  14:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
-  15:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
-  16:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * the software package with which this file was provided.
-  17:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************/
-  18:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  19:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** #include "ADC_Timer.h"
-  20:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  21:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** static ADC_Timer_backupStruct ADC_Timer_backup;
-  22:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  23:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  24:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
-  25:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_SaveConfig
-  26:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
-  27:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 2
+  30              		.file 1 "Generated_Source\\PSoC5\\ADC_Timer_PM.c"
+   1:Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/ADC_Timer_PM.c **** * File Name: ADC_Timer_PM.c
+   3:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Version 2.70
+   4:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+   5:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  Description:
+   6:Generated_Source\PSoC5/ADC_Timer_PM.c **** *     This file provides the power management source code to API for the
+   7:Generated_Source\PSoC5/ADC_Timer_PM.c **** *     Timer.
+   8:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+   9:Generated_Source\PSoC5/ADC_Timer_PM.c **** *   Note:
+  10:Generated_Source\PSoC5/ADC_Timer_PM.c **** *     None
+  11:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  12:Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************
+  13:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  14:Generated_Source\PSoC5/ADC_Timer_PM.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:Generated_Source\PSoC5/ADC_Timer_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:Generated_Source\PSoC5/ADC_Timer_PM.c **** * the software package with which this file was provided.
+  17:Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************/
+  18:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  19:Generated_Source\PSoC5/ADC_Timer_PM.c **** #include "ADC_Timer.h"
+  20:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  21:Generated_Source\PSoC5/ADC_Timer_PM.c **** static ADC_Timer_backupStruct ADC_Timer_backup;
+  22:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  23:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  24:Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
+  25:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_SaveConfig
+  26:Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
+  27:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 2
 
 
-  28:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
-  29:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *     Save the current user configuration
-  30:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  31:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
-  32:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
-  33:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  34:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
-  35:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
-  36:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  37:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
-  38:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup:  Variables of this global structure are modified to
-  39:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  store the values of non retention configuration registers when Sleep() API is
-  40:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  called.
-  41:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  42:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
-  43:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_SaveConfig(void) 
-  44:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** {
+  28:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
+  29:Generated_Source\PSoC5/ADC_Timer_PM.c **** *     Save the current user configuration
+  30:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  31:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
+  32:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+  33:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  34:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
+  35:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+  36:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  37:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
+  38:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup:  Variables of this global structure are modified to
+  39:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  store the values of non retention configuration registers when Sleep() API is
+  40:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  called.
+  41:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  42:Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
+  43:Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_SaveConfig(void) 
+  44:Generated_Source\PSoC5/ADC_Timer_PM.c **** {
   31              		.loc 1 44 0
   32              		.cfi_startproc
   33              		@ args = 0, pretend = 0, frame = 0
@@ -88,37 +88,37 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
   38              		.cfi_offset 14, -4
   39 0002 00AF     		add	r7, sp, #0
   40              		.cfi_def_cfa_register 7
-  45:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if (!ADC_Timer_UsingFixedFunction)
-  46:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_backup.TimerUdb = ADC_Timer_ReadCounter();
+  45:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if (!ADC_Timer_UsingFixedFunction)
+  46:Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_backup.TimerUdb = ADC_Timer_ReadCounter();
   41              		.loc 1 46 0
   42 0004 FFF7FEFF 		bl	ADC_Timer_ReadCounter
   43 0008 0346     		mov	r3, r0
   44 000a 1A46     		mov	r2, r3
   45 000c 064B     		ldr	r3, .L2
   46 000e 5A70     		strb	r2, [r3, #1]
-  47:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_backup.InterruptMaskValue = ADC_Timer_STATUS_MASK;
+  47:Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_backup.InterruptMaskValue = ADC_Timer_STATUS_MASK;
   47              		.loc 1 47 0
   48 0010 064B     		ldr	r3, .L2+4
   49 0012 1B78     		ldrb	r3, [r3]
   50 0014 DAB2     		uxtb	r2, r3
   51 0016 044B     		ldr	r3, .L2
   52 0018 9A70     		strb	r2, [r3, #2]
-  48:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if (ADC_Timer_UsingHWCaptureCounter)
-  49:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerCaptureCounter = ADC_Timer_ReadCaptureCount();
-  50:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Back Up capture counter register  */
-  51:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  52:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
-  53:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerControlRegister = ADC_Timer_ReadControlRegister();
+  48:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if (ADC_Timer_UsingHWCaptureCounter)
+  49:Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerCaptureCounter = ADC_Timer_ReadCaptureCount();
+  50:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Back Up capture counter register  */
+  51:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  52:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
+  53:Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerControlRegister = ADC_Timer_ReadControlRegister();
   53              		.loc 1 53 0
   54 001a FFF7FEFF 		bl	ADC_Timer_ReadControlRegister
   55 001e 0346     		mov	r3, r0
   56 0020 1A46     		mov	r2, r3
   57 0022 014B     		ldr	r3, .L2
   58 0024 DA70     		strb	r2, [r3, #3]
-  54:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Backup the enable state of the Timer component */
-  55:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Backup non retention registers in UDB implementation. All fixed function registers ar
-  56:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** }
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 3
+  54:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Backup the enable state of the Timer component */
+  55:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Backup non retention registers in UDB implementation. All fixed function registers ar
+  56:Generated_Source\PSoC5/ADC_Timer_PM.c **** }
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 3
 
 
   59              		.loc 1 56 0
@@ -127,7 +127,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
   62              		.align	2
   63              	.L2:
   64 0028 00000000 		.word	ADC_Timer_backup
-  65 002c 85650040 		.word	1073767813
+  65 002c 8A640040 		.word	1073767562
   66              		.cfi_endproc
   67              	.LFE0:
   68              		.size	ADC_Timer_SaveConfig, .-ADC_Timer_SaveConfig
@@ -139,28 +139,28 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
   74              		.type	ADC_Timer_RestoreConfig, %function
   75              	ADC_Timer_RestoreConfig:
   76              	.LFB1:
-  57:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  58:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  59:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
-  60:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_RestoreConfig
-  61:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
-  62:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  63:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
-  64:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  Restores the current user configuration.
-  65:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  66:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
-  67:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
-  68:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  69:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
-  70:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
-  71:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  72:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
-  73:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup:  Variables of this global structure are used to
-  74:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  restore the values of non retention registers on wakeup from sleep mode.
-  75:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  76:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
-  77:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_RestoreConfig(void) 
-  78:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** {   
+  57:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  58:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  59:Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
+  60:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_RestoreConfig
+  61:Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
+  62:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  63:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
+  64:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  Restores the current user configuration.
+  65:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  66:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
+  67:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+  68:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  69:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
+  70:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+  71:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  72:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
+  73:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup:  Variables of this global structure are used to
+  74:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  restore the values of non retention registers on wakeup from sleep mode.
+  75:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  76:Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
+  77:Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_RestoreConfig(void) 
+  78:Generated_Source\PSoC5/ADC_Timer_PM.c **** {   
   77              		.loc 1 78 0
   78              		.cfi_startproc
   79              		@ args = 0, pretend = 0, frame = 0
@@ -171,44 +171,44 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
   84              		.cfi_offset 14, -4
   85 0002 00AF     		add	r7, sp, #0
   86              		.cfi_def_cfa_register 7
-  79:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if (!ADC_Timer_UsingFixedFunction)
-  80:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  81:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_WriteCounter(ADC_Timer_backup.TimerUdb);
+  79:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if (!ADC_Timer_UsingFixedFunction)
+  80:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  81:Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_WriteCounter(ADC_Timer_backup.TimerUdb);
   87              		.loc 1 81 0
   88 0004 074B     		ldr	r3, .L5
   89 0006 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
   90 0008 1846     		mov	r0, r3
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 4
 
 
   91 000a FFF7FEFF 		bl	ADC_Timer_WriteCounter
-  82:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_STATUS_MASK =ADC_Timer_backup.InterruptMaskValue;
+  82:Generated_Source\PSoC5/ADC_Timer_PM.c ****         ADC_Timer_STATUS_MASK =ADC_Timer_backup.InterruptMaskValue;
   92              		.loc 1 82 0
   93 000e 064B     		ldr	r3, .L5+4
   94 0010 044A     		ldr	r2, .L5
   95 0012 9278     		ldrb	r2, [r2, #2]	@ zero_extendqisi2
   96 0014 1A70     		strb	r2, [r3]
-  83:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if (ADC_Timer_UsingHWCaptureCounter)
-  84:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_SetCaptureCount(ADC_Timer_backup.TimerCaptureCounter);
-  85:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Restore Capture counter register*/
-  86:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  87:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
-  88:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_WriteControlRegister(ADC_Timer_backup.TimerControlRegister);
+  83:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if (ADC_Timer_UsingHWCaptureCounter)
+  84:Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_SetCaptureCount(ADC_Timer_backup.TimerCaptureCounter);
+  85:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Restore Capture counter register*/
+  86:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  87:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
+  88:Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_WriteControlRegister(ADC_Timer_backup.TimerControlRegister);
   97              		.loc 1 88 0
   98 0016 034B     		ldr	r3, .L5
   99 0018 DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
  100 001a 1846     		mov	r0, r3
  101 001c FFF7FEFF 		bl	ADC_Timer_WriteControlRegister
-  89:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Restore the enable state of the Timer component */
-  90:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Restore non retention registers in the UDB implementation only */
-  91:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** }
+  89:Generated_Source\PSoC5/ADC_Timer_PM.c ****         #endif /* Restore the enable state of the Timer component */
+  90:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Restore non retention registers in the UDB implementation only */
+  91:Generated_Source\PSoC5/ADC_Timer_PM.c **** }
  102              		.loc 1 91 0
  103 0020 80BD     		pop	{r7, pc}
  104              	.L6:
  105 0022 00BF     		.align	2
  106              	.L5:
  107 0024 00000000 		.word	ADC_Timer_backup
- 108 0028 85650040 		.word	1073767813
+ 108 0028 8A640040 		.word	1073767562
  109              		.cfi_endproc
  110              	.LFE1:
  111              		.size	ADC_Timer_RestoreConfig, .-ADC_Timer_RestoreConfig
@@ -220,31 +220,31 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  117              		.type	ADC_Timer_Sleep, %function
  118              	ADC_Timer_Sleep:
  119              	.LFB2:
-  92:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  93:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
-  94:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
-  95:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_Sleep
-  96:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
-  97:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
-  98:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
-  99:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *     Stop and Save the user configuration
- 100:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 101:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
- 102:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
- 103:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 104:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
- 105:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
- 106:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 107:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
- 108:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup.TimerEnableState:  Is modified depending on the
- 109:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  enable state of the block before entering sleep mode.
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 5
+  92:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  93:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+  94:Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
+  95:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_Sleep
+  96:Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
+  97:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+  98:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
+  99:Generated_Source\PSoC5/ADC_Timer_PM.c **** *     Stop and Save the user configuration
+ 100:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 101:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
+ 102:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+ 103:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 104:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
+ 105:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+ 106:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 107:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
+ 108:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup.TimerEnableState:  Is modified depending on the
+ 109:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  enable state of the block before entering sleep mode.
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 5
 
 
- 110:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 111:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
- 112:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_Sleep(void) 
- 113:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** {
+ 110:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 111:Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
+ 112:Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_Sleep(void) 
+ 113:Generated_Source\PSoC5/ADC_Timer_PM.c **** {
  120              		.loc 1 113 0
  121              		.cfi_startproc
  122              		@ args = 0, pretend = 0, frame = 0
@@ -255,9 +255,9 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  127              		.cfi_offset 14, -4
  128 0002 00AF     		add	r7, sp, #0
  129              		.cfi_def_cfa_register 7
- 114:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
- 115:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         /* Save Counter's enable state */
- 116:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         if(ADC_Timer_CTRL_ENABLE == (ADC_Timer_CONTROL & ADC_Timer_CTRL_ENABLE))
+ 114:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
+ 115:Generated_Source\PSoC5/ADC_Timer_PM.c ****         /* Save Counter's enable state */
+ 116:Generated_Source\PSoC5/ADC_Timer_PM.c ****         if(ADC_Timer_CTRL_ENABLE == (ADC_Timer_CONTROL & ADC_Timer_CTRL_ENABLE))
  130              		.loc 1 116 0
  131 0004 094B     		ldr	r3, .L10
  132 0006 1B78     		ldrb	r3, [r3]
@@ -266,43 +266,43 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  135 000c 5BB2     		sxtb	r3, r3
  136 000e 002B     		cmp	r3, #0
  137 0010 03DA     		bge	.L8
- 117:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         {
- 118:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             /* Timer is enabled */
- 119:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerEnableState = 1u;
+ 117:Generated_Source\PSoC5/ADC_Timer_PM.c ****         {
+ 118:Generated_Source\PSoC5/ADC_Timer_PM.c ****             /* Timer is enabled */
+ 119:Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerEnableState = 1u;
  138              		.loc 1 119 0
  139 0012 074B     		ldr	r3, .L10+4
  140 0014 0122     		movs	r2, #1
  141 0016 1A70     		strb	r2, [r3]
  142 0018 02E0     		b	.L9
  143              	.L8:
- 120:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         }
- 121:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         else
- 122:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         {
- 123:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             /* Timer is disabled */
- 124:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerEnableState = 0u;
+ 120:Generated_Source\PSoC5/ADC_Timer_PM.c ****         }
+ 121:Generated_Source\PSoC5/ADC_Timer_PM.c ****         else
+ 122:Generated_Source\PSoC5/ADC_Timer_PM.c ****         {
+ 123:Generated_Source\PSoC5/ADC_Timer_PM.c ****             /* Timer is disabled */
+ 124:Generated_Source\PSoC5/ADC_Timer_PM.c ****             ADC_Timer_backup.TimerEnableState = 0u;
  144              		.loc 1 124 0
  145 001a 054B     		ldr	r3, .L10+4
  146 001c 0022     		movs	r2, #0
  147 001e 1A70     		strb	r2, [r3]
  148              	.L9:
- 125:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         }
- 126:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Back up enable state from the Timer control register */
- 127:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     ADC_Timer_Stop();
+ 125:Generated_Source\PSoC5/ADC_Timer_PM.c ****         }
+ 126:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Back up enable state from the Timer control register */
+ 127:Generated_Source\PSoC5/ADC_Timer_PM.c ****     ADC_Timer_Stop();
  149              		.loc 1 127 0
  150 0020 FFF7FEFF 		bl	ADC_Timer_Stop
- 128:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     ADC_Timer_SaveConfig();
+ 128:Generated_Source\PSoC5/ADC_Timer_PM.c ****     ADC_Timer_SaveConfig();
  151              		.loc 1 128 0
  152 0024 FFF7FEFF 		bl	ADC_Timer_SaveConfig
- 129:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** }
+ 129:Generated_Source\PSoC5/ADC_Timer_PM.c **** }
  153              		.loc 1 129 0
  154 0028 80BD     		pop	{r7, pc}
  155              	.L11:
  156 002a 00BF     		.align	2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 6
 
 
  157              	.L10:
- 158 002c 75650040 		.word	1073767797
+ 158 002c 7A640040 		.word	1073767546
  159 0030 00000000 		.word	ADC_Timer_backup
  160              		.cfi_endproc
  161              	.LFE2:
@@ -315,28 +315,28 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  168              		.type	ADC_Timer_Wakeup, %function
  169              	ADC_Timer_Wakeup:
  170              	.LFB3:
- 130:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
- 131:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** 
- 132:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
- 133:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_Wakeup
- 134:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
- 135:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 136:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
- 137:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  Restores and enables the user configuration
- 138:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 139:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
- 140:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
- 141:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 142:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
- 143:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
- 144:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 145:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
- 146:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup.enableState:  Is used to restore the enable state of
- 147:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *  block on wakeup from sleep mode.
- 148:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *
- 149:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
- 150:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_Wakeup(void) 
- 151:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** {
+ 130:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+ 131:Generated_Source\PSoC5/ADC_Timer_PM.c **** 
+ 132:Generated_Source\PSoC5/ADC_Timer_PM.c **** /*******************************************************************************
+ 133:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Function Name: ADC_Timer_Wakeup
+ 134:Generated_Source\PSoC5/ADC_Timer_PM.c **** ********************************************************************************
+ 135:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 136:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Summary:
+ 137:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  Restores and enables the user configuration
+ 138:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 139:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Parameters:
+ 140:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+ 141:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 142:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Return:
+ 143:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  void
+ 144:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 145:Generated_Source\PSoC5/ADC_Timer_PM.c **** * Global variables:
+ 146:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  ADC_Timer_backup.enableState:  Is used to restore the enable state of
+ 147:Generated_Source\PSoC5/ADC_Timer_PM.c **** *  block on wakeup from sleep mode.
+ 148:Generated_Source\PSoC5/ADC_Timer_PM.c **** *
+ 149:Generated_Source\PSoC5/ADC_Timer_PM.c **** *******************************************************************************/
+ 150:Generated_Source\PSoC5/ADC_Timer_PM.c **** void ADC_Timer_Wakeup(void) 
+ 151:Generated_Source\PSoC5/ADC_Timer_PM.c **** {
  171              		.loc 1 151 0
  172              		.cfi_startproc
  173              		@ args = 0, pretend = 0, frame = 0
@@ -347,27 +347,27 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  178              		.cfi_offset 14, -4
  179 0002 00AF     		add	r7, sp, #0
  180              		.cfi_def_cfa_register 7
- 152:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     ADC_Timer_RestoreConfig();
+ 152:Generated_Source\PSoC5/ADC_Timer_PM.c ****     ADC_Timer_RestoreConfig();
  181              		.loc 1 152 0
  182 0004 FFF7FEFF 		bl	ADC_Timer_RestoreConfig
- 153:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
- 154:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         if(ADC_Timer_backup.TimerEnableState == 1u)
+ 153:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #if(!ADC_Timer_UDB_CONTROL_REG_REMOVED)
+ 154:Generated_Source\PSoC5/ADC_Timer_PM.c ****         if(ADC_Timer_backup.TimerEnableState == 1u)
  183              		.loc 1 154 0
  184 0008 034B     		ldr	r3, .L14
  185 000a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  186 000c 012B     		cmp	r3, #1
  187 000e 01D1     		bne	.L12
- 155:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         {     /* Enable Timer's operation */
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 7
+ 155:Generated_Source\PSoC5/ADC_Timer_PM.c ****         {     /* Enable Timer's operation */
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 7
 
 
- 156:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****                 ADC_Timer_Enable();
+ 156:Generated_Source\PSoC5/ADC_Timer_PM.c ****                 ADC_Timer_Enable();
  188              		.loc 1 156 0
  189 0010 FFF7FEFF 		bl	ADC_Timer_Enable
  190              	.L12:
- 157:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****         } /* Do nothing if Timer was disabled before */
- 158:.\Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Remove this code section if Control register is removed */
- 159:.\Generated_Source\PSoC5/ADC_Timer_PM.c **** }
+ 157:Generated_Source\PSoC5/ADC_Timer_PM.c ****         } /* Do nothing if Timer was disabled before */
+ 158:Generated_Source\PSoC5/ADC_Timer_PM.c ****     #endif /* Remove this code section if Control register is removed */
+ 159:Generated_Source\PSoC5/ADC_Timer_PM.c **** }
  191              		.loc 1 159 0
  192 0014 80BD     		pop	{r7, pc}
  193              	.L15:
@@ -379,8 +379,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  199              		.size	ADC_Timer_Wakeup, .-ADC_Timer_Wakeup
  200              		.text
  201              	.Letext0:
- 202              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
- 203              		.file 3 ".\\Generated_Source\\PSoC5\\ADC_Timer.h"
+ 202              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 203              		.file 3 "Generated_Source\\PSoC5\\ADC_Timer.h"
  204              		.section	.debug_info,"",%progbits
  205              	.Ldebug_info0:
  206 0000 3A010000 		.4byte	0x13a
@@ -388,40 +388,40 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  208 0006 00000000 		.4byte	.Ldebug_abbrev0
  209 000a 04       		.byte	0x4
  210 000b 01       		.uleb128 0x1
- 211 000c 2B010000 		.4byte	.LASF24
+ 211 000c FF000000 		.4byte	.LASF24
  212 0010 01       		.byte	0x1
- 213 0011 12020000 		.4byte	.LASF25
- 214 0015 9A000000 		.4byte	.LASF26
+ 213 0011 30000000 		.4byte	.LASF25
+ 214 0015 E6010000 		.4byte	.LASF26
  215 0019 00000000 		.4byte	.Ldebug_ranges0+0
  216 001d 00000000 		.4byte	0
  217 0021 00000000 		.4byte	.Ldebug_line0
  218 0025 02       		.uleb128 0x2
  219 0026 01       		.byte	0x1
  220 0027 06       		.byte	0x6
- 221 0028 06020000 		.4byte	.LASF0
+ 221 0028 DA010000 		.4byte	.LASF0
  222 002c 02       		.uleb128 0x2
  223 002d 01       		.byte	0x1
  224 002e 08       		.byte	0x8
- 225 002f 03010000 		.4byte	.LASF1
+ 225 002f D7000000 		.4byte	.LASF1
  226 0033 02       		.uleb128 0x2
  227 0034 02       		.byte	0x2
  228 0035 05       		.byte	0x5
- 229 0036 B9010000 		.4byte	.LASF2
+ 229 0036 8D010000 		.4byte	.LASF2
  230 003a 02       		.uleb128 0x2
  231 003b 02       		.byte	0x2
  232 003c 07       		.byte	0x7
- 233 003d F3010000 		.4byte	.LASF3
+ 233 003d C7010000 		.4byte	.LASF3
  234 0041 02       		.uleb128 0x2
  235 0042 04       		.byte	0x4
  236 0043 05       		.byte	0x5
- 237 0044 22010000 		.4byte	.LASF4
+ 237 0044 F6000000 		.4byte	.LASF4
  238 0048 02       		.uleb128 0x2
  239 0049 04       		.byte	0x4
  240 004a 07       		.byte	0x7
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 8
 
 
- 241 004b 47000000 		.4byte	.LASF5
+ 241 004b 5C000000 		.4byte	.LASF5
  242 004f 02       		.uleb128 0x2
  243 0050 08       		.byte	0x8
  244 0051 05       		.byte	0x5
@@ -429,7 +429,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  246 0056 02       		.uleb128 0x2
  247 0057 08       		.byte	0x8
  248 0058 07       		.byte	0x7
- 249 0059 59000000 		.4byte	.LASF7
+ 249 0059 6E000000 		.4byte	.LASF7
  250 005d 03       		.uleb128 0x3
  251 005e 04       		.byte	0x4
  252 005f 05       		.byte	0x5
@@ -439,24 +439,24 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  256 0066 07       		.byte	0x7
  257 0067 23000000 		.4byte	.LASF8
  258 006b 04       		.uleb128 0x4
- 259 006c 41000000 		.4byte	.LASF12
+ 259 006c 56000000 		.4byte	.LASF12
  260 0070 02       		.byte	0x2
  261 0071 9201     		.2byte	0x192
  262 0073 2C000000 		.4byte	0x2c
  263 0077 02       		.uleb128 0x2
  264 0078 04       		.byte	0x4
  265 0079 04       		.byte	0x4
- 266 007a 3A020000 		.4byte	.LASF9
+ 266 007a 44020000 		.4byte	.LASF9
  267 007e 02       		.uleb128 0x2
  268 007f 08       		.byte	0x8
  269 0080 04       		.byte	0x4
- 270 0081 C3010000 		.4byte	.LASF10
+ 270 0081 97010000 		.4byte	.LASF10
  271 0085 02       		.uleb128 0x2
  272 0086 01       		.byte	0x1
  273 0087 08       		.byte	0x8
- 274 0088 85000000 		.4byte	.LASF11
+ 274 0088 9A000000 		.4byte	.LASF11
  275 008c 04       		.uleb128 0x4
- 276 008d 49020000 		.4byte	.LASF13
+ 276 008d 53020000 		.4byte	.LASF13
  277 0091 02       		.byte	0x2
  278 0092 3C02     		.2byte	0x23c
  279 0094 98000000 		.4byte	0x98
@@ -465,42 +465,42 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  282 009d 02       		.uleb128 0x2
  283 009e 04       		.byte	0x4
  284 009f 07       		.byte	0x7
- 285 00a0 61020000 		.4byte	.LASF14
+ 285 00a0 6B020000 		.4byte	.LASF14
  286 00a4 06       		.uleb128 0x6
  287 00a5 04       		.byte	0x4
  288 00a6 03       		.byte	0x3
  289 00a7 43       		.byte	0x43
  290 00a8 DD000000 		.4byte	0xdd
  291 00ac 07       		.uleb128 0x7
- 292 00ad 30000000 		.4byte	.LASF15
+ 292 00ad AF000000 		.4byte	.LASF15
  293 00b1 03       		.byte	0x3
  294 00b2 45       		.byte	0x45
  295 00b3 6B000000 		.4byte	0x6b
  296 00b7 00       		.byte	0
  297 00b8 07       		.uleb128 0x7
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 9
 
 
- 298 00b9 40020000 		.4byte	.LASF16
+ 298 00b9 4A020000 		.4byte	.LASF16
  299 00bd 03       		.byte	0x3
  300 00be 48       		.byte	0x48
  301 00bf 6B000000 		.4byte	0x6b
  302 00c3 01       		.byte	0x1
  303 00c4 07       		.uleb128 0x7
- 304 00c5 4E020000 		.4byte	.LASF17
+ 304 00c5 58020000 		.4byte	.LASF17
  305 00c9 03       		.byte	0x3
  306 00ca 49       		.byte	0x49
  307 00cb 6B000000 		.4byte	0x6b
  308 00cf 02       		.byte	0x2
  309 00d0 07       		.uleb128 0x7
- 310 00d1 70000000 		.4byte	.LASF18
+ 310 00d1 85000000 		.4byte	.LASF18
  311 00d5 03       		.byte	0x3
  312 00d6 4F       		.byte	0x4f
  313 00d7 6B000000 		.4byte	0x6b
  314 00db 03       		.byte	0x3
  315 00dc 00       		.byte	0
  316 00dd 08       		.uleb128 0x8
- 317 00de EC000000 		.4byte	.LASF19
+ 317 00de C0000000 		.4byte	.LASF19
  318 00e2 03       		.byte	0x3
  319 00e3 53       		.byte	0x53
  320 00e4 A4000000 		.4byte	0xa4
@@ -513,7 +513,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  327 00f7 01       		.uleb128 0x1
  328 00f8 9C       		.byte	0x9c
  329 00f9 09       		.uleb128 0x9
- 330 00fa DB010000 		.4byte	.LASF21
+ 330 00fa AF010000 		.4byte	.LASF21
  331 00fe 01       		.byte	0x1
  332 00ff 4D       		.byte	0x4d
  333 0100 00000000 		.4byte	.LFB1
@@ -521,7 +521,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  335 0108 01       		.uleb128 0x1
  336 0109 9C       		.byte	0x9c
  337 010a 09       		.uleb128 0x9
- 338 010b 8A000000 		.4byte	.LASF22
+ 338 010b 9F000000 		.4byte	.LASF22
  339 010f 01       		.byte	0x1
  340 0110 70       		.byte	0x70
  341 0111 00000000 		.4byte	.LFB2
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  343 0119 01       		.uleb128 0x1
  344 011a 9C       		.byte	0x9c
  345 011b 09       		.uleb128 0x9
- 346 011c CA010000 		.4byte	.LASF23
+ 346 011c 9E010000 		.4byte	.LASF23
  347 0120 01       		.byte	0x1
  348 0121 96       		.byte	0x96
  349 0122 00000000 		.4byte	.LFB3
@@ -537,8 +537,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  351 012a 01       		.uleb128 0x1
  352 012b 9C       		.byte	0x9c
  353 012c 0A       		.uleb128 0xa
- 354 012d 11010000 		.4byte	.LASF27
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 10
+ 354 012d E5000000 		.4byte	.LASF27
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 10
 
 
  355 0131 01       		.byte	0x1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  409 002d 0E       		.uleb128 0xe
  410 002e 3A       		.uleb128 0x3a
  411 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 11
 
 
  412 0030 3B       		.uleb128 0x3b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  466 0066 09       		.uleb128 0x9
  467 0067 2E       		.uleb128 0x2e
  468 0068 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 12
 
 
  469 0069 3F       		.uleb128 0x3f
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  523              		.section	.debug_ranges,"",%progbits
  524              	.Ldebug_ranges0:
  525 0000 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 13
 
 
  526 0004 30000000 		.4byte	.LFE0
@@ -732,8 +732,8 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  534 0024 00000000 		.4byte	0
  535              		.section	.debug_line,"",%progbits
  536              	.Ldebug_line0:
- 537 0000 B1000000 		.section	.debug_str,"MS",%progbits,1
- 537      02005A00 
+ 537 0000 AF000000 		.section	.debug_str,"MS",%progbits,1
+ 537      02005800 
  537      00000201 
  537      FB0E0D00 
  537      01010101 
@@ -753,151 +753,151 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 1
  543      676E6564 
  543      20696E74 
  543      00
- 544              	.LASF15:
- 545 0030 54696D65 		.ascii	"TimerEnableState\000"
- 545      72456E61 
- 545      626C6553 
- 545      74617465 
- 545      00
+ 544              	.LASF25:
+ 545 0030 47656E65 		.ascii	"Generated_Source\\PSoC5\\ADC_Timer_PM.c\000"
+ 545      72617465 
+ 545      645F536F 
+ 545      75726365 
+ 545      5C50536F 
  546              	.LASF12:
- 547 0041 75696E74 		.ascii	"uint8\000"
+ 547 0056 75696E74 		.ascii	"uint8\000"
  547      3800
  548              	.LASF5:
- 549 0047 6C6F6E67 		.ascii	"long unsigned int\000"
+ 549 005c 6C6F6E67 		.ascii	"long unsigned int\000"
  549      20756E73 
  549      69676E65 
  549      6420696E 
  549      7400
  550              	.LASF7:
- 551 0059 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 551 006e 6C6F6E67 		.ascii	"long long unsigned int\000"
  551      206C6F6E 
  551      6720756E 
  551      7369676E 
  551      65642069 
  552              	.LASF18:
- 553 0070 54696D65 		.ascii	"TimerControlRegister\000"
+ 553 0085 54696D65 		.ascii	"TimerControlRegister\000"
  553      72436F6E 
  553      74726F6C 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 14
 
 
  553      52656769 
  553      73746572 
  554              	.LASF11:
- 555 0085 63686172 		.ascii	"char\000"
+ 555 009a 63686172 		.ascii	"char\000"
  555      00
  556              	.LASF22:
- 557 008a 4144435F 		.ascii	"ADC_Timer_Sleep\000"
+ 557 009f 4144435F 		.ascii	"ADC_Timer_Sleep\000"
  557      54696D65 
  557      725F536C 
  557      65657000 
- 558              	.LASF26:
- 559 009a 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 559      73657273 
- 559      5C4C756B 
- 559      61732043 
- 559      72657574 
- 560 00c9 725C576F 		.ascii	"r\\Workspace01\\Volume_Control.cydsn\000"
- 560      726B7370 
- 560      61636530 
- 560      315C566F 
- 560      6C756D65 
- 561              	.LASF19:
- 562 00ec 4144435F 		.ascii	"ADC_Timer_backupStruct\000"
- 562      54696D65 
- 562      725F6261 
- 562      636B7570 
- 562      53747275 
- 563              	.LASF1:
- 564 0103 756E7369 		.ascii	"unsigned char\000"
- 564      676E6564 
- 564      20636861 
- 564      7200
- 565              	.LASF27:
- 566 0111 4144435F 		.ascii	"ADC_Timer_backup\000"
- 566      54696D65 
- 566      725F6261 
- 566      636B7570 
- 566      00
- 567              	.LASF4:
- 568 0122 6C6F6E67 		.ascii	"long int\000"
- 568      20696E74 
- 568      00
- 569              	.LASF24:
- 570 012b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 570      4320342E 
- 570      392E3320 
- 570      32303135 
- 570      30333033 
- 571 015e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 571      20726576 
- 571      6973696F 
- 571      6E203232 
- 571      31323230 
- 572 0191 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 572      66756E63 
- 572      74696F6E 
- 572      2D736563 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 15
+ 558              	.LASF15:
+ 559 00af 54696D65 		.ascii	"TimerEnableState\000"
+ 559      72456E61 
+ 559      626C6553 
+ 559      74617465 
+ 559      00
+ 560              	.LASF19:
+ 561 00c0 4144435F 		.ascii	"ADC_Timer_backupStruct\000"
+ 561      54696D65 
+ 561      725F6261 
+ 561      636B7570 
+ 561      53747275 
+ 562              	.LASF1:
+ 563 00d7 756E7369 		.ascii	"unsigned char\000"
+ 563      676E6564 
+ 563      20636861 
+ 563      7200
+ 564              	.LASF27:
+ 565 00e5 4144435F 		.ascii	"ADC_Timer_backup\000"
+ 565      54696D65 
+ 565      725F6261 
+ 565      636B7570 
+ 565      00
+ 566              	.LASF4:
+ 567 00f6 6C6F6E67 		.ascii	"long int\000"
+ 567      20696E74 
+ 567      00
+ 568              	.LASF24:
+ 569 00ff 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 569      4320342E 
+ 569      392E3320 
+ 569      32303135 
+ 569      30333033 
+ 570 0132 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 570      20726576 
+ 570      6973696F 
+ 570      6E203232 
+ 570      31323230 
+ 571 0165 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 571      66756E63 
+ 571      74696F6E 
+ 571      2D736563 
+ 571      74696F6E 
+ 572              	.LASF2:
+ 573 018d 73686F72 		.ascii	"short int\000"
+ 573      7420696E 
+ 573      7400
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 15
 
 
- 572      74696F6E 
- 573              	.LASF2:
- 574 01b9 73686F72 		.ascii	"short int\000"
- 574      7420696E 
- 574      7400
- 575              	.LASF10:
- 576 01c3 646F7562 		.ascii	"double\000"
- 576      6C6500
- 577              	.LASF23:
- 578 01ca 4144435F 		.ascii	"ADC_Timer_Wakeup\000"
- 578      54696D65 
- 578      725F5761 
- 578      6B657570 
- 578      00
- 579              	.LASF21:
- 580 01db 4144435F 		.ascii	"ADC_Timer_RestoreConfig\000"
- 580      54696D65 
- 580      725F5265 
- 580      73746F72 
- 580      65436F6E 
- 581              	.LASF3:
- 582 01f3 73686F72 		.ascii	"short unsigned int\000"
- 582      7420756E 
- 582      7369676E 
- 582      65642069 
- 582      6E7400
- 583              	.LASF0:
- 584 0206 7369676E 		.ascii	"signed char\000"
- 584      65642063 
- 584      68617200 
- 585              	.LASF25:
- 586 0212 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\ADC_Timer_PM.c\000"
- 586      6E657261 
- 586      7465645F 
- 586      536F7572 
- 586      63655C50 
+ 574              	.LASF10:
+ 575 0197 646F7562 		.ascii	"double\000"
+ 575      6C6500
+ 576              	.LASF23:
+ 577 019e 4144435F 		.ascii	"ADC_Timer_Wakeup\000"
+ 577      54696D65 
+ 577      725F5761 
+ 577      6B657570 
+ 577      00
+ 578              	.LASF21:
+ 579 01af 4144435F 		.ascii	"ADC_Timer_RestoreConfig\000"
+ 579      54696D65 
+ 579      725F5265 
+ 579      73746F72 
+ 579      65436F6E 
+ 580              	.LASF3:
+ 581 01c7 73686F72 		.ascii	"short unsigned int\000"
+ 581      7420756E 
+ 581      7369676E 
+ 581      65642069 
+ 581      6E7400
+ 582              	.LASF0:
+ 583 01da 7369676E 		.ascii	"signed char\000"
+ 583      65642063 
+ 583      68617200 
+ 584              	.LASF26:
+ 585 01e6 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 585      73657273 
+ 585      5C4C756B 
+ 585      61732043 
+ 585      72657574 
+ 586 0214 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Volume_Control.cydsn\000"
+ 586      5F364348 
+ 586      616D705C 
+ 586      50536F43 
+ 586      20576F72 
  587              	.LASF9:
- 588 023a 666C6F61 		.ascii	"float\000"
+ 588 0244 666C6F61 		.ascii	"float\000"
  588      7400
  589              	.LASF16:
- 590 0240 54696D65 		.ascii	"TimerUdb\000"
+ 590 024a 54696D65 		.ascii	"TimerUdb\000"
  590      72556462 
  590      00
  591              	.LASF13:
- 592 0249 72656738 		.ascii	"reg8\000"
+ 592 0253 72656738 		.ascii	"reg8\000"
  592      00
  593              	.LASF17:
- 594 024e 496E7465 		.ascii	"InterruptMaskValue\000"
+ 594 0258 496E7465 		.ascii	"InterruptMaskValue\000"
  594      72727570 
  594      744D6173 
  594      6B56616C 
  594      756500
  595              	.LASF14:
- 596 0261 73697A65 		.ascii	"sizetype\000"
+ 596 026b 73697A65 		.ascii	"sizetype\000"
  596      74797065 
  596      00
  597              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqHDlZ5.s 			page 16
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8Lrf54.s 			page 16
 
 

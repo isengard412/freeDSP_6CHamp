@@ -1,13 +1,13 @@
 /***************************************************************************//**
 * \file COM_episr.c
-* \version 3.0
+* \version 3.10
 *
 * \brief
 *  This file contains the Data endpoint Interrupt Service Routines.
 *
 ********************************************************************************
 * \copyright
-* Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+* Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -862,7 +862,7 @@ CY_ISR(COM_LPM_ISR)
                     uint32 channelNum = COM_DmaChan[ep];
 
                     /* Restore burst counter for endpoint. */
-                    COM_DmaEpBurstCnt[ep] = COM_DmaEpBurstCntBackup[ep];
+                    COM_DmaEpBurstCnt[ep] = COM_DMA_GET_BURST_CNT(COM_DmaEpBurstCntBackup[ep]);
 
                     /* Disable DMA channel to restore descriptor configuration. The on-going transfer is aborted. */
                     COM_CyDmaChDisable(channelNum);
@@ -886,7 +886,10 @@ CY_ISR(COM_LPM_ISR)
 
                     /* Validate descriptor 0 and 1 (also reset current state). Command to start with descriptor 0. */
                     COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR0);
-                    COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+                    if (COM_DmaEpBurstCntBackup[ep] > 1u)
+                    {
+                        COM_CyDmaValidateDescriptor(channelNum, COM_DMA_DESCR1);
+                    }
                     COM_CyDmaSetDescriptor0Next(channelNum);
 
                     /* Enable DMA channel: configuration complete. */
@@ -946,6 +949,87 @@ CY_ISR(COM_LPM_ISR)
 
 #if (COM_EP_MANAGEMENT_DMA_AUTO)
 #if (CY_PSOC4)
+
+    /******************************************************************************
+    * Function Name: COM_EPxDmaDone
+    ***************************************************************************//**
+    *
+    * \internal
+    *  Endpoint  DMA Done Interrupt Service Routine basic function .
+    *  
+    *  \param dmaCh
+    *  number of DMA channel
+    *  
+    *  \param ep
+    *  number of USB end point
+    *  
+    *  \param dmaDone
+    *  transfer completion flag
+    *  
+    *  \return
+    *   updated transfer completion flag
+    *
+    ******************************************************************************/
+    CY_INLINE static void COM_EPxDmaDone(uint8 dmaCh, uint8 ep)
+    {
+        uint32 nextAddr;
+
+        /* Manage data elements which remain to transfer. */
+        if (0u != COM_DmaEpBurstCnt[ep])
+        {
+            if(COM_DmaEpBurstCnt[ep] <= 2u)
+            {
+                /* Adjust length of last burst. */
+                COM_CyDmaSetNumDataElements(dmaCh,
+                                                    ((uint32) COM_DmaEpLastBurstEl[ep] >> COM_DMA_DESCR_SHIFT),
+                                                    ((uint32) COM_DmaEpLastBurstEl[ep] &  COM_DMA_BURST_BYTES_MASK));
+            }
+            
+
+            /* Advance source for input endpoint or destination for output endpoint. */
+            if (0u != (COM_EP[ep].addr & COM_DIR_IN))
+            {
+                /* Change source for descriptor 0. */
+                nextAddr = (uint32) COM_CyDmaGetSrcAddress(dmaCh, COM_DMA_DESCR0);
+                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
+                COM_CyDmaSetSrcAddress(dmaCh, COM_DMA_DESCR0, (void *) nextAddr);
+
+                /* Change source for descriptor 1. */
+                nextAddr += COM_DMA_BYTES_PER_BURST;
+                COM_CyDmaSetSrcAddress(dmaCh, COM_DMA_DESCR1, (void *) nextAddr);
+            }
+            else
+            {
+                /* Change destination for descriptor 0. */
+                nextAddr  = (uint32) COM_CyDmaGetDstAddress(dmaCh, COM_DMA_DESCR0);
+                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
+                COM_CyDmaSetDstAddress(dmaCh, COM_DMA_DESCR0, (void *) nextAddr);
+
+                /* Change destination for descriptor 1. */
+                nextAddr += COM_DMA_BYTES_PER_BURST;
+                COM_CyDmaSetDstAddress(dmaCh, COM_DMA_DESCR1, (void *) nextAddr);
+            }
+
+            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
+            COM_CyDmaValidateDescriptor(dmaCh, COM_DMA_DESCR0);
+            
+            --COM_DmaEpBurstCnt[ep];
+            if (0u != COM_DmaEpBurstCnt[ep])
+            {
+                COM_CyDmaValidateDescriptor(dmaCh, COM_DMA_DESCR1);
+                --COM_DmaEpBurstCnt[ep];
+            }
+            
+            COM_CyDmaChEnable (dmaCh);
+            COM_CyDmaTriggerIn(COM_DmaReqOut[ep]);
+        }
+        else
+        {
+            /* No data to transfer. False DMA trig. Ignore.  */
+        }
+
+    }
+
     #if (COM_DMA1_ACTIVE)
         /******************************************************************************
         * Function Name: COM_EP1_DMA_DONE_ISR
@@ -957,50 +1041,10 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP1_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP1])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP1];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP1_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP1] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP1] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP1].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP1_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP1_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP1_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP1_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP1_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP1_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP1_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP1_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP1]);
+            COM_EPxDmaDone((uint8)COM_EP1_DMA_CH,
+                                                  COM_EP1);
+                
         }
     #endif /* (COM_DMA1_ACTIVE) */
 
@@ -1016,50 +1060,9 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP2_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP2])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP2];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP2_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP2] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP2] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP2].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP2_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP2_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP2_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP2_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP2_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP2_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP2_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP2_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP2]);
+            COM_EPxDmaDone((uint8)COM_EP2_DMA_CH,
+                                                  COM_EP2);
         }
     #endif /* (COM_DMA2_ACTIVE) */
 
@@ -1075,50 +1078,9 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP3_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP3])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP3];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP3_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP3] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP3] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP3].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP3_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP3_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP3_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP3_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP3_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP3_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP3_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP3_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP3]);
+            COM_EPxDmaDone((uint8)COM_EP3_DMA_CH,
+                                                  COM_EP3);
         }
     #endif /* (COM_DMA3_ACTIVE) */
 
@@ -1134,50 +1096,9 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP4_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP4])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP4];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP4_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP4] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP4] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP4].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP4_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP4_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP4_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP4_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP4_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP4_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP4_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP4_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP4]);
+            COM_EPxDmaDone((uint8)COM_EP4_DMA_CH,
+                                                  COM_EP4);
         }
     #endif /* (COM_DMA4_ACTIVE) */
 
@@ -1193,50 +1114,9 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP5_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP5])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP5];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP5_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP5] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP5] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP5].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP5_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP5_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP5_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP5_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP5_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP5_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP5_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP5_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP5]);
+            COM_EPxDmaDone((uint8)COM_EP5_DMA_CH,
+                                                  COM_EP5);
         }
     #endif /* (COM_DMA5_ACTIVE) */
 
@@ -1252,50 +1132,9 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP6_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP6])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP6];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP6_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP6] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP6] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP6].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP6_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP6_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP6_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP6_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP6_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP6_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable the DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP6_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP6_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP6]);
+            COM_EPxDmaDone((uint8)COM_EP6_DMA_CH,
+                                                  COM_EP6);
         }
     #endif /* (COM_DMA6_ACTIVE) */
 
@@ -1311,50 +1150,9 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP7_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP7])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP7];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP7_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP7] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP7] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP7].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP7_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP7_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP7_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP7_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP7_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP7_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP7_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP7_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP7]);
+            COM_EPxDmaDone((uint8)COM_EP7_DMA_CH,
+                                                  COM_EP7);
         }
     #endif /* (COM_DMA7_ACTIVE) */
 
@@ -1370,52 +1168,12 @@ CY_ISR(COM_LPM_ISR)
         ******************************************************************************/
         void COM_EP8_DMA_DONE_ISR(void)
         {
-            uint32 nextAddr;
 
-            /* Manage data elements which remain to transfer. */
-            if (0u != COM_DmaEpBurstCnt[COM_EP8])
-            {
-                /* Decrement burst counter. */
-                --COM_DmaEpBurstCnt[COM_EP8];
-            }
-            else
-            {
-                /* Adjust length of last burst. */
-                COM_CyDmaSetNumDataElements(COM_EP8_DMA_CH,
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP8] >> COM_DMA_DESCR_SHIFT),
-                                                        ((uint32) COM_DmaEpLastBurstEl[COM_EP8] &  COM_DMA_BURST_BYTES_MASK));
-            }
-
-            /* Advance source for input endpoint or destination for output endpoint. */
-            if (0u != (COM_EP[COM_EP8].addr & COM_DIR_IN))
-            {
-                /* Change source for descriptor 0. */
-                nextAddr = (uint32) COM_CyDmaGetSrcAddress(COM_EP8_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetSrcAddress(COM_EP8_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change source for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetSrcAddress(COM_EP8_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-            else
-            {
-                /* Change destination for descriptor 0. */
-                nextAddr  = (uint32) COM_CyDmaGetDstAddress(COM_EP8_DMA_CH, COM_DMA_DESCR0);
-                nextAddr += (2u * COM_DMA_BYTES_PER_BURST);
-                COM_CyDmaSetDstAddress(COM_EP8_DMA_CH, COM_DMA_DESCR0, (void *) nextAddr);
-
-                /* Change destination for descriptor 1. */
-                nextAddr += COM_DMA_BYTES_PER_BURST;
-                COM_CyDmaSetDstAddress(COM_EP8_DMA_CH, COM_DMA_DESCR1, (void *) nextAddr);
-            }
-
-            /* Enable DMA to execute transfer as it was disabled because there were no valid descriptor. */
-            COM_CyDmaValidateDescriptor(COM_EP8_DMA_CH, COM_DMA_DESCR0);
-            COM_CyDmaChEnable (COM_EP8_DMA_CH);
-            COM_CyDmaTriggerIn(COM_DmaReqOut[COM_EP8]);
+            COM_EPxDmaDone((uint8)COM_EP8_DMA_CH,
+                                                  COM_EP8);
         }
     #endif /* (COM_DMA8_ACTIVE) */
+
 
 #else
     #if (COM_EP_DMA_AUTO_OPT == 0u)

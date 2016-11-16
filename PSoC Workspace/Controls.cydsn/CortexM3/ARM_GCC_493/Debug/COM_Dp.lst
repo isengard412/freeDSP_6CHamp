@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
   29:Generated_Source\PSoC5/COM_Dp.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/COM_Dp.c **** *  and shifting the bits appropriately. 
   31:Generated_Source\PSoC5/COM_Dp.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 2
 
 
   32:Generated_Source\PSoC5/COM_Dp.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
   52              		.section	.text.COM_Dp_SetDriveMode,"ax",%progbits
   53              		.align	2
   54              		.global	COM_Dp_SetDriveMode
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 3
 
 
   55              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
   77              	.L5:
   78 0014 7E500040 		.word	1073762430
   79              		.cfi_endproc
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 4
 
 
   80              	.LFE1:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  110              		.global	COM_Dp_ReadDataReg
  111              		.thumb
  112              		.thumb_func
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 5
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 5
 
 
  113              		.type	COM_Dp_ReadDataReg, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  139              		.type	COM_Dp_SetInterruptMode, %function
  140              	COM_Dp_SetInterruptMode:
  141              	.LFB4:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 6
 
 
  145:Generated_Source\PSoC5/COM_Dp.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  151 0004 80B2     		uxth	r0, r0
  152 0006 10B1     		cbz	r0, .L13
  190:Generated_Source\PSoC5/COM_Dp.c **** 		{ 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 7
 
 
  191:Generated_Source\PSoC5/COM_Dp.c **** 			 COM_Dp_0_INTTYPE_REG = (uint8)mode; 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  218:Generated_Source\PSoC5/COM_Dp.c ****         return (COM_Dp_INTSTAT & COM_Dp_MASK) >> COM_Dp_SHIFT;
  180              		.loc 1 218 0
  181 0000 024B     		ldr	r3, .L18
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 8
 
 
  182 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
@@ -443,48 +443,48 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  200 0006 00000000 		.4byte	.Ldebug_abbrev0
  201 000a 04       		.byte	0x4
  202 000b 01       		.uleb128 0x1
- 203 000c B2000000 		.4byte	.LASF24
+ 203 000c 0A010000 		.4byte	.LASF24
  204 0010 01       		.byte	0x1
- 205 0011 1E000000 		.4byte	.LASF25
- 206 0015 C3010000 		.4byte	.LASF26
+ 205 0011 76000000 		.4byte	.LASF25
+ 206 0015 1E000000 		.4byte	.LASF26
  207 0019 00000000 		.4byte	.Ldebug_ranges0+0
  208 001d 00000000 		.4byte	0
  209 0021 00000000 		.4byte	.Ldebug_line0
  210 0025 02       		.uleb128 0x2
  211 0026 01       		.byte	0x1
  212 0027 06       		.byte	0x6
- 213 0028 0F020000 		.4byte	.LASF0
+ 213 0028 1B020000 		.4byte	.LASF0
  214 002c 02       		.uleb128 0x2
  215 002d 01       		.byte	0x1
  216 002e 08       		.byte	0x8
- 217 002f 44000000 		.4byte	.LASF1
+ 217 002f 9C000000 		.4byte	.LASF1
  218 0033 02       		.uleb128 0x2
  219 0034 02       		.byte	0x2
  220 0035 05       		.byte	0x5
- 221 0036 94010000 		.4byte	.LASF2
+ 221 0036 EC010000 		.4byte	.LASF2
  222 003a 02       		.uleb128 0x2
  223 003b 02       		.byte	0x2
  224 003c 07       		.byte	0x7
- 225 003d 69000000 		.4byte	.LASF3
+ 225 003d C1000000 		.4byte	.LASF3
  226 0041 02       		.uleb128 0x2
  227 0042 04       		.byte	0x4
  228 0043 05       		.byte	0x5
- 229 0044 BA010000 		.4byte	.LASF4
+ 229 0044 12020000 		.4byte	.LASF4
  230 0048 02       		.uleb128 0x2
  231 0049 04       		.byte	0x4
  232 004a 07       		.byte	0x7
- 233 004b 57000000 		.4byte	.LASF5
+ 233 004b AF000000 		.4byte	.LASF5
  234 004f 02       		.uleb128 0x2
  235 0050 08       		.byte	0x8
  236 0051 05       		.byte	0x5
- 237 0052 69010000 		.4byte	.LASF6
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 9
+ 237 0052 C1010000 		.4byte	.LASF6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 9
 
 
  238 0056 02       		.uleb128 0x2
  239 0057 08       		.byte	0x8
  240 0058 07       		.byte	0x7
- 241 0059 4D010000 		.4byte	.LASF7
+ 241 0059 A5010000 		.4byte	.LASF7
  242 005d 03       		.uleb128 0x3
  243 005e 04       		.byte	0x4
  244 005f 05       		.byte	0x5
@@ -492,31 +492,31 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  246 0064 02       		.uleb128 0x2
  247 0065 04       		.byte	0x4
  248 0066 07       		.byte	0x7
- 249 0067 40010000 		.4byte	.LASF8
+ 249 0067 98010000 		.4byte	.LASF8
  250 006b 04       		.uleb128 0x4
- 251 006c B4010000 		.4byte	.LASF9
+ 251 006c 0C020000 		.4byte	.LASF9
  252 0070 02       		.byte	0x2
  253 0071 9201     		.2byte	0x192
  254 0073 2C000000 		.4byte	0x2c
  255 0077 04       		.uleb128 0x4
- 256 0078 A2000000 		.4byte	.LASF10
+ 256 0078 FA000000 		.4byte	.LASF10
  257 007c 02       		.byte	0x2
  258 007d 9301     		.2byte	0x193
  259 007f 3A000000 		.4byte	0x3a
  260 0083 02       		.uleb128 0x2
  261 0084 04       		.byte	0x4
  262 0085 04       		.byte	0x4
- 263 0086 3E000000 		.4byte	.LASF11
+ 263 0086 96000000 		.4byte	.LASF11
  264 008a 02       		.uleb128 0x2
  265 008b 08       		.byte	0x8
  266 008c 04       		.byte	0x4
- 267 008d 8F000000 		.4byte	.LASF12
+ 267 008d E7000000 		.4byte	.LASF12
  268 0091 02       		.uleb128 0x2
  269 0092 01       		.byte	0x1
  270 0093 08       		.byte	0x8
- 271 0094 77010000 		.4byte	.LASF13
+ 271 0094 CF010000 		.4byte	.LASF13
  272 0098 04       		.uleb128 0x4
- 273 0099 52000000 		.4byte	.LASF14
+ 273 0099 AA000000 		.4byte	.LASF14
  274 009d 02       		.byte	0x2
  275 009e 3C02     		.2byte	0x23c
  276 00a0 A4000000 		.4byte	0xa4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  292 00c5 6B000000 		.4byte	0x6b
  293 00c9 00000000 		.4byte	.LLST0
  294 00cd 08       		.uleb128 0x8
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 10
 
 
  295 00ce 13000000 		.4byte	.LASF27
@@ -549,7 +549,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  300 00d9 53       		.byte	0x53
  301 00da 00       		.byte	0
  302 00db 06       		.uleb128 0x6
- 303 00dc 1B020000 		.4byte	.LASF16
+ 303 00dc 27020000 		.4byte	.LASF16
  304 00e0 01       		.byte	0x1
  305 00e1 5A       		.byte	0x5a
  306 00e2 00000000 		.4byte	.LFB1
@@ -558,14 +558,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  309 00eb 9C       		.byte	0x9c
  310 00ec 00010000 		.4byte	0x100
  311 00f0 07       		.uleb128 0x7
- 312 00f1 64010000 		.4byte	.LASF18
+ 312 00f1 BC010000 		.4byte	.LASF18
  313 00f5 01       		.byte	0x1
  314 00f6 5A       		.byte	0x5a
  315 00f7 6B000000 		.4byte	0x6b
  316 00fb 21000000 		.4byte	.LLST1
  317 00ff 00       		.byte	0
  318 0100 09       		.uleb128 0x9
- 319 0101 96000000 		.4byte	.LASF19
+ 319 0101 EE000000 		.4byte	.LASF19
  320 0105 01       		.byte	0x1
  321 0106 71       		.byte	0x71
  322 0107 6B000000 		.4byte	0x6b
@@ -574,7 +574,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  325 0113 01       		.uleb128 0x1
  326 0114 9C       		.byte	0x9c
  327 0115 09       		.uleb128 0x9
- 328 0116 7C000000 		.4byte	.LASF20
+ 328 0116 D4000000 		.4byte	.LASF20
  329 011a 01       		.byte	0x1
  330 011b 8D       		.byte	0x8d
  331 011c 6B000000 		.4byte	0x6b
@@ -583,7 +583,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  334 0128 01       		.uleb128 0x1
  335 0129 9C       		.byte	0x9c
  336 012a 06       		.uleb128 0x6
- 337 012b 7C010000 		.4byte	.LASF21
+ 337 012b D4010000 		.4byte	.LASF21
  338 012f 01       		.byte	0x1
  339 0130 BB       		.byte	0xbb
  340 0131 00000000 		.4byte	.LFB4
@@ -592,23 +592,23 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  343 013a 9C       		.byte	0x9c
  344 013b 5E010000 		.4byte	0x15e
  345 013f 07       		.uleb128 0x7
- 346 0140 A9000000 		.4byte	.LASF22
+ 346 0140 01010000 		.4byte	.LASF22
  347 0144 01       		.byte	0x1
  348 0145 BB       		.byte	0xbb
  349 0146 77000000 		.4byte	0x77
  350 014a 42000000 		.4byte	.LLST2
  351 014e 07       		.uleb128 0x7
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 11
 
 
- 352 014f 64010000 		.4byte	.LASF18
+ 352 014f BC010000 		.4byte	.LASF18
  353 0153 01       		.byte	0x1
  354 0154 BB       		.byte	0xbb
  355 0155 77000000 		.4byte	0x77
  356 0159 63000000 		.4byte	.LLST3
  357 015d 00       		.byte	0
  358 015e 09       		.uleb128 0x9
- 359 015f 9E010000 		.4byte	.LASF23
+ 359 015f F6010000 		.4byte	.LASF23
  360 0163 01       		.byte	0x1
  361 0164 D8       		.byte	0xd8
  362 0165 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  406 0024 0B       		.uleb128 0xb
  407 0025 03       		.uleb128 0x3
  408 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 12
 
 
  409 0027 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  463 005e 3B       		.uleb128 0x3b
  464 005f 0B       		.uleb128 0xb
  465 0060 49       		.uleb128 0x49
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 13
 
 
  466 0061 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  520 000f 18000000 		.4byte	.LFE0
  521 0013 0400     		.2byte	0x4
  522 0015 F3       		.byte	0xf3
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 14
 
 
  523 0016 01       		.uleb128 0x1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  577 000e 0000     		.2byte	0
  578 0010 00000000 		.4byte	.LFB0
  579 0014 18000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 15
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 15
 
 
  580 0018 00000000 		.4byte	.LFB1
@@ -888,142 +888,142 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 1
  616 0013 73746174 		.ascii	"staticBits\000"
  616      69634269 
  616      747300
- 617              	.LASF25:
- 618 001e 47656E65 		.ascii	"Generated_Source\\PSoC5\\COM_Dp.c\000"
- 618      72617465 
- 618      645F536F 
- 618      75726365 
- 618      5C50536F 
- 619              	.LASF11:
- 620 003e 666C6F61 		.ascii	"float\000"
- 620      7400
- 621              	.LASF1:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 16
+ 617              	.LASF26:
+ 618 001e 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 618      73657273 
+ 618      5C4C756B 
+ 618      61732043 
+ 618      72657574 
+ 619 004c 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 619      5F364348 
+ 619      616D705C 
+ 619      50536F43 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 16
 
 
- 622 0044 756E7369 		.ascii	"unsigned char\000"
- 622      676E6564 
- 622      20636861 
- 622      7200
- 623              	.LASF14:
- 624 0052 72656738 		.ascii	"reg8\000"
- 624      00
- 625              	.LASF5:
- 626 0057 6C6F6E67 		.ascii	"long unsigned int\000"
- 626      20756E73 
- 626      69676E65 
- 626      6420696E 
- 626      7400
- 627              	.LASF3:
- 628 0069 73686F72 		.ascii	"short unsigned int\000"
- 628      7420756E 
- 628      7369676E 
- 628      65642069 
- 628      6E7400
- 629              	.LASF20:
- 630 007c 434F4D5F 		.ascii	"COM_Dp_ReadDataReg\000"
- 630      44705F52 
- 630      65616444 
- 630      61746152 
- 630      656700
- 631              	.LASF12:
- 632 008f 646F7562 		.ascii	"double\000"
- 632      6C6500
- 633              	.LASF19:
- 634 0096 434F4D5F 		.ascii	"COM_Dp_Read\000"
- 634      44705F52 
- 634      65616400 
- 635              	.LASF10:
- 636 00a2 75696E74 		.ascii	"uint16\000"
- 636      313600
- 637              	.LASF22:
- 638 00a9 706F7369 		.ascii	"position\000"
- 638      74696F6E 
- 638      00
- 639              	.LASF24:
- 640 00b2 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 640      4320342E 
- 640      392E3320 
- 640      32303135 
- 640      30333033 
- 641 00e5 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 641      20726576 
- 641      6973696F 
- 641      6E203232 
- 641      31323230 
- 642 0118 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 642      66756E63 
- 642      74696F6E 
- 642      2D736563 
- 642      74696F6E 
- 643              	.LASF8:
- 644 0140 756E7369 		.ascii	"unsigned int\000"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 17
+ 619      20576F72 
+ 620              	.LASF25:
+ 621 0076 47656E65 		.ascii	"Generated_Source\\PSoC5\\COM_Dp.c\000"
+ 621      72617465 
+ 621      645F536F 
+ 621      75726365 
+ 621      5C50536F 
+ 622              	.LASF11:
+ 623 0096 666C6F61 		.ascii	"float\000"
+ 623      7400
+ 624              	.LASF1:
+ 625 009c 756E7369 		.ascii	"unsigned char\000"
+ 625      676E6564 
+ 625      20636861 
+ 625      7200
+ 626              	.LASF14:
+ 627 00aa 72656738 		.ascii	"reg8\000"
+ 627      00
+ 628              	.LASF5:
+ 629 00af 6C6F6E67 		.ascii	"long unsigned int\000"
+ 629      20756E73 
+ 629      69676E65 
+ 629      6420696E 
+ 629      7400
+ 630              	.LASF3:
+ 631 00c1 73686F72 		.ascii	"short unsigned int\000"
+ 631      7420756E 
+ 631      7369676E 
+ 631      65642069 
+ 631      6E7400
+ 632              	.LASF20:
+ 633 00d4 434F4D5F 		.ascii	"COM_Dp_ReadDataReg\000"
+ 633      44705F52 
+ 633      65616444 
+ 633      61746152 
+ 633      656700
+ 634              	.LASF12:
+ 635 00e7 646F7562 		.ascii	"double\000"
+ 635      6C6500
+ 636              	.LASF19:
+ 637 00ee 434F4D5F 		.ascii	"COM_Dp_Read\000"
+ 637      44705F52 
+ 637      65616400 
+ 638              	.LASF10:
+ 639 00fa 75696E74 		.ascii	"uint16\000"
+ 639      313600
+ 640              	.LASF22:
+ 641 0101 706F7369 		.ascii	"position\000"
+ 641      74696F6E 
+ 641      00
+ 642              	.LASF24:
+ 643 010a 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 643      4320342E 
+ 643      392E3320 
+ 643      32303135 
+ 643      30333033 
+ 644 013d 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 17
 
 
- 644      676E6564 
- 644      20696E74 
- 644      00
- 645              	.LASF7:
- 646 014d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 646      206C6F6E 
- 646      6720756E 
- 646      7369676E 
- 646      65642069 
- 647              	.LASF18:
- 648 0164 6D6F6465 		.ascii	"mode\000"
- 648      00
- 649              	.LASF6:
- 650 0169 6C6F6E67 		.ascii	"long long int\000"
- 650      206C6F6E 
- 650      6720696E 
- 650      7400
- 651              	.LASF13:
- 652 0177 63686172 		.ascii	"char\000"
- 652      00
- 653              	.LASF21:
- 654 017c 434F4D5F 		.ascii	"COM_Dp_SetInterruptMode\000"
- 654      44705F53 
- 654      6574496E 
- 654      74657272 
- 654      7570744D 
- 655              	.LASF2:
- 656 0194 73686F72 		.ascii	"short int\000"
- 656      7420696E 
- 656      7400
- 657              	.LASF23:
- 658 019e 434F4D5F 		.ascii	"COM_Dp_ClearInterrupt\000"
- 658      44705F43 
- 658      6C656172 
- 658      496E7465 
- 658      72727570 
- 659              	.LASF9:
- 660 01b4 75696E74 		.ascii	"uint8\000"
- 660      3800
- 661              	.LASF4:
- 662 01ba 6C6F6E67 		.ascii	"long int\000"
- 662      20696E74 
- 662      00
- 663              	.LASF26:
- 664 01c3 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 664      73657273 
- 664      5C4C756B 
- 664      61732043 
- 664      72657574 
- 665 01f2 725C576F 		.ascii	"r\\Workspace01\\Controls.cydsn\000"
- 665      726B7370 
- 665      61636530 
- 665      315C436F 
- 665      6E74726F 
+ 644      20726576 
+ 644      6973696F 
+ 644      6E203232 
+ 644      31323230 
+ 645 0170 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 645      66756E63 
+ 645      74696F6E 
+ 645      2D736563 
+ 645      74696F6E 
+ 646              	.LASF8:
+ 647 0198 756E7369 		.ascii	"unsigned int\000"
+ 647      676E6564 
+ 647      20696E74 
+ 647      00
+ 648              	.LASF7:
+ 649 01a5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 649      206C6F6E 
+ 649      6720756E 
+ 649      7369676E 
+ 649      65642069 
+ 650              	.LASF18:
+ 651 01bc 6D6F6465 		.ascii	"mode\000"
+ 651      00
+ 652              	.LASF6:
+ 653 01c1 6C6F6E67 		.ascii	"long long int\000"
+ 653      206C6F6E 
+ 653      6720696E 
+ 653      7400
+ 654              	.LASF13:
+ 655 01cf 63686172 		.ascii	"char\000"
+ 655      00
+ 656              	.LASF21:
+ 657 01d4 434F4D5F 		.ascii	"COM_Dp_SetInterruptMode\000"
+ 657      44705F53 
+ 657      6574496E 
+ 657      74657272 
+ 657      7570744D 
+ 658              	.LASF2:
+ 659 01ec 73686F72 		.ascii	"short int\000"
+ 659      7420696E 
+ 659      7400
+ 660              	.LASF23:
+ 661 01f6 434F4D5F 		.ascii	"COM_Dp_ClearInterrupt\000"
+ 661      44705F43 
+ 661      6C656172 
+ 661      496E7465 
+ 661      72727570 
+ 662              	.LASF9:
+ 663 020c 75696E74 		.ascii	"uint8\000"
+ 663      3800
+ 664              	.LASF4:
+ 665 0212 6C6F6E67 		.ascii	"long int\000"
+ 665      20696E74 
+ 665      00
  666              	.LASF0:
- 667 020f 7369676E 		.ascii	"signed char\000"
+ 667 021b 7369676E 		.ascii	"signed char\000"
  667      65642063 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccd7I0Hr.s 			page 18
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccSnc6MG.s 			page 18
 
 
  667      68617200 
  668              	.LASF16:
- 669 021b 434F4D5F 		.ascii	"COM_Dp_SetDriveMode\000"
+ 669 0227 434F4D5F 		.ascii	"COM_Dp_SetDriveMode\000"
  669      44705F53 
  669      65744472 
  669      6976654D 

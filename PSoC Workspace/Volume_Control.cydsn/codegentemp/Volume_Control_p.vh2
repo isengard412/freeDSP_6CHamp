@@ -1,6 +1,6 @@
 -- Project:   Volume_Control
--- Generated: 07/10/2016 11:01:00
--- PSoC Creator  3.3 SP2
+-- Generated: 11/16/2016 12:46:14
+-- PSoC Creator  4.0
 
 ENTITY Volume_Control IS
     PORT(
@@ -92,7 +92,11 @@ ARCHITECTURE __DEFAULT__ OF Volume_Control IS
     SIGNAL \ClockBlock.aclk_glb_ff_0__sig\ : bit;
     ATTRIBUTE lib_model OF Volume_Messung1(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF Volume_Messung1(0) : LABEL IS "P0[4]";
-    ATTRIBUTE lib_model OF Volume_Messung2(0) : LABEL IS "iocell2";
+    ATTRIBUTE lib_model OF Volume_1(0) : LABEL IS "iocell2";
+    ATTRIBUTE Location OF Volume_1(0) : LABEL IS "P0[1]";
+    ATTRIBUTE lib_model OF Volume_0(0) : LABEL IS "iocell3";
+    ATTRIBUTE Location OF Volume_0(0) : LABEL IS "P0[0]";
+    ATTRIBUTE lib_model OF Volume_Messung2(0) : LABEL IS "iocell4";
     ATTRIBUTE Location OF Volume_Messung2(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF \ADC_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF \ADC_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
@@ -828,6 +832,7 @@ BEGIN
     \ADC_Timer:TimerUDB:status_tc\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 0,
             clken_mode => 1)
         PORT MAP(
             q => \ADC_Timer:TimerUDB:status_tc\,
@@ -934,7 +939,8 @@ BEGIN
 
     \Volume_ADC:IRQ\:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "10",
+            is_nmi => 0)
         PORT MAP(
             interrupt => Net_193,
             clock => ClockBlock_BUS_CLK);
@@ -974,6 +980,7 @@ BEGIN
     Net_13:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
+            regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(

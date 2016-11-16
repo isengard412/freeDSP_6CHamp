@@ -2,7 +2,7 @@
 --	Conversion of Volume_Control.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Jul 10 11:00:59 2016
+--	Wed Nov 16 12:46:14 2016
 --
 
 USE cypress.cypress.all;
@@ -415,7 +415,8 @@ ADC_Clock:cy_clock_v1_0
 	PORT MAP(signal1=>\Volume_ADC:Net_520\,
 		signal2=>Net_192);
 \Volume_ADC:IRQ\:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10")
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_193);
 \Volume_ADC:theACLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",

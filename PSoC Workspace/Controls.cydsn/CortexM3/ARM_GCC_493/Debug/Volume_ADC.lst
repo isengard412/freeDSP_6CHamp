@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
   30:Generated_Source\PSoC5/Volume_ADC.c **** 
   31:Generated_Source\PSoC5/Volume_ADC.c **** /***************************************
   32:Generated_Source\PSoC5/Volume_ADC.c **** * Global data allocation
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 2
 
 
   33:Generated_Source\PSoC5/Volume_ADC.c **** ***************************************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
   87:Generated_Source\PSoC5/Volume_ADC.c **** * Return:
   88:Generated_Source\PSoC5/Volume_ADC.c **** *  None
   89:Generated_Source\PSoC5/Volume_ADC.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 3
 
 
   90:Generated_Source\PSoC5/Volume_ADC.c **** *******************************************************************************/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  144:Generated_Source\PSoC5/Volume_ADC.c ****     #endif /* Volume_ADC_DEFAULT_NUM_CONFIGS > 1 */
  145:Generated_Source\PSoC5/Volume_ADC.c ****     #if(Volume_ADC_DEFAULT_NUM_CONFIGS > 2)
  146:Generated_Source\PSoC5/Volume_ADC.c ****         Volume_ADC_GainCompensation(Volume_ADC_CFG3_INPUT_RANGE,
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 4
 
 
  147:Generated_Source\PSoC5/Volume_ADC.c ****                                           Volume_ADC_CFG3_IDEAL_DEC_GAIN,
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  201:Generated_Source\PSoC5/Volume_ADC.c ****     /* Disable PRES, Enable power to VCMBUF0, REFBUF0 and REFBUF1, enable PRES */
  202:Generated_Source\PSoC5/Volume_ADC.c ****     Volume_ADC_RESET_CR4_REG |= Volume_ADC_IGNORE_PRESA1;
  203:Generated_Source\PSoC5/Volume_ADC.c ****     Volume_ADC_RESET_CR5_REG |= Volume_ADC_IGNORE_PRESA2;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 5
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 5
 
 
  204:Generated_Source\PSoC5/Volume_ADC.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  258:Generated_Source\PSoC5/Volume_ADC.c ****              ((Volume_ADC_CFG4_REFERENCE != Volume_ADC_EXT_REF_ON_P03) &&
  259:Generated_Source\PSoC5/Volume_ADC.c ****              (Volume_ADC_CFG4_REFERENCE != Volume_ADC_EXT_REF_ON_P32))))
  260:Generated_Source\PSoC5/Volume_ADC.c ****         {
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 6
 
 
  261:Generated_Source\PSoC5/Volume_ADC.c ****             /* Enable the REFBUF1 */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  315:Generated_Source\PSoC5/Volume_ADC.c **** *  Volume_ADC_SelectConfiguration( ) function has been called to change
  316:Generated_Source\PSoC5/Volume_ADC.c **** *  the default setting.
  317:Generated_Source\PSoC5/Volume_ADC.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 7
 
 
  318:Generated_Source\PSoC5/Volume_ADC.c **** * Parameters:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  372:Generated_Source\PSoC5/Volume_ADC.c ****        enable PRES */
  373:Generated_Source\PSoC5/Volume_ADC.c ****     Volume_ADC_RESET_CR4_REG |= Volume_ADC_IGNORE_PRESA1;
  374:Generated_Source\PSoC5/Volume_ADC.c ****     Volume_ADC_RESET_CR5_REG |= Volume_ADC_IGNORE_PRESA2;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 8
 
 
  375:Generated_Source\PSoC5/Volume_ADC.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  429:Generated_Source\PSoC5/Volume_ADC.c **** void Volume_ADC_SetBufferGain(uint8 gain) 
  430:Generated_Source\PSoC5/Volume_ADC.c **** {
  431:Generated_Source\PSoC5/Volume_ADC.c ****     uint8 tmpReg;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 9
 
 
  432:Generated_Source\PSoC5/Volume_ADC.c ****     tmpReg = Volume_ADC_DSM_BUF1_REG & (uint8)~Volume_ADC_DSM_GAIN_MASK;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  486:Generated_Source\PSoC5/Volume_ADC.c **** *  0xFFFF -> 1.99997
  487:Generated_Source\PSoC5/Volume_ADC.c **** *  When executing the function, the old GCOR value is multiplied by
  488:Generated_Source\PSoC5/Volume_ADC.c **** *  gainAdjust and reloaded into the GCOR register.
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 10
 
 
  489:Generated_Source\PSoC5/Volume_ADC.c **** *
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  543:Generated_Source\PSoC5/Volume_ADC.c **** *  (Actual GCOR value = 0x0812, returned value = 0x8120)
  544:Generated_Source\PSoC5/Volume_ADC.c **** *
  545:Generated_Source\PSoC5/Volume_ADC.c **** * Parameters:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 11
 
 
  546:Generated_Source\PSoC5/Volume_ADC.c **** *  None
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  600:Generated_Source\PSoC5/Volume_ADC.c **** *  conversion.
  601:Generated_Source\PSoC5/Volume_ADC.c **** *
  602:Generated_Source\PSoC5/Volume_ADC.c **** * Parameters:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 12
 
 
  603:Generated_Source\PSoC5/Volume_ADC.c **** *  None
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  657:Generated_Source\PSoC5/Volume_ADC.c ****         else
  658:Generated_Source\PSoC5/Volume_ADC.c ****         {
  659:Generated_Source\PSoC5/Volume_ADC.c ****             status = Volume_ADC_DEC_SR_REG & Volume_ADC_DEC_CONV_DONE;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 13
 
 
  660:Generated_Source\PSoC5/Volume_ADC.c ****         }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  714:Generated_Source\PSoC5/Volume_ADC.c ****     {
  715:Generated_Source\PSoC5/Volume_ADC.c ****         Volume_ADC_convDone = 0u;
  716:Generated_Source\PSoC5/Volume_ADC.c ****     }
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 14
 
 
  717:Generated_Source\PSoC5/Volume_ADC.c ****     return (result);
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  771:Generated_Source\PSoC5/Volume_ADC.c ****         {   /* Dummy read of the MSB byte to unlock the coherency */
  772:Generated_Source\PSoC5/Volume_ADC.c ****             (void)Volume_ADC_DEC_SAMPH_REG;
  773:Generated_Source\PSoC5/Volume_ADC.c ****         }
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 15
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 15
 
 
  774:Generated_Source\PSoC5/Volume_ADC.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  828:Generated_Source\PSoC5/Volume_ADC.c ****             result = (result << 16u) | (CY_GET_REG16(Volume_ADC_DEC_SAMP_16B_PTR));
  829:Generated_Source\PSoC5/Volume_ADC.c ****         #endif /* CY_PSOC3 */
  830:Generated_Source\PSoC5/Volume_ADC.c ****     }
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 16
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 16
 
 
  831:Generated_Source\PSoC5/Volume_ADC.c ****     else if(coherency == Volume_ADC_DEC_SAMP_KEY_MID)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  885:Generated_Source\PSoC5/Volume_ADC.c **** * Return:
  886:Generated_Source\PSoC5/Volume_ADC.c **** *  None
  887:Generated_Source\PSoC5/Volume_ADC.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 17
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 17
 
 
  888:Generated_Source\PSoC5/Volume_ADC.c **** * Global variables:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  942:Generated_Source\PSoC5/Volume_ADC.c **** *
  943:Generated_Source\PSoC5/Volume_ADC.c **** * Summary:
  944:Generated_Source\PSoC5/Volume_ADC.c **** *  Converts the ADC counts output to mVolts as a 16-bit integer. For
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 18
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 18
 
 
  945:Generated_Source\PSoC5/Volume_ADC.c **** *  example, if the ADC measured 0.534 volts, the return value would
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  999:Generated_Source\PSoC5/Volume_ADC.c **** 
 1000:Generated_Source\PSoC5/Volume_ADC.c **** /*******************************************************************************
 1001:Generated_Source\PSoC5/Volume_ADC.c **** * Function Name: Volume_ADC_CountsTo_Volts
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 19
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 19
 
 
 1002:Generated_Source\PSoC5/Volume_ADC.c **** ********************************************************************************
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1056:Generated_Source\PSoC5/Volume_ADC.c **** 
 1057:Generated_Source\PSoC5/Volume_ADC.c ****     return( Volts );
 1058:Generated_Source\PSoC5/Volume_ADC.c **** }
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 20
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 20
 
 
 1059:Generated_Source\PSoC5/Volume_ADC.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1113:Generated_Source\PSoC5/Volume_ADC.c ****         resolution = Volume_ADC_CFG3_RESOLUTION;
 1114:Generated_Source\PSoC5/Volume_ADC.c ****         #if(Volume_ADC_CFG3_DEC_DIV != 0)
 1115:Generated_Source\PSoC5/Volume_ADC.c ****             adcCounts /= Volume_ADC_CFG3_DEC_DIV;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 21
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 21
 
 
 1116:Generated_Source\PSoC5/Volume_ADC.c ****         #endif /* Volume_ADC_CFG3_DEC_DIV */
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1170:Generated_Source\PSoC5/Volume_ADC.c ****                 coefB = Volume_ADC_DIVISOR_32;
 1171:Generated_Source\PSoC5/Volume_ADC.c ****                 break;
 1172:Generated_Source\PSoC5/Volume_ADC.c ****         #endif /* Volume_ADC__BITS_16 */    
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 22
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 22
 
 
 1173:Generated_Source\PSoC5/Volume_ADC.c ****         #if( (Volume_ADC_CFG1_RESOLUTION == Volume_ADC__BITS_17) || \
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1227:Generated_Source\PSoC5/Volume_ADC.c **** *  Initializes all registers based on customizer settings
 1228:Generated_Source\PSoC5/Volume_ADC.c **** *
 1229:Generated_Source\PSoC5/Volume_ADC.c **** * Parameters:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 23
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 23
 
 
 1230:Generated_Source\PSoC5/Volume_ADC.c **** *   void
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1284:Generated_Source\PSoC5/Volume_ADC.c ****         #if(Volume_ADC_DEFAULT_INPUT_MODE)
 1285:Generated_Source\PSoC5/Volume_ADC.c ****             #if (Volume_ADC_CFG1_INPUT_RANGE == Volume_ADC_IR_VSSA_TO_2VREF)
 1286:Generated_Source\PSoC5/Volume_ADC.c ****                 Volume_ADC_AMux_Select(1u);
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 24
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 24
 
 
 1287:Generated_Source\PSoC5/Volume_ADC.c ****             #else
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1341:Generated_Source\PSoC5/Volume_ADC.c ****             /* Set DSM_REF0_REG by disabling and enabling the PRESS cirucit */
 1342:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_SetDSMRef0Reg(Volume_ADC_CFG2_DSM_REF0);
 1343:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_DSM_REF2_REG    = Volume_ADC_CFG2_DSM_REF2;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 25
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 25
 
 
 1344:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_DSM_REF3_REG    = Volume_ADC_CFG2_DSM_REF3;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1398:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_DEC_OCORM_REG   = Volume_ADC_CFG3_DEC_OCORM;
 1399:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_DEC_OCORH_REG   = Volume_ADC_CFG3_DEC_OCORH;
 1400:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_DEC_COHER_REG   = Volume_ADC_CFG3_DEC_COHER;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 26
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 26
 
 
 1401:Generated_Source\PSoC5/Volume_ADC.c **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1455:Generated_Source\PSoC5/Volume_ADC.c ****     #endif /* Volume_ADC_DEFAULT_NUM_CONFIGS > 2 */
 1456:Generated_Source\PSoC5/Volume_ADC.c **** 
 1457:Generated_Source\PSoC5/Volume_ADC.c ****     #if(Volume_ADC_DEFAULT_NUM_CONFIGS > 3)
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 27
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 27
 
 
 1458:Generated_Source\PSoC5/Volume_ADC.c ****         if (config == 4u)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1512:Generated_Source\PSoC5/Volume_ADC.c **** 
 1513:Generated_Source\PSoC5/Volume_ADC.c ****             Volume_ADC_Ext_CP_Clk_SetDividerRegister(Volume_ADC_CFG4_CP_CLK_DIVIDER, 1u);
 1514:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 28
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 28
 
 
 1515:Generated_Source\PSoC5/Volume_ADC.c ****             /* This is only valid if there is an internal clock */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1569:Generated_Source\PSoC5/Volume_ADC.c ****         /* Stop the ADC  */
 1570:Generated_Source\PSoC5/Volume_ADC.c ****         Volume_ADC_Stop();
 1571:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 29
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 29
 
 
 1572:Generated_Source\PSoC5/Volume_ADC.c ****         /* Set the  ADC registers based on the configuration */
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
   32              		.cfi_def_cfa_offset 8
   33              		.cfi_offset 4, -8
   34              		.cfi_offset 14, -4
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 30
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 30
 
 
   35 0002 9DF80840 		ldrb	r4, [sp, #8]	@ zero_extendqisi2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
   70 002a 0078     		ldrb	r0, [r0]	@ zero_extendqisi2
   71              	.LVL4:
   72 002c 18E0     		b	.L3
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 31
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 31
 
 
   73              	.LVL5:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  103 0048 1C48     		ldr	r0, .L18+20
  104 004a 0078     		ldrb	r0, [r0]	@ zero_extendqisi2
  105              	.LVL12:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 32
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 32
 
 
  106 004c 08E0     		b	.L3
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1686:Generated_Source\PSoC5/Volume_ADC.c ****         gcorValue = (uint16)(gcorTmp / Volume_ADC_IDEAL_GAIN_CONST);
  137              		.loc 1 1686 0
  138 006a C90B     		lsrs	r1, r1, #15
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 33
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 33
 
 
  139              	.LVL21:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1704:Generated_Source\PSoC5/Volume_ADC.c ****         /* Halt CPU in debug mode if config is out of valid range */
 1705:Generated_Source\PSoC5/Volume_ADC.c ****         CYASSERT(0u != 0u);
  176              		.loc 1 1705 0 discriminator 1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 34
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 34
 
 
  177 00a0 0020     		movs	r0, #0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  211              		.cfi_def_cfa_offset 24
  212              		.cfi_offset 3, -24
  213              		.cfi_offset 4, -20
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 35
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 35
 
 
  214              		.cfi_offset 5, -16
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  253 003e F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  254              	.LVL38:
  255              	.L23:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 36
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 36
 
 
  256              		.align	2
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  302              		.loc 1 1252 0
  303 001e 0024     		movs	r4, #0
  304 0020 0133     		adds	r3, r3, #1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 37
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 37
 
 
  305 0022 1C70     		strb	r4, [r3]
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  347 0060 0133     		adds	r3, r3, #1
  348 0062 1A70     		strb	r2, [r3]
 1266:Generated_Source\PSoC5/Volume_ADC.c ****         Volume_ADC_DSM_CR14_REG    = Volume_ADC_CFG1_DSM_CR14;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 38
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 38
 
 
  349              		.loc 1 1266 0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  392 00a0 1C70     		strb	r4, [r3]
 1288:Generated_Source\PSoC5/Volume_ADC.c ****             #endif /* Volume_ADC_IR_VSSA_TO_2VREF) */
  393              		.loc 1 1288 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 39
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 39
 
 
  394 00a2 2046     		mov	r0, r4
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
   92:Generated_Source\PSoC5/Volume_ADC.c **** 
  444              		.loc 1 92 0
  445              		.cfi_startproc
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 40
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 40
 
 
  446              		@ args = 0, pretend = 0, frame = 0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  491 0036 43F01803 		orr	r3, r3, #24
  492 003a 1370     		strb	r3, [r2]
  114:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 41
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 41
 
 
  493              		.loc 1 114 0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  536 0084 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
  537 0086 06EB8303 		add	r3, r6, r3, lsl #2
  538 008a 13F8022C 		ldrb	r2, [r3, #-2]	@ zero_extendqisi2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 42
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 42
 
 
  539 008e 0B4B     		ldr	r3, .L32+20
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  588 0002 FFF7FEFF 		bl	CyEnterCriticalSection
  589              	.LVL52:
  590 0006 0646     		mov	r6, r0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 43
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 43
 
 
  591              	.LVL53:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  635 0056 03F0FD03 		and	r3, r3, #253
  636 005a 2B70     		strb	r3, [r5]
  275:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 44
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 44
 
 
  637              		.loc 1 275 0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  682              	.LVL57:
  683              	.L37:
  684 00b2 00BF     		.align	2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 45
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 45
 
 
  685              	.L36:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  733 001c FFF7FEFF 		bl	Volume_ADC_Enable
  734              	.LVL59:
  735 0020 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 46
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 46
 
 
  736              	.L43:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  784 002a 43F00203 		orr	r3, r3, #2
  785 002e 2370     		strb	r3, [r4]
  376:Generated_Source\PSoC5/Volume_ADC.c ****     Volume_ADC_DSM_REF0_REG &= (uint8)~Volume_ADC_DSM_EN_BUF_VREF_INN;
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 47
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 47
 
 
  786              		.loc 1 376 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  401:Generated_Source\PSoC5/Volume_ADC.c ****         Volume_ADC_STBY_PWRMGR_CLK_REG &= (uint8)~Volume_ADC_STBY_PWR_CLK_EN;
  831              		.loc 1 401 0
  832 008a A2F5A652 		sub	r2, r2, #5312
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 48
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 48
 
 
  833 008e 163A     		subs	r2, r2, #22
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  882              	.LFB4:
  430:Generated_Source\PSoC5/Volume_ADC.c ****     uint8 tmpReg;
  883              		.loc 1 430 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 49
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 49
 
 
  884              		.cfi_startproc
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  932 000c 1843     		orrs	r0, r0, r3
  933              	.LVL72:
  471:Generated_Source\PSoC5/Volume_ADC.c **** }
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 50
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 50
 
 
  934              		.loc 1 471 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  984              	.LVL78:
  985 0022 0446     		mov	r4, r0
  986              	.LVL79:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 51
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 51
 
 
  515:Generated_Source\PSoC5/Volume_ADC.c ****     {
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1033 006c 00000000 		.word	.LANCHOR0
  1034 0070 0C4E0040 		.word	1073761804
  1035              		.cfi_endproc
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 52
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 52
 
 
  1036              	.LFE6:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1084              		.global	Volume_ADC_StartConvert
  1085              		.thumb
  1086              		.thumb_func
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 53
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 53
 
 
  1087              		.type	Volume_ADC_StartConvert, %function
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1137              		.thumb
  1138              		.thumb_func
  1139              		.type	Volume_ADC_IsEndConversion, %function
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 54
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 54
 
 
  1140              	Volume_ADC_IsEndConversion:
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1187              		.section	.text.Volume_ADC_GetResult8,"ax",%progbits
  1188              		.align	2
  1189              		.global	Volume_ADC_GetResult8
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 55
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 55
 
 
  1190              		.thumb
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1235 002c 5A71     		strb	r2, [r3, #5]
  1236              	.L80:
  718:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 56
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 56
 
 
  1237              		.loc 1 718 0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1285              		.loc 1 768 0
  1286 0018 0A49     		ldr	r1, .L87+8
  1287 001a 0878     		ldrb	r0, [r1]	@ zero_extendqisi2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 57
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 57
 
 
  1288 001c 42EA0020 		orr	r0, r2, r0, lsl #8
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1335              		.loc 1 814 0
  1336 0000 154B     		ldr	r3, .L94
  1337 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 58
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 58
 
 
  1338 0004 03F00303 		and	r3, r3, #3
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  859:Generated_Source\PSoC5/Volume_ADC.c ****         #endif /* CY_PSOC3 */
  1384              		.loc 1 859 0
  1385 003c 074A     		ldr	r2, .L94+4
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 59
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 59
 
 
  1386 003e 1088     		ldrh	r0, [r2]
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1435              		.cfi_endproc
  1436              	.LFE14:
  1437              		.size	Volume_ADC_SetOffset, .-Volume_ADC_SetOffset
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 60
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 60
 
 
  1438              		.section	.text.Volume_ADC_SetGain,"ax",%progbits
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1487 0010 1B68     		ldr	r3, [r3]
  1488 0012 90FBF3F0 		sdiv	r0, r0, r3
  1489              	.LVL130:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 61
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 61
 
 
  997:Generated_Source\PSoC5/Volume_ADC.c **** 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1539 001e 10BD     		pop	{r4, pc}
  1540              	.L108:
  1541              		.align	2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 62
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 62
 
 
  1542              	.L107:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1590 0028 03FB00F0 		mul	r0, r3, r0
  1591              	.LVL140:
  1592 002c 90FBF2F0 		sdiv	r0, r0, r2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 63
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 63
 
 
  1593 0030 0549     		ldr	r1, .L112+8
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1642 0014 DA71     		strb	r2, [r3, #7]
  1643              	.L116:
 1567:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 64
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 64
 
 
  1644              		.loc 1 1567 0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1690 005c 0C4E0040 		.word	1073761804
  1691              		.cfi_endproc
  1692              	.LFE20:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 65
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 65
 
 
  1693              		.size	Volume_ADC_SelectConfiguration, .-Volume_ADC_SelectConfiguration
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1718              		.loc 1 1769 0
  1719 0010 0020     		movs	r0, #0
  1720 0012 FFF7FEFF 		bl	Volume_ADC_IsEndConversion
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 66
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 66
 
 
  1721              	.LVL152:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
 1796:Generated_Source\PSoC5/Volume_ADC.c **** {
  1749              		.loc 1 1796 0
  1750              		.cfi_startproc
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 67
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 67
 
 
  1751              		@ args = 0, pretend = 0, frame = 0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1794              	Volume_ADC_Read32:
  1795              	.LFB25:
 1808:Generated_Source\PSoC5/Volume_ADC.c **** 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 68
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 68
 
 
 1809:Generated_Source\PSoC5/Volume_ADC.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1821              		.loc 1 1837 0
  1822 001c FFF7FEFF 		bl	Volume_ADC_StopConvert
  1823              	.LVL167:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 69
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 69
 
 
 1838:Generated_Source\PSoC5/Volume_ADC.c ****     
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1875              		.file 4 "Generated_Source\\PSoC5\\CyLib.h"
  1876              		.file 5 "Generated_Source\\PSoC5\\Volume_ADC_AMux.h"
  1877              		.file 6 "Generated_Source\\PSoC5\\Volume_ADC_Ext_CP_Clk.h"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 70
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 70
 
 
  1878              		.file 7 "Generated_Source\\PSoC5\\Volume_ADC_theACLK.h"
@@ -4149,45 +4149,45 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1883 0006 00000000 		.4byte	.Ldebug_abbrev0
  1884 000a 04       		.byte	0x4
  1885 000b 01       		.uleb128 0x1
- 1886 000c EB050000 		.4byte	.LASF98
+ 1886 000c F7050000 		.4byte	.LASF98
  1887 0010 01       		.byte	0x1
  1888 0011 00000000 		.4byte	.LASF99
- 1889 0015 7F050000 		.4byte	.LASF100
+ 1889 0015 FB000000 		.4byte	.LASF100
  1890 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1891 001d 00000000 		.4byte	0
  1892 0021 00000000 		.4byte	.Ldebug_line0
  1893 0025 02       		.uleb128 0x2
  1894 0026 04       		.byte	0x4
  1895 0027 04       		.byte	0x4
- 1896 0028 9C030000 		.4byte	.LASF0
+ 1896 0028 E3030000 		.4byte	.LASF0
  1897 002c 02       		.uleb128 0x2
  1898 002d 01       		.byte	0x1
  1899 002e 06       		.byte	0x6
- 1900 002f 00010000 		.4byte	.LASF1
+ 1900 002f EF000000 		.4byte	.LASF1
  1901 0033 02       		.uleb128 0x2
  1902 0034 01       		.byte	0x1
  1903 0035 08       		.byte	0x8
- 1904 0036 14040000 		.4byte	.LASF2
+ 1904 0036 5B040000 		.4byte	.LASF2
  1905 003a 02       		.uleb128 0x2
  1906 003b 02       		.byte	0x2
  1907 003c 05       		.byte	0x5
- 1908 003d 34040000 		.4byte	.LASF3
+ 1908 003d 7B040000 		.4byte	.LASF3
  1909 0041 02       		.uleb128 0x2
  1910 0042 02       		.byte	0x2
  1911 0043 07       		.byte	0x7
- 1912 0044 42020000 		.4byte	.LASF4
+ 1912 0044 89020000 		.4byte	.LASF4
  1913 0048 02       		.uleb128 0x2
  1914 0049 04       		.byte	0x4
  1915 004a 05       		.byte	0x5
- 1916 004b 2D010000 		.4byte	.LASF5
+ 1916 004b 74010000 		.4byte	.LASF5
  1917 004f 02       		.uleb128 0x2
  1918 0050 04       		.byte	0x4
  1919 0051 07       		.byte	0x7
- 1920 0052 F6010000 		.4byte	.LASF6
+ 1920 0052 3D020000 		.4byte	.LASF6
  1921 0056 02       		.uleb128 0x2
  1922 0057 08       		.byte	0x8
  1923 0058 05       		.byte	0x5
- 1924 0059 F2000000 		.4byte	.LASF7
+ 1924 0059 E1000000 		.4byte	.LASF7
  1925 005d 02       		.uleb128 0x2
  1926 005e 08       		.byte	0x8
  1927 005f 07       		.byte	0x7
@@ -4198,13 +4198,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1932 0067 696E7400 		.ascii	"int\000"
  1933 006b 02       		.uleb128 0x2
  1934 006c 04       		.byte	0x4
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 71
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 71
 
 
  1935 006d 07       		.byte	0x7
- 1936 006e E2010000 		.4byte	.LASF9
+ 1936 006e 29020000 		.4byte	.LASF9
  1937 0072 04       		.uleb128 0x4
- 1938 0073 66010000 		.4byte	.LASF10
+ 1938 0073 AD010000 		.4byte	.LASF10
  1939 0077 02       		.byte	0x2
  1940 0078 9201     		.2byte	0x192
  1941 007a 33000000 		.4byte	0x33
@@ -4214,64 +4214,64 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  1945 0084 9301     		.2byte	0x193
  1946 0086 41000000 		.4byte	0x41
  1947 008a 04       		.uleb128 0x4
- 1948 008b AE010000 		.4byte	.LASF12
+ 1948 008b F5010000 		.4byte	.LASF12
  1949 008f 02       		.byte	0x2
  1950 0090 9401     		.2byte	0x194
  1951 0092 4F000000 		.4byte	0x4f
  1952 0096 04       		.uleb128 0x4
- 1953 0097 55020000 		.4byte	.LASF13
+ 1953 0097 9C020000 		.4byte	.LASF13
  1954 009b 02       		.byte	0x2
  1955 009c 9501     		.2byte	0x195
  1956 009e 2C000000 		.4byte	0x2c
  1957 00a2 04       		.uleb128 0x4
- 1958 00a3 AF060000 		.4byte	.LASF14
+ 1958 00a3 BB060000 		.4byte	.LASF14
  1959 00a7 02       		.byte	0x2
  1960 00a8 9601     		.2byte	0x196
  1961 00aa 3A000000 		.4byte	0x3a
  1962 00ae 04       		.uleb128 0x4
- 1963 00af 0C010000 		.4byte	.LASF15
+ 1963 00af 53010000 		.4byte	.LASF15
  1964 00b3 02       		.byte	0x2
  1965 00b4 9701     		.2byte	0x197
  1966 00b6 48000000 		.4byte	0x48
  1967 00ba 04       		.uleb128 0x4
- 1968 00bb E1020000 		.4byte	.LASF16
+ 1968 00bb 28030000 		.4byte	.LASF16
  1969 00bf 02       		.byte	0x2
  1970 00c0 9801     		.2byte	0x198
  1971 00c2 25000000 		.4byte	0x25
  1972 00c6 02       		.uleb128 0x2
  1973 00c7 08       		.byte	0x8
  1974 00c8 04       		.byte	0x4
- 1975 00c9 76010000 		.4byte	.LASF17
+ 1975 00c9 BD010000 		.4byte	.LASF17
  1976 00cd 02       		.uleb128 0x2
  1977 00ce 01       		.byte	0x1
  1978 00cf 08       		.byte	0x8
- 1979 00d0 E7040000 		.4byte	.LASF18
+ 1979 00d0 2E050000 		.4byte	.LASF18
  1980 00d4 04       		.uleb128 0x4
- 1981 00d5 CA030000 		.4byte	.LASF19
+ 1981 00d5 11040000 		.4byte	.LASF19
  1982 00d9 02       		.byte	0x2
  1983 00da 3C02     		.2byte	0x23c
  1984 00dc E0000000 		.4byte	0xe0
  1985 00e0 05       		.uleb128 0x5
  1986 00e1 72000000 		.4byte	0x72
  1987 00e5 04       		.uleb128 0x4
- 1988 00e6 60010000 		.4byte	.LASF20
+ 1988 00e6 A7010000 		.4byte	.LASF20
  1989 00ea 02       		.byte	0x2
  1990 00eb 3D02     		.2byte	0x23d
  1991 00ed F1000000 		.4byte	0xf1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 72
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 72
 
 
  1992 00f1 05       		.uleb128 0x5
  1993 00f2 7E000000 		.4byte	0x7e
  1994 00f6 04       		.uleb128 0x4
- 1995 00f7 A5020000 		.4byte	.LASF21
+ 1995 00f7 EC020000 		.4byte	.LASF21
  1996 00fb 02       		.byte	0x2
  1997 00fc 3E02     		.2byte	0x23e
  1998 00fe 02010000 		.4byte	0x102
  1999 0102 05       		.uleb128 0x5
  2000 0103 8A000000 		.4byte	0x8a
  2001 0107 04       		.uleb128 0x4
- 2002 0108 F3040000 		.4byte	.LASF22
+ 2002 0108 3A050000 		.4byte	.LASF22
  2003 010c 02       		.byte	0x2
  2004 010d 4E02     		.2byte	0x24e
  2005 010f 13010000 		.4byte	0x113
@@ -4282,7 +4282,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2010 011a 02       		.uleb128 0x2
  2011 011b 04       		.byte	0x4
  2012 011c 07       		.byte	0x7
- 2013 011d E9020000 		.4byte	.LASF23
+ 2013 011d 30030000 		.4byte	.LASF23
  2014 0121 08       		.uleb128 0x8
  2015 0122 04       		.byte	0x4
  2016 0123 03       		.byte	0x3
@@ -4295,14 +4295,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2023 0130 7E000000 		.4byte	0x7e
  2024 0134 00       		.byte	0
  2025 0135 09       		.uleb128 0x9
- 2026 0136 07050000 		.4byte	.LASF25
+ 2026 0136 4E050000 		.4byte	.LASF25
  2027 013a 03       		.byte	0x3
  2028 013b 32       		.byte	0x32
  2029 013c 72000000 		.4byte	0x72
  2030 0140 02       		.byte	0x2
  2031 0141 00       		.byte	0
  2032 0142 0A       		.uleb128 0xa
- 2033 0143 15030000 		.4byte	.LASF26
+ 2033 0143 5C030000 		.4byte	.LASF26
  2034 0147 03       		.byte	0x3
  2035 0148 33       		.byte	0x33
  2036 0149 21010000 		.4byte	0x121
@@ -4318,56 +4318,56 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2046 0163 0C       		.uleb128 0xc
  2047 0164 7A000000 		.4byte	.LASF27
  2048 0168 01       		.byte	0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 73
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 73
 
 
  2049 0169 5106     		.2byte	0x651
  2050 016b 72000000 		.4byte	0x72
  2051 016f 00000000 		.4byte	.LLST0
  2052 0173 0C       		.uleb128 0xc
- 2053 0174 CF030000 		.4byte	.LASF28
+ 2053 0174 16040000 		.4byte	.LASF28
  2054 0178 01       		.byte	0x1
  2055 0179 5106     		.2byte	0x651
  2056 017b 7E000000 		.4byte	0x7e
  2057 017f 3A000000 		.4byte	.LLST1
  2058 0183 0C       		.uleb128 0xc
- 2059 0184 E2000000 		.4byte	.LASF29
+ 2059 0184 D1000000 		.4byte	.LASF29
  2060 0188 01       		.byte	0x1
  2061 0189 5106     		.2byte	0x651
  2062 018b 7E000000 		.4byte	0x7e
  2063 018f 74000000 		.4byte	.LLST2
  2064 0193 0C       		.uleb128 0xc
- 2065 0194 78040000 		.4byte	.LASF30
+ 2065 0194 BF040000 		.4byte	.LASF30
  2066 0198 01       		.byte	0x1
  2067 0199 5206     		.2byte	0x652
  2068 019b 72000000 		.4byte	0x72
  2069 019f AE000000 		.4byte	.LLST3
  2070 01a3 0C       		.uleb128 0xc
- 2071 01a4 00050000 		.4byte	.LASF31
+ 2071 01a4 47050000 		.4byte	.LASF31
  2072 01a8 01       		.byte	0x1
  2073 01a9 5206     		.2byte	0x652
  2074 01ab 72000000 		.4byte	0x72
  2075 01af 01010000 		.4byte	.LLST4
  2076 01b3 0D       		.uleb128 0xd
- 2077 01b4 9F020000 		.4byte	.LASF32
+ 2077 01b4 E6020000 		.4byte	.LASF32
  2078 01b8 01       		.byte	0x1
  2079 01b9 5406     		.2byte	0x654
  2080 01bb 96000000 		.4byte	0x96
  2081 01bf 2D010000 		.4byte	.LLST5
  2082 01c3 0D       		.uleb128 0xd
- 2083 01c4 DC030000 		.4byte	.LASF33
+ 2083 01c4 23040000 		.4byte	.LASF33
  2084 01c8 01       		.byte	0x1
  2085 01c9 5506     		.2byte	0x655
  2086 01cb AE000000 		.4byte	0xae
  2087 01cf 98010000 		.4byte	.LLST6
  2088 01d3 0D       		.uleb128 0xd
- 2089 01d4 5A020000 		.4byte	.LASF34
+ 2089 01d4 A1020000 		.4byte	.LASF34
  2090 01d8 01       		.byte	0x1
  2091 01d9 5606     		.2byte	0x656
  2092 01db 7E000000 		.4byte	0x7e
  2093 01df AB010000 		.4byte	.LLST7
  2094 01e3 0D       		.uleb128 0xd
- 2095 01e4 3E040000 		.4byte	.LASF35
+ 2095 01e4 85040000 		.4byte	.LASF35
  2096 01e8 01       		.byte	0x1
  2097 01e9 5706     		.2byte	0x657
  2098 01eb 8A000000 		.4byte	0x8a
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2103 01fc 0F       		.uleb128 0xf
  2104 01fd 01       		.uleb128 0x1
  2105 01fe 50       		.byte	0x50
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 74
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 74
 
 
  2106 01ff 01       		.uleb128 0x1
@@ -4386,7 +4386,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2108 0201 00       		.byte	0
  2109 0202 00       		.byte	0
  2110 0203 0B       		.uleb128 0xb
- 2111 0204 CB050000 		.4byte	.LASF37
+ 2111 0204 C6050000 		.4byte	.LASF37
  2112 0208 01       		.byte	0x1
  2113 0209 BC06     		.2byte	0x6bc
  2114 020b 00000000 		.4byte	.LFB22
@@ -4395,13 +4395,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2117 0214 9C       		.byte	0x9c
  2118 0215 66020000 		.4byte	0x266
  2119 0219 0C       		.uleb128 0xc
- 2120 021a C4010000 		.4byte	.LASF38
+ 2120 021a 0B020000 		.4byte	.LASF38
  2121 021e 01       		.byte	0x1
  2122 021f BC06     		.2byte	0x6bc
  2123 0221 72000000 		.4byte	0x72
  2124 0225 E7010000 		.4byte	.LLST9
  2125 0229 0D       		.uleb128 0xd
- 2126 022a D1000000 		.4byte	.LASF39
+ 2126 022a DF050000 		.4byte	.LASF39
  2127 022e 01       		.byte	0x1
  2128 022f BE06     		.2byte	0x6be
  2129 0231 72000000 		.4byte	0x72
@@ -4438,12 +4438,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2160 0272 E0000000 		.4byte	.LFE19-.LFB19
  2161 0276 01       		.uleb128 0x1
  2162 0277 9C       		.byte	0x9c
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 75
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 75
 
 
  2163 0278 F7020000 		.4byte	0x2f7
  2164 027c 0C       		.uleb128 0xc
- 2165 027d 00050000 		.4byte	.LASF31
+ 2165 027d 47050000 		.4byte	.LASF31
  2166 0281 01       		.byte	0x1
  2167 0282 DA04     		.2byte	0x4da
  2168 0284 72000000 		.4byte	0x72
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2217 02df 00       		.sleb128 0
  2218 02e0 0F       		.uleb128 0xf
  2219 02e1 01       		.uleb128 0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 76
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 76
 
 
  2220 02e2 50       		.byte	0x50
@@ -4517,7 +4517,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2233 02f5 00       		.byte	0
  2234 02f6 00       		.byte	0
  2235 02f7 12       		.uleb128 0x12
- 2236 02f8 05030000 		.4byte	.LASF41
+ 2236 02f8 4C030000 		.4byte	.LASF41
  2237 02fc 01       		.byte	0x1
  2238 02fd 5B       		.byte	0x5b
  2239 02fe 00000000 		.4byte	.LFB0
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2274 0345 01       		.uleb128 0x1
  2275 0346 50       		.byte	0x50
  2276 0347 01       		.uleb128 0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 77
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 77
 
 
  2277 0348 4D       		.byte	0x4d
@@ -4603,7 +4603,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2316 037d 66020000 		.4byte	0x266
  2317 0381 00       		.byte	0
  2318 0382 12       		.uleb128 0x12
- 2319 0383 30020000 		.4byte	.LASF42
+ 2319 0383 77020000 		.4byte	.LASF42
  2320 0387 01       		.byte	0x1
  2321 0388 B8       		.byte	0xb8
  2322 0389 00000000 		.4byte	.LFB1
@@ -4612,13 +4612,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2325 0392 9C       		.byte	0x9c
  2326 0393 DE030000 		.4byte	0x3de
  2327 0397 13       		.uleb128 0x13
- 2328 0398 00050000 		.4byte	.LASF31
+ 2328 0398 47050000 		.4byte	.LASF31
  2329 039c 01       		.byte	0x1
  2330 039d BA       		.byte	0xba
  2331 039e 72000000 		.4byte	0x72
  2332 03a2 14       		.uleb128 0x14
- 2333 03a3 D1000000 		.4byte	.LASF39
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 78
+ 2333 03a3 DF050000 		.4byte	.LASF39
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 78
 
 
  2334 03a7 01       		.byte	0x1
@@ -4650,7 +4650,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2360 03dc 00       		.byte	0
  2361 03dd 00       		.byte	0
  2362 03de 15       		.uleb128 0x15
- 2363 03df 1F020000 		.4byte	.LASF43
+ 2363 03df 66020000 		.4byte	.LASF43
  2364 03e3 01       		.byte	0x1
  2365 03e4 4901     		.2byte	0x149
  2366 03e6 00000000 		.4byte	.LFB2
@@ -4666,7 +4666,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2376 0402 82030000 		.4byte	0x382
  2377 0406 00       		.byte	0
  2378 0407 15       		.uleb128 0x15
- 2379 0408 D2010000 		.4byte	.LASF44
+ 2379 0408 19020000 		.4byte	.LASF44
  2380 040c 01       		.byte	0x1
  2381 040d 6A01     		.2byte	0x16a
  2382 040f 00000000 		.4byte	.LFB3
@@ -4675,10 +4675,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2385 0418 9C       		.byte	0x9c
  2386 0419 5A040000 		.4byte	0x45a
  2387 041d 0D       		.uleb128 0xd
- 2388 041e D1000000 		.4byte	.LASF39
+ 2388 041e DF050000 		.4byte	.LASF39
  2389 0422 01       		.byte	0x1
  2390 0423 6C01     		.2byte	0x16c
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 79
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 79
 
 
  2391 0425 72000000 		.4byte	0x72
@@ -4708,7 +4708,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2415 0458 00       		.byte	0
  2416 0459 00       		.byte	0
  2417 045a 15       		.uleb128 0x15
- 2418 045b 8F010000 		.4byte	.LASF45
+ 2418 045b D6010000 		.4byte	.LASF45
  2419 045f 01       		.byte	0x1
  2420 0460 AD01     		.2byte	0x1ad
  2421 0462 00000000 		.4byte	.LFB4
@@ -4717,20 +4717,20 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2424 046b 9C       		.byte	0x9c
  2425 046c 91040000 		.4byte	0x491
  2426 0470 0C       		.uleb128 0xc
- 2427 0471 5A030000 		.4byte	.LASF46
+ 2427 0471 A1030000 		.4byte	.LASF46
  2428 0475 01       		.byte	0x1
  2429 0476 AD01     		.2byte	0x1ad
  2430 0478 72000000 		.4byte	0x72
  2431 047c 6D020000 		.4byte	.LLST14
  2432 0480 0D       		.uleb128 0xd
- 2433 0481 E5060000 		.4byte	.LASF47
+ 2433 0481 F1060000 		.4byte	.LASF47
  2434 0485 01       		.byte	0x1
  2435 0486 AF01     		.2byte	0x1af
  2436 0488 72000000 		.4byte	0x72
  2437 048c 8E020000 		.4byte	.LLST15
  2438 0490 00       		.byte	0
  2439 0491 15       		.uleb128 0x15
- 2440 0492 CF040000 		.4byte	.LASF48
+ 2440 0492 16050000 		.4byte	.LASF48
  2441 0496 01       		.byte	0x1
  2442 0497 D101     		.2byte	0x1d1
  2443 0499 00000000 		.4byte	.LFB5
@@ -4738,24 +4738,24 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2445 04a1 01       		.uleb128 0x1
  2446 04a2 9C       		.byte	0x9c
  2447 04a3 C8040000 		.4byte	0x4c8
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 80
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 80
 
 
  2448 04a7 0C       		.uleb128 0xc
- 2449 04a8 3F030000 		.4byte	.LASF49
+ 2449 04a8 86030000 		.4byte	.LASF49
  2450 04ac 01       		.byte	0x1
  2451 04ad D101     		.2byte	0x1d1
  2452 04af 72000000 		.4byte	0x72
  2453 04b3 AC020000 		.4byte	.LLST16
  2454 04b7 0D       		.uleb128 0xd
- 2455 04b8 E5060000 		.4byte	.LASF47
+ 2455 04b8 F1060000 		.4byte	.LASF47
  2456 04bc 01       		.byte	0x1
  2457 04bd D301     		.2byte	0x1d3
  2458 04bf 72000000 		.4byte	0x72
  2459 04c3 CD020000 		.4byte	.LLST17
  2460 04c7 00       		.byte	0
  2461 04c8 16       		.uleb128 0x16
- 2462 04c9 0C050000 		.4byte	.LASF53
+ 2462 04c9 53050000 		.4byte	.LASF53
  2463 04cd 01       		.byte	0x1
  2464 04ce F901     		.2byte	0x1f9
  2465 04d0 72000000 		.4byte	0x72
@@ -4765,32 +4765,32 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2469 04dd 9C       		.byte	0x9c
  2470 04de 23050000 		.4byte	0x523
  2471 04e2 0C       		.uleb128 0xc
- 2472 04e3 90060000 		.4byte	.LASF50
+ 2472 04e3 9C060000 		.4byte	.LASF50
  2473 04e7 01       		.byte	0x1
  2474 04e8 F901     		.2byte	0x1f9
  2475 04ea BA000000 		.4byte	0xba
  2476 04ee EB020000 		.4byte	.LLST18
  2477 04f2 0D       		.uleb128 0xd
- 2478 04f3 E5060000 		.4byte	.LASF47
+ 2478 04f3 F1060000 		.4byte	.LASF47
  2479 04f7 01       		.byte	0x1
  2480 04f8 FB01     		.2byte	0x1fb
  2481 04fa 7E000000 		.4byte	0x7e
  2482 04fe 19030000 		.4byte	.LLST19
  2483 0502 0D       		.uleb128 0xd
- 2484 0503 E4050000 		.4byte	.LASF51
+ 2484 0503 F0050000 		.4byte	.LASF51
  2485 0507 01       		.byte	0x1
  2486 0508 FC01     		.2byte	0x1fc
  2487 050a 72000000 		.4byte	0x72
  2488 050e 51030000 		.4byte	.LLST20
  2489 0512 0D       		.uleb128 0xd
- 2490 0513 27050000 		.4byte	.LASF52
+ 2490 0513 6E050000 		.4byte	.LASF52
  2491 0517 01       		.byte	0x1
  2492 0518 FD01     		.2byte	0x1fd
  2493 051a BA000000 		.4byte	0xba
  2494 051e 70030000 		.4byte	.LLST21
  2495 0522 00       		.byte	0
  2496 0523 17       		.uleb128 0x17
- 2497 0524 9B060000 		.4byte	.LASF54
+ 2497 0524 A7060000 		.4byte	.LASF54
  2498 0528 01       		.byte	0x1
  2499 0529 2802     		.2byte	0x228
  2500 052b 7E000000 		.4byte	0x7e
@@ -4798,25 +4798,25 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2502 0533 24000000 		.4byte	.LFE7-.LFB7
  2503 0537 01       		.uleb128 0x1
  2504 0538 9C       		.byte	0x9c
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 81
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 81
 
 
  2505 0539 5E050000 		.4byte	0x55e
  2506 053d 0D       		.uleb128 0xd
- 2507 053e EC040000 		.4byte	.LASF55
+ 2507 053e 33050000 		.4byte	.LASF55
  2508 0542 01       		.byte	0x1
  2509 0543 2A02     		.2byte	0x22a
  2510 0545 72000000 		.4byte	0x72
  2511 0549 AF030000 		.4byte	.LLST22
  2512 054d 0D       		.uleb128 0xd
- 2513 054e 5A020000 		.4byte	.LASF34
+ 2513 054e A1020000 		.4byte	.LASF34
  2514 0552 01       		.byte	0x1
  2515 0553 2B02     		.2byte	0x22b
  2516 0555 7E000000 		.4byte	0x7e
  2517 0559 C2030000 		.4byte	.LLST23
  2518 055d 00       		.byte	0
  2519 055e 18       		.uleb128 0x18
- 2520 055f 46040000 		.4byte	.LASF56
+ 2520 055f 8D040000 		.4byte	.LASF56
  2521 0563 01       		.byte	0x1
  2522 0564 4A02     		.2byte	0x24a
  2523 0566 00000000 		.4byte	.LFB8
@@ -4824,7 +4824,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2525 056e 01       		.uleb128 0x1
  2526 056f 9C       		.byte	0x9c
  2527 0570 18       		.uleb128 0x18
- 2528 0571 85030000 		.4byte	.LASF57
+ 2528 0571 CC030000 		.4byte	.LASF57
  2529 0575 01       		.byte	0x1
  2530 0576 6102     		.2byte	0x261
  2531 0578 00000000 		.4byte	.LFB9
@@ -4832,7 +4832,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2533 0580 01       		.uleb128 0x1
  2534 0581 9C       		.byte	0x9c
  2535 0582 17       		.uleb128 0x17
- 2536 0583 CA060000 		.4byte	.LASF58
+ 2536 0583 D6060000 		.4byte	.LASF58
  2537 0587 01       		.byte	0x1
  2538 0588 8402     		.2byte	0x284
  2539 058a 72000000 		.4byte	0x72
@@ -4842,13 +4842,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2543 0597 9C       		.byte	0x9c
  2544 0598 BD050000 		.4byte	0x5bd
  2545 059c 0C       		.uleb128 0xc
- 2546 059d CA010000 		.4byte	.LASF59
+ 2546 059d 11020000 		.4byte	.LASF59
  2547 05a1 01       		.byte	0x1
  2548 05a2 8402     		.2byte	0x284
  2549 05a4 72000000 		.4byte	0x72
  2550 05a8 E0030000 		.4byte	.LLST24
  2551 05ac 0D       		.uleb128 0xd
- 2552 05ad E4050000 		.4byte	.LASF51
+ 2552 05ad F0050000 		.4byte	.LASF51
  2553 05b1 01       		.byte	0x1
  2554 05b2 8602     		.2byte	0x286
  2555 05b4 72000000 		.4byte	0x72
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2559 05be 41000000 		.4byte	.LASF60
  2560 05c2 01       		.byte	0x1
  2561 05c3 B302     		.2byte	0x2b3
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 82
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 82
 
 
  2562 05c5 96000000 		.4byte	0x96
@@ -4868,21 +4868,21 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2566 05d2 9C       		.byte	0x9c
  2567 05d3 F6050000 		.4byte	0x5f6
  2568 05d7 19       		.uleb128 0x19
- 2569 05d8 EC060000 		.4byte	.LASF61
+ 2569 05d8 F8060000 		.4byte	.LASF61
  2570 05dc 01       		.byte	0x1
  2571 05dd B502     		.2byte	0x2b5
  2572 05df 96000000 		.4byte	0x96
  2573 05e3 01       		.uleb128 0x1
  2574 05e4 50       		.byte	0x50
  2575 05e5 0D       		.uleb128 0xd
- 2576 05e6 3F030000 		.4byte	.LASF49
+ 2576 05e6 86030000 		.4byte	.LASF49
  2577 05ea 01       		.byte	0x1
  2578 05eb B602     		.2byte	0x2b6
  2579 05ed 72000000 		.4byte	0x72
  2580 05f1 1F040000 		.4byte	.LLST26
  2581 05f5 00       		.byte	0
  2582 05f6 17       		.uleb128 0x17
- 2583 05f7 AB020000 		.4byte	.LASF62
+ 2583 05f7 F2020000 		.4byte	.LASF62
  2584 05fb 01       		.byte	0x1
  2585 05fc E902     		.2byte	0x2e9
  2586 05fe A2000000 		.4byte	0xa2
@@ -4892,20 +4892,20 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2590 060b 9C       		.byte	0x9c
  2591 060c 31060000 		.4byte	0x631
  2592 0610 0D       		.uleb128 0xd
- 2593 0611 EC060000 		.4byte	.LASF61
+ 2593 0611 F8060000 		.4byte	.LASF61
  2594 0615 01       		.byte	0x1
  2595 0616 EB02     		.2byte	0x2eb
  2596 0618 7E000000 		.4byte	0x7e
  2597 061c 3D040000 		.4byte	.LLST27
  2598 0620 0D       		.uleb128 0xd
- 2599 0621 3F030000 		.4byte	.LASF49
+ 2599 0621 86030000 		.4byte	.LASF49
  2600 0625 01       		.byte	0x1
  2601 0626 EC02     		.2byte	0x2ec
  2602 0628 72000000 		.4byte	0x72
  2603 062c 66040000 		.4byte	.LLST28
  2604 0630 00       		.byte	0
  2605 0631 17       		.uleb128 0x17
- 2606 0632 83040000 		.4byte	.LASF63
+ 2606 0632 CA040000 		.4byte	.LASF63
  2607 0636 01       		.byte	0x1
  2608 0637 2503     		.2byte	0x325
  2609 0639 AE000000 		.4byte	0xae
@@ -4915,23 +4915,23 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2613 0646 9C       		.byte	0x9c
  2614 0647 6C060000 		.4byte	0x66c
  2615 064b 0D       		.uleb128 0xd
- 2616 064c EC060000 		.4byte	.LASF61
+ 2616 064c F8060000 		.4byte	.LASF61
  2617 0650 01       		.byte	0x1
  2618 0651 2703     		.2byte	0x327
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 83
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 83
 
 
  2619 0653 8A000000 		.4byte	0x8a
  2620 0657 84040000 		.4byte	.LLST29
  2621 065b 0D       		.uleb128 0xd
- 2622 065c 3F030000 		.4byte	.LASF49
+ 2622 065c 86030000 		.4byte	.LASF49
  2623 0660 01       		.byte	0x1
  2624 0661 2803     		.2byte	0x328
  2625 0663 72000000 		.4byte	0x72
  2626 0667 E5040000 		.4byte	.LLST30
  2627 066b 00       		.byte	0
  2628 066c 15       		.uleb128 0x15
- 2629 066d B5060000 		.4byte	.LASF64
+ 2629 066d C1060000 		.4byte	.LASF64
  2630 0671 01       		.byte	0x1
  2631 0672 8203     		.2byte	0x382
  2632 0674 00000000 		.4byte	.LFB14
@@ -4940,7 +4940,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2635 067d 9C       		.byte	0x9c
  2636 067e 91060000 		.4byte	0x691
  2637 0682 1A       		.uleb128 0x1a
- 2638 0683 43050000 		.4byte	.LASF65
+ 2638 0683 8A050000 		.4byte	.LASF65
  2639 0687 01       		.byte	0x1
  2640 0688 8203     		.2byte	0x382
  2641 068a AE000000 		.4byte	0xae
@@ -4948,7 +4948,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2643 068f 50       		.byte	0x50
  2644 0690 00       		.byte	0
  2645 0691 15       		.uleb128 0x15
- 2646 0692 30050000 		.4byte	.LASF66
+ 2646 0692 77050000 		.4byte	.LASF66
  2647 0696 01       		.byte	0x1
  2648 0697 A503     		.2byte	0x3a5
  2649 0699 00000000 		.4byte	.LFB15
@@ -4975,16 +4975,16 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2670 06cb 9C       		.byte	0x9c
  2671 06cc EF060000 		.4byte	0x6ef
  2672 06d0 0C       		.uleb128 0xc
- 2673 06d1 75050000 		.4byte	.LASF69
+ 2673 06d1 BC050000 		.4byte	.LASF69
  2674 06d5 01       		.byte	0x1
  2675 06d6 C003     		.2byte	0x3c0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 84
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 84
 
 
  2676 06d8 AE000000 		.4byte	0xae
  2677 06dc 0E050000 		.4byte	.LLST31
  2678 06e0 19       		.uleb128 0x19
- 2679 06e1 75020000 		.4byte	.LASF70
+ 2679 06e1 BC020000 		.4byte	.LASF70
  2680 06e5 01       		.byte	0x1
  2681 06e6 C303     		.2byte	0x3c3
  2682 06e8 A2000000 		.4byte	0xa2
@@ -4992,7 +4992,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2684 06ed 50       		.byte	0x50
  2685 06ee 00       		.byte	0
  2686 06ef 16       		.uleb128 0x16
- 2687 06f0 46010000 		.4byte	.LASF71
+ 2687 06f0 8D010000 		.4byte	.LASF71
  2688 06f4 01       		.byte	0x1
  2689 06f5 FD03     		.2byte	0x3fd
  2690 06f7 BA000000 		.4byte	0xba
@@ -5002,13 +5002,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2694 0704 9C       		.byte	0x9c
  2695 0705 28070000 		.4byte	0x728
  2696 0709 0C       		.uleb128 0xc
- 2697 070a 75050000 		.4byte	.LASF69
+ 2697 070a BC050000 		.4byte	.LASF69
  2698 070e 01       		.byte	0x1
  2699 070f FD03     		.2byte	0x3fd
  2700 0711 AE000000 		.4byte	0xae
  2701 0715 2C050000 		.4byte	.LLST32
  2702 0719 19       		.uleb128 0x19
- 2703 071a A8010000 		.4byte	.LASF72
+ 2703 071a EF010000 		.4byte	.LASF72
  2704 071e 01       		.byte	0x1
  2705 071f 0004     		.2byte	0x400
  2706 0721 BA000000 		.4byte	0xba
@@ -5016,7 +5016,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2708 0726 50       		.byte	0x50
  2709 0727 00       		.byte	0
  2710 0728 17       		.uleb128 0x17
- 2711 0729 12010000 		.4byte	.LASF73
+ 2711 0729 59010000 		.4byte	.LASF73
  2712 072d 01       		.byte	0x1
  2713 072e 3F04     		.2byte	0x43f
  2714 0730 AE000000 		.4byte	0xae
@@ -5026,41 +5026,41 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2718 073d 9C       		.byte	0x9c
  2719 073e 8E070000 		.4byte	0x78e
  2720 0742 0C       		.uleb128 0xc
- 2721 0743 75050000 		.4byte	.LASF69
+ 2721 0743 BC050000 		.4byte	.LASF69
  2722 0747 01       		.byte	0x1
  2723 0748 3F04     		.2byte	0x43f
  2724 074a AE000000 		.4byte	0xae
  2725 074e 5A050000 		.4byte	.LLST33
  2726 0752 0D       		.uleb128 0xd
- 2727 0753 EF010000 		.4byte	.LASF74
+ 2727 0753 36020000 		.4byte	.LASF74
  2728 0757 01       		.byte	0x1
  2729 0758 4204     		.2byte	0x442
  2730 075a AE000000 		.4byte	0xae
  2731 075e 7B050000 		.4byte	.LLST34
  2732 0762 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 85
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 85
 
 
- 2733 0763 C3040000 		.4byte	.LASF75
+ 2733 0763 0A050000 		.4byte	.LASF75
  2734 0767 01       		.byte	0x1
  2735 0768 4304     		.2byte	0x443
  2736 076a AE000000 		.4byte	0xae
  2737 076e 127A     		.2byte	0x7a12
  2738 0770 0D       		.uleb128 0xd
- 2739 0771 C9040000 		.4byte	.LASF76
+ 2739 0771 10050000 		.4byte	.LASF76
  2740 0775 01       		.byte	0x1
  2741 0776 4404     		.2byte	0x444
  2742 0778 AE000000 		.4byte	0xae
  2743 077c 9E050000 		.4byte	.LLST35
  2744 0780 1C       		.uleb128 0x1c
- 2745 0781 78040000 		.4byte	.LASF30
+ 2745 0781 BF040000 		.4byte	.LASF30
  2746 0785 01       		.byte	0x1
  2747 0786 4504     		.2byte	0x445
  2748 0788 72000000 		.4byte	0x72
  2749 078c 10       		.byte	0x10
  2750 078d 00       		.byte	0
  2751 078e 15       		.uleb128 0x15
- 2752 078f C2020000 		.4byte	.LASF77
+ 2752 078f 09030000 		.4byte	.LASF77
  2753 0793 01       		.byte	0x1
  2754 0794 1006     		.2byte	0x610
  2755 0796 00000000 		.4byte	.LFB20
@@ -5069,13 +5069,13 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2758 079f 9C       		.byte	0x9c
  2759 07a0 03080000 		.4byte	0x803
  2760 07a4 0C       		.uleb128 0xc
- 2761 07a5 00050000 		.4byte	.LASF31
+ 2761 07a5 47050000 		.4byte	.LASF31
  2762 07a9 01       		.byte	0x1
  2763 07aa 1006     		.2byte	0x610
  2764 07ac 72000000 		.4byte	0x72
  2765 07b0 BE050000 		.4byte	.LLST36
  2766 07b4 0C       		.uleb128 0xc
- 2767 07b5 1F050000 		.4byte	.LASF78
+ 2767 07b5 66050000 		.4byte	.LASF78
  2768 07b9 01       		.byte	0x1
  2769 07ba 1006     		.2byte	0x610
  2770 07bc 72000000 		.4byte	0x72
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2787 07e2 42000000 		.4byte	.LVL146
  2788 07e6 DE030000 		.4byte	0x3de
  2789 07ea 10       		.uleb128 0x10
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 86
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 86
 
 
  2790 07eb 46000000 		.4byte	.LVL147
@@ -5114,7 +5114,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2800 0801 00       		.byte	0
  2801 0802 00       		.byte	0
  2802 0803 17       		.uleb128 0x17
- 2803 0804 64020000 		.4byte	.LASF79
+ 2803 0804 AB020000 		.4byte	.LASF79
  2804 0808 01       		.byte	0x1
  2805 0809 E206     		.2byte	0x6e2
  2806 080b 96000000 		.4byte	0x96
@@ -5124,7 +5124,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2810 0818 9C       		.byte	0x9c
  2811 0819 5C080000 		.4byte	0x85c
  2812 081d 0D       		.uleb128 0xd
- 2813 081e EC060000 		.4byte	.LASF61
+ 2813 081e F8060000 		.4byte	.LASF61
  2814 0822 01       		.byte	0x1
  2815 0823 E406     		.2byte	0x6e4
  2816 0825 96000000 		.4byte	0x96
@@ -5150,7 +5150,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2836 0857 70050000 		.4byte	0x570
  2837 085b 00       		.byte	0
  2838 085c 17       		.uleb128 0x17
- 2839 085d 63050000 		.4byte	.LASF80
+ 2839 085d AA050000 		.4byte	.LASF80
  2840 0861 01       		.byte	0x1
  2841 0862 0307     		.2byte	0x703
  2842 0864 A2000000 		.4byte	0xa2
@@ -5158,12 +5158,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2844 086c 28000000 		.4byte	.LFE24-.LFB24
  2845 0870 01       		.uleb128 0x1
  2846 0871 9C       		.byte	0x9c
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 87
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 87
 
 
  2847 0872 B5080000 		.4byte	0x8b5
  2848 0876 0D       		.uleb128 0xd
- 2849 0877 EC060000 		.4byte	.LASF61
+ 2849 0877 F8060000 		.4byte	.LASF61
  2850 087b 01       		.byte	0x1
  2851 087c 0507     		.2byte	0x705
  2852 087e A2000000 		.4byte	0xa2
@@ -5189,7 +5189,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2872 08b0 70050000 		.4byte	0x570
  2873 08b4 00       		.byte	0
  2874 08b5 17       		.uleb128 0x17
- 2875 08b6 7D010000 		.4byte	.LASF81
+ 2875 08b6 C4010000 		.4byte	.LASF81
  2876 08ba 01       		.byte	0x1
  2877 08bb 2407     		.2byte	0x724
  2878 08bd AE000000 		.4byte	0xae
@@ -5199,7 +5199,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2882 08ca 9C       		.byte	0x9c
  2883 08cb 0E090000 		.4byte	0x90e
  2884 08cf 0D       		.uleb128 0xd
- 2885 08d0 EC060000 		.4byte	.LASF61
+ 2885 08d0 F8060000 		.4byte	.LASF61
  2886 08d4 01       		.byte	0x1
  2887 08d5 2607     		.2byte	0x726
  2888 08d7 AE000000 		.4byte	0xae
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2901 08f9 30       		.byte	0x30
  2902 08fa 00       		.byte	0
  2903 08fb 10       		.uleb128 0x10
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 88
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 88
 
 
  2904 08fc 1A000000 		.4byte	.LVL165
@@ -5235,7 +5235,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2915 091c 00       		.byte	0
  2916 091d 00       		.byte	0
  2917 091e 1F       		.uleb128 0x1f
- 2918 091f 36010000 		.4byte	.LASF82
+ 2918 091f 7D010000 		.4byte	.LASF82
  2919 0923 01       		.byte	0x1
  2920 0924 3D       		.byte	0x3d
  2921 0925 0E090000 		.4byte	0x90e
@@ -5243,7 +5243,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2923 092a 03       		.byte	0x3
  2924 092b 00000000 		.4byte	Volume_ADC_gcor
  2925 092f 20       		.uleb128 0x20
- 2926 0930 F2020000 		.4byte	.LASF83
+ 2926 0930 39030000 		.4byte	.LASF83
  2927 0934 01       		.byte	0x1
  2928 0935 2C       		.byte	0x2c
  2929 0936 72000000 		.4byte	0x72
@@ -5259,7 +5259,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2939 094c 03       		.byte	0x3
  2940 094d 00000000 		.4byte	Volume_ADC_convDone
  2941 0951 20       		.uleb128 0x20
- 2942 0952 5E040000 		.4byte	.LASF85
+ 2942 0952 A5040000 		.4byte	.LASF85
  2943 0956 01       		.byte	0x1
  2944 0957 29       		.byte	0x29
  2945 0958 E0000000 		.4byte	0xe0
@@ -5267,7 +5267,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2947 095d 03       		.byte	0x3
  2948 095e 00000000 		.4byte	Volume_ADC_stopConversion
  2949 0962 20       		.uleb128 0x20
- 2950 0963 2C030000 		.4byte	.LASF86
+ 2950 0963 73030000 		.4byte	.LASF86
  2951 0967 01       		.byte	0x1
  2952 0968 2F       		.byte	0x2f
  2953 0969 E0000000 		.4byte	0xe0
@@ -5275,10 +5275,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2955 096e 03       		.byte	0x3
  2956 096f 00000000 		.4byte	Volume_ADC_started
  2957 0973 20       		.uleb128 0x20
- 2958 0974 B8030000 		.4byte	.LASF87
+ 2958 0974 FF030000 		.4byte	.LASF87
  2959 0978 01       		.byte	0x1
  2960 0979 32       		.byte	0x32
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 89
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 89
 
 
  2961 097a E0000000 		.4byte	0xe0
@@ -5286,7 +5286,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2963 097f 03       		.byte	0x3
  2964 0980 00000000 		.4byte	Volume_ADC_Config
  2965 0984 20       		.uleb128 0x20
- 2966 0985 22040000 		.4byte	.LASF88
+ 2966 0985 69040000 		.4byte	.LASF88
  2967 0989 01       		.byte	0x1
  2968 098a 34       		.byte	0x34
  2969 098b 95090000 		.4byte	0x995
@@ -5296,7 +5296,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2973 0995 05       		.uleb128 0x5
  2974 0996 AE000000 		.4byte	0xae
  2975 099a 20       		.uleb128 0x20
- 2976 099b 4A050000 		.4byte	.LASF89
+ 2976 099b 91050000 		.4byte	.LASF89
  2977 099f 01       		.byte	0x1
  2978 09a0 35       		.byte	0x35
  2979 09a1 95090000 		.4byte	0x995
@@ -5304,7 +5304,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2981 09a6 03       		.byte	0x3
  2982 09a7 00000000 		.4byte	Volume_ADC_CountsPerVolt
  2983 09ab 21       		.uleb128 0x21
- 2984 09ac E7030000 		.4byte	.LASF90
+ 2984 09ac 2E040000 		.4byte	.LASF90
  2985 09b0 04       		.byte	0x4
  2986 09b1 7F       		.byte	0x7f
  2987 09b2 BC090000 		.4byte	0x9bc
@@ -5312,12 +5312,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  2989 09b7 72000000 		.4byte	0x72
  2990 09bb 00       		.byte	0
  2991 09bc 23       		.uleb128 0x23
- 2992 09bd 08020000 		.4byte	.LASF101
+ 2992 09bd 4F020000 		.4byte	.LASF101
  2993 09c1 04       		.byte	0x4
  2994 09c2 7D       		.byte	0x7d
  2995 09c3 72000000 		.4byte	0x72
  2996 09c7 21       		.uleb128 0x21
- 2997 09c8 6C010000 		.4byte	.LASF91
+ 2997 09c8 B3010000 		.4byte	.LASF91
  2998 09cc 04       		.byte	0x4
  2999 09cd 77       		.byte	0x77
  3000 09ce D8090000 		.4byte	0x9d8
@@ -5325,7 +5325,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3002 09d3 7E000000 		.4byte	0x7e
  3003 09d7 00       		.byte	0
  3004 09d8 21       		.uleb128 0x21
- 3005 09d9 A2030000 		.4byte	.LASF92
+ 3005 09d9 E9030000 		.4byte	.LASF92
  3006 09dd 04       		.byte	0x4
  3007 09de 7E       		.byte	0x7e
  3008 09df E9090000 		.4byte	0x9e9
@@ -5333,18 +5333,18 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3010 09e4 72000000 		.4byte	0x72
  3011 09e8 00       		.byte	0
  3012 09e9 21       		.uleb128 0x21
- 3013 09ea 79060000 		.4byte	.LASF93
+ 3013 09ea 85060000 		.4byte	.LASF93
  3014 09ee 05       		.byte	0x5
  3015 09ef 50       		.byte	0x50
  3016 09f0 FA090000 		.4byte	0x9fa
  3017 09f4 22       		.uleb128 0x22
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 90
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 90
 
 
  3018 09f5 72000000 		.4byte	0x72
  3019 09f9 00       		.byte	0
  3020 09fa 21       		.uleb128 0x21
- 3021 09fb 9A040000 		.4byte	.LASF94
+ 3021 09fb E1040000 		.4byte	.LASF94
  3022 09ff 06       		.byte	0x6
  3023 0a00 2F       		.byte	0x2f
  3024 0a01 100A0000 		.4byte	0xa10
@@ -5354,7 +5354,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3028 0a0b 72000000 		.4byte	0x72
  3029 0a0f 00       		.byte	0
  3030 0a10 21       		.uleb128 0x21
- 3031 0a11 5F030000 		.4byte	.LASF95
+ 3031 0a11 A6030000 		.4byte	.LASF95
  3032 0a15 07       		.byte	0x7
  3033 0a16 2F       		.byte	0x2f
  3034 0a17 260A0000 		.4byte	0xa26
@@ -5364,7 +5364,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3038 0a21 72000000 		.4byte	0x72
  3039 0a25 00       		.byte	0
  3040 0a26 24       		.uleb128 0x24
- 3041 0a27 B5010000 		.4byte	.LASF102
+ 3041 0a27 FC010000 		.4byte	.LASF102
  3042 0a2b 04       		.byte	0x4
  3043 0a2c 88       		.byte	0x88
  3044 0a2d 07010000 		.4byte	0x107
@@ -5375,7 +5375,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3049 0a3b 07010000 		.4byte	0x107
  3050 0a3f 00       		.byte	0
  3051 0a40 21       		.uleb128 0x21
- 3052 0a41 EE030000 		.4byte	.LASF96
+ 3052 0a41 35040000 		.4byte	.LASF96
  3053 0a45 06       		.byte	0x6
  3054 0a46 32       		.byte	0x32
  3055 0a47 510A0000 		.4byte	0xa51
@@ -5383,7 +5383,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3057 0a4c 72000000 		.4byte	0x72
  3058 0a50 00       		.byte	0
  3059 0a51 21       		.uleb128 0x21
- 3060 0a52 7C020000 		.4byte	.LASF97
+ 3060 0a52 C3020000 		.4byte	.LASF97
  3061 0a56 07       		.byte	0x7
  3062 0a57 32       		.byte	0x32
  3063 0a58 620A0000 		.4byte	0xa62
@@ -5391,14 +5391,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3065 0a5d 72000000 		.4byte	0x72
  3066 0a61 00       		.byte	0
  3067 0a62 25       		.uleb128 0x25
- 3068 0a63 49030000 		.4byte	.LASF103
+ 3068 0a63 90030000 		.4byte	.LASF103
  3069 0a67 04       		.byte	0x4
  3070 0a68 8B       		.byte	0x8b
  3071 0a69 22       		.uleb128 0x22
  3072 0a6a 72000000 		.4byte	0x72
  3073 0a6e 22       		.uleb128 0x22
  3074 0a6f 72000000 		.4byte	0x72
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 91
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 91
 
 
  3075 0a73 00       		.byte	0
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3129 0032 49       		.uleb128 0x49
  3130 0033 13       		.uleb128 0x13
  3131 0034 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 92
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 92
 
 
  3132 0035 00       		.byte	0
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3186 006b 00       		.byte	0
  3187 006c 03       		.uleb128 0x3
  3188 006d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 93
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 93
 
 
  3189 006e 3A       		.uleb128 0x3a
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3243 00a5 05       		.uleb128 0x5
  3244 00a6 49       		.uleb128 0x49
  3245 00a7 13       		.uleb128 0x13
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 94
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 94
 
 
  3246 00a8 02       		.uleb128 0x2
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3300 00e7 19       		.uleb128 0x19
  3301 00e8 11       		.uleb128 0x11
  3302 00e9 01       		.uleb128 0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 95
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 95
 
 
  3303 00ea 12       		.uleb128 0x12
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3357 0121 06       		.uleb128 0x6
  3358 0122 40       		.uleb128 0x40
  3359 0123 18       		.uleb128 0x18
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 96
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 96
 
 
  3360 0124 9742     		.uleb128 0x2117
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3414 015c 9742     		.uleb128 0x2117
  3415 015e 19       		.uleb128 0x19
  3416 015f 01       		.uleb128 0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 97
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 97
 
 
  3417 0160 13       		.uleb128 0x13
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3471 0197 00       		.byte	0
  3472 0198 00       		.byte	0
  3473 0199 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 98
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 98
 
 
  3474 019a 34       		.uleb128 0x34
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3528 01d0 3B       		.uleb128 0x3b
  3529 01d1 0B       		.uleb128 0xb
  3530 01d2 49       		.uleb128 0x49
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 99
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 99
 
 
  3531 01d3 13       		.uleb128 0x13
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3585 0209 0E       		.uleb128 0xe
  3586 020a 3A       		.uleb128 0x3a
  3587 020b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 100
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 100
 
 
  3588 020c 3B       		.uleb128 0x3b
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3642 0008 0100     		.2byte	0x1
  3643 000a 50       		.byte	0x50
  3644 000b 0C000000 		.4byte	.LVL1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 101
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 101
 
 
  3645 000f A0000000 		.4byte	.LVL29
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3699 008b 52       		.byte	0x52
  3700 008c 9F       		.byte	0x9f
  3701 008d A0000000 		.4byte	.LVL29
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 102
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 102
 
 
  3702 0091 A5000000 		.4byte	.LVL31-1
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3756 010d A0000000 		.4byte	.LVL29
  3757 0111 A8000000 		.4byte	.LVL32
  3758 0115 0200     		.2byte	0x2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 103
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 103
 
 
  3759 0117 91       		.byte	0x91
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3813 01a7 00000000 		.4byte	0
  3814              	.LLST7:
  3815 01ab 6E000000 		.4byte	.LVL22
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 104
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 104
 
 
  3816 01af 76000000 		.4byte	.LVL23
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3870 0238 E0000000 		.4byte	.LFE19
  3871 023c 0100     		.2byte	0x1
  3872 023e 50       		.byte	0x50
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 105
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 105
 
 
  3873 023f 00000000 		.4byte	0
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3927 02c9 00000000 		.4byte	0
  3928              	.LLST17:
  3929 02cd 08000000 		.4byte	.LVL70
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 106
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 106
 
 
  3930 02d1 0E000000 		.4byte	.LVL72
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  3984 0349 00000000 		.4byte	0
  3985 034d 00000000 		.4byte	0
  3986              	.LLST20:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 107
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 107
 
 
  3987 0351 54000000 		.4byte	.LVL85
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4041 03e4 24000000 		.4byte	.LVL99
  4042 03e8 0100     		.2byte	0x1
  4043 03ea 50       		.byte	0x50
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 108
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 108
 
 
  4044 03eb 24000000 		.4byte	.LVL99
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4098 047b 53       		.byte	0x53
  4099 047c 00000000 		.4byte	0
  4100 0480 00000000 		.4byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 109
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 109
 
 
  4101              	.LLST29:
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4155 0506 00000000 		.4byte	0
  4156 050a 00000000 		.4byte	0
  4157              	.LLST31:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 110
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 110
 
 
  4158 050e 00000000 		.4byte	.LVL127
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4212 058b 3E000000 		.4byte	.LVL142
  4213 058f 4C000000 		.4byte	.LFE18
  4214 0593 0100     		.2byte	0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 111
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 111
 
 
  4215 0595 50       		.byte	0x50
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4269 0615 4D000000 		.4byte	.LVL150-1
  4270 0619 0100     		.2byte	0x1
  4271 061b 51       		.byte	0x51
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 112
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 112
 
 
  4272 061c 4D000000 		.4byte	.LVL150-1
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4326 0030 00000000 		.4byte	.LFB1
  4327 0034 D8000000 		.4byte	.LFE1-.LFB1
  4328 0038 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 113
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 113
 
 
  4329 003c 28000000 		.4byte	.LFE2-.LFB2
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4383 0024 D8000000 		.4byte	.LFE1
  4384 0028 00000000 		.4byte	.LFB2
  4385 002c 28000000 		.4byte	.LFE2
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 114
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 114
 
 
  4386 0030 00000000 		.4byte	.LFB3
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4432      5C50536F 
  4433              	.LASF11:
  4434 0024 75696E74 		.ascii	"uint16\000"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 115
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 115
 
 
  4434      313600
@@ -6888,474 +6888,474 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 1
  4452      6720756E 
  4452      7369676E 
  4452      65642069 
- 4453              	.LASF39:
- 4454 00d1 656E6162 		.ascii	"enableInterrupts\000"
- 4454      6C65496E 
- 4454      74657272 
- 4454      75707473 
- 4454      00
- 4455              	.LASF29:
- 4456 00e2 69646561 		.ascii	"idealOddDecGain\000"
- 4456      6C4F6464 
- 4456      44656347 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 116
+ 4453              	.LASF29:
+ 4454 00d1 69646561 		.ascii	"idealOddDecGain\000"
+ 4454      6C4F6464 
+ 4454      44656347 
+ 4454      61696E00 
+ 4455              	.LASF7:
+ 4456 00e1 6C6F6E67 		.ascii	"long long int\000"
+ 4456      206C6F6E 
+ 4456      6720696E 
+ 4456      7400
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 116
 
 
- 4456      61696E00 
- 4457              	.LASF7:
- 4458 00f2 6C6F6E67 		.ascii	"long long int\000"
- 4458      206C6F6E 
- 4458      6720696E 
- 4458      7400
- 4459              	.LASF1:
- 4460 0100 7369676E 		.ascii	"signed char\000"
- 4460      65642063 
- 4460      68617200 
- 4461              	.LASF15:
- 4462 010c 696E7433 		.ascii	"int32\000"
- 4462      3200
- 4463              	.LASF73:
- 4464 0112 566F6C75 		.ascii	"Volume_ADC_CountsTo_uVolts\000"
- 4464      6D655F41 
- 4464      44435F43 
- 4464      6F756E74 
- 4464      73546F5F 
- 4465              	.LASF5:
- 4466 012d 6C6F6E67 		.ascii	"long int\000"
- 4466      20696E74 
- 4466      00
- 4467              	.LASF82:
- 4468 0136 566F6C75 		.ascii	"Volume_ADC_gcor\000"
- 4468      6D655F41 
- 4468      44435F67 
- 4468      636F7200 
- 4469              	.LASF71:
- 4470 0146 566F6C75 		.ascii	"Volume_ADC_CountsTo_Volts\000"
- 4470      6D655F41 
- 4470      44435F43 
- 4470      6F756E74 
- 4470      73546F5F 
- 4471              	.LASF20:
- 4472 0160 72656731 		.ascii	"reg16\000"
- 4472      3600
- 4473              	.LASF10:
- 4474 0166 75696E74 		.ascii	"uint8\000"
- 4474      3800
- 4475              	.LASF91:
- 4476 016c 43794465 		.ascii	"CyDelayUs\000"
- 4476      6C617955 
- 4476      7300
- 4477              	.LASF17:
- 4478 0176 646F7562 		.ascii	"double\000"
- 4478      6C6500
- 4479              	.LASF81:
- 4480 017d 566F6C75 		.ascii	"Volume_ADC_Read32\000"
- 4480      6D655F41 
- 4480      44435F52 
- 4480      65616433 
- 4480      3200
- 4481              	.LASF45:
- 4482 018f 566F6C75 		.ascii	"Volume_ADC_SetBufferGain\000"
- 4482      6D655F41 
- 4482      44435F53 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 117
+ 4457              	.LASF1:
+ 4458 00ef 7369676E 		.ascii	"signed char\000"
+ 4458      65642063 
+ 4458      68617200 
+ 4459              	.LASF100:
+ 4460 00fb 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 4460      73657273 
+ 4460      5C4C756B 
+ 4460      61732043 
+ 4460      72657574 
+ 4461 0129 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 4461      5F364348 
+ 4461      616D705C 
+ 4461      50536F43 
+ 4461      20576F72 
+ 4462              	.LASF15:
+ 4463 0153 696E7433 		.ascii	"int32\000"
+ 4463      3200
+ 4464              	.LASF73:
+ 4465 0159 566F6C75 		.ascii	"Volume_ADC_CountsTo_uVolts\000"
+ 4465      6D655F41 
+ 4465      44435F43 
+ 4465      6F756E74 
+ 4465      73546F5F 
+ 4466              	.LASF5:
+ 4467 0174 6C6F6E67 		.ascii	"long int\000"
+ 4467      20696E74 
+ 4467      00
+ 4468              	.LASF82:
+ 4469 017d 566F6C75 		.ascii	"Volume_ADC_gcor\000"
+ 4469      6D655F41 
+ 4469      44435F67 
+ 4469      636F7200 
+ 4470              	.LASF71:
+ 4471 018d 566F6C75 		.ascii	"Volume_ADC_CountsTo_Volts\000"
+ 4471      6D655F41 
+ 4471      44435F43 
+ 4471      6F756E74 
+ 4471      73546F5F 
+ 4472              	.LASF20:
+ 4473 01a7 72656731 		.ascii	"reg16\000"
+ 4473      3600
+ 4474              	.LASF10:
+ 4475 01ad 75696E74 		.ascii	"uint8\000"
+ 4475      3800
+ 4476              	.LASF91:
+ 4477 01b3 43794465 		.ascii	"CyDelayUs\000"
+ 4477      6C617955 
+ 4477      7300
+ 4478              	.LASF17:
+ 4479 01bd 646F7562 		.ascii	"double\000"
+ 4479      6C6500
+ 4480              	.LASF81:
+ 4481 01c4 566F6C75 		.ascii	"Volume_ADC_Read32\000"
+ 4481      6D655F41 
+ 4481      44435F52 
+ 4481      65616433 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 117
 
 
- 4482      65744275 
- 4482      66666572 
- 4483              	.LASF72:
- 4484 01a8 566F6C74 		.ascii	"Volts\000"
- 4484      7300
- 4485              	.LASF12:
- 4486 01ae 75696E74 		.ascii	"uint32\000"
- 4486      333200
- 4487              	.LASF102:
- 4488 01b5 4379496E 		.ascii	"CyIntSetVector\000"
- 4488      74536574 
- 4488      56656374 
- 4488      6F7200
- 4489              	.LASF38:
- 4490 01c4 76616C75 		.ascii	"value\000"
- 4490      6500
- 4491              	.LASF59:
- 4492 01ca 7265744D 		.ascii	"retMode\000"
- 4492      6F646500 
- 4493              	.LASF44:
- 4494 01d2 566F6C75 		.ascii	"Volume_ADC_Stop\000"
- 4494      6D655F41 
- 4494      44435F53 
- 4494      746F7000 
- 4495              	.LASF9:
- 4496 01e2 756E7369 		.ascii	"unsigned int\000"
- 4496      676E6564 
- 4496      20696E74 
- 4496      00
- 4497              	.LASF74:
- 4498 01ef 75566F6C 		.ascii	"uVolts\000"
- 4498      747300
- 4499              	.LASF6:
- 4500 01f6 6C6F6E67 		.ascii	"long unsigned int\000"
- 4500      20756E73 
- 4500      69676E65 
- 4500      6420696E 
- 4500      7400
- 4501              	.LASF101:
- 4502 0208 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 4502      74657243 
- 4502      72697469 
- 4502      63616C53 
- 4502      65637469 
- 4503              	.LASF43:
- 4504 021f 566F6C75 		.ascii	"Volume_ADC_Start\000"
- 4504      6D655F41 
- 4504      44435F53 
- 4504      74617274 
- 4504      00
- 4505              	.LASF42:
- 4506 0230 566F6C75 		.ascii	"Volume_ADC_Enable\000"
- 4506      6D655F41 
- 4506      44435F45 
- 4506      6E61626C 
- 4506      6500
- 4507              	.LASF4:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 118
+ 4481      3200
+ 4482              	.LASF45:
+ 4483 01d6 566F6C75 		.ascii	"Volume_ADC_SetBufferGain\000"
+ 4483      6D655F41 
+ 4483      44435F53 
+ 4483      65744275 
+ 4483      66666572 
+ 4484              	.LASF72:
+ 4485 01ef 566F6C74 		.ascii	"Volts\000"
+ 4485      7300
+ 4486              	.LASF12:
+ 4487 01f5 75696E74 		.ascii	"uint32\000"
+ 4487      333200
+ 4488              	.LASF102:
+ 4489 01fc 4379496E 		.ascii	"CyIntSetVector\000"
+ 4489      74536574 
+ 4489      56656374 
+ 4489      6F7200
+ 4490              	.LASF38:
+ 4491 020b 76616C75 		.ascii	"value\000"
+ 4491      6500
+ 4492              	.LASF59:
+ 4493 0211 7265744D 		.ascii	"retMode\000"
+ 4493      6F646500 
+ 4494              	.LASF44:
+ 4495 0219 566F6C75 		.ascii	"Volume_ADC_Stop\000"
+ 4495      6D655F41 
+ 4495      44435F53 
+ 4495      746F7000 
+ 4496              	.LASF9:
+ 4497 0229 756E7369 		.ascii	"unsigned int\000"
+ 4497      676E6564 
+ 4497      20696E74 
+ 4497      00
+ 4498              	.LASF74:
+ 4499 0236 75566F6C 		.ascii	"uVolts\000"
+ 4499      747300
+ 4500              	.LASF6:
+ 4501 023d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4501      20756E73 
+ 4501      69676E65 
+ 4501      6420696E 
+ 4501      7400
+ 4502              	.LASF101:
+ 4503 024f 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 4503      74657243 
+ 4503      72697469 
+ 4503      63616C53 
+ 4503      65637469 
+ 4504              	.LASF43:
+ 4505 0266 566F6C75 		.ascii	"Volume_ADC_Start\000"
+ 4505      6D655F41 
+ 4505      44435F53 
+ 4505      74617274 
+ 4505      00
+ 4506              	.LASF42:
+ 4507 0277 566F6C75 		.ascii	"Volume_ADC_Enable\000"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 118
 
 
- 4508 0242 73686F72 		.ascii	"short unsigned int\000"
- 4508      7420756E 
- 4508      7369676E 
- 4508      65642069 
- 4508      6E7400
- 4509              	.LASF13:
- 4510 0255 696E7438 		.ascii	"int8\000"
- 4510      00
- 4511              	.LASF34:
- 4512 025a 67636F72 		.ascii	"gcorValue\000"
- 4512      56616C75 
- 4512      6500
- 4513              	.LASF79:
- 4514 0264 566F6C75 		.ascii	"Volume_ADC_Read8\000"
- 4514      6D655F41 
- 4514      44435F52 
- 4514      65616438 
- 4514      00
- 4515              	.LASF70:
- 4516 0275 6D566F6C 		.ascii	"mVolts\000"
- 4516      747300
- 4517              	.LASF97:
- 4518 027c 566F6C75 		.ascii	"Volume_ADC_theACLK_SetModeRegister\000"
- 4518      6D655F41 
- 4518      44435F74 
- 4518      68654143 
- 4518      4C4B5F53 
- 4519              	.LASF32:
- 4520 029f 666C6173 		.ascii	"flash\000"
- 4520      6800
- 4521              	.LASF21:
- 4522 02a5 72656733 		.ascii	"reg32\000"
- 4522      3200
- 4523              	.LASF62:
- 4524 02ab 566F6C75 		.ascii	"Volume_ADC_GetResult16\000"
- 4524      6D655F41 
- 4524      44435F47 
- 4524      65745265 
- 4524      73756C74 
- 4525              	.LASF77:
- 4526 02c2 566F6C75 		.ascii	"Volume_ADC_SelectConfiguration\000"
- 4526      6D655F41 
- 4526      44435F53 
- 4526      656C6563 
- 4526      74436F6E 
- 4527              	.LASF16:
- 4528 02e1 666C6F61 		.ascii	"float32\000"
- 4528      74333200 
- 4529              	.LASF23:
- 4530 02e9 73697A65 		.ascii	"sizetype\000"
- 4530      74797065 
- 4530      00
- 4531              	.LASF83:
- 4532 02f2 566F6C75 		.ascii	"Volume_ADC_initVar\000"
- 4532      6D655F41 
- 4532      44435F69 
- 4532      6E697456 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 119
+ 4507      6D655F41 
+ 4507      44435F45 
+ 4507      6E61626C 
+ 4507      6500
+ 4508              	.LASF4:
+ 4509 0289 73686F72 		.ascii	"short unsigned int\000"
+ 4509      7420756E 
+ 4509      7369676E 
+ 4509      65642069 
+ 4509      6E7400
+ 4510              	.LASF13:
+ 4511 029c 696E7438 		.ascii	"int8\000"
+ 4511      00
+ 4512              	.LASF34:
+ 4513 02a1 67636F72 		.ascii	"gcorValue\000"
+ 4513      56616C75 
+ 4513      6500
+ 4514              	.LASF79:
+ 4515 02ab 566F6C75 		.ascii	"Volume_ADC_Read8\000"
+ 4515      6D655F41 
+ 4515      44435F52 
+ 4515      65616438 
+ 4515      00
+ 4516              	.LASF70:
+ 4517 02bc 6D566F6C 		.ascii	"mVolts\000"
+ 4517      747300
+ 4518              	.LASF97:
+ 4519 02c3 566F6C75 		.ascii	"Volume_ADC_theACLK_SetModeRegister\000"
+ 4519      6D655F41 
+ 4519      44435F74 
+ 4519      68654143 
+ 4519      4C4B5F53 
+ 4520              	.LASF32:
+ 4521 02e6 666C6173 		.ascii	"flash\000"
+ 4521      6800
+ 4522              	.LASF21:
+ 4523 02ec 72656733 		.ascii	"reg32\000"
+ 4523      3200
+ 4524              	.LASF62:
+ 4525 02f2 566F6C75 		.ascii	"Volume_ADC_GetResult16\000"
+ 4525      6D655F41 
+ 4525      44435F47 
+ 4525      65745265 
+ 4525      73756C74 
+ 4526              	.LASF77:
+ 4527 0309 566F6C75 		.ascii	"Volume_ADC_SelectConfiguration\000"
+ 4527      6D655F41 
+ 4527      44435F53 
+ 4527      656C6563 
+ 4527      74436F6E 
+ 4528              	.LASF16:
+ 4529 0328 666C6F61 		.ascii	"float32\000"
+ 4529      74333200 
+ 4530              	.LASF23:
+ 4531 0330 73697A65 		.ascii	"sizetype\000"
+ 4531      74797065 
+ 4531      00
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 119
 
 
- 4532      617200
- 4533              	.LASF41:
- 4534 0305 566F6C75 		.ascii	"Volume_ADC_Init\000"
- 4534      6D655F41 
- 4534      44435F49 
- 4534      6E697400 
- 4535              	.LASF26:
- 4536 0315 566F6C75 		.ascii	"Volume_ADC_GCOR_STRUCT\000"
- 4536      6D655F41 
- 4536      44435F47 
- 4536      434F525F 
- 4536      53545255 
- 4537              	.LASF86:
- 4538 032c 566F6C75 		.ascii	"Volume_ADC_started\000"
- 4538      6D655F41 
- 4538      44435F73 
- 4538      74617274 
- 4538      656400
- 4539              	.LASF49:
- 4540 033f 636F6865 		.ascii	"coherency\000"
- 4540      72656E63 
- 4540      7900
- 4541              	.LASF103:
- 4542 0349 4379496E 		.ascii	"CyIntSetPriority\000"
- 4542      74536574 
- 4542      5072696F 
- 4542      72697479 
- 4542      00
- 4543              	.LASF46:
- 4544 035a 6761696E 		.ascii	"gain\000"
- 4544      00
- 4545              	.LASF95:
- 4546 035f 566F6C75 		.ascii	"Volume_ADC_theACLK_SetDividerRegister\000"
- 4546      6D655F41 
- 4546      44435F74 
- 4546      68654143 
- 4546      4C4B5F53 
- 4547              	.LASF57:
- 4548 0385 566F6C75 		.ascii	"Volume_ADC_StopConvert\000"
- 4548      6D655F41 
- 4548      44435F53 
- 4548      746F7043 
- 4548      6F6E7665 
- 4549              	.LASF0:
- 4550 039c 666C6F61 		.ascii	"float\000"
- 4550      7400
- 4551              	.LASF92:
- 4552 03a2 43794578 		.ascii	"CyExitCriticalSection\000"
- 4552      69744372 
- 4552      69746963 
- 4552      616C5365 
- 4552      6374696F 
- 4553              	.LASF87:
- 4554 03b8 566F6C75 		.ascii	"Volume_ADC_Config\000"
- 4554      6D655F41 
- 4554      44435F43 
- 4554      6F6E6669 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 120
+ 4532              	.LASF83:
+ 4533 0339 566F6C75 		.ascii	"Volume_ADC_initVar\000"
+ 4533      6D655F41 
+ 4533      44435F69 
+ 4533      6E697456 
+ 4533      617200
+ 4534              	.LASF41:
+ 4535 034c 566F6C75 		.ascii	"Volume_ADC_Init\000"
+ 4535      6D655F41 
+ 4535      44435F49 
+ 4535      6E697400 
+ 4536              	.LASF26:
+ 4537 035c 566F6C75 		.ascii	"Volume_ADC_GCOR_STRUCT\000"
+ 4537      6D655F41 
+ 4537      44435F47 
+ 4537      434F525F 
+ 4537      53545255 
+ 4538              	.LASF86:
+ 4539 0373 566F6C75 		.ascii	"Volume_ADC_started\000"
+ 4539      6D655F41 
+ 4539      44435F73 
+ 4539      74617274 
+ 4539      656400
+ 4540              	.LASF49:
+ 4541 0386 636F6865 		.ascii	"coherency\000"
+ 4541      72656E63 
+ 4541      7900
+ 4542              	.LASF103:
+ 4543 0390 4379496E 		.ascii	"CyIntSetPriority\000"
+ 4543      74536574 
+ 4543      5072696F 
+ 4543      72697479 
+ 4543      00
+ 4544              	.LASF46:
+ 4545 03a1 6761696E 		.ascii	"gain\000"
+ 4545      00
+ 4546              	.LASF95:
+ 4547 03a6 566F6C75 		.ascii	"Volume_ADC_theACLK_SetDividerRegister\000"
+ 4547      6D655F41 
+ 4547      44435F74 
+ 4547      68654143 
+ 4547      4C4B5F53 
+ 4548              	.LASF57:
+ 4549 03cc 566F6C75 		.ascii	"Volume_ADC_StopConvert\000"
+ 4549      6D655F41 
+ 4549      44435F53 
+ 4549      746F7043 
+ 4549      6F6E7665 
+ 4550              	.LASF0:
+ 4551 03e3 666C6F61 		.ascii	"float\000"
+ 4551      7400
+ 4552              	.LASF92:
+ 4553 03e9 43794578 		.ascii	"CyExitCriticalSection\000"
+ 4553      69744372 
+ 4553      69746963 
+ 4553      616C5365 
+ 4553      6374696F 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 120
 
 
- 4554      6700
- 4555              	.LASF19:
- 4556 03ca 72656738 		.ascii	"reg8\000"
- 4556      00
- 4557              	.LASF28:
- 4558 03cf 69646561 		.ascii	"idealDecGain\000"
- 4558      6C446563 
- 4558      4761696E 
- 4558      00
- 4559              	.LASF33:
- 4560 03dc 6E6F726D 		.ascii	"normalised\000"
- 4560      616C6973 
- 4560      656400
- 4561              	.LASF90:
- 4562 03e7 43794861 		.ascii	"CyHalt\000"
- 4562      6C7400
- 4563              	.LASF96:
- 4564 03ee 566F6C75 		.ascii	"Volume_ADC_Ext_CP_Clk_SetModeRegister\000"
- 4564      6D655F41 
- 4564      44435F45 
- 4564      78745F43 
- 4564      505F436C 
- 4565              	.LASF2:
- 4566 0414 756E7369 		.ascii	"unsigned char\000"
- 4566      676E6564 
- 4566      20636861 
- 4566      7200
- 4567              	.LASF88:
- 4568 0422 566F6C75 		.ascii	"Volume_ADC_Offset\000"
- 4568      6D655F41 
- 4568      44435F4F 
- 4568      66667365 
- 4568      7400
- 4569              	.LASF3:
- 4570 0434 73686F72 		.ascii	"short int\000"
- 4570      7420696E 
- 4570      7400
- 4571              	.LASF35:
- 4572 043e 67636F72 		.ascii	"gcorTmp\000"
- 4572      546D7000 
- 4573              	.LASF56:
- 4574 0446 566F6C75 		.ascii	"Volume_ADC_StartConvert\000"
- 4574      6D655F41 
- 4574      44435F53 
- 4574      74617274 
- 4574      436F6E76 
- 4575              	.LASF85:
- 4576 045e 566F6C75 		.ascii	"Volume_ADC_stopConversion\000"
- 4576      6D655F41 
- 4576      44435F73 
- 4576      746F7043 
- 4576      6F6E7665 
- 4577              	.LASF30:
- 4578 0478 7265736F 		.ascii	"resolution\000"
- 4578      6C757469 
- 4578      6F6E00
- 4579              	.LASF63:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 121
+ 4554              	.LASF87:
+ 4555 03ff 566F6C75 		.ascii	"Volume_ADC_Config\000"
+ 4555      6D655F41 
+ 4555      44435F43 
+ 4555      6F6E6669 
+ 4555      6700
+ 4556              	.LASF19:
+ 4557 0411 72656738 		.ascii	"reg8\000"
+ 4557      00
+ 4558              	.LASF28:
+ 4559 0416 69646561 		.ascii	"idealDecGain\000"
+ 4559      6C446563 
+ 4559      4761696E 
+ 4559      00
+ 4560              	.LASF33:
+ 4561 0423 6E6F726D 		.ascii	"normalised\000"
+ 4561      616C6973 
+ 4561      656400
+ 4562              	.LASF90:
+ 4563 042e 43794861 		.ascii	"CyHalt\000"
+ 4563      6C7400
+ 4564              	.LASF96:
+ 4565 0435 566F6C75 		.ascii	"Volume_ADC_Ext_CP_Clk_SetModeRegister\000"
+ 4565      6D655F41 
+ 4565      44435F45 
+ 4565      78745F43 
+ 4565      505F436C 
+ 4566              	.LASF2:
+ 4567 045b 756E7369 		.ascii	"unsigned char\000"
+ 4567      676E6564 
+ 4567      20636861 
+ 4567      7200
+ 4568              	.LASF88:
+ 4569 0469 566F6C75 		.ascii	"Volume_ADC_Offset\000"
+ 4569      6D655F41 
+ 4569      44435F4F 
+ 4569      66667365 
+ 4569      7400
+ 4570              	.LASF3:
+ 4571 047b 73686F72 		.ascii	"short int\000"
+ 4571      7420696E 
+ 4571      7400
+ 4572              	.LASF35:
+ 4573 0485 67636F72 		.ascii	"gcorTmp\000"
+ 4573      546D7000 
+ 4574              	.LASF56:
+ 4575 048d 566F6C75 		.ascii	"Volume_ADC_StartConvert\000"
+ 4575      6D655F41 
+ 4575      44435F53 
+ 4575      74617274 
+ 4575      436F6E76 
+ 4576              	.LASF85:
+ 4577 04a5 566F6C75 		.ascii	"Volume_ADC_stopConversion\000"
+ 4577      6D655F41 
+ 4577      44435F73 
+ 4577      746F7043 
+ 4577      6F6E7665 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 121
 
 
- 4580 0483 566F6C75 		.ascii	"Volume_ADC_GetResult32\000"
- 4580      6D655F41 
- 4580      44435F47 
- 4580      65745265 
- 4580      73756C74 
- 4581              	.LASF94:
- 4582 049a 566F6C75 		.ascii	"Volume_ADC_Ext_CP_Clk_SetDividerRegister\000"
- 4582      6D655F41 
- 4582      44435F45 
- 4582      78745F43 
- 4582      505F436C 
- 4583              	.LASF75:
- 4584 04c3 636F6566 		.ascii	"coefA\000"
- 4584      4100
- 4585              	.LASF76:
- 4586 04c9 636F6566 		.ascii	"coefB\000"
- 4586      4200
- 4587              	.LASF48:
- 4588 04cf 566F6C75 		.ascii	"Volume_ADC_SetCoherency\000"
- 4588      6D655F41 
- 4588      44435F53 
- 4588      6574436F 
- 4588      68657265 
- 4589              	.LASF18:
- 4590 04e7 63686172 		.ascii	"char\000"
- 4590      00
- 4591              	.LASF55:
- 4592 04ec 6756616C 		.ascii	"gValue\000"
- 4592      756500
- 4593              	.LASF22:
- 4594 04f3 63796973 		.ascii	"cyisraddress\000"
- 4594      72616464 
- 4594      72657373 
- 4594      00
- 4595              	.LASF31:
- 4596 0500 636F6E66 		.ascii	"config\000"
- 4596      696700
- 4597              	.LASF25:
- 4598 0507 6776616C 		.ascii	"gval\000"
- 4598      00
- 4599              	.LASF53:
- 4600 050c 566F6C75 		.ascii	"Volume_ADC_SetGCOR\000"
- 4600      6D655F41 
- 4600      44435F53 
- 4600      65744743 
- 4600      4F5200
- 4601              	.LASF78:
- 4602 051f 72657374 		.ascii	"restart\000"
- 4602      61727400 
- 4603              	.LASF52:
- 4604 0527 746D7056 		.ascii	"tmpValue\000"
- 4604      616C7565 
- 4604      00
- 4605              	.LASF66:
- 4606 0530 566F6C75 		.ascii	"Volume_ADC_SetGain\000"
- 4606      6D655F41 
- 4606      44435F53 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 122
+ 4578              	.LASF30:
+ 4579 04bf 7265736F 		.ascii	"resolution\000"
+ 4579      6C757469 
+ 4579      6F6E00
+ 4580              	.LASF63:
+ 4581 04ca 566F6C75 		.ascii	"Volume_ADC_GetResult32\000"
+ 4581      6D655F41 
+ 4581      44435F47 
+ 4581      65745265 
+ 4581      73756C74 
+ 4582              	.LASF94:
+ 4583 04e1 566F6C75 		.ascii	"Volume_ADC_Ext_CP_Clk_SetDividerRegister\000"
+ 4583      6D655F41 
+ 4583      44435F45 
+ 4583      78745F43 
+ 4583      505F436C 
+ 4584              	.LASF75:
+ 4585 050a 636F6566 		.ascii	"coefA\000"
+ 4585      4100
+ 4586              	.LASF76:
+ 4587 0510 636F6566 		.ascii	"coefB\000"
+ 4587      4200
+ 4588              	.LASF48:
+ 4589 0516 566F6C75 		.ascii	"Volume_ADC_SetCoherency\000"
+ 4589      6D655F41 
+ 4589      44435F53 
+ 4589      6574436F 
+ 4589      68657265 
+ 4590              	.LASF18:
+ 4591 052e 63686172 		.ascii	"char\000"
+ 4591      00
+ 4592              	.LASF55:
+ 4593 0533 6756616C 		.ascii	"gValue\000"
+ 4593      756500
+ 4594              	.LASF22:
+ 4595 053a 63796973 		.ascii	"cyisraddress\000"
+ 4595      72616464 
+ 4595      72657373 
+ 4595      00
+ 4596              	.LASF31:
+ 4597 0547 636F6E66 		.ascii	"config\000"
+ 4597      696700
+ 4598              	.LASF25:
+ 4599 054e 6776616C 		.ascii	"gval\000"
+ 4599      00
+ 4600              	.LASF53:
+ 4601 0553 566F6C75 		.ascii	"Volume_ADC_SetGCOR\000"
+ 4601      6D655F41 
+ 4601      44435F53 
+ 4601      65744743 
+ 4601      4F5200
+ 4602              	.LASF78:
+ 4603 0566 72657374 		.ascii	"restart\000"
+ 4603      61727400 
+ 4604              	.LASF52:
+ 4605 056e 746D7056 		.ascii	"tmpValue\000"
+ 4605      616C7565 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 122
 
 
- 4606      65744761 
- 4606      696E00
- 4607              	.LASF65:
- 4608 0543 6F666673 		.ascii	"offset\000"
- 4608      657400
- 4609              	.LASF89:
- 4610 054a 566F6C75 		.ascii	"Volume_ADC_CountsPerVolt\000"
- 4610      6D655F41 
- 4610      44435F43 
- 4610      6F756E74 
- 4610      73506572 
- 4611              	.LASF80:
- 4612 0563 566F6C75 		.ascii	"Volume_ADC_Read16\000"
- 4612      6D655F41 
- 4612      44435F52 
- 4612      65616431 
- 4612      3600
- 4613              	.LASF69:
- 4614 0575 61646343 		.ascii	"adcCounts\000"
- 4614      6F756E74 
- 4614      7300
- 4615              	.LASF100:
- 4616 057f 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 4616      73657273 
- 4616      5C4C756B 
- 4616      61732043 
- 4616      72657574 
- 4617 05ae 725C576F 		.ascii	"r\\Workspace01\\Controls.cydsn\000"
- 4617      726B7370 
- 4617      61636530 
- 4617      315C436F 
- 4617      6E74726F 
- 4618              	.LASF37:
- 4619 05cb 566F6C75 		.ascii	"Volume_ADC_SetDSMRef0Reg\000"
- 4619      6D655F41 
- 4619      44435F53 
- 4619      65744453 
- 4619      4D526566 
+ 4605      00
+ 4606              	.LASF66:
+ 4607 0577 566F6C75 		.ascii	"Volume_ADC_SetGain\000"
+ 4607      6D655F41 
+ 4607      44435F53 
+ 4607      65744761 
+ 4607      696E00
+ 4608              	.LASF65:
+ 4609 058a 6F666673 		.ascii	"offset\000"
+ 4609      657400
+ 4610              	.LASF89:
+ 4611 0591 566F6C75 		.ascii	"Volume_ADC_CountsPerVolt\000"
+ 4611      6D655F41 
+ 4611      44435F43 
+ 4611      6F756E74 
+ 4611      73506572 
+ 4612              	.LASF80:
+ 4613 05aa 566F6C75 		.ascii	"Volume_ADC_Read16\000"
+ 4613      6D655F41 
+ 4613      44435F52 
+ 4613      65616431 
+ 4613      3600
+ 4614              	.LASF69:
+ 4615 05bc 61646343 		.ascii	"adcCounts\000"
+ 4615      6F756E74 
+ 4615      7300
+ 4616              	.LASF37:
+ 4617 05c6 566F6C75 		.ascii	"Volume_ADC_SetDSMRef0Reg\000"
+ 4617      6D655F41 
+ 4617      44435F53 
+ 4617      65744453 
+ 4617      4D526566 
+ 4618              	.LASF39:
+ 4619 05df 656E6162 		.ascii	"enableInterrupts\000"
+ 4619      6C65496E 
+ 4619      74657272 
+ 4619      75707473 
+ 4619      00
  4620              	.LASF51:
- 4621 05e4 73746174 		.ascii	"status\000"
+ 4621 05f0 73746174 		.ascii	"status\000"
  4621      757300
  4622              	.LASF98:
- 4623 05eb 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 4623 05f7 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
  4623      4320342E 
  4623      392E3320 
  4623      32303135 
  4623      30333033 
- 4624 061e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 4624 062a 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
  4624      20726576 
  4624      6973696F 
  4624      6E203232 
  4624      31323230 
- 4625 0651 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 4625 065d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  4625      66756E63 
  4625      74696F6E 
  4625      2D736563 
  4625      74696F6E 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccqhgsvp.s 			page 123
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccTvRJpG.s 			page 123
 
 
  4626              	.LASF93:
- 4627 0679 566F6C75 		.ascii	"Volume_ADC_AMux_Select\000"
+ 4627 0685 566F6C75 		.ascii	"Volume_ADC_AMux_Select\000"
  4627      6D655F41 
  4627      44435F41 
  4627      4D75785F 
  4627      53656C65 
  4628              	.LASF50:
- 4629 0690 6761696E 		.ascii	"gainAdjust\000"
+ 4629 069c 6761696E 		.ascii	"gainAdjust\000"
  4629      41646A75 
  4629      737400
  4630              	.LASF54:
- 4631 069b 566F6C75 		.ascii	"Volume_ADC_ReadGCOR\000"
+ 4631 06a7 566F6C75 		.ascii	"Volume_ADC_ReadGCOR\000"
  4631      6D655F41 
  4631      44435F52 
  4631      65616447 
  4631      434F5200 
  4632              	.LASF14:
- 4633 06af 696E7431 		.ascii	"int16\000"
+ 4633 06bb 696E7431 		.ascii	"int16\000"
  4633      3600
  4634              	.LASF64:
- 4635 06b5 566F6C75 		.ascii	"Volume_ADC_SetOffset\000"
+ 4635 06c1 566F6C75 		.ascii	"Volume_ADC_SetOffset\000"
  4635      6D655F41 
  4635      44435F53 
  4635      65744F66 
  4635      66736574 
  4636              	.LASF58:
- 4637 06ca 566F6C75 		.ascii	"Volume_ADC_IsEndConversion\000"
+ 4637 06d6 566F6C75 		.ascii	"Volume_ADC_IsEndConversion\000"
  4637      6D655F41 
  4637      44435F49 
  4637      73456E64 
  4637      436F6E76 
  4638              	.LASF47:
- 4639 06e5 746D7052 		.ascii	"tmpReg\000"
+ 4639 06f1 746D7052 		.ascii	"tmpReg\000"
  4639      656700
  4640              	.LASF61:
- 4641 06ec 72657375 		.ascii	"result\000"
+ 4641 06f8 72657375 		.ascii	"result\000"
  4641      6C7400
  4642              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

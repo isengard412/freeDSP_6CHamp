@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
   29:Generated_Source\PSoC5/i_Down.c **** /* `#START i_Down_intc` */
   30:Generated_Source\PSoC5/i_Down.c **** 
   31:Generated_Source\PSoC5/i_Down.c **** /* `#END` */
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 2
 
 
   32:Generated_Source\PSoC5/i_Down.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
   86:Generated_Source\PSoC5/i_Down.c **** *  
   87:Generated_Source\PSoC5/i_Down.c **** *  When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
   88:Generated_Source\PSoC5/i_Down.c **** *  used to provide consistent definition across compilers:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 3
 
 
   89:Generated_Source\PSoC5/i_Down.c **** *  
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  143:Generated_Source\PSoC5/i_Down.c **** 
  144:Generated_Source\PSoC5/i_Down.c **** /*******************************************************************************
  145:Generated_Source\PSoC5/i_Down.c **** * Function Name: i_Down_Interrupt
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 4
 
 
  146:Generated_Source\PSoC5/i_Down.c **** ********************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  183:Generated_Source\PSoC5/i_Down.c **** *   used to provide consistent definition across compilers:
  184:Generated_Source\PSoC5/i_Down.c **** *
  185:Generated_Source\PSoC5/i_Down.c **** *   Function definition example:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 5
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 5
 
 
  186:Generated_Source\PSoC5/i_Down.c **** *   CY_ISR(MyISR)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  212:Generated_Source\PSoC5/i_Down.c **** ********************************************************************************
  213:Generated_Source\PSoC5/i_Down.c **** *
  214:Generated_Source\PSoC5/i_Down.c **** * Summary:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 6
 
 
  215:Generated_Source\PSoC5/i_Down.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  242:Generated_Source\PSoC5/i_Down.c **** *   override any effect this API would have had. This API should only be called
  243:Generated_Source\PSoC5/i_Down.c **** *   after i_Down_Start or i_Down_StartEx has been called. 
  244:Generated_Source\PSoC5/i_Down.c **** *   To set the initial priority for the component, use the Design-Wide Resources
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 7
 
 
  245:Generated_Source\PSoC5/i_Down.c **** *   Interrupt Editor.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  271:Generated_Source\PSoC5/i_Down.c **** * Parameters:
  272:Generated_Source\PSoC5/i_Down.c **** *   None
  273:Generated_Source\PSoC5/i_Down.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 8
 
 
  274:Generated_Source\PSoC5/i_Down.c **** * Return:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  300:Generated_Source\PSoC5/i_Down.c **** * Parameters:
  301:Generated_Source\PSoC5/i_Down.c **** *   None
  302:Generated_Source\PSoC5/i_Down.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 9
 
 
  303:Generated_Source\PSoC5/i_Down.c **** * Return:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  182              		@ args = 0, pretend = 0, frame = 0
  183              		@ frame_needed = 0, uses_anonymous_args = 0
  184              		@ link register save eliminated.
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 10
 
 
  330:Generated_Source\PSoC5/i_Down.c ****     /* Get the state of the general interrupt. */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  216              		.loc 1 352 0
  217 0000 4022     		movs	r2, #64
  218 0002 014B     		ldr	r3, .L23
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 11
 
 
  219 0004 1A60     		str	r2, [r3]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  268              		.global	i_Down_StartEx
  269              		.thumb
  270              		.thumb_func
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 12
 
 
  271              		.type	i_Down_StartEx, %function
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  318              		.loc 1 137 0
  319 0002 FFF7FEFF 		bl	i_Down_Disable
  320              	.LVL16:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 13
 
 
  140:Generated_Source\PSoC5/i_Down.c **** }
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  348 0002 014B     		ldr	r3, .L36
  349 0004 1A60     		str	r2, [r3]
  350 0006 7047     		bx	lr
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 14
 
 
  351              	.L37:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  380              		.cfi_endproc
  381              	.LFE12:
  382              		.size	i_Down_ClearPending, .-i_Down_ClearPending
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 15
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 15
 
 
  383              		.text
@@ -851,10 +851,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  390 0006 00000000 		.4byte	.Ldebug_abbrev0
  391 000a 04       		.byte	0x4
  392 000b 01       		.uleb128 0x1
- 393 000c E9000000 		.4byte	.LASF33
+ 393 000c 2E010000 		.4byte	.LASF33
  394 0010 01       		.byte	0x1
- 395 0011 1F020000 		.4byte	.LASF34
- 396 0015 48020000 		.4byte	.LASF35
+ 395 0011 64020000 		.4byte	.LASF34
+ 396 0015 39000000 		.4byte	.LASF35
  397 0019 00000000 		.4byte	.Ldebug_ranges0+0
  398 001d 00000000 		.4byte	0
  399 0021 00000000 		.4byte	.Ldebug_line0
@@ -865,46 +865,46 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  404 002c 03       		.uleb128 0x3
  405 002d 04       		.byte	0x4
  406 002e 07       		.byte	0x7
- 407 002f 77010000 		.4byte	.LASF0
+ 407 002f BC010000 		.4byte	.LASF0
  408 0033 03       		.uleb128 0x3
  409 0034 01       		.byte	0x1
  410 0035 06       		.byte	0x6
- 411 0036 94020000 		.4byte	.LASF1
+ 411 0036 8D020000 		.4byte	.LASF1
  412 003a 03       		.uleb128 0x3
  413 003b 01       		.byte	0x1
  414 003c 08       		.byte	0x8
- 415 003d 60000000 		.4byte	.LASF2
+ 415 003d A5000000 		.4byte	.LASF2
  416 0041 03       		.uleb128 0x3
  417 0042 02       		.byte	0x2
  418 0043 05       		.byte	0x5
- 419 0044 08020000 		.4byte	.LASF3
+ 419 0044 4D020000 		.4byte	.LASF3
  420 0048 03       		.uleb128 0x3
  421 0049 02       		.byte	0x2
  422 004a 07       		.byte	0x7
- 423 004b 39000000 		.4byte	.LASF4
+ 423 004b 99020000 		.4byte	.LASF4
  424 004f 03       		.uleb128 0x3
  425 0050 04       		.byte	0x4
  426 0051 05       		.byte	0x5
- 427 0052 3F020000 		.4byte	.LASF5
+ 427 0052 84020000 		.4byte	.LASF5
  428 0056 03       		.uleb128 0x3
  429 0057 04       		.byte	0x4
  430 0058 07       		.byte	0x7
- 431 0059 73000000 		.4byte	.LASF6
+ 431 0059 B8000000 		.4byte	.LASF6
  432 005d 03       		.uleb128 0x3
  433 005e 08       		.byte	0x8
  434 005f 05       		.byte	0x5
- 435 0060 DA010000 		.4byte	.LASF7
+ 435 0060 1F020000 		.4byte	.LASF7
  436 0064 03       		.uleb128 0x3
  437 0065 08       		.byte	0x8
  438 0066 07       		.byte	0x7
- 439 0067 8C010000 		.4byte	.LASF8
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 16
+ 439 0067 D1010000 		.4byte	.LASF8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 16
 
 
  440 006b 03       		.uleb128 0x3
  441 006c 04       		.byte	0x4
  442 006d 07       		.byte	0x7
- 443 006e D1010000 		.4byte	.LASF9
+ 443 006e 16020000 		.4byte	.LASF9
  444 0072 04       		.uleb128 0x4
  445 0073 04       		.byte	0x4
  446 0074 78000000 		.4byte	0x78
@@ -912,27 +912,27 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  448 0079 03       		.uleb128 0x3
  449 007a 01       		.byte	0x1
  450 007b 08       		.byte	0x8
- 451 007c E8010000 		.4byte	.LASF10
+ 451 007c 2D020000 		.4byte	.LASF10
  452 0080 06       		.uleb128 0x6
- 453 0081 85000000 		.4byte	.LASF11
+ 453 0081 CA000000 		.4byte	.LASF11
  454 0085 02       		.byte	0x2
  455 0086 9201     		.2byte	0x192
  456 0088 3A000000 		.4byte	0x3a
  457 008c 06       		.uleb128 0x6
- 458 008d E2000000 		.4byte	.LASF12
+ 458 008d 27010000 		.4byte	.LASF12
  459 0091 02       		.byte	0x2
  460 0092 9401     		.2byte	0x194
  461 0094 56000000 		.4byte	0x56
  462 0098 03       		.uleb128 0x3
  463 0099 04       		.byte	0x4
  464 009a 04       		.byte	0x4
- 465 009b 5A000000 		.4byte	.LASF13
+ 465 009b 9F000000 		.4byte	.LASF13
  466 009f 03       		.uleb128 0x3
  467 00a0 08       		.byte	0x8
  468 00a1 04       		.byte	0x4
- 469 00a2 CA000000 		.4byte	.LASF14
+ 469 00a2 0F010000 		.4byte	.LASF14
  470 00a6 06       		.uleb128 0x6
- 471 00a7 6E000000 		.4byte	.LASF15
+ 471 00a7 B3000000 		.4byte	.LASF15
  472 00ab 02       		.byte	0x2
  473 00ac 3C02     		.2byte	0x23c
  474 00ae B2000000 		.4byte	0xb2
@@ -946,19 +946,19 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  482 00c3 07       		.uleb128 0x7
  483 00c4 8C000000 		.4byte	0x8c
  484 00c8 06       		.uleb128 0x6
- 485 00c9 A3010000 		.4byte	.LASF17
+ 485 00c9 E8010000 		.4byte	.LASF17
  486 00cd 02       		.byte	0x2
  487 00ce 4E02     		.2byte	0x24e
  488 00d0 72000000 		.4byte	0x72
  489 00d4 08       		.uleb128 0x8
- 490 00d5 B0010000 		.4byte	.LASF25
+ 490 00d5 F5010000 		.4byte	.LASF25
  491 00d9 01       		.byte	0x1
  492 00da A0       		.byte	0xa0
  493 00db 00000000 		.4byte	.LFB3
  494 00df 02000000 		.4byte	.LFE3-.LFB3
  495 00e3 01       		.uleb128 0x1
  496 00e4 9C       		.byte	0x9c
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 17
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 17
 
 
  497 00e5 09       		.uleb128 0x9
@@ -971,14 +971,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  504 00f5 9C       		.byte	0x9c
  505 00f6 15010000 		.4byte	0x115
  506 00fa 0A       		.uleb128 0xa
- 507 00fb 84010000 		.4byte	.LASF21
+ 507 00fb C9010000 		.4byte	.LASF21
  508 00ff 01       		.byte	0x1
  509 0100 C8       		.byte	0xc8
  510 0101 C8000000 		.4byte	0xc8
  511 0105 01       		.uleb128 0x1
  512 0106 50       		.byte	0x50
  513 0107 0B       		.uleb128 0xb
- 514 0108 ED010000 		.4byte	.LASF18
+ 514 0108 32020000 		.4byte	.LASF18
  515 010c 01       		.byte	0x1
  516 010d CA       		.byte	0xca
  517 010e 15010000 		.4byte	0x115
@@ -989,7 +989,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  522 0116 04       		.byte	0x4
  523 0117 C8000000 		.4byte	0xc8
  524 011b 0C       		.uleb128 0xc
- 525 011c D1000000 		.4byte	.LASF23
+ 525 011c 16010000 		.4byte	.LASF23
  526 0120 01       		.byte	0x1
  527 0121 E0       		.byte	0xe0
  528 0122 C8000000 		.4byte	0xc8
@@ -999,7 +999,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  532 012f 9C       		.byte	0x9c
  533 0130 42010000 		.4byte	0x142
  534 0134 0B       		.uleb128 0xb
- 535 0135 ED010000 		.4byte	.LASF18
+ 535 0135 32020000 		.4byte	.LASF18
  536 0139 01       		.byte	0x1
  537 013a E2       		.byte	0xe2
  538 013b 15010000 		.4byte	0x115
@@ -1007,7 +1007,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  540 0140 53       		.byte	0x53
  541 0141 00       		.byte	0
  542 0142 0D       		.uleb128 0xd
- 543 0143 B7000000 		.4byte	.LASF20
+ 543 0143 FC000000 		.4byte	.LASF20
  544 0147 01       		.byte	0x1
  545 0148 0201     		.2byte	0x102
  546 014a 00000000 		.4byte	.LFB6
@@ -1016,9 +1016,9 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  549 0153 9C       		.byte	0x9c
  550 0154 69010000 		.4byte	0x169
  551 0158 0E       		.uleb128 0xe
- 552 0159 AE000000 		.4byte	.LASF22
+ 552 0159 F3000000 		.4byte	.LASF22
  553 015d 01       		.byte	0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 18
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 18
 
 
  554 015e 0201     		.2byte	0x102
@@ -1036,14 +1036,14 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  566 017e 9C       		.byte	0x9c
  567 017f 94010000 		.4byte	0x194
  568 0183 10       		.uleb128 0x10
- 569 0184 AE000000 		.4byte	.LASF22
+ 569 0184 F3000000 		.4byte	.LASF22
  570 0188 01       		.byte	0x1
  571 0189 1A01     		.2byte	0x11a
  572 018b 80000000 		.4byte	0x80
  573 018f 21000000 		.4byte	.LLST1
  574 0193 00       		.byte	0
  575 0194 11       		.uleb128 0x11
- 576 0195 4C000000 		.4byte	.LASF26
+ 576 0195 91000000 		.4byte	.LASF26
  577 0199 01       		.byte	0x1
  578 019a 3301     		.2byte	0x133
  579 019c 00000000 		.4byte	.LFB8
@@ -1051,7 +1051,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  581 01a4 01       		.uleb128 0x1
  582 01a5 9C       		.byte	0x9c
  583 01a6 12       		.uleb128 0x12
- 584 01a7 C1010000 		.4byte	.LASF36
+ 584 01a7 06020000 		.4byte	.LASF36
  585 01ab 01       		.byte	0x1
  586 01ac 4801     		.2byte	0x148
  587 01ae 80000000 		.4byte	0x80
@@ -1060,7 +1060,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  590 01ba 01       		.uleb128 0x1
  591 01bb 9C       		.byte	0x9c
  592 01bc 11       		.uleb128 0x11
- 593 01bd 8B000000 		.4byte	.LASF27
+ 593 01bd D0000000 		.4byte	.LASF27
  594 01c1 01       		.byte	0x1
  595 01c2 5D01     		.2byte	0x15d
  596 01c4 00000000 		.4byte	.LFB10
@@ -1068,7 +1068,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  598 01cc 01       		.uleb128 0x1
  599 01cd 9C       		.byte	0x9c
  600 01ce 09       		.uleb128 0x9
- 601 01cf 12020000 		.4byte	.LASF28
+ 601 01cf 57020000 		.4byte	.LASF28
  602 01d3 01       		.byte	0x1
  603 01d4 3D       		.byte	0x3d
  604 01d5 00000000 		.4byte	.LFB0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  608 01df 20020000 		.4byte	0x220
  609 01e3 13       		.uleb128 0x13
  610 01e4 06000000 		.4byte	.LVL7
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 19
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 19
 
 
  611 01e8 BC010000 		.4byte	0x1bc
@@ -1117,7 +1117,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  644 0230 9C       		.byte	0x9c
  645 0231 7E020000 		.4byte	0x27e
  646 0235 16       		.uleb128 0x16
- 647 0236 84010000 		.4byte	.LASF21
+ 647 0236 C9010000 		.4byte	.LASF21
  648 023a 01       		.byte	0x1
  649 023b 68       		.byte	0x68
  650 023c C8000000 		.4byte	0xc8
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  665 0260 00       		.byte	0
  666 0261 14       		.uleb128 0x14
  667 0262 14000000 		.4byte	.LVL14
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 20
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 20
 
 
  668 0266 42010000 		.4byte	0x142
@@ -1154,7 +1154,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  678 0279 94010000 		.4byte	0x194
  679 027d 00       		.byte	0
  680 027e 09       		.uleb128 0x9
- 681 027f FC010000 		.4byte	.LASF30
+ 681 027f 41020000 		.4byte	.LASF30
  682 0283 01       		.byte	0x1
  683 0284 86       		.byte	0x86
  684 0285 00000000 		.4byte	.LFB2
@@ -1170,7 +1170,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  694 02a1 E5000000 		.4byte	0xe5
  695 02a5 00       		.byte	0
  696 02a6 11       		.uleb128 0x11
- 697 02a7 A0020000 		.4byte	.LASF31
+ 697 02a7 AC020000 		.4byte	.LASF31
  698 02ab 01       		.byte	0x1
  699 02ac 7801     		.2byte	0x178
  700 02ae 00000000 		.4byte	.LFB11
@@ -1178,7 +1178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  702 02b6 01       		.uleb128 0x1
  703 02b7 9C       		.byte	0x9c
  704 02b8 11       		.uleb128 0x11
- 705 02b9 9A000000 		.4byte	.LASF32
+ 705 02b9 DF000000 		.4byte	.LASF32
  706 02bd 01       		.byte	0x1
  707 02be 9101     		.2byte	0x191
  708 02c0 00000000 		.4byte	.LFB12
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  722 0007 03       		.uleb128 0x3
  723 0008 0E       		.uleb128 0xe
  724 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 21
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 21
 
 
  725 000a 0E       		.uleb128 0xe
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  779 0040 3B       		.uleb128 0x3b
  780 0041 05       		.uleb128 0x5
  781 0042 49       		.uleb128 0x49
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 22
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 22
 
 
  782 0043 13       		.uleb128 0x13
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  836 007b 01       		.uleb128 0x1
  837 007c 13       		.uleb128 0x13
  838 007d 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 23
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 23
 
 
  839 007e 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  893 00b5 01       		.uleb128 0x1
  894 00b6 13       		.uleb128 0x13
  895 00b7 00       		.byte	0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 24
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 24
 
 
  896 00b8 00       		.byte	0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  950 00ef 49       		.uleb128 0x49
  951 00f0 13       		.uleb128 0x13
  952 00f1 11       		.uleb128 0x11
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 25
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 25
 
 
  953 00f2 01       		.uleb128 0x1
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  1007 012a 03       		.uleb128 0x3
  1008 012b 0E       		.uleb128 0xe
  1009 012c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 26
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 26
 
 
  1010 012d 0B       		.uleb128 0xb
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  1064 016b 0B       		.uleb128 0xb
  1065 016c 49       		.uleb128 0x49
  1066 016d 13       		.uleb128 0x13
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 27
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 27
 
 
  1067 016e 02       		.uleb128 0x2
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  1121 001c 0C000000 		.4byte	.LFE4-.LFB4
  1122 0020 00000000 		.4byte	.LFB5
  1123 0024 0C000000 		.4byte	.LFE5-.LFB5
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 28
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 28
 
 
  1124 0028 00000000 		.4byte	.LFB6
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  1178 0000 2F010000 		.section	.debug_str,"MS",%progbits,1
  1178      02004300 
  1178      00000201 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 29
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 29
 
 
  1178      FB0E0D00 
@@ -1703,182 +1703,182 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 1
  1186      65745665 
  1186      63746F72 
  1186      00
- 1187              	.LASF4:
- 1188 0039 73686F72 		.ascii	"short unsigned int\000"
- 1188      7420756E 
- 1188      7369676E 
- 1188      65642069 
- 1188      6E7400
- 1189              	.LASF26:
- 1190 004c 695F446F 		.ascii	"i_Down_Enable\000"
- 1190      776E5F45 
- 1190      6E61626C 
- 1190      6500
- 1191              	.LASF13:
- 1192 005a 666C6F61 		.ascii	"float\000"
- 1192      7400
- 1193              	.LASF2:
- 1194 0060 756E7369 		.ascii	"unsigned char\000"
- 1194      676E6564 
- 1194      20636861 
- 1194      7200
- 1195              	.LASF15:
- 1196 006e 72656738 		.ascii	"reg8\000"
- 1196      00
- 1197              	.LASF6:
- 1198 0073 6C6F6E67 		.ascii	"long unsigned int\000"
- 1198      20756E73 
- 1198      69676E65 
- 1198      6420696E 
- 1198      7400
- 1199              	.LASF11:
- 1200 0085 75696E74 		.ascii	"uint8\000"
- 1200      3800
- 1201              	.LASF27:
- 1202 008b 695F446F 		.ascii	"i_Down_Disable\000"
- 1202      776E5F44 
- 1202      69736162 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 30
+ 1187              	.LASF35:
+ 1188 0039 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 1188      73657273 
+ 1188      5C4C756B 
+ 1188      61732043 
+ 1188      72657574 
+ 1189 0067 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 1189      5F364348 
+ 1189      616D705C 
+ 1189      50536F43 
+ 1189      20576F72 
+ 1190              	.LASF26:
+ 1191 0091 695F446F 		.ascii	"i_Down_Enable\000"
+ 1191      776E5F45 
+ 1191      6E61626C 
+ 1191      6500
+ 1192              	.LASF13:
+ 1193 009f 666C6F61 		.ascii	"float\000"
+ 1193      7400
+ 1194              	.LASF2:
+ 1195 00a5 756E7369 		.ascii	"unsigned char\000"
+ 1195      676E6564 
+ 1195      20636861 
+ 1195      7200
+ 1196              	.LASF15:
+ 1197 00b3 72656738 		.ascii	"reg8\000"
+ 1197      00
+ 1198              	.LASF6:
+ 1199 00b8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1199      20756E73 
+ 1199      69676E65 
+ 1199      6420696E 
+ 1199      7400
+ 1200              	.LASF11:
+ 1201 00ca 75696E74 		.ascii	"uint8\000"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 30
 
 
- 1202      6C6500
- 1203              	.LASF32:
- 1204 009a 695F446F 		.ascii	"i_Down_ClearPending\000"
- 1204      776E5F43 
- 1204      6C656172 
- 1204      50656E64 
- 1204      696E6700 
- 1205              	.LASF22:
- 1206 00ae 7072696F 		.ascii	"priority\000"
- 1206      72697479 
- 1206      00
- 1207              	.LASF20:
- 1208 00b7 695F446F 		.ascii	"i_Down_SetPriority\000"
- 1208      776E5F53 
- 1208      65745072 
- 1208      696F7269 
- 1208      747900
- 1209              	.LASF14:
- 1210 00ca 646F7562 		.ascii	"double\000"
- 1210      6C6500
- 1211              	.LASF23:
- 1212 00d1 695F446F 		.ascii	"i_Down_GetVector\000"
- 1212      776E5F47 
- 1212      65745665 
- 1212      63746F72 
- 1212      00
- 1213              	.LASF12:
- 1214 00e2 75696E74 		.ascii	"uint32\000"
- 1214      333200
- 1215              	.LASF33:
- 1216 00e9 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1216      4320342E 
- 1216      392E3320 
- 1216      32303135 
- 1216      30333033 
- 1217 011c 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1217      20726576 
- 1217      6973696F 
- 1217      6E203232 
- 1217      31323230 
- 1218 014f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1218      66756E63 
- 1218      74696F6E 
- 1218      2D736563 
- 1218      74696F6E 
- 1219              	.LASF0:
- 1220 0177 756E7369 		.ascii	"unsigned int\000"
- 1220      676E6564 
- 1220      20696E74 
- 1220      00
- 1221              	.LASF21:
- 1222 0184 61646472 		.ascii	"address\000"
- 1222      65737300 
- 1223              	.LASF8:
- 1224 018c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1224      206C6F6E 
- 1224      6720756E 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 31
+ 1201      3800
+ 1202              	.LASF27:
+ 1203 00d0 695F446F 		.ascii	"i_Down_Disable\000"
+ 1203      776E5F44 
+ 1203      69736162 
+ 1203      6C6500
+ 1204              	.LASF32:
+ 1205 00df 695F446F 		.ascii	"i_Down_ClearPending\000"
+ 1205      776E5F43 
+ 1205      6C656172 
+ 1205      50656E64 
+ 1205      696E6700 
+ 1206              	.LASF22:
+ 1207 00f3 7072696F 		.ascii	"priority\000"
+ 1207      72697479 
+ 1207      00
+ 1208              	.LASF20:
+ 1209 00fc 695F446F 		.ascii	"i_Down_SetPriority\000"
+ 1209      776E5F53 
+ 1209      65745072 
+ 1209      696F7269 
+ 1209      747900
+ 1210              	.LASF14:
+ 1211 010f 646F7562 		.ascii	"double\000"
+ 1211      6C6500
+ 1212              	.LASF23:
+ 1213 0116 695F446F 		.ascii	"i_Down_GetVector\000"
+ 1213      776E5F47 
+ 1213      65745665 
+ 1213      63746F72 
+ 1213      00
+ 1214              	.LASF12:
+ 1215 0127 75696E74 		.ascii	"uint32\000"
+ 1215      333200
+ 1216              	.LASF33:
+ 1217 012e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1217      4320342E 
+ 1217      392E3320 
+ 1217      32303135 
+ 1217      30333033 
+ 1218 0161 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1218      20726576 
+ 1218      6973696F 
+ 1218      6E203232 
+ 1218      31323230 
+ 1219 0194 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1219      66756E63 
+ 1219      74696F6E 
+ 1219      2D736563 
+ 1219      74696F6E 
+ 1220              	.LASF0:
+ 1221 01bc 756E7369 		.ascii	"unsigned int\000"
+ 1221      676E6564 
+ 1221      20696E74 
+ 1221      00
+ 1222              	.LASF21:
+ 1223 01c9 61646472 		.ascii	"address\000"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 31
 
 
- 1224      7369676E 
- 1224      65642069 
- 1225              	.LASF17:
- 1226 01a3 63796973 		.ascii	"cyisraddress\000"
- 1226      72616464 
- 1226      72657373 
- 1226      00
- 1227              	.LASF25:
- 1228 01b0 695F446F 		.ascii	"i_Down_Interrupt\000"
- 1228      776E5F49 
- 1228      6E746572 
- 1228      72757074 
- 1228      00
- 1229              	.LASF36:
- 1230 01c1 695F446F 		.ascii	"i_Down_GetState\000"
- 1230      776E5F47 
- 1230      65745374 
- 1230      61746500 
- 1231              	.LASF9:
- 1232 01d1 73697A65 		.ascii	"sizetype\000"
- 1232      74797065 
- 1232      00
- 1233              	.LASF7:
- 1234 01da 6C6F6E67 		.ascii	"long long int\000"
- 1234      206C6F6E 
- 1234      6720696E 
- 1234      7400
- 1235              	.LASF10:
- 1236 01e8 63686172 		.ascii	"char\000"
- 1236      00
- 1237              	.LASF18:
- 1238 01ed 72616D56 		.ascii	"ramVectorTable\000"
- 1238      6563746F 
- 1238      72546162 
- 1238      6C6500
- 1239              	.LASF30:
- 1240 01fc 695F446F 		.ascii	"i_Down_Stop\000"
- 1240      776E5F53 
- 1240      746F7000 
- 1241              	.LASF3:
- 1242 0208 73686F72 		.ascii	"short int\000"
- 1242      7420696E 
- 1242      7400
- 1243              	.LASF28:
- 1244 0212 695F446F 		.ascii	"i_Down_Start\000"
- 1244      776E5F53 
- 1244      74617274 
- 1244      00
- 1245              	.LASF34:
- 1246 021f 47656E65 		.ascii	"Generated_Source\\PSoC5\\i_Down.c\000"
- 1246      72617465 
- 1246      645F536F 
- 1246      75726365 
- 1246      5C50536F 
- 1247              	.LASF5:
- 1248 023f 6C6F6E67 		.ascii	"long int\000"
- 1248      20696E74 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccMiYWBx.s 			page 32
+ 1223      65737300 
+ 1224              	.LASF8:
+ 1225 01d1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1225      206C6F6E 
+ 1225      6720756E 
+ 1225      7369676E 
+ 1225      65642069 
+ 1226              	.LASF17:
+ 1227 01e8 63796973 		.ascii	"cyisraddress\000"
+ 1227      72616464 
+ 1227      72657373 
+ 1227      00
+ 1228              	.LASF25:
+ 1229 01f5 695F446F 		.ascii	"i_Down_Interrupt\000"
+ 1229      776E5F49 
+ 1229      6E746572 
+ 1229      72757074 
+ 1229      00
+ 1230              	.LASF36:
+ 1231 0206 695F446F 		.ascii	"i_Down_GetState\000"
+ 1231      776E5F47 
+ 1231      65745374 
+ 1231      61746500 
+ 1232              	.LASF9:
+ 1233 0216 73697A65 		.ascii	"sizetype\000"
+ 1233      74797065 
+ 1233      00
+ 1234              	.LASF7:
+ 1235 021f 6C6F6E67 		.ascii	"long long int\000"
+ 1235      206C6F6E 
+ 1235      6720696E 
+ 1235      7400
+ 1236              	.LASF10:
+ 1237 022d 63686172 		.ascii	"char\000"
+ 1237      00
+ 1238              	.LASF18:
+ 1239 0232 72616D56 		.ascii	"ramVectorTable\000"
+ 1239      6563746F 
+ 1239      72546162 
+ 1239      6C6500
+ 1240              	.LASF30:
+ 1241 0241 695F446F 		.ascii	"i_Down_Stop\000"
+ 1241      776E5F53 
+ 1241      746F7000 
+ 1242              	.LASF3:
+ 1243 024d 73686F72 		.ascii	"short int\000"
+ 1243      7420696E 
+ 1243      7400
+ 1244              	.LASF28:
+ 1245 0257 695F446F 		.ascii	"i_Down_Start\000"
+ 1245      776E5F53 
+ 1245      74617274 
+ 1245      00
+ 1246              	.LASF34:
+ 1247 0264 47656E65 		.ascii	"Generated_Source\\PSoC5\\i_Down.c\000"
+ 1247      72617465 
+ 1247      645F536F 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccJEWTqR.s 			page 32
 
 
- 1248      00
- 1249              	.LASF35:
- 1250 0248 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\PSoC Creato"
- 1250      73657273 
- 1250      5C4C756B 
- 1250      61732043 
- 1250      72657574 
- 1251 0277 725C576F 		.ascii	"r\\Workspace01\\Controls.cydsn\000"
- 1251      726B7370 
- 1251      61636530 
- 1251      315C436F 
- 1251      6E74726F 
- 1252              	.LASF1:
- 1253 0294 7369676E 		.ascii	"signed char\000"
- 1253      65642063 
- 1253      68617200 
+ 1247      75726365 
+ 1247      5C50536F 
+ 1248              	.LASF5:
+ 1249 0284 6C6F6E67 		.ascii	"long int\000"
+ 1249      20696E74 
+ 1249      00
+ 1250              	.LASF1:
+ 1251 028d 7369676E 		.ascii	"signed char\000"
+ 1251      65642063 
+ 1251      68617200 
+ 1252              	.LASF4:
+ 1253 0299 73686F72 		.ascii	"short unsigned int\000"
+ 1253      7420756E 
+ 1253      7369676E 
+ 1253      65642069 
+ 1253      6E7400
  1254              	.LASF31:
- 1255 02a0 695F446F 		.ascii	"i_Down_SetPending\000"
+ 1255 02ac 695F446F 		.ascii	"i_Down_SetPending\000"
  1255      776E5F53 
  1255      65745065 
  1255      6E64696E 

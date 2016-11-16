@@ -1,6 +1,6 @@
 -- Project:   Protection_Register_Control
--- Generated: 08/02/2016 17:16:46
--- PSoC Creator  3.3 SP2
+-- Generated: 11/16/2016 12:45:58
+-- PSoC Creator  4.0
 
 ENTITY Protection_Register_Control IS
     PORT(
