@@ -149,6 +149,25 @@
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_3_aliases.h" value="HEADER;;;;;Input_Relais_3" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_3.c" value="SOURCE_C;CortexM3;;;;Input_Relais_3" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_3.h" value="HEADER;;;;;Input_Relais_3" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\timer_clock.c" value="SOURCE_C;CortexM3;;;;timer_clock" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\timer_clock.h" value="HEADER;;;;;timer_clock" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Button_Timer.c" value="SOURCE_C;CortexM3;;;;Button_Timer" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Button_Timer.h" value="HEADER;;;;;Button_Timer" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Button_Timer_PM.c" value="SOURCE_C;CortexM3;;;;Button_Timer" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Button_Timer_Interrupt.c" value="SOURCE_C;CortexM3;;;;Button_Timer_Interrupt" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Button_Timer_Interrupt.h" value="HEADER;;;;;Button_Timer_Interrupt" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_4_aliases.h" value="HEADER;;;;;Input_Relais_4" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_4.c" value="SOURCE_C;CortexM3;;;;Input_Relais_4" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_4.h" value="HEADER;;;;;Input_Relais_4" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_5_aliases.h" value="HEADER;;;;;Input_Relais_5" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_5.c" value="SOURCE_C;CortexM3;;;;Input_Relais_5" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_5.h" value="HEADER;;;;;Input_Relais_5" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_6_aliases.h" value="HEADER;;;;;Input_Relais_6" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_6.c" value="SOURCE_C;CortexM3;;;;Input_Relais_6" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_6.h" value="HEADER;;;;;Input_Relais_6" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_7_aliases.h" value="HEADER;;;;;Input_Relais_7" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_7.c" value="SOURCE_C;CortexM3;;;;Input_Relais_7" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_7.h" value="HEADER;;;;;Input_Relais_7" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Volume_ADC_AMux.c" value="SOURCE_C;CortexM3;;;;Volume_ADC_AMux" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Volume_ADC_AMux.h" value="HEADER;;;;;Volume_ADC_AMux" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Volume_ADC_Ext_CP_Clk.c" value="SOURCE_C;CortexM3;;;;Volume_ADC_Ext_CP_Clk" />

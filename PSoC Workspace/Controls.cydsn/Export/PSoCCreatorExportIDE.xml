@@ -230,6 +230,25 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_3_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_3.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_clock.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Timer.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Timer.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Timer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Timer_Interrupt.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_Timer_Interrupt.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_4.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_4.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_5_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_5.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_5.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_6_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_6.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_6.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_7_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_7.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Input_Relais_7.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\Export\ARM_GCC_Generic">

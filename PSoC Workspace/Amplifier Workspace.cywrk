@@ -8,7 +8,6 @@
 <files />
 <projects>
 <v>.\Volume_Control.cydsn\Volume_Control.cyprj</v>
-<v>.\Display.cydsn\Display.cyprj</v>
 <v>.\Protection_Register_Control.cydsn\Protection_Register_Control.cyprj</v>
 <v>.\Controls.cydsn\Controls.cyprj</v>
 </projects>

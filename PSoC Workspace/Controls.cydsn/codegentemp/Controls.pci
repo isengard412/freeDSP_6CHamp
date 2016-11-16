@@ -1,5 +1,5 @@
 # Controls
-# 2016-11-16 11:45:16Z
+# 2016-11-16 15:09:41Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -37,5 +37,9 @@ set_io "Input_Relais_0(0)" iocell 0 7
 set_io "Input_Relais_1(0)" iocell 0 6
 set_io "Input_Relais_2(0)" iocell 0 5
 set_io "Input_Relais_3(0)" iocell 0 4
+set_io "Input_Relais_4(0)" iocell 0 0
+set_io "Input_Relais_5(0)" iocell 0 1
+set_io "Input_Relais_6(0)" iocell 3 6
+set_io "Input_Relais_7(0)" iocell 3 7
 set_location "\Volume_ADC:DSM\" dsmodcell -1 -1 0
 set_location "\COM:USB\" usbcell -1 -1 0
