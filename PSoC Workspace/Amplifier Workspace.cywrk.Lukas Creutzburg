@@ -193,6 +193,18 @@
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Power_SW\Power_SW.c</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Power_SW\Power_SW.h</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Power_SW\Power_SW_aliases.h</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLK</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLK\Protection_CLK.c</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLK\Protection_CLK.h</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLK\Protection_CLK_aliases.h</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLR</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLR\Protection_CLR.c</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLR\Protection_CLR.h</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_CLR\Protection_CLR_aliases.h</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_IN</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_IN\Protection_IN.c</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_IN\Protection_IN.h</v>
+<v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Protection_IN\Protection_IN_aliases.h</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Right_SW</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Right_SW\Right_SW.c</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\Right_SW\Right_SW.h</v>
@@ -610,6 +622,9 @@
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Mute_SW.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Power_LED.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Power_SW.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Protection_CLK.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Protection_CLR.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Protection_IN.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Right_SW.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\timer_clock.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\U1_LED.lst</v>
@@ -703,6 +718,45 @@
 <VisibleNodeIds>
 <v>Amplifier Workspace</v>
 <v>Amplifier Workspace\Controls</v>
+<v>Amplifier Workspace\Controls\CortexM3</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Button_Timer.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Button_Timer_Interrupt.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Button_Timer_PM.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_audio.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_boot.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_cdc.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_cls.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_descr.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_Dm.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_Dp.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_drv.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_episr.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_hid.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_midi.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_msc.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_pm.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_std.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\COM_vnd.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\D1_LED.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\D2_LED.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\D3_LED.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Down_SW.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Enter_SW.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Down.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -822,7 +876,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 598" SelectedTabbedMdiWindow="1a3fc747-ff3d-464f-be0f-27746ee19621"><DocumentWindow Key="16ab1e32-9b64-4ae7-989a-bd56d146d97e" Guid="81c5e9c8-95ea-4b98-9960-6acfd106bb38" /><DocumentWindow Key="e2a05854-d6a8-4a35-9e89-15db02b0aa89" Guid="7defa4ed-e33a-4ac2-bf71-0af894ff589c" /><DocumentWindow Key="c2abba80-85c6-4c83-aba5-53d7a96cb144" Guid="1a3fc747-ff3d-464f-be0f-27746ee19621" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 598" SelectedTabbedMdiWindow="6d8b7fa6-aeab-4fe3-bdbf-1894934b5018"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5c640187-2d4e-4644-b5ba-0f07f745e6a5" /><DocumentWindow Key="51ef564a-aecb-40bc-b925-aa3b453f8da7" Guid="6d8b7fa6-aeab-4fe3-bdbf-1894934b5018" /><DocumentWindow Key="0e655cd1-3008-4663-8c37-8473c39f2da2" Guid="dbe3ce3a-3869-4a0b-afbb-b119f87659a8" /><DocumentWindow Key="78966515-8684-4353-b54a-3b23e92c9587" Guid="2f8d0eda-4994-4879-bd04-9f789717e2c3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

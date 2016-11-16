@@ -1,5 +1,5 @@
 # Controls
-# 2016-11-16 15:09:42Z
+# 2016-11-16 16:42:22Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -43,6 +43,9 @@ set_io "Input_Relais_4(0)" iocell 0 0
 set_io "Input_Relais_5(0)" iocell 0 1
 set_io "Input_Relais_6(0)" iocell 3 6
 set_io "Input_Relais_7(0)" iocell 3 7
+set_io "Protection_IN(0)" iocell 15 3
+set_io "Protection_CLR(0)" iocell 15 4
+set_io "Protection_CLK(0)" iocell 15 5
 set_location "i_Up" interrupt -1 -1 16
 set_location "i_Left" interrupt -1 -1 11
 set_location "i_Mute" interrupt -1 -1 13

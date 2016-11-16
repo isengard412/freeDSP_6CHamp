@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2016-11-16T15:09:44Z")
+ (DATE "2016-11-16T16:42:25Z")
  (DESIGN "Controls")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -97,6 +97,9 @@
     (INTERCONNECT Input_Relais_5\(0\)_PAD Input_Relais_5\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Input_Relais_6\(0\)_PAD Input_Relais_6\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Input_Relais_7\(0\)_PAD Input_Relais_7\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Protection_IN\(0\)_PAD Protection_IN\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Protection_CLR\(0\)_PAD Protection_CLR\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Protection_CLK\(0\)_PAD Protection_CLK\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

@@ -168,6 +168,15 @@
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_7_aliases.h" value="HEADER;;;;;Input_Relais_7" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_7.c" value="SOURCE_C;CortexM3;;;;Input_Relais_7" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Input_Relais_7.h" value="HEADER;;;;;Input_Relais_7" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_IN_aliases.h" value="HEADER;;;;;Protection_IN" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_IN.c" value="SOURCE_C;CortexM3;;;;Protection_IN" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_IN.h" value="HEADER;;;;;Protection_IN" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_CLR_aliases.h" value="HEADER;;;;;Protection_CLR" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_CLR.c" value="SOURCE_C;CortexM3;;;;Protection_CLR" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_CLR.h" value="HEADER;;;;;Protection_CLR" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_CLK_aliases.h" value="HEADER;;;;;Protection_CLK" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_CLK.c" value="SOURCE_C;CortexM3;;;;Protection_CLK" />
+  <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Protection_CLK.h" value="HEADER;;;;;Protection_CLK" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Volume_ADC_AMux.c" value="SOURCE_C;CortexM3;;;;Volume_ADC_AMux" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Volume_ADC_AMux.h" value="HEADER;;;;;Volume_ADC_AMux" />
   <file name="C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\codegentemp\Volume_ADC_Ext_CP_Clk.c" value="SOURCE_C;CortexM3;;;;Volume_ADC_Ext_CP_Clk" />

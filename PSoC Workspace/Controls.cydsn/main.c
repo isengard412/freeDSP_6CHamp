@@ -41,6 +41,8 @@ CY_ISR_PROTO(Left_Handler);
 CY_ISR_PROTO(Mute_Handler);
 CY_ISR_PROTO(E_Handler);
 CY_ISR_PROTO(Button_Timer_Handler);
+int protection_clear();
+int protection_set();
 int set_input(uint8 input);
 
 /* Variables */
@@ -51,6 +53,10 @@ uint8_t muted = 0;
 /* Functions */
 int main()
 {
+    /* Set initial state for Protection */
+    Protection_CLK_Write(0u);
+    Protection_CLR_Write(1u);
+    Protection_IN_Write(1u);
     /* Set initial state for Input selection */
     set_input(input);
     /* Set initial state for LEDs */
@@ -134,12 +140,16 @@ int main()
                 i_Left_Enable();
                 i_Mute_Enable();
                 i_Enter_Enable();
+                //enable modules
+                protection_set();
                 //switch to ON state
                 globalstate=3;
                 break;
             //Powering OFF
             case 2:
                 Power_LED_Write(1u);
+                //disable modules
+                protection_clear();
                 //disable inputs
                 muted=0;
                 set_input(0u);
@@ -162,6 +172,7 @@ int main()
             default:
                 //ERROR Case
                 //Shut everything down
+                protection_clear();
                 muted=0;
                 set_input(0u);
                 
@@ -176,6 +187,29 @@ int main()
 }
 
 /* helper functions */
+int protection_clear()
+{
+    Protection_CLR_Write(1u);
+    Protection_CLK_Write(0u);
+    return 0;
+}
+
+int protection_set()
+{
+    Protection_CLK_Write(0u);
+    Protection_CLR_Write(0u);
+    Protection_IN_Write(1u);
+    int i;
+    for(i=0;i<8;i++)
+    {
+        Protection_CLK_Write(1u);
+        CyDelay(1);
+        Protection_CLK_Write(0u);
+        CyDelay(1);
+    }
+    return 0;
+}
+
 int set_input(uint8 input)
 {
     //error for undefined inputs or more than one input set

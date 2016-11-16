@@ -1,8 +1,8 @@
-C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Volume_Control.cydsn\Volume_Control.cyprj|54b0a626-65e8-4dcd-b49d-b0485c537345
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b2b1627a-4781-4ab5-ab91-51118d24f2d1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|8882cad8-30aa-4e4d-9ea7-77ec022325cd
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fb98a83a-9297-4b36-aed4-aab2f43f65ff
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|aef750ca-ae0b-4664-b98c-964dbfa3f153
-C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0d3787b6-beb8-4915-aed4-fc89320ec364
-C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Protection_Register_Control.cydsn\Protection_Register_Control.cyprj|b943fa13-a605-46d8-bd8e-1f8d6538af7d
-C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\Controls.cyprj|6d7f9934-af87-49f6-855c-54acd11bfd00
+C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Volume_Control.cydsn\Volume_Control.cyprj|c5afbb67-a1e8-475c-89d5-7c7b1b99782d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8dca85d8-118f-4e6b-8ab2-c498e4a6ec6e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|5096420b-57ae-4b84-a27e-b3f5b4a92222
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0e45dfb8-6a91-4e34-b586-91f8095a40ea
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8317dd66-4cbc-480c-afdb-5011cf8fca80
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6b2c40c4-30f1-4058-bc41-906064efc7ba
+C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Protection_Register_Control.cydsn\Protection_Register_Control.cyprj|b4da8683-5ea0-4066-95c5-d40518f24301
+C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\Controls.cyprj|5a125ef5-4961-42e8-9a4c-2bfd1e3e1c16

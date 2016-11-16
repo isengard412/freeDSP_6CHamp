@@ -57,6 +57,12 @@ set_io "U4_LED(0)" iocell 1 5
 # Note: port 12 is the logical name for port 7
 set_io "U5_LED(0)" iocell 12 5
 set_io "U6_LED(0)" iocell 1 2
+# Note: port 15 is the logical name for port 8
+set_io "Protection_IN(0)" iocell 15 3
+# Note: port 15 is the logical name for port 8
+set_io "Protection_CLR(0)" iocell 15 4
+# Note: port 15 is the logical name for port 8
+set_io "Protection_CLK(0)" iocell 15 5
 set_location "i_Input_1" interrupt -1 -1 9
 set_location "i_Power" interrupt -1 -1 14
 set_location "i_Enter" interrupt -1 -1 8
