@@ -1,0 +1,1374 @@
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"USBUART_descr.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.comm	USBUART_idSerialNumberStringDescriptor,34,4
+  19              		.global	USBUART_MSOS_CONFIGURATION_DESCR
+  20              		.global	USBUART_MSOS_DESCRIPTOR
+  21              		.global	USBUART_TABLE
+  22              		.global	USBUART_DEVICE0_TABLE
+  23              		.global	USBUART_DEVICE0_CONFIGURATION0_TABLE
+  24              		.global	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+  25              		.global	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+  26              		.global	USBUART_HIDREPORT_DESCRIPTOR1
+  27              		.global	USBUART_SN_STRING_DESCRIPTOR
+  28              		.global	USBUART_STRING_DESCRIPTORS
+  29              		.global	USBUART_DEVICE0_CONFIGURATION0_DESCR
+  30              		.global	USBUART_DEVICE0_DESCR
+  31              		.section	.rodata
+  32              		.align	2
+  33              		.type	USBUART_MSOS_CONFIGURATION_DESCR, %object
+  34              		.size	USBUART_MSOS_CONFIGURATION_DESCR, 40
+  35              	USBUART_MSOS_CONFIGURATION_DESCR:
+  36 0000 28       		.byte	40
+  37 0001 00       		.byte	0
+  38 0002 00       		.byte	0
+  39 0003 00       		.byte	0
+  40 0004 00       		.byte	0
+  41 0005 01       		.byte	1
+  42 0006 04       		.byte	4
+  43 0007 00       		.byte	0
+  44 0008 01       		.byte	1
+  45 0009 00       		.byte	0
+  46 000a 00       		.byte	0
+  47 000b 00       		.byte	0
+  48 000c 00       		.byte	0
+  49 000d 00       		.byte	0
+  50 000e 00       		.byte	0
+  51 000f 00       		.byte	0
+  52 0010 00       		.byte	0
+  53 0011 01       		.byte	1
+  54 0012 43       		.byte	67
+  55 0013 59       		.byte	89
+  56 0014 55       		.byte	85
+  57 0015 53       		.byte	83
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 2
+
+
+  58 0016 42       		.byte	66
+  59 0017 00       		.byte	0
+  60 0018 00       		.byte	0
+  61 0019 00       		.byte	0
+  62 001a 30       		.byte	48
+  63 001b 30       		.byte	48
+  64 001c 30       		.byte	48
+  65 001d 30       		.byte	48
+  66 001e 31       		.byte	49
+  67 001f 00       		.byte	0
+  68 0020 00       		.byte	0
+  69 0021 00       		.byte	0
+  70 0022 00       		.byte	0
+  71 0023 00       		.byte	0
+  72 0024 00       		.byte	0
+  73 0025 00       		.byte	0
+  74 0026 00       		.byte	0
+  75 0027 00       		.byte	0
+  76              		.type	USBUART_MSOS_DESCRIPTOR, %object
+  77              		.size	USBUART_MSOS_DESCRIPTOR, 18
+  78              	USBUART_MSOS_DESCRIPTOR:
+  79 0028 12       		.byte	18
+  80 0029 03       		.byte	3
+  81 002a 4D       		.byte	77
+  82 002b 00       		.byte	0
+  83 002c 53       		.byte	83
+  84 002d 00       		.byte	0
+  85 002e 46       		.byte	70
+  86 002f 00       		.byte	0
+  87 0030 54       		.byte	84
+  88 0031 00       		.byte	0
+  89 0032 31       		.byte	49
+  90 0033 00       		.byte	0
+  91 0034 30       		.byte	48
+  92 0035 00       		.byte	0
+  93 0036 30       		.byte	48
+  94 0037 00       		.byte	0
+  95 0038 01       		.byte	1
+  96 0039 00       		.byte	0
+  97 003a 0000     		.space	2
+  98              		.type	USBUART_TABLE, %object
+  99              		.size	USBUART_TABLE, 8
+ 100              	USBUART_TABLE:
+ 101 003c 01       		.byte	1
+ 102 003d 000000   		.space	3
+ 103 0040 00000000 		.word	USBUART_DEVICE0_TABLE
+ 104              		.type	USBUART_DEVICE0_TABLE, %object
+ 105              		.size	USBUART_DEVICE0_TABLE, 24
+ 106              	USBUART_DEVICE0_TABLE:
+ 107 0044 01       		.byte	1
+ 108 0045 000000   		.space	3
+ 109 0048 00000000 		.word	USBUART_DEVICE0_DESCR
+ 110 004c 00       		.byte	0
+ 111 004d 000000   		.space	3
+ 112 0050 00000000 		.word	0
+ 113 0054 01       		.byte	1
+ 114 0055 000000   		.space	3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 3
+
+
+ 115 0058 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_TABLE
+ 116              		.type	USBUART_DEVICE0_CONFIGURATION0_TABLE, %object
+ 117              		.size	USBUART_DEVICE0_CONFIGURATION0_TABLE, 40
+ 118              	USBUART_DEVICE0_CONFIGURATION0_TABLE:
+ 119 005c 01       		.byte	1
+ 120 005d 000000   		.space	3
+ 121 0060 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_DESCR
+ 122 0064 03       		.byte	3
+ 123 0065 000000   		.space	3
+ 124 0068 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 125 006c 00       		.byte	0
+ 126 006d 000000   		.space	3
+ 127 0070 00000000 		.word	0
+ 128 0074 00       		.byte	0
+ 129 0075 000000   		.space	3
+ 130 0078 00000000 		.word	0
+ 131 007c 00       		.byte	0
+ 132 007d 000000   		.space	3
+ 133 0080 00000000 		.word	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 134              		.type	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, %object
+ 135              		.size	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, 2
+ 136              	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS:
+ 137 0084 02       		.byte	2
+ 138 0085 0A       		.byte	10
+ 139 0086 0000     		.space	2
+ 140              		.type	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, %object
+ 141              		.size	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, 24
+ 142              	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE:
+ 143 0088 00       		.byte	0
+ 144 0089 00       		.byte	0
+ 145 008a 81       		.byte	-127
+ 146 008b 03       		.byte	3
+ 147 008c 0800     		.short	8
+ 148 008e 02       		.byte	2
+ 149 008f 00       		.space	1
+ 150 0090 01       		.byte	1
+ 151 0091 00       		.byte	0
+ 152 0092 82       		.byte	-126
+ 153 0093 02       		.byte	2
+ 154 0094 4000     		.short	64
+ 155 0096 0A       		.byte	10
+ 156 0097 00       		.space	1
+ 157 0098 01       		.byte	1
+ 158 0099 00       		.byte	0
+ 159 009a 03       		.byte	3
+ 160 009b 02       		.byte	2
+ 161 009c 4000     		.short	64
+ 162 009e 0A       		.byte	10
+ 163 009f 00       		.space	1
+ 164              		.type	USBUART_HIDREPORT_DESCRIPTOR1, %object
+ 165              		.size	USBUART_HIDREPORT_DESCRIPTOR1, 54
+ 166              	USBUART_HIDREPORT_DESCRIPTOR1:
+ 167 00a0 32       		.byte	50
+ 168 00a1 00       		.byte	0
+ 169 00a2 05       		.byte	5
+ 170 00a3 01       		.byte	1
+ 171 00a4 09       		.byte	9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 4
+
+
+ 172 00a5 02       		.byte	2
+ 173 00a6 A1       		.byte	-95
+ 174 00a7 01       		.byte	1
+ 175 00a8 09       		.byte	9
+ 176 00a9 01       		.byte	1
+ 177 00aa A1       		.byte	-95
+ 178 00ab 00       		.byte	0
+ 179 00ac 05       		.byte	5
+ 180 00ad 09       		.byte	9
+ 181 00ae 19       		.byte	25
+ 182 00af 01       		.byte	1
+ 183 00b0 29       		.byte	41
+ 184 00b1 03       		.byte	3
+ 185 00b2 15       		.byte	21
+ 186 00b3 00       		.byte	0
+ 187 00b4 25       		.byte	37
+ 188 00b5 01       		.byte	1
+ 189 00b6 95       		.byte	-107
+ 190 00b7 03       		.byte	3
+ 191 00b8 75       		.byte	117
+ 192 00b9 01       		.byte	1
+ 193 00ba 81       		.byte	-127
+ 194 00bb 02       		.byte	2
+ 195 00bc 95       		.byte	-107
+ 196 00bd 01       		.byte	1
+ 197 00be 75       		.byte	117
+ 198 00bf 05       		.byte	5
+ 199 00c0 81       		.byte	-127
+ 200 00c1 01       		.byte	1
+ 201 00c2 05       		.byte	5
+ 202 00c3 01       		.byte	1
+ 203 00c4 09       		.byte	9
+ 204 00c5 30       		.byte	48
+ 205 00c6 09       		.byte	9
+ 206 00c7 31       		.byte	49
+ 207 00c8 15       		.byte	21
+ 208 00c9 81       		.byte	-127
+ 209 00ca 25       		.byte	37
+ 210 00cb 7F       		.byte	127
+ 211 00cc 75       		.byte	117
+ 212 00cd 08       		.byte	8
+ 213 00ce 95       		.byte	-107
+ 214 00cf 02       		.byte	2
+ 215 00d0 81       		.byte	-127
+ 216 00d1 06       		.byte	6
+ 217 00d2 C0       		.byte	-64
+ 218 00d3 C0       		.byte	-64
+ 219 00d4 00       		.byte	0
+ 220 00d5 00       		.byte	0
+ 221 00d6 0000     		.space	2
+ 222              		.type	USBUART_SN_STRING_DESCRIPTOR, %object
+ 223              		.size	USBUART_SN_STRING_DESCRIPTOR, 2
+ 224              	USBUART_SN_STRING_DESCRIPTOR:
+ 225 00d8 02       		.byte	2
+ 226 00d9 03       		.byte	3
+ 227 00da 0000     		.space	2
+ 228              		.type	USBUART_STRING_DESCRIPTORS, %object
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 5
+
+
+ 229              		.size	USBUART_STRING_DESCRIPTORS, 209
+ 230              	USBUART_STRING_DESCRIPTORS:
+ 231 00dc 04       		.byte	4
+ 232 00dd 03       		.byte	3
+ 233 00de 09       		.byte	9
+ 234 00df 04       		.byte	4
+ 235 00e0 2C       		.byte	44
+ 236 00e1 03       		.byte	3
+ 237 00e2 43       		.byte	67
+ 238 00e3 00       		.byte	0
+ 239 00e4 79       		.byte	121
+ 240 00e5 00       		.byte	0
+ 241 00e6 70       		.byte	112
+ 242 00e7 00       		.byte	0
+ 243 00e8 72       		.byte	114
+ 244 00e9 00       		.byte	0
+ 245 00ea 65       		.byte	101
+ 246 00eb 00       		.byte	0
+ 247 00ec 73       		.byte	115
+ 248 00ed 00       		.byte	0
+ 249 00ee 73       		.byte	115
+ 250 00ef 00       		.byte	0
+ 251 00f0 20       		.byte	32
+ 252 00f1 00       		.byte	0
+ 253 00f2 53       		.byte	83
+ 254 00f3 00       		.byte	0
+ 255 00f4 65       		.byte	101
+ 256 00f5 00       		.byte	0
+ 257 00f6 6D       		.byte	109
+ 258 00f7 00       		.byte	0
+ 259 00f8 69       		.byte	105
+ 260 00f9 00       		.byte	0
+ 261 00fa 63       		.byte	99
+ 262 00fb 00       		.byte	0
+ 263 00fc 6F       		.byte	111
+ 264 00fd 00       		.byte	0
+ 265 00fe 6E       		.byte	110
+ 266 00ff 00       		.byte	0
+ 267 0100 64       		.byte	100
+ 268 0101 00       		.byte	0
+ 269 0102 75       		.byte	117
+ 270 0103 00       		.byte	0
+ 271 0104 63       		.byte	99
+ 272 0105 00       		.byte	0
+ 273 0106 74       		.byte	116
+ 274 0107 00       		.byte	0
+ 275 0108 6F       		.byte	111
+ 276 0109 00       		.byte	0
+ 277 010a 72       		.byte	114
+ 278 010b 00       		.byte	0
+ 279 010c 38       		.byte	56
+ 280 010d 03       		.byte	3
+ 281 010e 43       		.byte	67
+ 282 010f 00       		.byte	0
+ 283 0110 44       		.byte	68
+ 284 0111 00       		.byte	0
+ 285 0112 43       		.byte	67
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 6
+
+
+ 286 0113 00       		.byte	0
+ 287 0114 20       		.byte	32
+ 288 0115 00       		.byte	0
+ 289 0116 43       		.byte	67
+ 290 0117 00       		.byte	0
+ 291 0118 6F       		.byte	111
+ 292 0119 00       		.byte	0
+ 293 011a 6D       		.byte	109
+ 294 011b 00       		.byte	0
+ 295 011c 6D       		.byte	109
+ 296 011d 00       		.byte	0
+ 297 011e 75       		.byte	117
+ 298 011f 00       		.byte	0
+ 299 0120 6E       		.byte	110
+ 300 0121 00       		.byte	0
+ 301 0122 69       		.byte	105
+ 302 0123 00       		.byte	0
+ 303 0124 63       		.byte	99
+ 304 0125 00       		.byte	0
+ 305 0126 61       		.byte	97
+ 306 0127 00       		.byte	0
+ 307 0128 74       		.byte	116
+ 308 0129 00       		.byte	0
+ 309 012a 69       		.byte	105
+ 310 012b 00       		.byte	0
+ 311 012c 6F       		.byte	111
+ 312 012d 00       		.byte	0
+ 313 012e 6E       		.byte	110
+ 314 012f 00       		.byte	0
+ 315 0130 20       		.byte	32
+ 316 0131 00       		.byte	0
+ 317 0132 49       		.byte	73
+ 318 0133 00       		.byte	0
+ 319 0134 6E       		.byte	110
+ 320 0135 00       		.byte	0
+ 321 0136 74       		.byte	116
+ 322 0137 00       		.byte	0
+ 323 0138 65       		.byte	101
+ 324 0139 00       		.byte	0
+ 325 013a 72       		.byte	114
+ 326 013b 00       		.byte	0
+ 327 013c 66       		.byte	102
+ 328 013d 00       		.byte	0
+ 329 013e 61       		.byte	97
+ 330 013f 00       		.byte	0
+ 331 0140 63       		.byte	99
+ 332 0141 00       		.byte	0
+ 333 0142 65       		.byte	101
+ 334 0143 00       		.byte	0
+ 335 0144 26       		.byte	38
+ 336 0145 03       		.byte	3
+ 337 0146 43       		.byte	67
+ 338 0147 00       		.byte	0
+ 339 0148 44       		.byte	68
+ 340 0149 00       		.byte	0
+ 341 014a 43       		.byte	67
+ 342 014b 00       		.byte	0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 7
+
+
+ 343 014c 20       		.byte	32
+ 344 014d 00       		.byte	0
+ 345 014e 44       		.byte	68
+ 346 014f 00       		.byte	0
+ 347 0150 61       		.byte	97
+ 348 0151 00       		.byte	0
+ 349 0152 74       		.byte	116
+ 350 0153 00       		.byte	0
+ 351 0154 61       		.byte	97
+ 352 0155 00       		.byte	0
+ 353 0156 20       		.byte	32
+ 354 0157 00       		.byte	0
+ 355 0158 49       		.byte	73
+ 356 0159 00       		.byte	0
+ 357 015a 6E       		.byte	110
+ 358 015b 00       		.byte	0
+ 359 015c 74       		.byte	116
+ 360 015d 00       		.byte	0
+ 361 015e 65       		.byte	101
+ 362 015f 00       		.byte	0
+ 363 0160 72       		.byte	114
+ 364 0161 00       		.byte	0
+ 365 0162 66       		.byte	102
+ 366 0163 00       		.byte	0
+ 367 0164 61       		.byte	97
+ 368 0165 00       		.byte	0
+ 369 0166 63       		.byte	99
+ 370 0167 00       		.byte	0
+ 371 0168 65       		.byte	101
+ 372 0169 00       		.byte	0
+ 373 016a 10       		.byte	16
+ 374 016b 03       		.byte	3
+ 375 016c 55       		.byte	85
+ 376 016d 00       		.byte	0
+ 377 016e 53       		.byte	83
+ 378 016f 00       		.byte	0
+ 379 0170 42       		.byte	66
+ 380 0171 00       		.byte	0
+ 381 0172 55       		.byte	85
+ 382 0173 00       		.byte	0
+ 383 0174 41       		.byte	65
+ 384 0175 00       		.byte	0
+ 385 0176 52       		.byte	82
+ 386 0177 00       		.byte	0
+ 387 0178 54       		.byte	84
+ 388 0179 00       		.byte	0
+ 389 017a 22       		.byte	34
+ 390 017b 03       		.byte	3
+ 391 017c 4C       		.byte	76
+ 392 017d 00       		.byte	0
+ 393 017e 75       		.byte	117
+ 394 017f 00       		.byte	0
+ 395 0180 6B       		.byte	107
+ 396 0181 00       		.byte	0
+ 397 0182 61       		.byte	97
+ 398 0183 00       		.byte	0
+ 399 0184 73       		.byte	115
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 8
+
+
+ 400 0185 00       		.byte	0
+ 401 0186 20       		.byte	32
+ 402 0187 00       		.byte	0
+ 403 0188 43       		.byte	67
+ 404 0189 00       		.byte	0
+ 405 018a 72       		.byte	114
+ 406 018b 00       		.byte	0
+ 407 018c 65       		.byte	101
+ 408 018d 00       		.byte	0
+ 409 018e 75       		.byte	117
+ 410 018f 00       		.byte	0
+ 411 0190 74       		.byte	116
+ 412 0191 00       		.byte	0
+ 413 0192 7A       		.byte	122
+ 414 0193 00       		.byte	0
+ 415 0194 62       		.byte	98
+ 416 0195 00       		.byte	0
+ 417 0196 75       		.byte	117
+ 418 0197 00       		.byte	0
+ 419 0198 72       		.byte	114
+ 420 0199 00       		.byte	0
+ 421 019a 67       		.byte	103
+ 422 019b 00       		.byte	0
+ 423 019c 10       		.byte	16
+ 424 019d 03       		.byte	3
+ 425 019e 44       		.byte	68
+ 426 019f 00       		.byte	0
+ 427 01a0 53       		.byte	83
+ 428 01a1 00       		.byte	0
+ 429 01a2 50       		.byte	80
+ 430 01a3 00       		.byte	0
+ 431 01a4 5F       		.byte	95
+ 432 01a5 00       		.byte	0
+ 433 01a6 41       		.byte	65
+ 434 01a7 00       		.byte	0
+ 435 01a8 6D       		.byte	109
+ 436 01a9 00       		.byte	0
+ 437 01aa 70       		.byte	112
+ 438 01ab 00       		.byte	0
+ 439 01ac 00       		.byte	0
+ 440 01ad 000000   		.space	3
+ 441              		.type	USBUART_DEVICE0_CONFIGURATION0_DESCR, %object
+ 442              		.size	USBUART_DEVICE0_CONFIGURATION0_DESCR, 67
+ 443              	USBUART_DEVICE0_CONFIGURATION0_DESCR:
+ 444 01b0 09       		.byte	9
+ 445 01b1 02       		.byte	2
+ 446 01b2 43       		.byte	67
+ 447 01b3 00       		.byte	0
+ 448 01b4 02       		.byte	2
+ 449 01b5 01       		.byte	1
+ 450 01b6 06       		.byte	6
+ 451 01b7 80       		.byte	-128
+ 452 01b8 FA       		.byte	-6
+ 453 01b9 09       		.byte	9
+ 454 01ba 04       		.byte	4
+ 455 01bb 00       		.byte	0
+ 456 01bc 00       		.byte	0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 9
+
+
+ 457 01bd 01       		.byte	1
+ 458 01be 02       		.byte	2
+ 459 01bf 02       		.byte	2
+ 460 01c0 00       		.byte	0
+ 461 01c1 02       		.byte	2
+ 462 01c2 05       		.byte	5
+ 463 01c3 24       		.byte	36
+ 464 01c4 00       		.byte	0
+ 465 01c5 10       		.byte	16
+ 466 01c6 01       		.byte	1
+ 467 01c7 04       		.byte	4
+ 468 01c8 24       		.byte	36
+ 469 01c9 02       		.byte	2
+ 470 01ca 02       		.byte	2
+ 471 01cb 05       		.byte	5
+ 472 01cc 24       		.byte	36
+ 473 01cd 06       		.byte	6
+ 474 01ce 00       		.byte	0
+ 475 01cf 01       		.byte	1
+ 476 01d0 05       		.byte	5
+ 477 01d1 24       		.byte	36
+ 478 01d2 01       		.byte	1
+ 479 01d3 00       		.byte	0
+ 480 01d4 01       		.byte	1
+ 481 01d5 07       		.byte	7
+ 482 01d6 05       		.byte	5
+ 483 01d7 81       		.byte	-127
+ 484 01d8 03       		.byte	3
+ 485 01d9 08       		.byte	8
+ 486 01da 00       		.byte	0
+ 487 01db 0A       		.byte	10
+ 488 01dc 09       		.byte	9
+ 489 01dd 04       		.byte	4
+ 490 01de 01       		.byte	1
+ 491 01df 00       		.byte	0
+ 492 01e0 02       		.byte	2
+ 493 01e1 0A       		.byte	10
+ 494 01e2 00       		.byte	0
+ 495 01e3 00       		.byte	0
+ 496 01e4 03       		.byte	3
+ 497 01e5 07       		.byte	7
+ 498 01e6 05       		.byte	5
+ 499 01e7 82       		.byte	-126
+ 500 01e8 02       		.byte	2
+ 501 01e9 40       		.byte	64
+ 502 01ea 00       		.byte	0
+ 503 01eb 00       		.byte	0
+ 504 01ec 07       		.byte	7
+ 505 01ed 05       		.byte	5
+ 506 01ee 03       		.byte	3
+ 507 01ef 02       		.byte	2
+ 508 01f0 40       		.byte	64
+ 509 01f1 00       		.byte	0
+ 510 01f2 00       		.byte	0
+ 511 01f3 00       		.space	1
+ 512              		.type	USBUART_DEVICE0_DESCR, %object
+ 513              		.size	USBUART_DEVICE0_DESCR, 18
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 10
+
+
+ 514              	USBUART_DEVICE0_DESCR:
+ 515 01f4 12       		.byte	18
+ 516 01f5 01       		.byte	1
+ 517 01f6 00       		.byte	0
+ 518 01f7 02       		.byte	2
+ 519 01f8 02       		.byte	2
+ 520 01f9 00       		.byte	0
+ 521 01fa 00       		.byte	0
+ 522 01fb 08       		.byte	8
+ 523 01fc B4       		.byte	-76
+ 524 01fd 04       		.byte	4
+ 525 01fe 32       		.byte	50
+ 526 01ff F2       		.byte	-14
+ 527 0200 01       		.byte	1
+ 528 0201 00       		.byte	0
+ 529 0202 05       		.byte	5
+ 530 0203 06       		.byte	6
+ 531 0204 80       		.byte	-128
+ 532 0205 01       		.byte	1
+ 533 0206 0000     		.text
+ 534              	.Letext0:
+ 535              		.file 1 "Generated_Source\\PSoC5\\cytypes.h"
+ 536              		.file 2 "Generated_Source\\PSoC5\\USBUART.h"
+ 537              		.file 3 "Generated_Source\\PSoC5\\USBUART_descr.c"
+ 538              		.section	.debug_info,"",%progbits
+ 539              	.Ldebug_info0:
+ 540 0000 F2020000 		.4byte	0x2f2
+ 541 0004 0400     		.2byte	0x4
+ 542 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 543 000a 04       		.byte	0x4
+ 544 000b 01       		.uleb128 0x1
+ 545 000c 14020000 		.4byte	.LASF37
+ 546 0010 01       		.byte	0x1
+ 547 0011 93000000 		.4byte	.LASF38
+ 548 0015 BA000000 		.4byte	.LASF39
+ 549 0019 00000000 		.4byte	.Ldebug_line0
+ 550 001d 02       		.uleb128 0x2
+ 551 001e 01       		.byte	0x1
+ 552 001f 06       		.byte	0x6
+ 553 0020 58030000 		.4byte	.LASF0
+ 554 0024 02       		.uleb128 0x2
+ 555 0025 01       		.byte	0x1
+ 556 0026 08       		.byte	0x8
+ 557 0027 74010000 		.4byte	.LASF1
+ 558 002b 02       		.uleb128 0x2
+ 559 002c 02       		.byte	0x2
+ 560 002d 05       		.byte	0x5
+ 561 002e 35030000 		.4byte	.LASF2
+ 562 0032 02       		.uleb128 0x2
+ 563 0033 02       		.byte	0x2
+ 564 0034 07       		.byte	0x7
+ 565 0035 64030000 		.4byte	.LASF3
+ 566 0039 02       		.uleb128 0x2
+ 567 003a 04       		.byte	0x4
+ 568 003b 05       		.byte	0x5
+ 569 003c 4F030000 		.4byte	.LASF4
+ 570 0040 02       		.uleb128 0x2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 11
+
+
+ 571 0041 04       		.byte	0x4
+ 572 0042 07       		.byte	0x7
+ 573 0043 A9010000 		.4byte	.LASF5
+ 574 0047 02       		.uleb128 0x2
+ 575 0048 08       		.byte	0x8
+ 576 0049 05       		.byte	0x5
+ 577 004a 09030000 		.4byte	.LASF6
+ 578 004e 02       		.uleb128 0x2
+ 579 004f 08       		.byte	0x8
+ 580 0050 07       		.byte	0x7
+ 581 0051 BD020000 		.4byte	.LASF7
+ 582 0055 03       		.uleb128 0x3
+ 583 0056 04       		.byte	0x4
+ 584 0057 05       		.byte	0x5
+ 585 0058 696E7400 		.ascii	"int\000"
+ 586 005c 02       		.uleb128 0x2
+ 587 005d 04       		.byte	0x4
+ 588 005e 07       		.byte	0x7
+ 589 005f A2020000 		.4byte	.LASF8
+ 590 0063 04       		.uleb128 0x4
+ 591 0064 3F030000 		.4byte	.LASF9
+ 592 0068 01       		.byte	0x1
+ 593 0069 9201     		.2byte	0x192
+ 594 006b 24000000 		.4byte	0x24
+ 595 006f 04       		.uleb128 0x4
+ 596 0070 0D020000 		.4byte	.LASF10
+ 597 0074 01       		.byte	0x1
+ 598 0075 9301     		.2byte	0x193
+ 599 0077 32000000 		.4byte	0x32
+ 600 007b 02       		.uleb128 0x2
+ 601 007c 04       		.byte	0x4
+ 602 007d 04       		.byte	0x4
+ 603 007e 46010000 		.4byte	.LASF11
+ 604 0082 02       		.uleb128 0x2
+ 605 0083 08       		.byte	0x8
+ 606 0084 04       		.byte	0x4
+ 607 0085 06020000 		.4byte	.LASF12
+ 608 0089 02       		.uleb128 0x2
+ 609 008a 01       		.byte	0x1
+ 610 008b 08       		.byte	0x8
+ 611 008c 17030000 		.4byte	.LASF13
+ 612 0090 02       		.uleb128 0x2
+ 613 0091 04       		.byte	0x4
+ 614 0092 07       		.byte	0x7
+ 615 0093 00030000 		.4byte	.LASF14
+ 616 0097 05       		.uleb128 0x5
+ 617 0098 08       		.byte	0x8
+ 618 0099 02       		.byte	0x2
+ 619 009a 9E       		.byte	0x9e
+ 620 009b E8000000 		.4byte	0xe8
+ 621 009f 06       		.uleb128 0x6
+ 622 00a0 45030000 		.4byte	.LASF15
+ 623 00a4 02       		.byte	0x2
+ 624 00a5 A0       		.byte	0xa0
+ 625 00a6 63000000 		.4byte	0x63
+ 626 00aa 00       		.byte	0
+ 627 00ab 06       		.uleb128 0x6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 12
+
+
+ 628 00ac 69010000 		.4byte	.LASF16
+ 629 00b0 02       		.byte	0x2
+ 630 00b1 A1       		.byte	0xa1
+ 631 00b2 63000000 		.4byte	0x63
+ 632 00b6 01       		.byte	0x1
+ 633 00b7 06       		.uleb128 0x6
+ 634 00b8 BB010000 		.4byte	.LASF17
+ 635 00bc 02       		.byte	0x2
+ 636 00bd A2       		.byte	0xa2
+ 637 00be 63000000 		.4byte	0x63
+ 638 00c2 02       		.byte	0x2
+ 639 00c3 06       		.uleb128 0x6
+ 640 00c4 82010000 		.4byte	.LASF18
+ 641 00c8 02       		.byte	0x2
+ 642 00c9 A3       		.byte	0xa3
+ 643 00ca 63000000 		.4byte	0x63
+ 644 00ce 03       		.byte	0x3
+ 645 00cf 06       		.uleb128 0x6
+ 646 00d0 1C030000 		.4byte	.LASF19
+ 647 00d4 02       		.byte	0x2
+ 648 00d5 A4       		.byte	0xa4
+ 649 00d6 6F000000 		.4byte	0x6f
+ 650 00da 04       		.byte	0x4
+ 651 00db 06       		.uleb128 0x6
+ 652 00dc 8D030000 		.4byte	.LASF20
+ 653 00e0 02       		.byte	0x2
+ 654 00e1 A5       		.byte	0xa5
+ 655 00e2 63000000 		.4byte	0x63
+ 656 00e6 06       		.byte	0x6
+ 657 00e7 00       		.byte	0
+ 658 00e8 07       		.uleb128 0x7
+ 659 00e9 8D010000 		.4byte	.LASF21
+ 660 00ed 02       		.byte	0x2
+ 661 00ee A6       		.byte	0xa6
+ 662 00ef 97000000 		.4byte	0x97
+ 663 00f3 05       		.uleb128 0x5
+ 664 00f4 08       		.byte	0x8
+ 665 00f5 02       		.byte	0x2
+ 666 00f6 B5       		.byte	0xb5
+ 667 00f7 12010000 		.4byte	0x112
+ 668 00fb 08       		.uleb128 0x8
+ 669 00fc 6300     		.ascii	"c\000"
+ 670 00fe 02       		.byte	0x2
+ 671 00ff B7       		.byte	0xb7
+ 672 0100 63000000 		.4byte	0x63
+ 673 0104 00       		.byte	0
+ 674 0105 06       		.uleb128 0x6
+ 675 0106 F9020000 		.4byte	.LASF22
+ 676 010a 02       		.byte	0x2
+ 677 010b B8       		.byte	0xb8
+ 678 010c 12010000 		.4byte	0x112
+ 679 0110 04       		.byte	0x4
+ 680 0111 00       		.byte	0
+ 681 0112 09       		.uleb128 0x9
+ 682 0113 04       		.byte	0x4
+ 683 0114 18010000 		.4byte	0x118
+ 684 0118 0A       		.uleb128 0xa
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 13
+
+
+ 685 0119 07       		.uleb128 0x7
+ 686 011a AF020000 		.4byte	.LASF23
+ 687 011e 02       		.byte	0x2
+ 688 011f B9       		.byte	0xb9
+ 689 0120 F3000000 		.4byte	0xf3
+ 690 0124 0B       		.uleb128 0xb
+ 691 0125 63000000 		.4byte	0x63
+ 692 0129 34010000 		.4byte	0x134
+ 693 012d 0C       		.uleb128 0xc
+ 694 012e 90000000 		.4byte	0x90
+ 695 0132 11       		.byte	0x11
+ 696 0133 00       		.byte	0
+ 697 0134 0D       		.uleb128 0xd
+ 698 0135 30010000 		.4byte	.LASF24
+ 699 0139 03       		.byte	0x3
+ 700 013a 24       		.byte	0x24
+ 701 013b 45010000 		.4byte	0x145
+ 702 013f 05       		.uleb128 0x5
+ 703 0140 03       		.byte	0x3
+ 704 0141 00000000 		.4byte	USBUART_DEVICE0_DESCR
+ 705 0145 0E       		.uleb128 0xe
+ 706 0146 24010000 		.4byte	0x124
+ 707 014a 0B       		.uleb128 0xb
+ 708 014b 63000000 		.4byte	0x63
+ 709 014f 5A010000 		.4byte	0x15a
+ 710 0153 0C       		.uleb128 0xc
+ 711 0154 90000000 		.4byte	0x90
+ 712 0158 42       		.byte	0x42
+ 713 0159 00       		.byte	0
+ 714 015a 0D       		.uleb128 0xd
+ 715 015b D4020000 		.4byte	.LASF25
+ 716 015f 03       		.byte	0x3
+ 717 0160 37       		.byte	0x37
+ 718 0161 6B010000 		.4byte	0x16b
+ 719 0165 05       		.uleb128 0x5
+ 720 0166 03       		.byte	0x3
+ 721 0167 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_DESCR
+ 722 016b 0E       		.uleb128 0xe
+ 723 016c 4A010000 		.4byte	0x14a
+ 724 0170 0B       		.uleb128 0xb
+ 725 0171 E8000000 		.4byte	0xe8
+ 726 0175 80010000 		.4byte	0x180
+ 727 0179 0C       		.uleb128 0xc
+ 728 017a 90000000 		.4byte	0x90
+ 729 017e 02       		.byte	0x2
+ 730 017f 00       		.byte	0
+ 731 0180 0F       		.uleb128 0xf
+ 732 0181 4A000000 		.4byte	.LASF26
+ 733 0185 03       		.byte	0x3
+ 734 0186 0B01     		.2byte	0x10b
+ 735 0188 92010000 		.4byte	0x192
+ 736 018c 05       		.uleb128 0x5
+ 737 018d 03       		.byte	0x3
+ 738 018e 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 739 0192 0E       		.uleb128 0xe
+ 740 0193 70010000 		.4byte	0x170
+ 741 0197 0B       		.uleb128 0xb
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 14
+
+
+ 742 0198 63000000 		.4byte	0x63
+ 743 019c A7010000 		.4byte	0x1a7
+ 744 01a0 0C       		.uleb128 0xc
+ 745 01a1 90000000 		.4byte	0x90
+ 746 01a5 01       		.byte	0x1
+ 747 01a6 00       		.byte	0
+ 748 01a7 0F       		.uleb128 0xf
+ 749 01a8 00000000 		.4byte	.LASF27
+ 750 01ac 03       		.byte	0x3
+ 751 01ad 1101     		.2byte	0x111
+ 752 01af B9010000 		.4byte	0x1b9
+ 753 01b3 05       		.uleb128 0x5
+ 754 01b4 03       		.byte	0x3
+ 755 01b5 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 756 01b9 0E       		.uleb128 0xe
+ 757 01ba 97010000 		.4byte	0x197
+ 758 01be 0B       		.uleb128 0xb
+ 759 01bf 19010000 		.4byte	0x119
+ 760 01c3 CE010000 		.4byte	0x1ce
+ 761 01c7 0C       		.uleb128 0xc
+ 762 01c8 90000000 		.4byte	0x90
+ 763 01cc 04       		.byte	0x4
+ 764 01cd 00       		.byte	0
+ 765 01ce 0F       		.uleb128 0xf
+ 766 01cf C0010000 		.4byte	.LASF28
+ 767 01d3 03       		.byte	0x3
+ 768 01d4 1901     		.2byte	0x119
+ 769 01d6 E0010000 		.4byte	0x1e0
+ 770 01da 05       		.uleb128 0x5
+ 771 01db 03       		.byte	0x3
+ 772 01dc 00000000 		.4byte	USBUART_DEVICE0_CONFIGURATION0_TABLE
+ 773 01e0 0E       		.uleb128 0xe
+ 774 01e1 BE010000 		.4byte	0x1be
+ 775 01e5 0B       		.uleb128 0xb
+ 776 01e6 19010000 		.4byte	0x119
+ 777 01ea F5010000 		.4byte	0x1f5
+ 778 01ee 0C       		.uleb128 0xc
+ 779 01ef 90000000 		.4byte	0x90
+ 780 01f3 02       		.byte	0x2
+ 781 01f4 00       		.byte	0
+ 782 01f5 0F       		.uleb128 0xf
+ 783 01f6 77030000 		.4byte	.LASF29
+ 784 01fa 03       		.byte	0x3
+ 785 01fb 2401     		.2byte	0x124
+ 786 01fd 07020000 		.4byte	0x207
+ 787 0201 05       		.uleb128 0x5
+ 788 0202 03       		.byte	0x3
+ 789 0203 00000000 		.4byte	USBUART_DEVICE0_TABLE
+ 790 0207 0E       		.uleb128 0xe
+ 791 0208 E5010000 		.4byte	0x1e5
+ 792 020c 0B       		.uleb128 0xb
+ 793 020d 19010000 		.4byte	0x119
+ 794 0211 1C020000 		.4byte	0x21c
+ 795 0215 0C       		.uleb128 0xc
+ 796 0216 90000000 		.4byte	0x90
+ 797 021a 00       		.byte	0
+ 798 021b 00       		.byte	0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 15
+
+
+ 799 021c 0F       		.uleb128 0xf
+ 800 021d 27030000 		.4byte	.LASF30
+ 801 0221 03       		.byte	0x3
+ 802 0222 2C01     		.2byte	0x12c
+ 803 0224 2E020000 		.4byte	0x22e
+ 804 0228 05       		.uleb128 0x5
+ 805 0229 03       		.byte	0x3
+ 806 022a 00000000 		.4byte	USBUART_TABLE
+ 807 022e 0E       		.uleb128 0xe
+ 808 022f 0C020000 		.4byte	0x20c
+ 809 0233 0D       		.uleb128 0xd
+ 810 0234 4C010000 		.4byte	.LASF31
+ 811 0238 03       		.byte	0x3
+ 812 0239 D9       		.byte	0xd9
+ 813 023a 44020000 		.4byte	0x244
+ 814 023e 05       		.uleb128 0x5
+ 815 023f 03       		.byte	0x3
+ 816 0240 00000000 		.4byte	USBUART_SN_STRING_DESCRIPTOR
+ 817 0244 0E       		.uleb128 0xe
+ 818 0245 97010000 		.4byte	0x197
+ 819 0249 0B       		.uleb128 0xb
+ 820 024a 63000000 		.4byte	0x63
+ 821 024e 59020000 		.4byte	0x259
+ 822 0252 0C       		.uleb128 0xc
+ 823 0253 90000000 		.4byte	0x90
+ 824 0257 D0       		.byte	0xd0
+ 825 0258 00       		.byte	0
+ 826 0259 0D       		.uleb128 0xd
+ 827 025a 2F000000 		.4byte	.LASF32
+ 828 025e 03       		.byte	0x3
+ 829 025f 96       		.byte	0x96
+ 830 0260 6A020000 		.4byte	0x26a
+ 831 0264 05       		.uleb128 0x5
+ 832 0265 03       		.byte	0x3
+ 833 0266 00000000 		.4byte	USBUART_STRING_DESCRIPTORS
+ 834 026a 0E       		.uleb128 0xe
+ 835 026b 49020000 		.4byte	0x249
+ 836 026f 0B       		.uleb128 0xb
+ 837 0270 63000000 		.4byte	0x63
+ 838 0274 7F020000 		.4byte	0x27f
+ 839 0278 0C       		.uleb128 0xc
+ 840 0279 90000000 		.4byte	0x90
+ 841 027d 35       		.byte	0x35
+ 842 027e 00       		.byte	0
+ 843 027f 0D       		.uleb128 0xd
+ 844 0280 12010000 		.4byte	.LASF33
+ 845 0284 03       		.byte	0x3
+ 846 0285 E2       		.byte	0xe2
+ 847 0286 90020000 		.4byte	0x290
+ 848 028a 05       		.uleb128 0x5
+ 849 028b 03       		.byte	0x3
+ 850 028c 00000000 		.4byte	USBUART_HIDREPORT_DESCRIPTOR1
+ 851 0290 0E       		.uleb128 0xe
+ 852 0291 6F020000 		.4byte	0x26f
+ 853 0295 0F       		.uleb128 0xf
+ 854 0296 7B000000 		.4byte	.LASF34
+ 855 029a 03       		.byte	0x3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 16
+
+
+ 856 029b 3C01     		.2byte	0x13c
+ 857 029d A7020000 		.4byte	0x2a7
+ 858 02a1 05       		.uleb128 0x5
+ 859 02a2 03       		.byte	0x3
+ 860 02a3 00000000 		.4byte	USBUART_MSOS_DESCRIPTOR
+ 861 02a7 0E       		.uleb128 0xe
+ 862 02a8 24010000 		.4byte	0x124
+ 863 02ac 0B       		.uleb128 0xb
+ 864 02ad 63000000 		.4byte	0x63
+ 865 02b1 BC020000 		.4byte	0x2bc
+ 866 02b5 0C       		.uleb128 0xc
+ 867 02b6 90000000 		.4byte	0x90
+ 868 02ba 27       		.byte	0x27
+ 869 02bb 00       		.byte	0
+ 870 02bc 0F       		.uleb128 0xf
+ 871 02bd E5010000 		.4byte	.LASF35
+ 872 02c1 03       		.byte	0x3
+ 873 02c2 4701     		.2byte	0x147
+ 874 02c4 CE020000 		.4byte	0x2ce
+ 875 02c8 05       		.uleb128 0x5
+ 876 02c9 03       		.byte	0x3
+ 877 02ca 00000000 		.4byte	USBUART_MSOS_CONFIGURATION_DESCR
+ 878 02ce 0E       		.uleb128 0xe
+ 879 02cf AC020000 		.4byte	0x2ac
+ 880 02d3 0B       		.uleb128 0xb
+ 881 02d4 63000000 		.4byte	0x63
+ 882 02d8 E3020000 		.4byte	0x2e3
+ 883 02dc 0C       		.uleb128 0xc
+ 884 02dd 90000000 		.4byte	0x90
+ 885 02e1 21       		.byte	0x21
+ 886 02e2 00       		.byte	0
+ 887 02e3 0F       		.uleb128 0xf
+ 888 02e4 93030000 		.4byte	.LASF36
+ 889 02e8 03       		.byte	0x3
+ 890 02e9 5A01     		.2byte	0x15a
+ 891 02eb D3020000 		.4byte	0x2d3
+ 892 02ef 05       		.uleb128 0x5
+ 893 02f0 03       		.byte	0x3
+ 894 02f1 00000000 		.4byte	USBUART_idSerialNumberStringDescriptor
+ 895 02f5 00       		.byte	0
+ 896              		.section	.debug_abbrev,"",%progbits
+ 897              	.Ldebug_abbrev0:
+ 898 0000 01       		.uleb128 0x1
+ 899 0001 11       		.uleb128 0x11
+ 900 0002 01       		.byte	0x1
+ 901 0003 25       		.uleb128 0x25
+ 902 0004 0E       		.uleb128 0xe
+ 903 0005 13       		.uleb128 0x13
+ 904 0006 0B       		.uleb128 0xb
+ 905 0007 03       		.uleb128 0x3
+ 906 0008 0E       		.uleb128 0xe
+ 907 0009 1B       		.uleb128 0x1b
+ 908 000a 0E       		.uleb128 0xe
+ 909 000b 10       		.uleb128 0x10
+ 910 000c 17       		.uleb128 0x17
+ 911 000d 00       		.byte	0
+ 912 000e 00       		.byte	0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 17
+
+
+ 913 000f 02       		.uleb128 0x2
+ 914 0010 24       		.uleb128 0x24
+ 915 0011 00       		.byte	0
+ 916 0012 0B       		.uleb128 0xb
+ 917 0013 0B       		.uleb128 0xb
+ 918 0014 3E       		.uleb128 0x3e
+ 919 0015 0B       		.uleb128 0xb
+ 920 0016 03       		.uleb128 0x3
+ 921 0017 0E       		.uleb128 0xe
+ 922 0018 00       		.byte	0
+ 923 0019 00       		.byte	0
+ 924 001a 03       		.uleb128 0x3
+ 925 001b 24       		.uleb128 0x24
+ 926 001c 00       		.byte	0
+ 927 001d 0B       		.uleb128 0xb
+ 928 001e 0B       		.uleb128 0xb
+ 929 001f 3E       		.uleb128 0x3e
+ 930 0020 0B       		.uleb128 0xb
+ 931 0021 03       		.uleb128 0x3
+ 932 0022 08       		.uleb128 0x8
+ 933 0023 00       		.byte	0
+ 934 0024 00       		.byte	0
+ 935 0025 04       		.uleb128 0x4
+ 936 0026 16       		.uleb128 0x16
+ 937 0027 00       		.byte	0
+ 938 0028 03       		.uleb128 0x3
+ 939 0029 0E       		.uleb128 0xe
+ 940 002a 3A       		.uleb128 0x3a
+ 941 002b 0B       		.uleb128 0xb
+ 942 002c 3B       		.uleb128 0x3b
+ 943 002d 05       		.uleb128 0x5
+ 944 002e 49       		.uleb128 0x49
+ 945 002f 13       		.uleb128 0x13
+ 946 0030 00       		.byte	0
+ 947 0031 00       		.byte	0
+ 948 0032 05       		.uleb128 0x5
+ 949 0033 13       		.uleb128 0x13
+ 950 0034 01       		.byte	0x1
+ 951 0035 0B       		.uleb128 0xb
+ 952 0036 0B       		.uleb128 0xb
+ 953 0037 3A       		.uleb128 0x3a
+ 954 0038 0B       		.uleb128 0xb
+ 955 0039 3B       		.uleb128 0x3b
+ 956 003a 0B       		.uleb128 0xb
+ 957 003b 01       		.uleb128 0x1
+ 958 003c 13       		.uleb128 0x13
+ 959 003d 00       		.byte	0
+ 960 003e 00       		.byte	0
+ 961 003f 06       		.uleb128 0x6
+ 962 0040 0D       		.uleb128 0xd
+ 963 0041 00       		.byte	0
+ 964 0042 03       		.uleb128 0x3
+ 965 0043 0E       		.uleb128 0xe
+ 966 0044 3A       		.uleb128 0x3a
+ 967 0045 0B       		.uleb128 0xb
+ 968 0046 3B       		.uleb128 0x3b
+ 969 0047 0B       		.uleb128 0xb
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 18
+
+
+ 970 0048 49       		.uleb128 0x49
+ 971 0049 13       		.uleb128 0x13
+ 972 004a 38       		.uleb128 0x38
+ 973 004b 0B       		.uleb128 0xb
+ 974 004c 00       		.byte	0
+ 975 004d 00       		.byte	0
+ 976 004e 07       		.uleb128 0x7
+ 977 004f 16       		.uleb128 0x16
+ 978 0050 00       		.byte	0
+ 979 0051 03       		.uleb128 0x3
+ 980 0052 0E       		.uleb128 0xe
+ 981 0053 3A       		.uleb128 0x3a
+ 982 0054 0B       		.uleb128 0xb
+ 983 0055 3B       		.uleb128 0x3b
+ 984 0056 0B       		.uleb128 0xb
+ 985 0057 49       		.uleb128 0x49
+ 986 0058 13       		.uleb128 0x13
+ 987 0059 00       		.byte	0
+ 988 005a 00       		.byte	0
+ 989 005b 08       		.uleb128 0x8
+ 990 005c 0D       		.uleb128 0xd
+ 991 005d 00       		.byte	0
+ 992 005e 03       		.uleb128 0x3
+ 993 005f 08       		.uleb128 0x8
+ 994 0060 3A       		.uleb128 0x3a
+ 995 0061 0B       		.uleb128 0xb
+ 996 0062 3B       		.uleb128 0x3b
+ 997 0063 0B       		.uleb128 0xb
+ 998 0064 49       		.uleb128 0x49
+ 999 0065 13       		.uleb128 0x13
+ 1000 0066 38       		.uleb128 0x38
+ 1001 0067 0B       		.uleb128 0xb
+ 1002 0068 00       		.byte	0
+ 1003 0069 00       		.byte	0
+ 1004 006a 09       		.uleb128 0x9
+ 1005 006b 0F       		.uleb128 0xf
+ 1006 006c 00       		.byte	0
+ 1007 006d 0B       		.uleb128 0xb
+ 1008 006e 0B       		.uleb128 0xb
+ 1009 006f 49       		.uleb128 0x49
+ 1010 0070 13       		.uleb128 0x13
+ 1011 0071 00       		.byte	0
+ 1012 0072 00       		.byte	0
+ 1013 0073 0A       		.uleb128 0xa
+ 1014 0074 26       		.uleb128 0x26
+ 1015 0075 00       		.byte	0
+ 1016 0076 00       		.byte	0
+ 1017 0077 00       		.byte	0
+ 1018 0078 0B       		.uleb128 0xb
+ 1019 0079 01       		.uleb128 0x1
+ 1020 007a 01       		.byte	0x1
+ 1021 007b 49       		.uleb128 0x49
+ 1022 007c 13       		.uleb128 0x13
+ 1023 007d 01       		.uleb128 0x1
+ 1024 007e 13       		.uleb128 0x13
+ 1025 007f 00       		.byte	0
+ 1026 0080 00       		.byte	0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 19
+
+
+ 1027 0081 0C       		.uleb128 0xc
+ 1028 0082 21       		.uleb128 0x21
+ 1029 0083 00       		.byte	0
+ 1030 0084 49       		.uleb128 0x49
+ 1031 0085 13       		.uleb128 0x13
+ 1032 0086 2F       		.uleb128 0x2f
+ 1033 0087 0B       		.uleb128 0xb
+ 1034 0088 00       		.byte	0
+ 1035 0089 00       		.byte	0
+ 1036 008a 0D       		.uleb128 0xd
+ 1037 008b 34       		.uleb128 0x34
+ 1038 008c 00       		.byte	0
+ 1039 008d 03       		.uleb128 0x3
+ 1040 008e 0E       		.uleb128 0xe
+ 1041 008f 3A       		.uleb128 0x3a
+ 1042 0090 0B       		.uleb128 0xb
+ 1043 0091 3B       		.uleb128 0x3b
+ 1044 0092 0B       		.uleb128 0xb
+ 1045 0093 49       		.uleb128 0x49
+ 1046 0094 13       		.uleb128 0x13
+ 1047 0095 3F       		.uleb128 0x3f
+ 1048 0096 19       		.uleb128 0x19
+ 1049 0097 02       		.uleb128 0x2
+ 1050 0098 18       		.uleb128 0x18
+ 1051 0099 00       		.byte	0
+ 1052 009a 00       		.byte	0
+ 1053 009b 0E       		.uleb128 0xe
+ 1054 009c 26       		.uleb128 0x26
+ 1055 009d 00       		.byte	0
+ 1056 009e 49       		.uleb128 0x49
+ 1057 009f 13       		.uleb128 0x13
+ 1058 00a0 00       		.byte	0
+ 1059 00a1 00       		.byte	0
+ 1060 00a2 0F       		.uleb128 0xf
+ 1061 00a3 34       		.uleb128 0x34
+ 1062 00a4 00       		.byte	0
+ 1063 00a5 03       		.uleb128 0x3
+ 1064 00a6 0E       		.uleb128 0xe
+ 1065 00a7 3A       		.uleb128 0x3a
+ 1066 00a8 0B       		.uleb128 0xb
+ 1067 00a9 3B       		.uleb128 0x3b
+ 1068 00aa 05       		.uleb128 0x5
+ 1069 00ab 49       		.uleb128 0x49
+ 1070 00ac 13       		.uleb128 0x13
+ 1071 00ad 3F       		.uleb128 0x3f
+ 1072 00ae 19       		.uleb128 0x19
+ 1073 00af 02       		.uleb128 0x2
+ 1074 00b0 18       		.uleb128 0x18
+ 1075 00b1 00       		.byte	0
+ 1076 00b2 00       		.byte	0
+ 1077 00b3 00       		.byte	0
+ 1078              		.section	.debug_aranges,"",%progbits
+ 1079 0000 14000000 		.4byte	0x14
+ 1080 0004 0200     		.2byte	0x2
+ 1081 0006 00000000 		.4byte	.Ldebug_info0
+ 1082 000a 04       		.byte	0x4
+ 1083 000b 00       		.byte	0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 20
+
+
+ 1084 000c 0000     		.2byte	0
+ 1085 000e 0000     		.2byte	0
+ 1086 0010 00000000 		.4byte	0
+ 1087 0014 00000000 		.4byte	0
+ 1088              		.section	.debug_line,"",%progbits
+ 1089              	.Ldebug_line0:
+ 1090 0000 5D000000 		.section	.debug_str,"MS",%progbits,1
+ 1090      02005700 
+ 1090      00000201 
+ 1090      FB0E0D00 
+ 1090      01010101 
+ 1091              	.LASF27:
+ 1092 0000 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
+ 1092      4152545F 
+ 1092      44455649 
+ 1092      4345305F 
+ 1092      434F4E46 
+ 1093              	.LASF32:
+ 1094 002f 55534255 		.ascii	"USBUART_STRING_DESCRIPTORS\000"
+ 1094      4152545F 
+ 1094      53545249 
+ 1094      4E475F44 
+ 1094      45534352 
+ 1095              	.LASF26:
+ 1096 004a 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
+ 1096      4152545F 
+ 1096      44455649 
+ 1096      4345305F 
+ 1096      434F4E46 
+ 1097              	.LASF34:
+ 1098 007b 55534255 		.ascii	"USBUART_MSOS_DESCRIPTOR\000"
+ 1098      4152545F 
+ 1098      4D534F53 
+ 1098      5F444553 
+ 1098      43524950 
+ 1099              	.LASF38:
+ 1100 0093 47656E65 		.ascii	"Generated_Source\\PSoC5\\USBUART_descr.c\000"
+ 1100      72617465 
+ 1100      645F536F 
+ 1100      75726365 
+ 1100      5C50536F 
+ 1101              	.LASF39:
+ 1102 00ba 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 1102      73657273 
+ 1102      5C4C756B 
+ 1102      61732043 
+ 1102      72657574 
+ 1103 00e8 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 1103      5F364348 
+ 1103      616D705C 
+ 1103      50536F43 
+ 1103      20576F72 
+ 1104              	.LASF33:
+ 1105 0112 55534255 		.ascii	"USBUART_HIDREPORT_DESCRIPTOR1\000"
+ 1105      4152545F 
+ 1105      48494452 
+ 1105      45504F52 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 21
+
+
+ 1105      545F4445 
+ 1106              	.LASF24:
+ 1107 0130 55534255 		.ascii	"USBUART_DEVICE0_DESCR\000"
+ 1107      4152545F 
+ 1107      44455649 
+ 1107      4345305F 
+ 1107      44455343 
+ 1108              	.LASF11:
+ 1109 0146 666C6F61 		.ascii	"float\000"
+ 1109      7400
+ 1110              	.LASF31:
+ 1111 014c 55534255 		.ascii	"USBUART_SN_STRING_DESCRIPTOR\000"
+ 1111      4152545F 
+ 1111      534E5F53 
+ 1111      5452494E 
+ 1111      475F4445 
+ 1112              	.LASF16:
+ 1113 0169 616C7453 		.ascii	"altSetting\000"
+ 1113      65747469 
+ 1113      6E6700
+ 1114              	.LASF1:
+ 1115 0174 756E7369 		.ascii	"unsigned char\000"
+ 1115      676E6564 
+ 1115      20636861 
+ 1115      7200
+ 1116              	.LASF18:
+ 1117 0182 61747472 		.ascii	"attributes\000"
+ 1117      69627574 
+ 1117      657300
+ 1118              	.LASF21:
+ 1119 018d 545F5553 		.ascii	"T_USBUART_EP_SETTINGS_BLOCK\000"
+ 1119      42554152 
+ 1119      545F4550 
+ 1119      5F534554 
+ 1119      54494E47 
+ 1120              	.LASF5:
+ 1121 01a9 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1121      20756E73 
+ 1121      69676E65 
+ 1121      6420696E 
+ 1121      7400
+ 1122              	.LASF17:
+ 1123 01bb 61646472 		.ascii	"addr\000"
+ 1123      00
+ 1124              	.LASF28:
+ 1125 01c0 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_TABLE\000"
+ 1125      4152545F 
+ 1125      44455649 
+ 1125      4345305F 
+ 1125      434F4E46 
+ 1126              	.LASF35:
+ 1127 01e5 55534255 		.ascii	"USBUART_MSOS_CONFIGURATION_DESCR\000"
+ 1127      4152545F 
+ 1127      4D534F53 
+ 1127      5F434F4E 
+ 1127      46494755 
+ 1128              	.LASF12:
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 22
+
+
+ 1129 0206 646F7562 		.ascii	"double\000"
+ 1129      6C6500
+ 1130              	.LASF10:
+ 1131 020d 75696E74 		.ascii	"uint16\000"
+ 1131      313600
+ 1132              	.LASF37:
+ 1133 0214 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1133      4320342E 
+ 1133      392E3320 
+ 1133      32303135 
+ 1133      30333033 
+ 1134 0247 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1134      20726576 
+ 1134      6973696F 
+ 1134      6E203232 
+ 1134      31323230 
+ 1135 027a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1135      66756E63 
+ 1135      74696F6E 
+ 1135      2D736563 
+ 1135      74696F6E 
+ 1136              	.LASF8:
+ 1137 02a2 756E7369 		.ascii	"unsigned int\000"
+ 1137      676E6564 
+ 1137      20696E74 
+ 1137      00
+ 1138              	.LASF23:
+ 1139 02af 545F5553 		.ascii	"T_USBUART_LUT\000"
+ 1139      42554152 
+ 1139      545F4C55 
+ 1139      5400
+ 1140              	.LASF7:
+ 1141 02bd 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1141      206C6F6E 
+ 1141      6720756E 
+ 1141      7369676E 
+ 1141      65642069 
+ 1142              	.LASF25:
+ 1143 02d4 55534255 		.ascii	"USBUART_DEVICE0_CONFIGURATION0_DESCR\000"
+ 1143      4152545F 
+ 1143      44455649 
+ 1143      4345305F 
+ 1143      434F4E46 
+ 1144              	.LASF22:
+ 1145 02f9 705F6C69 		.ascii	"p_list\000"
+ 1145      737400
+ 1146              	.LASF14:
+ 1147 0300 73697A65 		.ascii	"sizetype\000"
+ 1147      74797065 
+ 1147      00
+ 1148              	.LASF6:
+ 1149 0309 6C6F6E67 		.ascii	"long long int\000"
+ 1149      206C6F6E 
+ 1149      6720696E 
+ 1149      7400
+ 1150              	.LASF13:
+ 1151 0317 63686172 		.ascii	"char\000"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccWtKE3d.s 			page 23
+
+
+ 1151      00
+ 1152              	.LASF19:
+ 1153 031c 62756666 		.ascii	"bufferSize\000"
+ 1153      65725369 
+ 1153      7A6500
+ 1154              	.LASF30:
+ 1155 0327 55534255 		.ascii	"USBUART_TABLE\000"
+ 1155      4152545F 
+ 1155      5441424C 
+ 1155      4500
+ 1156              	.LASF2:
+ 1157 0335 73686F72 		.ascii	"short int\000"
+ 1157      7420696E 
+ 1157      7400
+ 1158              	.LASF9:
+ 1159 033f 75696E74 		.ascii	"uint8\000"
+ 1159      3800
+ 1160              	.LASF15:
+ 1161 0345 696E7465 		.ascii	"interface\000"
+ 1161      72666163 
+ 1161      6500
+ 1162              	.LASF4:
+ 1163 034f 6C6F6E67 		.ascii	"long int\000"
+ 1163      20696E74 
+ 1163      00
+ 1164              	.LASF0:
+ 1165 0358 7369676E 		.ascii	"signed char\000"
+ 1165      65642063 
+ 1165      68617200 
+ 1166              	.LASF3:
+ 1167 0364 73686F72 		.ascii	"short unsigned int\000"
+ 1167      7420756E 
+ 1167      7369676E 
+ 1167      65642069 
+ 1167      6E7400
+ 1168              	.LASF29:
+ 1169 0377 55534255 		.ascii	"USBUART_DEVICE0_TABLE\000"
+ 1169      4152545F 
+ 1169      44455649 
+ 1169      4345305F 
+ 1169      5441424C 
+ 1170              	.LASF20:
+ 1171 038d 624D6973 		.ascii	"bMisc\000"
+ 1171      6300
+ 1172              	.LASF36:
+ 1173 0393 55534255 		.ascii	"USBUART_idSerialNumberStringDescriptor\000"
+ 1173      4152545F 
+ 1173      69645365 
+ 1173      7269616C 
+ 1173      4E756D62 
+ 1174              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -20,6 +20,22 @@
 
 #include <project.h>
 
+#if defined (__GNUC__)
+    /* Add an explicit reference to the floating point printf library */
+    /* to allow usage of the floating point conversion specifiers. */
+    /* This is not linked in by default with the newlib-nano library. */
+    asm (".global _printf_float");
+#endif
+#define USBFS_DEVICE    (0u)
+/* The buffer size is equal to the maximum packet size of the IN and OUT bulk
+* endpoints.
+*/
+#define USBUART_BUFFER_SIZE (64u)
+#define LINE_STR_LENGTH     (20u)
+
+char8* parity[] = {"None", "Odd", "Even", "Mark", "Space"};
+char8* stop[]   = {"1", "1.5", "2"};
+
 /* priorities */
 #define LOWER_PRIORITY                      (4u)
 #define DEFAULT_PRIORITY                    (3u)
@@ -53,6 +69,13 @@ uint8_t muted = 0;
 /* Functions */
 int main()
 {
+    /* USB init */
+    uint16 count;
+    uint8 buffer[USBUART_BUFFER_SIZE];
+    /* Set initial state for Volume */
+    Volume_1_Write(0u);
+    Volume_2_Write(0u);
+    Volume_ADC_Start();
     /* Set initial state for Protection */
     Protection_CLK_Write(0u);
     Protection_CLR_Write(1u);
@@ -118,6 +141,8 @@ int main()
 
     /* Enable global interrupts */
     CyGlobalIntEnable;
+    
+    USBUART_Start(USBFS_DEVICE, USBUART_5V_OPERATION);
 
     for(;;)
     {
@@ -167,6 +192,55 @@ int main()
                 break;
             //ON
             case 3:
+                /* Host can send double SET_INTERFACE request. */
+                if (0u != USBUART_IsConfigurationChanged())
+                {
+                    /* Initialize IN endpoints when device is configured. */
+                    if (0u != USBUART_GetConfiguration())
+                    {
+                        /* Enumeration is done, enable OUT endpoint to receive data 
+                         * from host. */
+                        USBUART_CDC_Init();
+                    }
+                }
+
+                /* Service USB CDC when device is configured. */
+                if (0u != USBUART_GetConfiguration())
+                {
+                    /* Check for input data from host. */
+                    if (0u != USBUART_DataIsReady())
+                    {
+                        /* Read received data and re-enable OUT endpoint. */
+                        count = USBUART_GetAll(buffer);
+
+                        if (0u != count)
+                        {
+                            /* Wait until component is ready to send data to host. */
+                            while (0u == USBUART_CDCIsReady())
+                            {
+                            }
+
+                            /* Send data back to host. */
+                            USBUART_PutData(buffer, count);
+
+                            /* If the last sent packet is exactly the maximum packet 
+                            *  size, it is followed by a zero-length packet to assure
+                            *  that the end of the segment is properly identified by 
+                            *  the terminal.
+                            */
+                            if (USBUART_BUFFER_SIZE == count)
+                            {
+                                /* Wait until component is ready to send data to PC. */
+                                while (0u == USBUART_CDCIsReady())
+                                {
+                                }
+
+                                /* Send zero-length packet to PC. */
+                                USBUART_PutData(NULL, 0u);
+                            }
+                        }
+                    }
+                }
                 break;
             //Other cases -> use 255 to trigger ERROR
             default:
@@ -357,7 +431,14 @@ CY_ISR(Left_Handler)
     i_Left_Disable();
     if(Left_SW_Read())
     {
-        U7_LED_Write(!U7_LED_Read());
+        Volume_1_Write(1u);
+        CyDelay(200);
+        int adcval = Volume_ADC_Read16();
+        while(adcval < Volume_ADC_Read16()+0xFF) {}
+        Volume_1_Write(0u);
+        
+        CyDelay(1000);
+        
     }
     //wait for button no longer pressed
     while(Left_SW_Read()){

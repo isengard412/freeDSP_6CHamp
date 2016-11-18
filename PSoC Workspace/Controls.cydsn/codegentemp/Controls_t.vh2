@@ -1,5 +1,5 @@
 -- Project:   C:\Users\Lukas Creutzburg\Documents\GitHub\freeDSP_6CHamp\PSoC Workspace\Controls.cydsn\Controls.cyprj
--- Generated: 11/16/2016 17:42:25
+-- Generated: 11/18/2016 18:00:58
 -- PSoC Creator  4.0
 
 ENTITY Controls IS
@@ -91,8 +91,8 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     SIGNAL Net_65 : bit;
     SIGNAL Net_69 : bit;
     SIGNAL Net_827 : bit;
-    SIGNAL Net_833 : bit;
     SIGNAL Net_843 : bit;
+    SIGNAL Net_849 : bit;
     SIGNAL Power_LED(0)__PA : bit;
     SIGNAL Power_SW(0)__PA : bit;
     SIGNAL Protection_CLK(0)__PA : bit;
@@ -113,30 +113,30 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     SIGNAL Volume_Input(0)__PA : bit;
     SIGNAL \Button_Timer:Net_261\ : bit;
     SIGNAL \Button_Timer:Net_57\ : bit;
-    SIGNAL \\\COM:Dm(0)\\__PA\ : bit;
-    SIGNAL \\\COM:Dp(0)\\__PA\ : bit;
-    SIGNAL \COM:Net_1010\ : bit;
-    SIGNAL \COM:Net_1876\ : bit;
-    SIGNAL \COM:Net_1889\ : bit;
-    SIGNAL \COM:Net_95\ : bit;
-    SIGNAL \COM:dma_request_0\ : bit;
-    SIGNAL \COM:dma_request_1\ : bit;
-    SIGNAL \COM:dma_request_2\ : bit;
-    SIGNAL \COM:dma_request_3\ : bit;
-    SIGNAL \COM:dma_request_4\ : bit;
-    SIGNAL \COM:dma_request_5\ : bit;
-    SIGNAL \COM:dma_request_6\ : bit;
-    SIGNAL \COM:dma_request_7\ : bit;
-    SIGNAL \COM:dma_terminate\ : bit;
-    SIGNAL \COM:ep_int_0\ : bit;
-    SIGNAL \COM:ep_int_1\ : bit;
-    SIGNAL \COM:ep_int_2\ : bit;
-    SIGNAL \COM:ep_int_3\ : bit;
-    SIGNAL \COM:ep_int_4\ : bit;
-    SIGNAL \COM:ep_int_5\ : bit;
-    SIGNAL \COM:ep_int_6\ : bit;
-    SIGNAL \COM:ep_int_7\ : bit;
-    SIGNAL \COM:ep_int_8\ : bit;
+    SIGNAL \\\USBUART:Dm(0)\\__PA\ : bit;
+    SIGNAL \\\USBUART:Dp(0)\\__PA\ : bit;
+    SIGNAL \USBUART:Net_1010\ : bit;
+    SIGNAL \USBUART:Net_1876\ : bit;
+    SIGNAL \USBUART:Net_1889\ : bit;
+    SIGNAL \USBUART:Net_95\ : bit;
+    SIGNAL \USBUART:dma_request_0\ : bit;
+    SIGNAL \USBUART:dma_request_1\ : bit;
+    SIGNAL \USBUART:dma_request_2\ : bit;
+    SIGNAL \USBUART:dma_request_3\ : bit;
+    SIGNAL \USBUART:dma_request_4\ : bit;
+    SIGNAL \USBUART:dma_request_5\ : bit;
+    SIGNAL \USBUART:dma_request_6\ : bit;
+    SIGNAL \USBUART:dma_request_7\ : bit;
+    SIGNAL \USBUART:dma_terminate\ : bit;
+    SIGNAL \USBUART:ep_int_0\ : bit;
+    SIGNAL \USBUART:ep_int_1\ : bit;
+    SIGNAL \USBUART:ep_int_2\ : bit;
+    SIGNAL \USBUART:ep_int_3\ : bit;
+    SIGNAL \USBUART:ep_int_4\ : bit;
+    SIGNAL \USBUART:ep_int_5\ : bit;
+    SIGNAL \USBUART:ep_int_6\ : bit;
+    SIGNAL \USBUART:ep_int_7\ : bit;
+    SIGNAL \USBUART:ep_int_8\ : bit;
     SIGNAL \Volume_ADC:Net_245_0\ : bit;
     SIGNAL \Volume_ADC:Net_245_1\ : bit;
     SIGNAL \Volume_ADC:Net_245_2\ : bit;
@@ -199,11 +199,11 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     ATTRIBUTE Location OF Mute_SW(0) : LABEL IS "P2[5]";
     ATTRIBUTE lib_model OF Enter_SW(0) : LABEL IS "iocell14";
     ATTRIBUTE Location OF Enter_SW(0) : LABEL IS "P2[4]";
-    ATTRIBUTE lib_model OF \COM:Dm(0)\ : LABEL IS "iocell15";
-    ATTRIBUTE Location OF \COM:Dm(0)\ : LABEL IS "P15[7]";
-    ATTRIBUTE Location OF \COM:Dp\ : LABEL IS "F(PICU,8)";
-    ATTRIBUTE lib_model OF \COM:Dp(0)\ : LABEL IS "iocell16";
-    ATTRIBUTE Location OF \COM:Dp(0)\ : LABEL IS "P15[6]";
+    ATTRIBUTE lib_model OF \USBUART:Dm(0)\ : LABEL IS "iocell15";
+    ATTRIBUTE Location OF \USBUART:Dm(0)\ : LABEL IS "P15[7]";
+    ATTRIBUTE Location OF \USBUART:Dp\ : LABEL IS "F(PICU,8)";
+    ATTRIBUTE lib_model OF \USBUART:Dp(0)\ : LABEL IS "iocell16";
+    ATTRIBUTE Location OF \USBUART:Dp(0)\ : LABEL IS "P15[6]";
     ATTRIBUTE lib_model OF D1_LED(0) : LABEL IS "iocell17";
     ATTRIBUTE Location OF D1_LED(0) : LABEL IS "P12[3]";
     ATTRIBUTE lib_model OF U1_LED(0) : LABEL IS "iocell18";
@@ -233,44 +233,43 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     ATTRIBUTE lib_model OF Input_Relais_3(0) : LABEL IS "iocell30";
     ATTRIBUTE Location OF Input_Relais_3(0) : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF Input_Relais_4(0) : LABEL IS "iocell31";
-    ATTRIBUTE Location OF Input_Relais_4(0) : LABEL IS "P0[0]";
+    ATTRIBUTE Location OF Input_Relais_4(0) : LABEL IS "P15[0]";
     ATTRIBUTE lib_model OF Input_Relais_5(0) : LABEL IS "iocell32";
-    ATTRIBUTE Location OF Input_Relais_5(0) : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF Input_Relais_5(0) : LABEL IS "P15[1]";
     ATTRIBUTE lib_model OF Input_Relais_6(0) : LABEL IS "iocell33";
-    ATTRIBUTE Location OF Input_Relais_6(0) : LABEL IS "P3[6]";
+    ATTRIBUTE Location OF Input_Relais_6(0) : LABEL IS "P15[2]";
     ATTRIBUTE lib_model OF Input_Relais_7(0) : LABEL IS "iocell34";
-    ATTRIBUTE Location OF Input_Relais_7(0) : LABEL IS "P3[7]";
+    ATTRIBUTE Location OF Input_Relais_7(0) : LABEL IS "P15[3]";
     ATTRIBUTE lib_model OF Protection_IN(0) : LABEL IS "iocell35";
-    ATTRIBUTE Location OF Protection_IN(0) : LABEL IS "P15[3]";
+    ATTRIBUTE Location OF Protection_IN(0) : LABEL IS "P15[5]";
     ATTRIBUTE lib_model OF Protection_CLR(0) : LABEL IS "iocell36";
-    ATTRIBUTE Location OF Protection_CLR(0) : LABEL IS "P15[4]";
+    ATTRIBUTE Location OF Protection_CLR(0) : LABEL IS "P0[0]";
     ATTRIBUTE lib_model OF Protection_CLK(0) : LABEL IS "iocell37";
-    ATTRIBUTE Location OF Protection_CLK(0) : LABEL IS "P15[5]";
-    ATTRIBUTE Location OF i_Up : LABEL IS "[IntrContainer=(0)][IntrId=(16)]";
-    ATTRIBUTE Location OF i_Left : LABEL IS "[IntrContainer=(0)][IntrId=(11)]";
-    ATTRIBUTE Location OF i_Mute : LABEL IS "[IntrContainer=(0)][IntrId=(13)]";
-    ATTRIBUTE Location OF i_Enter : LABEL IS "[IntrContainer=(0)][IntrId=(8)]";
+    ATTRIBUTE Location OF Protection_CLK(0) : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF i_Up : LABEL IS "[IntrContainer=(0)][IntrId=(13)]";
+    ATTRIBUTE Location OF i_Left : LABEL IS "[IntrContainer=(0)][IntrId=(8)]";
+    ATTRIBUTE Location OF i_Mute : LABEL IS "[IntrContainer=(0)][IntrId=(9)]";
+    ATTRIBUTE Location OF i_Enter : LABEL IS "[IntrContainer=(0)][IntrId=(5)]";
     ATTRIBUTE Location OF \Volume_ADC:DSM\ : LABEL IS "F(DSM,0)";
     ATTRIBUTE Location OF \Volume_ADC:IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(29)]";
     ATTRIBUTE Location OF \Volume_ADC:DEC\ : LABEL IS "F(Decimator,0)";
     ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell1";
     ATTRIBUTE Location OF __ONE__ : LABEL IS "U(1,3)";
-    ATTRIBUTE Location OF \COM:dp_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
-    ATTRIBUTE Location OF \COM:USB\ : LABEL IS "F(USB,0)";
-    ATTRIBUTE Location OF \COM:ep_4\ : LABEL IS "[IntrContainer=(0)][IntrId=(4)]";
-    ATTRIBUTE Location OF \COM:ep_3\ : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
-    ATTRIBUTE Location OF \COM:ep_2\ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
-    ATTRIBUTE Location OF \COM:ep_1\ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
-    ATTRIBUTE Location OF \COM:ep_0\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
-    ATTRIBUTE Location OF \COM:bus_reset\ : LABEL IS "[IntrContainer=(0)][IntrId=(23)]";
-    ATTRIBUTE Location OF \COM:arb_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(22)]";
-    ATTRIBUTE Location OF \COM:ep_5\ : LABEL IS "[IntrContainer=(0)][IntrId=(5)]";
-    ATTRIBUTE Location OF \COM:ep_6\ : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
-    ATTRIBUTE Location OF i_Down : LABEL IS "[IntrContainer=(0)][IntrId=(7)]";
-    ATTRIBUTE Location OF i_Right : LABEL IS "[IntrContainer=(0)][IntrId=(15)]";
-    ATTRIBUTE Location OF i_Input_1 : LABEL IS "[IntrContainer=(0)][IntrId=(9)]";
-    ATTRIBUTE Location OF i_Power : LABEL IS "[IntrContainer=(0)][IntrId=(14)]";
-    ATTRIBUTE Location OF i_Input_2 : LABEL IS "[IntrContainer=(0)][IntrId=(10)]";
+    ATTRIBUTE Location OF \USBUART:dp_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
+    ATTRIBUTE Location OF \USBUART:USB\ : LABEL IS "F(USB,0)";
+    ATTRIBUTE Location OF \USBUART:ord_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(25)]";
+    ATTRIBUTE Location OF \USBUART:ep_3\ : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
+    ATTRIBUTE Location OF \USBUART:ep_2\ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
+    ATTRIBUTE Location OF \USBUART:ep_1\ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
+    ATTRIBUTE Location OF \USBUART:ep_0\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
+    ATTRIBUTE Location OF \USBUART:bus_reset\ : LABEL IS "[IntrContainer=(0)][IntrId=(23)]";
+    ATTRIBUTE Location OF \USBUART:arb_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(22)]";
+    ATTRIBUTE Location OF \USBUART:sof_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(21)]";
+    ATTRIBUTE Location OF i_Down : LABEL IS "[IntrContainer=(0)][IntrId=(4)]";
+    ATTRIBUTE Location OF i_Right : LABEL IS "[IntrContainer=(0)][IntrId=(11)]";
+    ATTRIBUTE Location OF i_Input_1 : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
+    ATTRIBUTE Location OF i_Power : LABEL IS "[IntrContainer=(0)][IntrId=(10)]";
+    ATTRIBUTE Location OF i_Input_2 : LABEL IS "[IntrContainer=(0)][IntrId=(7)]";
     ATTRIBUTE Location OF \Button_Timer:TimerHW\ : LABEL IS "F(Timer,0)";
     ATTRIBUTE Location OF Button_Timer_Interrupt : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
     COMPONENT clockblockcell
@@ -1798,11 +1797,11 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    \COM:Dm\:logicalport
+    \USBUART:Dm\:logicalport
         GENERIC MAP(
             drive_mode => "000",
             ibuf_enabled => "0",
-            id => "19ca56b6-3ebb-4071-90f3-384f4c633c6f/8b77a6c4-10a0-4390-971c-672353e2a49c",
+            id => "c39ef993-d787-4c0c-8ad6-c0c81f866442/8b77a6c4-10a0-4390-971c-672353e2a49c",
             init_dr_st => "0",
             input_buffer_sel => "00",
             input_clk_en => 0,
@@ -1869,16 +1868,16 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    \COM:Dm(0)\:iocell
+    \USBUART:Dm(0)\:iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "\COM:Dm\",
+            logicalport => "\USBUART:Dm\",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000100000000000000000000000")
         PORT MAP(
-            pa_out => \\\COM:Dm(0)\\__PA\,
+            pa_out => \\\USBUART:Dm(0)\\__PA\,
             oe => open,
             in_clock => open,
             in_clock_en => '1',
@@ -1887,11 +1886,11 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    \COM:Dp\:logicalport
+    \USBUART:Dp\:logicalport
         GENERIC MAP(
             drive_mode => "000",
             ibuf_enabled => "0",
-            id => "19ca56b6-3ebb-4071-90f3-384f4c633c6f/618a72fc-5ddd-4df5-958f-a3d55102db42",
+            id => "c39ef993-d787-4c0c-8ad6-c0c81f866442/618a72fc-5ddd-4df5-958f-a3d55102db42",
             init_dr_st => "1",
             input_buffer_sel => "00",
             input_clk_en => 0,
@@ -1957,19 +1956,19 @@ BEGIN
             in_reset => open,
             out_clock_en => open,
             out_reset => open,
-            interrupt => \COM:Net_1010\,
+            interrupt => \USBUART:Net_1010\,
             in_clock => open);
 
-    \COM:Dp(0)\:iocell
+    \USBUART:Dp(0)\:iocell
         GENERIC MAP(
             in_sync_mode => 2,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "\COM:Dp\",
+            logicalport => "\USBUART:Dp\",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000010000000000000000000000")
         PORT MAP(
-            pa_out => \\\COM:Dp(0)\\__PA\,
+            pa_out => \\\USBUART:Dp(0)\\__PA\,
             oe => open,
             in_clock => ClockBlock_BUS_CLK,
             in_clock_en => '1',
@@ -3600,7 +3599,7 @@ BEGIN
 
     Protection_IN:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "011",
             ibuf_enabled => "1",
             id => "d1aaa034-280c-4081-8f3f-e469690163fe",
             init_dr_st => "0",
@@ -3690,7 +3689,7 @@ BEGIN
 
     Protection_CLR:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "011",
             ibuf_enabled => "1",
             id => "145fb2a3-062a-4513-8368-10eb10920cba",
             init_dr_st => "0",
@@ -3780,7 +3779,7 @@ BEGIN
 
     Protection_CLK:logicalport
         GENERIC MAP(
-            drive_mode => "110",
+            drive_mode => "011",
             ibuf_enabled => "1",
             id => "285d059c-11c0-4f83-bf2f-775a37cfba2a",
             init_dr_st => "0",
@@ -3953,111 +3952,103 @@ BEGIN
         PORT MAP(
             q => __ONE__);
 
-    \COM:dp_int\:interrupt
+    \USBUART:dp_int\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:Net_1010\,
+            interrupt => \USBUART:Net_1010\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:USB\:usbcell
+    \USBUART:USB\:usbcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            sof_int => Net_833,
-            arb_int => \COM:Net_1889\,
-            usb_int => \COM:Net_1876\,
-            ept_int_8 => \COM:ep_int_8\,
-            ept_int_7 => \COM:ep_int_7\,
-            ept_int_6 => \COM:ep_int_6\,
-            ept_int_5 => \COM:ep_int_5\,
-            ept_int_4 => \COM:ep_int_4\,
-            ept_int_3 => \COM:ep_int_3\,
-            ept_int_2 => \COM:ep_int_2\,
-            ept_int_1 => \COM:ep_int_1\,
-            ept_int_0 => \COM:ep_int_0\,
-            ord_int => \COM:Net_95\,
-            dma_req_7 => \COM:dma_request_7\,
-            dma_req_6 => \COM:dma_request_6\,
-            dma_req_5 => \COM:dma_request_5\,
-            dma_req_4 => \COM:dma_request_4\,
-            dma_req_3 => \COM:dma_request_3\,
-            dma_req_2 => \COM:dma_request_2\,
-            dma_req_1 => \COM:dma_request_1\,
-            dma_req_0 => \COM:dma_request_0\,
-            dma_termin => \COM:dma_terminate\);
+            sof_int => Net_849,
+            arb_int => \USBUART:Net_1889\,
+            usb_int => \USBUART:Net_1876\,
+            ept_int_8 => \USBUART:ep_int_8\,
+            ept_int_7 => \USBUART:ep_int_7\,
+            ept_int_6 => \USBUART:ep_int_6\,
+            ept_int_5 => \USBUART:ep_int_5\,
+            ept_int_4 => \USBUART:ep_int_4\,
+            ept_int_3 => \USBUART:ep_int_3\,
+            ept_int_2 => \USBUART:ep_int_2\,
+            ept_int_1 => \USBUART:ep_int_1\,
+            ept_int_0 => \USBUART:ep_int_0\,
+            ord_int => \USBUART:Net_95\,
+            dma_req_7 => \USBUART:dma_request_7\,
+            dma_req_6 => \USBUART:dma_request_6\,
+            dma_req_5 => \USBUART:dma_request_5\,
+            dma_req_4 => \USBUART:dma_request_4\,
+            dma_req_3 => \USBUART:dma_request_3\,
+            dma_req_2 => \USBUART:dma_request_2\,
+            dma_req_1 => \USBUART:dma_request_1\,
+            dma_req_0 => \USBUART:dma_request_0\,
+            dma_termin => \USBUART:dma_terminate\);
 
-    \COM:ep_4\:interrupt
+    \USBUART:ord_int\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:ep_int_4\,
+            interrupt => \USBUART:Net_95\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:ep_3\:interrupt
+    \USBUART:ep_3\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:ep_int_3\,
+            interrupt => \USBUART:ep_int_3\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:ep_2\:interrupt
+    \USBUART:ep_2\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:ep_int_2\,
+            interrupt => \USBUART:ep_int_2\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:ep_1\:interrupt
+    \USBUART:ep_1\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:ep_int_1\,
+            interrupt => \USBUART:ep_int_1\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:ep_0\:interrupt
+    \USBUART:ep_0\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:ep_int_0\,
+            interrupt => \USBUART:ep_int_0\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:bus_reset\:interrupt
+    \USBUART:bus_reset\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:Net_1876\,
+            interrupt => \USBUART:Net_1876\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:arb_int\:interrupt
+    \USBUART:arb_int\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:Net_1889\,
+            interrupt => \USBUART:Net_1889\,
             clock => ClockBlock_BUS_CLK);
 
-    \COM:ep_5\:interrupt
+    \USBUART:sof_int\:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => \COM:ep_int_5\,
-            clock => ClockBlock_BUS_CLK);
-
-    \COM:ep_6\:interrupt
-        GENERIC MAP(
-            int_type => "10",
-            is_nmi => 0)
-        PORT MAP(
-            interrupt => \COM:ep_int_6\,
+            interrupt => Net_849,
             clock => ClockBlock_BUS_CLK);
 
     i_Down:interrupt

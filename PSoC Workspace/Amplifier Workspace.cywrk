@@ -10,6 +10,7 @@
 <v>.\Volume_Control.cydsn\Volume_Control.cyprj</v>
 <v>.\Protection_Register_Control.cydsn\Protection_Register_Control.cyprj</v>
 <v>.\Controls.cydsn\Controls.cyprj</v>
+<v>.\USBFS_UART01.cydsn\USBFS_UART01.cyprj</v>
 </projects>
 <workspace_id v="c91dd437-f920-4674-8fd5-66386d372458" />
 <WriteAppVersionLastSavedWith v="4.0.0.432" />
