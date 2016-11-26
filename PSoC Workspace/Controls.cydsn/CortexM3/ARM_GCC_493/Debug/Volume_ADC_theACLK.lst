@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 1
 
 
    1              		.syntax unified
@@ -29,7 +29,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
   26              		.file 1 "Generated_Source\\PSoC5\\Volume_ADC_theACLK.c"
    1:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** /*******************************************************************************
    2:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * File Name: Volume_ADC_theACLK.c
-   3:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Version 2.20
+   3:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Version 2.10
    4:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
    5:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  Description:
    6:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *   This file provides the source code to the API for the clock component.
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
   29:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
   30:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** /*******************************************************************************
   31:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Function Name: Volume_ADC_theACLK_Start
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 2
 
 
   32:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** ********************************************************************************
@@ -98,7 +98,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
   43              	.L3:
   44 0016 00BF     		.align	2
   45              	.L2:
-  46 0018 A1430040 		.word	1073759137
+  46 0018 A2430040 		.word	1073759138
   47              		.cfi_endproc
   48              	.LFE0:
   49              		.size	Volume_ADC_theACLK_Start, .-Volume_ADC_theACLK_Start
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
   55:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** ********************************************************************************
   56:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
   57:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Summary:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 3
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 3
 
 
   58:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  Stops the clock and returns immediately. This API does not require the
@@ -158,7 +158,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
   74              	.L6:
   75 0016 00BF     		.align	2
   76              	.L5:
-  77 0018 A1430040 		.word	1073759137
+  77 0018 A2430040 		.word	1073759138
   78              		.cfi_endproc
   79              	.LFE1:
   80              		.size	Volume_ADC_theACLK_Stop, .-Volume_ADC_theACLK_Stop
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
   81:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
   82:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** /*******************************************************************************
   83:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Function Name: Volume_ADC_theACLK_StopBlock
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 4
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 4
 
 
   84:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** ********************************************************************************
@@ -224,26 +224,26 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  109:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         /* Clear all the mask bits except ours. */
  110:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #if defined(Volume_ADC_theACLK__CFG3)
  111:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_AMASK = Volume_ADC_theACLK_CLKEN_MASK;
- 104              		.loc 1 111 0
+ 112:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_DMASK = 0x00u;
+ 113:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #else
+ 114:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_DMASK = Volume_ADC_theACLK_CLKEN_MASK;
+ 104              		.loc 1 114 0
  105 0010 0120     		movs	r0, #1
  106 0012 144A     		ldr	r2, .L10+8
  107 0014 1070     		strb	r0, [r2]
- 112:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_DMASK = 0x00u;
- 108              		.loc 1 112 0
- 109 0016 043A     		subs	r2, r2, #4
- 110 0018 1370     		strb	r3, [r2]
- 113:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #else
- 114:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_DMASK = Volume_ADC_theACLK_CLKEN_MASK;
  115:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_AMASK = 0x00u;
+ 108              		.loc 1 115 0
+ 109 0016 0432     		adds	r2, r2, #4
+ 110 0018 1370     		strb	r3, [r2]
  116:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #endif /* Volume_ADC_theACLK__CFG3 */
  117:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
  118:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         /* Clear mask of bus clock. */
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 5
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 5
 
 
  119:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_BCFG2 &= (uint8)(~BCFG2_MASK);
  111              		.loc 1 119 0
- 112 001a 083A     		subs	r2, r2, #8
+ 112 001a 0C3A     		subs	r2, r2, #12
  113 001c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  114 001e 03F07F03 		and	r3, r3, #127
  115 0022 1370     		strb	r3, [r2]
@@ -256,7 +256,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  120              	.LVL0:
  122:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CY_SET_REG16(CYREG_CLKDIST_WRK0, oldDivider);
  121              		.loc 1 122 0
- 122 002a FE3B     		subs	r3, r3, #254
+ 122 002a 7E3B     		subs	r3, r3, #126
  123 002c 1A80     		strh	r2, [r3]	@ movhi
  123:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CLK_DIST_LD = CYCLK_LD_DISABLE | CYCLK_LD_SYNC_EN | CYCLK_LD_LOAD;
  124              		.loc 1 123 0
@@ -296,9 +296,9 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  146 0054 1970     		strb	r1, [r3]
  136:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         CY_SET_REG16(Volume_ADC_theACLK_DIV_PTR, oldDivider);
  147              		.loc 1 136 0
- 148 0056 FF33     		adds	r3, r3, #255
+ 148 0056 7F33     		adds	r3, r3, #127
  149 0058 1A80     		strh	r2, [r3]	@ movhi
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 6
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 6
 
 
  150              	.LVL1:
@@ -307,10 +307,10 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  153              	.L11:
  154              		.align	2
  155              	.L10:
- 156 005c A1430040 		.word	1073759137
+ 156 005c A2430040 		.word	1073759138
  157 0060 01400040 		.word	1073758209
- 158 0064 14400040 		.word	1073758228
- 159 0068 00410040 		.word	1073758464
+ 158 0064 10400040 		.word	1073758224
+ 159 0068 80400040 		.word	1073758336
  160              	.LBE2:
  161              		.cfi_endproc
  162              	.LFE2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  161:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         Volume_ADC_theACLK_CLKSTBY &= (uint8)(~Volume_ADC_theACLK_CLKSTBY_MASK);
  180              		.loc 1 161 0
  181 0002 064A     		ldr	r2, .L15
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 7
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 7
 
 
  182 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
@@ -379,7 +379,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  193              	.L16:
  194 001a 00BF     		.align	2
  195              	.L15:
- 196 001c B1430040 		.word	1073759153
+ 196 001c B2430040 		.word	1073759154
  197              		.cfi_endproc
  198              	.LFE3:
  199              		.size	Volume_ADC_theACLK_StandbyPower, .-Volume_ADC_theACLK_StandbyPower
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  190:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  None
  191:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
  192:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *******************************************************************************/
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 8
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 8
 
 
  193:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** void Volume_ADC_theACLK_SetDividerRegister(uint16 clkDivider, uint8 restart)
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  247:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****                     CLK_DIST_LD = CYCLK_LD_DISABLE|CYCLK_LD_SYNC_EN|CYCLK_LD_LOAD;
  248:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
  249:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****                     /* Wait for clock to be disabled */
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 9
 
 
  250:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****                     while ((CLK_DIST_LD & CYCLK_LD_LOAD) != 0u) { }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  299:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****     return CY_GET_REG16(Volume_ADC_theACLK_DIV_PTR);
  213              		.loc 1 299 0
  214 0000 014B     		ldr	r3, .L18
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 10
 
 
  215 0002 1888     		ldrh	r0, [r3]
@@ -549,7 +549,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  219              	.L19:
  220              		.align	2
  221              	.L18:
- 222 0008 00410040 		.word	1073758464
+ 222 0008 80400040 		.word	1073758336
  223              		.cfi_endproc
  224              	.LFE5:
  225              		.size	Volume_ADC_theACLK_GetDividerRegister, .-Volume_ADC_theACLK_GetDividerRegister
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  235              		.cfi_startproc
  236              		@ args = 0, pretend = 0, frame = 0
  237              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 11
 
 
  238              		@ link register save eliminated.
@@ -615,7 +615,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  248              	.L22:
  249 000e 00BF     		.align	2
  250              	.L21:
- 251 0010 02410040 		.word	1073758466
+ 251 0010 82400040 		.word	1073758338
  252              		.cfi_endproc
  253              	.LFE6:
  254              		.size	Volume_ADC_theACLK_SetModeRegister, .-Volume_ADC_theACLK_SetModeRegister
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  363:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Returns:
  364:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  None
  365:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 12
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 12
 
 
  366:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *******************************************************************************/
@@ -684,7 +684,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  279              	.L25:
  280 0012 00BF     		.align	2
  281              	.L24:
- 282 0014 02410040 		.word	1073758466
+ 282 0014 82400040 		.word	1073758338
  283              		.cfi_endproc
  284              	.LFE7:
  285              		.size	Volume_ADC_theACLK_ClearModeRegister, .-Volume_ADC_theACLK_ClearModeRegister
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  389:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** {
  294              		.loc 1 389 0
  295              		.cfi_startproc
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 13
 
 
  296              		@ args = 0, pretend = 0, frame = 0
@@ -735,7 +735,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  305              	.L28:
  306 000a 00BF     		.align	2
  307              	.L27:
- 308 000c 02410040 		.word	1073758466
+ 308 000c 82400040 		.word	1073758338
  309              		.cfi_endproc
  310              	.LFE8:
  311              		.size	Volume_ADC_theACLK_GetModeRegister, .-Volume_ADC_theACLK_GetModeRegister
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  420:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** {
  421:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****     uint16 currDiv = Volume_ADC_theACLK_GetDividerRegister();
  422:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****     uint8 oldSrc = Volume_ADC_theACLK_GetSourceRegister();
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 14
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 14
 
 
  423:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
@@ -838,12 +838,12 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  329 0004 00F00700 		and	r0, r0, #7
  330 0008 7047     		bx	lr
  331              	.L31:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 15
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 15
 
 
  332 000a 00BF     		.align	2
  333              	.L30:
- 334 000c 02410040 		.word	1073758466
+ 334 000c 82400040 		.word	1073758338
  335              		.cfi_endproc
  336              	.LFE10:
  337              		.size	Volume_ADC_theACLK_GetSourceRegister, .-Volume_ADC_theACLK_GetSourceRegister
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  205:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****         {
  379              		.loc 1 205 0 discriminator 2
  380 0020 85B9     		cbnz	r5, .L34
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 16
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 16
 
 
  381              	.L35:
@@ -942,23 +942,23 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  412 0046 0023     		movs	r3, #0
  413 0048 2149     		ldr	r1, .L45+12
  414 004a 0B70     		strb	r3, [r1]
- 233:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****                 CLK_DIST_DMASK = 0x00u;
- 415              		.loc 1 233 0
+ 236:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****                 CLK_DIST_AMASK = 0x00u;
+ 415              		.loc 1 236 0
  416 004c 0124     		movs	r4, #1
  417              	.LVL17:
- 418 004e 1331     		adds	r1, r1, #19
+ 418 004e 0F31     		adds	r1, r1, #15
  419 0050 0C70     		strb	r4, [r1]
- 234:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #else
- 420              		.loc 1 234 0
- 421 0052 0439     		subs	r1, r1, #4
+ 237:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #endif /* Volume_ADC_theACLK__CFG3 */
+ 420              		.loc 1 237 0
+ 421 0052 0431     		adds	r1, r1, #4
  422 0054 0B70     		strb	r3, [r1]
  240:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
  423              		.loc 1 240 0
- 424 0056 0839     		subs	r1, r1, #8
+ 424 0056 0C39     		subs	r1, r1, #12
  425 0058 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
  426 005a 03F07F03 		and	r3, r3, #127
  427 005e 0B70     		strb	r3, [r1]
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 17
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 17
 
 
  243:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****                 {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  472              	.LVL19:
  473              	.L43:
  474 00a4 0122     		movs	r2, #1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 18
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 18
 
 
  475              	.LVL20:
@@ -1053,9 +1053,9 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  500              	.L46:
  501              		.align	2
  502              	.L45:
- 503 00c4 A1430040 		.word	1073759137
- 504 00c8 00410040 		.word	1073758464
- 505 00cc 02410040 		.word	1073758466
+ 503 00c4 A2430040 		.word	1073759138
+ 504 00c8 80400040 		.word	1073758336
+ 505 00cc 82400040 		.word	1073758338
  506 00d0 01400040 		.word	1073758209
  507 00d4 02400040 		.word	1073758210
  508              		.cfi_endproc
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  524 0000 38B5     		push	{r3, r4, r5, lr}
  525              		.cfi_def_cfa_offset 16
  526              		.cfi_offset 3, -16
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 19
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 19
 
 
  527              		.cfi_offset 4, -12
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  438:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****             (Volume_ADC_theACLK_MOD_SRC & (uint8)(~Volume_ADC_theACLK_SRC_SEL_MSK)) | clkSource;
  569              		.loc 1 438 0
  570 0036 03F0F803 		and	r3, r3, #248
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 20
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 20
 
 
  571 003a 1C43     		orrs	r4, r4, r3
@@ -1165,1194 +1165,1042 @@ ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 1
  589              	.L53:
  590 0056 00BF     		.align	2
  591              	.L52:
- 592 0058 02410040 		.word	1073758466
+ 592 0058 82400040 		.word	1073758338
  593              		.cfi_endproc
  594              	.LFE9:
  595              		.size	Volume_ADC_theACLK_SetSourceRegister, .-Volume_ADC_theACLK_SetSourceRegister
- 596              		.section	.text.Volume_ADC_theACLK_SetPhaseRegister,"ax",%progbits
- 597              		.align	2
- 598              		.global	Volume_ADC_theACLK_SetPhaseRegister
- 599              		.thumb
- 600              		.thumb_func
- 601              		.type	Volume_ADC_theACLK_SetPhaseRegister, %function
- 602              	Volume_ADC_theACLK_SetPhaseRegister:
- 603              	.LFB11:
- 468:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
- 469:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
- 470:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** #if defined(Volume_ADC_theACLK__CFG3)
- 471:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
- 472:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
- 473:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** /*******************************************************************************
- 474:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Function Name: Volume_ADC_theACLK_SetPhaseRegister
- 475:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** ********************************************************************************
- 476:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 477:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Summary:
- 478:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  Sets the phase delay of the analog clock. This function is only available
- 479:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  for analog clocks. The clock must be disabled before changing the phase
- 480:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  delay to avoid glitches.
- 481:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 482:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Parameters:
- 483:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  clkPhase: Amount to delay the phase of the clock, in 1.0ns increments.
- 484:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *   clkPhase must be from 1 to 11 inclusive. Other values, including 0,
- 485:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *   disable the clock. clkPhase = 1 produces a 0ns delay and clkPhase = 11 
- 486:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *   produces a 10ns delay.
- 487:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 488:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Returns:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 21
+ 596              		.text
+ 597              	.Letext0:
+ 598              		.file 2 "Generated_Source\\PSoC5/cytypes.h"
+ 599              		.section	.debug_info,"",%progbits
+ 600              	.Ldebug_info0:
+ 601 0000 7F020000 		.4byte	0x27f
+ 602 0004 0400     		.2byte	0x4
+ 603 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 604 000a 04       		.byte	0x4
+ 605 000b 01       		.uleb128 0x1
+ 606 000c 56020000 		.4byte	.LASF36
+ 607 0010 01       		.byte	0x1
+ 608 0011 73000000 		.4byte	.LASF37
+ 609 0015 DB000000 		.4byte	.LASF38
+ 610 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 611 001d 00000000 		.4byte	0
+ 612 0021 00000000 		.4byte	.Ldebug_line0
+ 613 0025 02       		.uleb128 0x2
+ 614 0026 01       		.byte	0x1
+ 615 0027 06       		.byte	0x6
+ 616 0028 C4010000 		.4byte	.LASF0
+ 617 002c 02       		.uleb128 0x2
+ 618 002d 01       		.byte	0x1
+ 619 002e 08       		.byte	0x8
+ 620 002f 87010000 		.4byte	.LASF1
+ 621 0033 02       		.uleb128 0x2
+ 622 0034 02       		.byte	0x2
+ 623 0035 05       		.byte	0x5
+ 624 0036 51000000 		.4byte	.LASF2
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 21
 
 
- 489:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  None
- 490:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 491:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *******************************************************************************/
- 492:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** void Volume_ADC_theACLK_SetPhaseRegister(uint8 clkPhase) 
- 493:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** {
- 604              		.loc 1 493 0
- 605              		.cfi_startproc
- 606              		@ args = 0, pretend = 0, frame = 0
- 607              		@ frame_needed = 0, uses_anonymous_args = 0
- 608              		@ link register save eliminated.
- 609              	.LVL30:
- 494:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****     Volume_ADC_theACLK_PHASE = clkPhase & Volume_ADC_theACLK_PHASE_MASK;
- 610              		.loc 1 494 0
- 611 0000 00F00F00 		and	r0, r0, #15
- 612              	.LVL31:
- 613 0004 014B     		ldr	r3, .L55
- 614 0006 1870     		strb	r0, [r3]
- 615 0008 7047     		bx	lr
- 616              	.L56:
- 617 000a 00BF     		.align	2
- 618              	.L55:
- 619 000c 03410040 		.word	1073758467
- 620              		.cfi_endproc
- 621              	.LFE11:
- 622              		.size	Volume_ADC_theACLK_SetPhaseRegister, .-Volume_ADC_theACLK_SetPhaseRegister
- 623              		.section	.text.Volume_ADC_theACLK_GetPhaseRegister,"ax",%progbits
- 624              		.align	2
- 625              		.global	Volume_ADC_theACLK_GetPhaseRegister
- 626              		.thumb
- 627              		.thumb_func
- 628              		.type	Volume_ADC_theACLK_GetPhaseRegister, %function
- 629              	Volume_ADC_theACLK_GetPhaseRegister:
- 630              	.LFB12:
- 495:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** }
- 496:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
- 497:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** 
- 498:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** /*******************************************************************************
- 499:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Function Name: Volume_ADC_theACLK_GetPhase
- 500:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** ********************************************************************************
- 501:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 502:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Summary:
- 503:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  Gets the phase delay of the analog clock. This function is only available
- 504:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  for analog clocks.
- 505:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 506:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Parameters:
- 507:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  None
- 508:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 509:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** * Returns:
- 510:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *  Phase of the analog clock. See SetPhaseRegister for details.
- 511:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *
- 512:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** *******************************************************************************/
- 513:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** uint8 Volume_ADC_theACLK_GetPhaseRegister(void) 
- 514:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** {
- 631              		.loc 1 514 0
- 632              		.cfi_startproc
- 633              		@ args = 0, pretend = 0, frame = 0
- 634              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 22
+ 625 003a 02       		.uleb128 0x2
+ 626 003b 02       		.byte	0x2
+ 627 003c 07       		.byte	0x7
+ 628 003d 3E020000 		.4byte	.LASF3
+ 629 0041 02       		.uleb128 0x2
+ 630 0042 04       		.byte	0x4
+ 631 0043 05       		.byte	0x5
+ 632 0044 78010000 		.4byte	.LASF4
+ 633 0048 02       		.uleb128 0x2
+ 634 0049 04       		.byte	0x4
+ 635 004a 07       		.byte	0x7
+ 636 004b 06030000 		.4byte	.LASF5
+ 637 004f 02       		.uleb128 0x2
+ 638 0050 08       		.byte	0x8
+ 639 0051 05       		.byte	0x5
+ 640 0052 6A010000 		.4byte	.LASF6
+ 641 0056 02       		.uleb128 0x2
+ 642 0057 08       		.byte	0x8
+ 643 0058 07       		.byte	0x7
+ 644 0059 D0010000 		.4byte	.LASF7
+ 645 005d 03       		.uleb128 0x3
+ 646 005e 04       		.byte	0x4
+ 647 005f 05       		.byte	0x5
+ 648 0060 696E7400 		.ascii	"int\000"
+ 649 0064 02       		.uleb128 0x2
+ 650 0065 04       		.byte	0x4
+ 651 0066 07       		.byte	0x7
+ 652 0067 0C020000 		.4byte	.LASF8
+ 653 006b 04       		.uleb128 0x4
+ 654 006c 33010000 		.4byte	.LASF9
+ 655 0070 02       		.byte	0x2
+ 656 0071 9201     		.2byte	0x192
+ 657 0073 2C000000 		.4byte	0x2c
+ 658 0077 04       		.uleb128 0x4
+ 659 0078 C5000000 		.4byte	.LASF10
+ 660 007c 02       		.byte	0x2
+ 661 007d 9301     		.2byte	0x193
+ 662 007f 3A000000 		.4byte	0x3a
+ 663 0083 02       		.uleb128 0x2
+ 664 0084 04       		.byte	0x4
+ 665 0085 04       		.byte	0x4
+ 666 0086 64010000 		.4byte	.LASF11
+ 667 008a 02       		.uleb128 0x2
+ 668 008b 08       		.byte	0x8
+ 669 008c 04       		.byte	0x4
+ 670 008d 18030000 		.4byte	.LASF12
+ 671 0091 02       		.uleb128 0x2
+ 672 0092 01       		.byte	0x1
+ 673 0093 08       		.byte	0x8
+ 674 0094 51020000 		.4byte	.LASF13
+ 675 0098 04       		.uleb128 0x4
+ 676 0099 01030000 		.4byte	.LASF14
+ 677 009d 02       		.byte	0x2
+ 678 009e 3C02     		.2byte	0x23c
+ 679 00a0 A4000000 		.4byte	0xa4
+ 680 00a4 05       		.uleb128 0x5
+ 681 00a5 6B000000 		.4byte	0x6b
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 22
 
 
- 635              		@ link register save eliminated.
- 515:Generated_Source\PSoC5/Volume_ADC_theACLK.c ****     return Volume_ADC_theACLK_PHASE & Volume_ADC_theACLK_PHASE_MASK;
- 636              		.loc 1 515 0
- 637 0000 024B     		ldr	r3, .L58
- 638 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
- 516:Generated_Source\PSoC5/Volume_ADC_theACLK.c **** }
- 639              		.loc 1 516 0
- 640 0004 00F00F00 		and	r0, r0, #15
- 641 0008 7047     		bx	lr
- 642              	.L59:
- 643 000a 00BF     		.align	2
- 644              	.L58:
- 645 000c 03410040 		.word	1073758467
- 646              		.cfi_endproc
- 647              	.LFE12:
- 648              		.size	Volume_ADC_theACLK_GetPhaseRegister, .-Volume_ADC_theACLK_GetPhaseRegister
- 649              		.text
- 650              	.Letext0:
- 651              		.file 2 "Generated_Source\\PSoC5/cytypes.h"
- 652              		.section	.debug_info,"",%progbits
- 653              	.Ldebug_info0:
- 654 0000 C0020000 		.4byte	0x2c0
- 655 0004 0400     		.2byte	0x4
- 656 0006 00000000 		.4byte	.Ldebug_abbrev0
- 657 000a 04       		.byte	0x4
- 658 000b 01       		.uleb128 0x1
- 659 000c 5F020000 		.4byte	.LASF40
- 660 0010 01       		.byte	0x1
- 661 0011 73000000 		.4byte	.LASF41
- 662 0015 DB000000 		.4byte	.LASF42
- 663 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 664 001d 00000000 		.4byte	0
- 665 0021 00000000 		.4byte	.Ldebug_line0
- 666 0025 02       		.uleb128 0x2
- 667 0026 01       		.byte	0x1
- 668 0027 06       		.byte	0x6
- 669 0028 CD010000 		.4byte	.LASF0
- 670 002c 02       		.uleb128 0x2
- 671 002d 01       		.byte	0x1
- 672 002e 08       		.byte	0x8
- 673 002f 90010000 		.4byte	.LASF1
- 674 0033 02       		.uleb128 0x2
- 675 0034 02       		.byte	0x2
- 676 0035 05       		.byte	0x5
- 677 0036 51000000 		.4byte	.LASF2
- 678 003a 02       		.uleb128 0x2
- 679 003b 02       		.byte	0x2
- 680 003c 07       		.byte	0x7
- 681 003d 47020000 		.4byte	.LASF3
- 682 0041 02       		.uleb128 0x2
- 683 0042 04       		.byte	0x4
- 684 0043 05       		.byte	0x5
- 685 0044 78010000 		.4byte	.LASF4
- 686 0048 02       		.uleb128 0x2
- 687 0049 04       		.byte	0x4
- 688 004a 07       		.byte	0x7
- 689 004b 0F030000 		.4byte	.LASF5
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 23
+ 682 00a9 04       		.uleb128 0x4
+ 683 00aa 25000000 		.4byte	.LASF15
+ 684 00ae 02       		.byte	0x2
+ 685 00af 3D02     		.2byte	0x23d
+ 686 00b1 B5000000 		.4byte	0xb5
+ 687 00b5 05       		.uleb128 0x5
+ 688 00b6 77000000 		.4byte	0x77
+ 689 00ba 06       		.uleb128 0x6
+ 690 00bb 6F030000 		.4byte	.LASF16
+ 691 00bf 01       		.byte	0x1
+ 692 00c0 2D       		.byte	0x2d
+ 693 00c1 00000000 		.4byte	.LFB0
+ 694 00c5 1C000000 		.4byte	.LFE0-.LFB0
+ 695 00c9 01       		.uleb128 0x1
+ 696 00ca 9C       		.byte	0x9c
+ 697 00cb 06       		.uleb128 0x6
+ 698 00cc 5B000000 		.4byte	.LASF17
+ 699 00d0 01       		.byte	0x1
+ 700 00d1 47       		.byte	0x47
+ 701 00d2 00000000 		.4byte	.LFB1
+ 702 00d6 1C000000 		.4byte	.LFE1-.LFB1
+ 703 00da 01       		.uleb128 0x1
+ 704 00db 9C       		.byte	0x9c
+ 705 00dc 07       		.uleb128 0x7
+ 706 00dd 00000000 		.4byte	.LASF18
+ 707 00e1 01       		.byte	0x1
+ 708 00e2 64       		.byte	0x64
+ 709 00e3 00000000 		.4byte	.LFB2
+ 710 00e7 6C000000 		.4byte	.LFE2-.LFB2
+ 711 00eb 01       		.uleb128 0x1
+ 712 00ec 9C       		.byte	0x9c
+ 713 00ed 0B010000 		.4byte	0x10b
+ 714 00f1 08       		.uleb128 0x8
+ 715 00f2 0A000000 		.4byte	.LBB2
+ 716 00f6 62000000 		.4byte	.LBE2-.LBB2
+ 717 00fa 09       		.uleb128 0x9
+ 718 00fb F6020000 		.4byte	.LASF30
+ 719 00ff 01       		.byte	0x1
+ 720 0100 69       		.byte	0x69
+ 721 0101 77000000 		.4byte	0x77
+ 722 0105 00000000 		.4byte	.LLST0
+ 723 0109 00       		.byte	0
+ 724 010a 00       		.byte	0
+ 725 010b 07       		.uleb128 0x7
+ 726 010c 44010000 		.4byte	.LASF19
+ 727 0110 01       		.byte	0x1
+ 728 0111 9D       		.byte	0x9d
+ 729 0112 00000000 		.4byte	.LFB3
+ 730 0116 20000000 		.4byte	.LFE3-.LFB3
+ 731 011a 01       		.uleb128 0x1
+ 732 011b 9C       		.byte	0x9c
+ 733 011c 2E010000 		.4byte	0x12e
+ 734 0120 0A       		.uleb128 0xa
+ 735 0121 81010000 		.4byte	.LASF21
+ 736 0125 01       		.byte	0x1
+ 737 0126 9D       		.byte	0x9d
+ 738 0127 6B000000 		.4byte	0x6b
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 23
 
 
- 690 004f 02       		.uleb128 0x2
- 691 0050 08       		.byte	0x8
- 692 0051 05       		.byte	0x5
- 693 0052 6A010000 		.4byte	.LASF6
- 694 0056 02       		.uleb128 0x2
- 695 0057 08       		.byte	0x8
- 696 0058 07       		.byte	0x7
- 697 0059 D9010000 		.4byte	.LASF7
- 698 005d 03       		.uleb128 0x3
- 699 005e 04       		.byte	0x4
- 700 005f 05       		.byte	0x5
- 701 0060 696E7400 		.ascii	"int\000"
- 702 0064 02       		.uleb128 0x2
- 703 0065 04       		.byte	0x4
- 704 0066 07       		.byte	0x7
- 705 0067 15020000 		.4byte	.LASF8
- 706 006b 04       		.uleb128 0x4
- 707 006c 33010000 		.4byte	.LASF9
- 708 0070 02       		.byte	0x2
- 709 0071 9201     		.2byte	0x192
- 710 0073 2C000000 		.4byte	0x2c
- 711 0077 04       		.uleb128 0x4
- 712 0078 C5000000 		.4byte	.LASF10
- 713 007c 02       		.byte	0x2
- 714 007d 9301     		.2byte	0x193
- 715 007f 3A000000 		.4byte	0x3a
- 716 0083 02       		.uleb128 0x2
- 717 0084 04       		.byte	0x4
- 718 0085 04       		.byte	0x4
- 719 0086 64010000 		.4byte	.LASF11
- 720 008a 02       		.uleb128 0x2
- 721 008b 08       		.byte	0x8
- 722 008c 04       		.byte	0x4
- 723 008d 21030000 		.4byte	.LASF12
- 724 0091 02       		.uleb128 0x2
- 725 0092 01       		.byte	0x1
- 726 0093 08       		.byte	0x8
- 727 0094 5A020000 		.4byte	.LASF13
- 728 0098 04       		.uleb128 0x4
- 729 0099 0A030000 		.4byte	.LASF14
- 730 009d 02       		.byte	0x2
- 731 009e 3C02     		.2byte	0x23c
- 732 00a0 A4000000 		.4byte	0xa4
- 733 00a4 05       		.uleb128 0x5
- 734 00a5 6B000000 		.4byte	0x6b
- 735 00a9 04       		.uleb128 0x4
- 736 00aa 25000000 		.4byte	.LASF15
- 737 00ae 02       		.byte	0x2
- 738 00af 3D02     		.2byte	0x23d
- 739 00b1 B5000000 		.4byte	0xb5
- 740 00b5 05       		.uleb128 0x5
- 741 00b6 77000000 		.4byte	0x77
- 742 00ba 06       		.uleb128 0x6
- 743 00bb 9C030000 		.4byte	.LASF16
- 744 00bf 01       		.byte	0x1
- 745 00c0 2D       		.byte	0x2d
- 746 00c1 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 24
+ 739 012b 01       		.uleb128 0x1
+ 740 012c 50       		.byte	0x50
+ 741 012d 00       		.byte	0
+ 742 012e 0B       		.uleb128 0xb
+ 743 012f 9F000000 		.4byte	.LASF24
+ 744 0133 01       		.byte	0x1
+ 745 0134 2901     		.2byte	0x129
+ 746 0136 77000000 		.4byte	0x77
+ 747 013a 00000000 		.4byte	.LFB5
+ 748 013e 0C000000 		.4byte	.LFE5-.LFB5
+ 749 0142 01       		.uleb128 0x1
+ 750 0143 9C       		.byte	0x9c
+ 751 0144 0C       		.uleb128 0xc
+ 752 0145 A1010000 		.4byte	.LASF20
+ 753 0149 01       		.byte	0x1
+ 754 014a 4C01     		.2byte	0x14c
+ 755 014c 00000000 		.4byte	.LFB6
+ 756 0150 14000000 		.4byte	.LFE6-.LFB6
+ 757 0154 01       		.uleb128 0x1
+ 758 0155 9C       		.byte	0x9c
+ 759 0156 6B010000 		.4byte	0x16b
+ 760 015a 0D       		.uleb128 0xd
+ 761 015b 95010000 		.4byte	.LASF22
+ 762 015f 01       		.byte	0x1
+ 763 0160 4C01     		.2byte	0x14c
+ 764 0162 6B000000 		.4byte	0x6b
+ 765 0166 13000000 		.4byte	.LLST1
+ 766 016a 00       		.byte	0
+ 767 016b 0C       		.uleb128 0xc
+ 768 016c 19020000 		.4byte	.LASF23
+ 769 0170 01       		.byte	0x1
+ 770 0171 6F01     		.2byte	0x16f
+ 771 0173 00000000 		.4byte	.LFB7
+ 772 0177 18000000 		.4byte	.LFE7-.LFB7
+ 773 017b 01       		.uleb128 0x1
+ 774 017c 9C       		.byte	0x9c
+ 775 017d 92010000 		.4byte	0x192
+ 776 0181 0D       		.uleb128 0xd
+ 777 0182 95010000 		.4byte	.LASF22
+ 778 0186 01       		.byte	0x1
+ 779 0187 6F01     		.2byte	0x16f
+ 780 0189 6B000000 		.4byte	0x6b
+ 781 018d 34000000 		.4byte	.LLST2
+ 782 0191 00       		.byte	0
+ 783 0192 0B       		.uleb128 0xb
+ 784 0193 4C030000 		.4byte	.LASF25
+ 785 0197 01       		.byte	0x1
+ 786 0198 8401     		.2byte	0x184
+ 787 019a 6B000000 		.4byte	0x6b
+ 788 019e 00000000 		.4byte	.LFB8
+ 789 01a2 10000000 		.4byte	.LFE8-.LFB8
+ 790 01a6 01       		.uleb128 0x1
+ 791 01a7 9C       		.byte	0x9c
+ 792 01a8 0B       		.uleb128 0xb
+ 793 01a9 E7010000 		.4byte	.LASF26
+ 794 01ad 01       		.byte	0x1
+ 795 01ae D001     		.2byte	0x1d0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 24
 
 
- 747 00c5 1C000000 		.4byte	.LFE0-.LFB0
- 748 00c9 01       		.uleb128 0x1
- 749 00ca 9C       		.byte	0x9c
- 750 00cb 06       		.uleb128 0x6
- 751 00cc 5B000000 		.4byte	.LASF17
- 752 00d0 01       		.byte	0x1
- 753 00d1 47       		.byte	0x47
- 754 00d2 00000000 		.4byte	.LFB1
- 755 00d6 1C000000 		.4byte	.LFE1-.LFB1
- 756 00da 01       		.uleb128 0x1
- 757 00db 9C       		.byte	0x9c
- 758 00dc 07       		.uleb128 0x7
- 759 00dd 00000000 		.4byte	.LASF18
- 760 00e1 01       		.byte	0x1
- 761 00e2 64       		.byte	0x64
- 762 00e3 00000000 		.4byte	.LFB2
- 763 00e7 6C000000 		.4byte	.LFE2-.LFB2
- 764 00eb 01       		.uleb128 0x1
- 765 00ec 9C       		.byte	0x9c
- 766 00ed 0B010000 		.4byte	0x10b
- 767 00f1 08       		.uleb128 0x8
- 768 00f2 0A000000 		.4byte	.LBB2
- 769 00f6 62000000 		.4byte	.LBE2-.LBB2
- 770 00fa 09       		.uleb128 0x9
- 771 00fb FF020000 		.4byte	.LASF30
- 772 00ff 01       		.byte	0x1
- 773 0100 69       		.byte	0x69
- 774 0101 77000000 		.4byte	0x77
- 775 0105 00000000 		.4byte	.LLST0
- 776 0109 00       		.byte	0
- 777 010a 00       		.byte	0
- 778 010b 07       		.uleb128 0x7
- 779 010c 44010000 		.4byte	.LASF19
- 780 0110 01       		.byte	0x1
- 781 0111 9D       		.byte	0x9d
- 782 0112 00000000 		.4byte	.LFB3
- 783 0116 20000000 		.4byte	.LFE3-.LFB3
- 784 011a 01       		.uleb128 0x1
- 785 011b 9C       		.byte	0x9c
- 786 011c 2E010000 		.4byte	0x12e
- 787 0120 0A       		.uleb128 0xa
- 788 0121 81010000 		.4byte	.LASF21
- 789 0125 01       		.byte	0x1
- 790 0126 9D       		.byte	0x9d
- 791 0127 6B000000 		.4byte	0x6b
- 792 012b 01       		.uleb128 0x1
- 793 012c 50       		.byte	0x50
- 794 012d 00       		.byte	0
- 795 012e 0B       		.uleb128 0xb
- 796 012f 9F000000 		.4byte	.LASF24
- 797 0133 01       		.byte	0x1
- 798 0134 2901     		.2byte	0x129
- 799 0136 77000000 		.4byte	0x77
- 800 013a 00000000 		.4byte	.LFB5
- 801 013e 0C000000 		.4byte	.LFE5-.LFB5
- 802 0142 01       		.uleb128 0x1
- 803 0143 9C       		.byte	0x9c
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 25
+ 796 01b0 6B000000 		.4byte	0x6b
+ 797 01b4 00000000 		.4byte	.LFB10
+ 798 01b8 10000000 		.4byte	.LFE10-.LFB10
+ 799 01bc 01       		.uleb128 0x1
+ 800 01bd 9C       		.byte	0x9c
+ 801 01be 07       		.uleb128 0x7
+ 802 01bf 2B000000 		.4byte	.LASF27
+ 803 01c3 01       		.byte	0x1
+ 804 01c4 C1       		.byte	0xc1
+ 805 01c5 00000000 		.4byte	.LFB4
+ 806 01c9 D8000000 		.4byte	.LFE4-.LFB4
+ 807 01cd 01       		.uleb128 0x1
+ 808 01ce 9C       		.byte	0x9c
+ 809 01cf 2F020000 		.4byte	0x22f
+ 810 01d3 0E       		.uleb128 0xe
+ 811 01d4 39010000 		.4byte	.LASF28
+ 812 01d8 01       		.byte	0x1
+ 813 01d9 C1       		.byte	0xc1
+ 814 01da 77000000 		.4byte	0x77
+ 815 01de 55000000 		.4byte	.LLST3
+ 816 01e2 0E       		.uleb128 0xe
+ 817 01e3 CC000000 		.4byte	.LASF29
+ 818 01e7 01       		.byte	0x1
+ 819 01e8 C1       		.byte	0xc1
+ 820 01e9 6B000000 		.4byte	0x6b
+ 821 01ed 76000000 		.4byte	.LLST4
+ 822 01f1 09       		.uleb128 0x9
+ 823 01f2 1F030000 		.4byte	.LASF31
+ 824 01f6 01       		.byte	0x1
+ 825 01f7 C4       		.byte	0xc4
+ 826 01f8 6B000000 		.4byte	0x6b
+ 827 01fc 97000000 		.4byte	.LLST5
+ 828 0200 09       		.uleb128 0x9
+ 829 0201 EE020000 		.4byte	.LASF32
+ 830 0205 01       		.byte	0x1
+ 831 0206 C6       		.byte	0xc6
+ 832 0207 6B000000 		.4byte	0x6b
+ 833 020b E5000000 		.4byte	.LLST6
+ 834 020f 0F       		.uleb128 0xf
+ 835 0210 F6020000 		.4byte	.LASF30
+ 836 0214 01       		.byte	0x1
+ 837 0215 C7       		.byte	0xc7
+ 838 0216 77000000 		.4byte	0x77
+ 839 021a 01       		.uleb128 0x1
+ 840 021b 50       		.byte	0x50
+ 841 021c 10       		.uleb128 0x10
+ 842 021d 0A000000 		.4byte	.LVL8
+ 843 0221 A8010000 		.4byte	0x1a8
+ 844 0225 10       		.uleb128 0x10
+ 845 0226 10000000 		.4byte	.LVL10
+ 846 022a 2E010000 		.4byte	0x12e
+ 847 022e 00       		.byte	0
+ 848 022f 11       		.uleb128 0x11
+ 849 0230 27030000 		.4byte	.LASF39
+ 850 0234 01       		.byte	0x1
+ 851 0235 A301     		.2byte	0x1a3
+ 852 0237 00000000 		.4byte	.LFB9
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 25
 
 
- 804 0144 0C       		.uleb128 0xc
- 805 0145 AA010000 		.4byte	.LASF20
- 806 0149 01       		.byte	0x1
- 807 014a 4C01     		.2byte	0x14c
- 808 014c 00000000 		.4byte	.LFB6
- 809 0150 14000000 		.4byte	.LFE6-.LFB6
- 810 0154 01       		.uleb128 0x1
- 811 0155 9C       		.byte	0x9c
- 812 0156 6B010000 		.4byte	0x16b
- 813 015a 0D       		.uleb128 0xd
- 814 015b 9E010000 		.4byte	.LASF22
- 815 015f 01       		.byte	0x1
- 816 0160 4C01     		.2byte	0x14c
- 817 0162 6B000000 		.4byte	0x6b
- 818 0166 13000000 		.4byte	.LLST1
- 819 016a 00       		.byte	0
- 820 016b 0C       		.uleb128 0xc
- 821 016c 22020000 		.4byte	.LASF23
- 822 0170 01       		.byte	0x1
- 823 0171 6F01     		.2byte	0x16f
- 824 0173 00000000 		.4byte	.LFB7
- 825 0177 18000000 		.4byte	.LFE7-.LFB7
- 826 017b 01       		.uleb128 0x1
- 827 017c 9C       		.byte	0x9c
- 828 017d 92010000 		.4byte	0x192
- 829 0181 0D       		.uleb128 0xd
- 830 0182 9E010000 		.4byte	.LASF22
- 831 0186 01       		.byte	0x1
- 832 0187 6F01     		.2byte	0x16f
- 833 0189 6B000000 		.4byte	0x6b
- 834 018d 34000000 		.4byte	.LLST2
- 835 0191 00       		.byte	0
- 836 0192 0B       		.uleb128 0xb
- 837 0193 79030000 		.4byte	.LASF25
- 838 0197 01       		.byte	0x1
- 839 0198 8401     		.2byte	0x184
- 840 019a 6B000000 		.4byte	0x6b
- 841 019e 00000000 		.4byte	.LFB8
- 842 01a2 10000000 		.4byte	.LFE8-.LFB8
- 843 01a6 01       		.uleb128 0x1
- 844 01a7 9C       		.byte	0x9c
- 845 01a8 0B       		.uleb128 0xb
- 846 01a9 F0010000 		.4byte	.LASF26
- 847 01ad 01       		.byte	0x1
- 848 01ae D001     		.2byte	0x1d0
- 849 01b0 6B000000 		.4byte	0x6b
- 850 01b4 00000000 		.4byte	.LFB10
- 851 01b8 10000000 		.4byte	.LFE10-.LFB10
- 852 01bc 01       		.uleb128 0x1
- 853 01bd 9C       		.byte	0x9c
- 854 01be 07       		.uleb128 0x7
- 855 01bf 2B000000 		.4byte	.LASF27
- 856 01c3 01       		.byte	0x1
- 857 01c4 C1       		.byte	0xc1
- 858 01c5 00000000 		.4byte	.LFB4
- 859 01c9 D8000000 		.4byte	.LFE4-.LFB4
- 860 01cd 01       		.uleb128 0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 26
+ 853 023b 5C000000 		.4byte	.LFE9-.LFB9
+ 854 023f 01       		.uleb128 0x1
+ 855 0240 9C       		.byte	0x9c
+ 856 0241 0D       		.uleb128 0xd
+ 857 0242 E4020000 		.4byte	.LASF33
+ 858 0246 01       		.byte	0x1
+ 859 0247 A301     		.2byte	0x1a3
+ 860 0249 6B000000 		.4byte	0x6b
+ 861 024d F8000000 		.4byte	.LLST7
+ 862 0251 12       		.uleb128 0x12
+ 863 0252 1D000000 		.4byte	.LASF34
+ 864 0256 01       		.byte	0x1
+ 865 0257 A501     		.2byte	0x1a5
+ 866 0259 77000000 		.4byte	0x77
+ 867 025d 19010000 		.4byte	.LLST8
+ 868 0261 13       		.uleb128 0x13
+ 869 0262 D4000000 		.4byte	.LASF35
+ 870 0266 01       		.byte	0x1
+ 871 0267 A601     		.2byte	0x1a6
+ 872 0269 6B000000 		.4byte	0x6b
+ 873 026d 01       		.uleb128 0x1
+ 874 026e 50       		.byte	0x50
+ 875 026f 10       		.uleb128 0x10
+ 876 0270 08000000 		.4byte	.LVL24
+ 877 0274 2E010000 		.4byte	0x12e
+ 878 0278 10       		.uleb128 0x10
+ 879 0279 0E000000 		.4byte	.LVL26
+ 880 027d A8010000 		.4byte	0x1a8
+ 881 0281 00       		.byte	0
+ 882 0282 00       		.byte	0
+ 883              		.section	.debug_abbrev,"",%progbits
+ 884              	.Ldebug_abbrev0:
+ 885 0000 01       		.uleb128 0x1
+ 886 0001 11       		.uleb128 0x11
+ 887 0002 01       		.byte	0x1
+ 888 0003 25       		.uleb128 0x25
+ 889 0004 0E       		.uleb128 0xe
+ 890 0005 13       		.uleb128 0x13
+ 891 0006 0B       		.uleb128 0xb
+ 892 0007 03       		.uleb128 0x3
+ 893 0008 0E       		.uleb128 0xe
+ 894 0009 1B       		.uleb128 0x1b
+ 895 000a 0E       		.uleb128 0xe
+ 896 000b 55       		.uleb128 0x55
+ 897 000c 17       		.uleb128 0x17
+ 898 000d 11       		.uleb128 0x11
+ 899 000e 01       		.uleb128 0x1
+ 900 000f 10       		.uleb128 0x10
+ 901 0010 17       		.uleb128 0x17
+ 902 0011 00       		.byte	0
+ 903 0012 00       		.byte	0
+ 904 0013 02       		.uleb128 0x2
+ 905 0014 24       		.uleb128 0x24
+ 906 0015 00       		.byte	0
+ 907 0016 0B       		.uleb128 0xb
+ 908 0017 0B       		.uleb128 0xb
+ 909 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 26
 
 
- 861 01ce 9C       		.byte	0x9c
- 862 01cf 2F020000 		.4byte	0x22f
- 863 01d3 0E       		.uleb128 0xe
- 864 01d4 39010000 		.4byte	.LASF28
- 865 01d8 01       		.byte	0x1
- 866 01d9 C1       		.byte	0xc1
- 867 01da 77000000 		.4byte	0x77
- 868 01de 55000000 		.4byte	.LLST3
- 869 01e2 0E       		.uleb128 0xe
- 870 01e3 CC000000 		.4byte	.LASF29
- 871 01e7 01       		.byte	0x1
- 872 01e8 C1       		.byte	0xc1
- 873 01e9 6B000000 		.4byte	0x6b
- 874 01ed 76000000 		.4byte	.LLST4
- 875 01f1 09       		.uleb128 0x9
- 876 01f2 28030000 		.4byte	.LASF31
- 877 01f6 01       		.byte	0x1
- 878 01f7 C4       		.byte	0xc4
- 879 01f8 6B000000 		.4byte	0x6b
- 880 01fc 97000000 		.4byte	.LLST5
- 881 0200 09       		.uleb128 0x9
- 882 0201 F7020000 		.4byte	.LASF32
- 883 0205 01       		.byte	0x1
- 884 0206 C6       		.byte	0xc6
- 885 0207 6B000000 		.4byte	0x6b
- 886 020b E5000000 		.4byte	.LLST6
- 887 020f 0F       		.uleb128 0xf
- 888 0210 FF020000 		.4byte	.LASF30
- 889 0214 01       		.byte	0x1
- 890 0215 C7       		.byte	0xc7
- 891 0216 77000000 		.4byte	0x77
- 892 021a 01       		.uleb128 0x1
- 893 021b 50       		.byte	0x50
- 894 021c 10       		.uleb128 0x10
- 895 021d 0A000000 		.4byte	.LVL8
- 896 0221 A8010000 		.4byte	0x1a8
- 897 0225 10       		.uleb128 0x10
- 898 0226 10000000 		.4byte	.LVL10
- 899 022a 2E010000 		.4byte	0x12e
- 900 022e 00       		.byte	0
- 901 022f 0C       		.uleb128 0xc
- 902 0230 54030000 		.4byte	.LASF33
- 903 0234 01       		.byte	0x1
- 904 0235 A301     		.2byte	0x1a3
- 905 0237 00000000 		.4byte	.LFB9
- 906 023b 5C000000 		.4byte	.LFE9-.LFB9
- 907 023f 01       		.uleb128 0x1
- 908 0240 9C       		.byte	0x9c
- 909 0241 86020000 		.4byte	0x286
- 910 0245 0D       		.uleb128 0xd
- 911 0246 ED020000 		.4byte	.LASF34
- 912 024a 01       		.byte	0x1
- 913 024b A301     		.2byte	0x1a3
- 914 024d 6B000000 		.4byte	0x6b
- 915 0251 F8000000 		.4byte	.LLST7
- 916 0255 11       		.uleb128 0x11
- 917 0256 1D000000 		.4byte	.LASF35
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 27
+ 910 0019 0B       		.uleb128 0xb
+ 911 001a 03       		.uleb128 0x3
+ 912 001b 0E       		.uleb128 0xe
+ 913 001c 00       		.byte	0
+ 914 001d 00       		.byte	0
+ 915 001e 03       		.uleb128 0x3
+ 916 001f 24       		.uleb128 0x24
+ 917 0020 00       		.byte	0
+ 918 0021 0B       		.uleb128 0xb
+ 919 0022 0B       		.uleb128 0xb
+ 920 0023 3E       		.uleb128 0x3e
+ 921 0024 0B       		.uleb128 0xb
+ 922 0025 03       		.uleb128 0x3
+ 923 0026 08       		.uleb128 0x8
+ 924 0027 00       		.byte	0
+ 925 0028 00       		.byte	0
+ 926 0029 04       		.uleb128 0x4
+ 927 002a 16       		.uleb128 0x16
+ 928 002b 00       		.byte	0
+ 929 002c 03       		.uleb128 0x3
+ 930 002d 0E       		.uleb128 0xe
+ 931 002e 3A       		.uleb128 0x3a
+ 932 002f 0B       		.uleb128 0xb
+ 933 0030 3B       		.uleb128 0x3b
+ 934 0031 05       		.uleb128 0x5
+ 935 0032 49       		.uleb128 0x49
+ 936 0033 13       		.uleb128 0x13
+ 937 0034 00       		.byte	0
+ 938 0035 00       		.byte	0
+ 939 0036 05       		.uleb128 0x5
+ 940 0037 35       		.uleb128 0x35
+ 941 0038 00       		.byte	0
+ 942 0039 49       		.uleb128 0x49
+ 943 003a 13       		.uleb128 0x13
+ 944 003b 00       		.byte	0
+ 945 003c 00       		.byte	0
+ 946 003d 06       		.uleb128 0x6
+ 947 003e 2E       		.uleb128 0x2e
+ 948 003f 00       		.byte	0
+ 949 0040 3F       		.uleb128 0x3f
+ 950 0041 19       		.uleb128 0x19
+ 951 0042 03       		.uleb128 0x3
+ 952 0043 0E       		.uleb128 0xe
+ 953 0044 3A       		.uleb128 0x3a
+ 954 0045 0B       		.uleb128 0xb
+ 955 0046 3B       		.uleb128 0x3b
+ 956 0047 0B       		.uleb128 0xb
+ 957 0048 27       		.uleb128 0x27
+ 958 0049 19       		.uleb128 0x19
+ 959 004a 11       		.uleb128 0x11
+ 960 004b 01       		.uleb128 0x1
+ 961 004c 12       		.uleb128 0x12
+ 962 004d 06       		.uleb128 0x6
+ 963 004e 40       		.uleb128 0x40
+ 964 004f 18       		.uleb128 0x18
+ 965 0050 9742     		.uleb128 0x2117
+ 966 0052 19       		.uleb128 0x19
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 27
 
 
- 918 025a 01       		.byte	0x1
- 919 025b A501     		.2byte	0x1a5
- 920 025d 77000000 		.4byte	0x77
- 921 0261 19010000 		.4byte	.LLST8
- 922 0265 12       		.uleb128 0x12
- 923 0266 D4000000 		.4byte	.LASF36
- 924 026a 01       		.byte	0x1
- 925 026b A601     		.2byte	0x1a6
- 926 026d 6B000000 		.4byte	0x6b
- 927 0271 01       		.uleb128 0x1
- 928 0272 50       		.byte	0x50
- 929 0273 10       		.uleb128 0x10
- 930 0274 08000000 		.4byte	.LVL24
- 931 0278 2E010000 		.4byte	0x12e
- 932 027c 10       		.uleb128 0x10
- 933 027d 0E000000 		.4byte	.LVL26
- 934 0281 A8010000 		.4byte	0x1a8
- 935 0285 00       		.byte	0
- 936 0286 0C       		.uleb128 0xc
- 937 0287 B5030000 		.4byte	.LASF37
- 938 028b 01       		.byte	0x1
- 939 028c EC01     		.2byte	0x1ec
- 940 028e 00000000 		.4byte	.LFB11
- 941 0292 10000000 		.4byte	.LFE11-.LFB11
- 942 0296 01       		.uleb128 0x1
- 943 0297 9C       		.byte	0x9c
- 944 0298 AD020000 		.4byte	0x2ad
- 945 029c 0D       		.uleb128 0xd
- 946 029d 87010000 		.4byte	.LASF38
- 947 02a1 01       		.byte	0x1
- 948 02a2 EC01     		.2byte	0x1ec
- 949 02a4 6B000000 		.4byte	0x6b
- 950 02a8 2C010000 		.4byte	.LLST9
- 951 02ac 00       		.byte	0
- 952 02ad 0B       		.uleb128 0xb
- 953 02ae 30030000 		.4byte	.LASF39
- 954 02b2 01       		.byte	0x1
- 955 02b3 0102     		.2byte	0x201
- 956 02b5 6B000000 		.4byte	0x6b
- 957 02b9 00000000 		.4byte	.LFB12
- 958 02bd 10000000 		.4byte	.LFE12-.LFB12
- 959 02c1 01       		.uleb128 0x1
- 960 02c2 9C       		.byte	0x9c
- 961 02c3 00       		.byte	0
- 962              		.section	.debug_abbrev,"",%progbits
- 963              	.Ldebug_abbrev0:
- 964 0000 01       		.uleb128 0x1
- 965 0001 11       		.uleb128 0x11
- 966 0002 01       		.byte	0x1
- 967 0003 25       		.uleb128 0x25
- 968 0004 0E       		.uleb128 0xe
- 969 0005 13       		.uleb128 0x13
- 970 0006 0B       		.uleb128 0xb
- 971 0007 03       		.uleb128 0x3
- 972 0008 0E       		.uleb128 0xe
- 973 0009 1B       		.uleb128 0x1b
- 974 000a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 28
+ 967 0053 00       		.byte	0
+ 968 0054 00       		.byte	0
+ 969 0055 07       		.uleb128 0x7
+ 970 0056 2E       		.uleb128 0x2e
+ 971 0057 01       		.byte	0x1
+ 972 0058 3F       		.uleb128 0x3f
+ 973 0059 19       		.uleb128 0x19
+ 974 005a 03       		.uleb128 0x3
+ 975 005b 0E       		.uleb128 0xe
+ 976 005c 3A       		.uleb128 0x3a
+ 977 005d 0B       		.uleb128 0xb
+ 978 005e 3B       		.uleb128 0x3b
+ 979 005f 0B       		.uleb128 0xb
+ 980 0060 27       		.uleb128 0x27
+ 981 0061 19       		.uleb128 0x19
+ 982 0062 11       		.uleb128 0x11
+ 983 0063 01       		.uleb128 0x1
+ 984 0064 12       		.uleb128 0x12
+ 985 0065 06       		.uleb128 0x6
+ 986 0066 40       		.uleb128 0x40
+ 987 0067 18       		.uleb128 0x18
+ 988 0068 9742     		.uleb128 0x2117
+ 989 006a 19       		.uleb128 0x19
+ 990 006b 01       		.uleb128 0x1
+ 991 006c 13       		.uleb128 0x13
+ 992 006d 00       		.byte	0
+ 993 006e 00       		.byte	0
+ 994 006f 08       		.uleb128 0x8
+ 995 0070 0B       		.uleb128 0xb
+ 996 0071 01       		.byte	0x1
+ 997 0072 11       		.uleb128 0x11
+ 998 0073 01       		.uleb128 0x1
+ 999 0074 12       		.uleb128 0x12
+ 1000 0075 06       		.uleb128 0x6
+ 1001 0076 00       		.byte	0
+ 1002 0077 00       		.byte	0
+ 1003 0078 09       		.uleb128 0x9
+ 1004 0079 34       		.uleb128 0x34
+ 1005 007a 00       		.byte	0
+ 1006 007b 03       		.uleb128 0x3
+ 1007 007c 0E       		.uleb128 0xe
+ 1008 007d 3A       		.uleb128 0x3a
+ 1009 007e 0B       		.uleb128 0xb
+ 1010 007f 3B       		.uleb128 0x3b
+ 1011 0080 0B       		.uleb128 0xb
+ 1012 0081 49       		.uleb128 0x49
+ 1013 0082 13       		.uleb128 0x13
+ 1014 0083 02       		.uleb128 0x2
+ 1015 0084 17       		.uleb128 0x17
+ 1016 0085 00       		.byte	0
+ 1017 0086 00       		.byte	0
+ 1018 0087 0A       		.uleb128 0xa
+ 1019 0088 05       		.uleb128 0x5
+ 1020 0089 00       		.byte	0
+ 1021 008a 03       		.uleb128 0x3
+ 1022 008b 0E       		.uleb128 0xe
+ 1023 008c 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 28
 
 
- 975 000b 55       		.uleb128 0x55
- 976 000c 17       		.uleb128 0x17
- 977 000d 11       		.uleb128 0x11
- 978 000e 01       		.uleb128 0x1
- 979 000f 10       		.uleb128 0x10
- 980 0010 17       		.uleb128 0x17
- 981 0011 00       		.byte	0
- 982 0012 00       		.byte	0
- 983 0013 02       		.uleb128 0x2
- 984 0014 24       		.uleb128 0x24
- 985 0015 00       		.byte	0
- 986 0016 0B       		.uleb128 0xb
- 987 0017 0B       		.uleb128 0xb
- 988 0018 3E       		.uleb128 0x3e
- 989 0019 0B       		.uleb128 0xb
- 990 001a 03       		.uleb128 0x3
- 991 001b 0E       		.uleb128 0xe
- 992 001c 00       		.byte	0
- 993 001d 00       		.byte	0
- 994 001e 03       		.uleb128 0x3
- 995 001f 24       		.uleb128 0x24
- 996 0020 00       		.byte	0
- 997 0021 0B       		.uleb128 0xb
- 998 0022 0B       		.uleb128 0xb
- 999 0023 3E       		.uleb128 0x3e
- 1000 0024 0B       		.uleb128 0xb
- 1001 0025 03       		.uleb128 0x3
- 1002 0026 08       		.uleb128 0x8
- 1003 0027 00       		.byte	0
- 1004 0028 00       		.byte	0
- 1005 0029 04       		.uleb128 0x4
- 1006 002a 16       		.uleb128 0x16
- 1007 002b 00       		.byte	0
- 1008 002c 03       		.uleb128 0x3
- 1009 002d 0E       		.uleb128 0xe
- 1010 002e 3A       		.uleb128 0x3a
- 1011 002f 0B       		.uleb128 0xb
- 1012 0030 3B       		.uleb128 0x3b
- 1013 0031 05       		.uleb128 0x5
- 1014 0032 49       		.uleb128 0x49
- 1015 0033 13       		.uleb128 0x13
- 1016 0034 00       		.byte	0
- 1017 0035 00       		.byte	0
- 1018 0036 05       		.uleb128 0x5
- 1019 0037 35       		.uleb128 0x35
- 1020 0038 00       		.byte	0
- 1021 0039 49       		.uleb128 0x49
- 1022 003a 13       		.uleb128 0x13
- 1023 003b 00       		.byte	0
- 1024 003c 00       		.byte	0
- 1025 003d 06       		.uleb128 0x6
- 1026 003e 2E       		.uleb128 0x2e
- 1027 003f 00       		.byte	0
- 1028 0040 3F       		.uleb128 0x3f
- 1029 0041 19       		.uleb128 0x19
- 1030 0042 03       		.uleb128 0x3
- 1031 0043 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 29
+ 1024 008d 0B       		.uleb128 0xb
+ 1025 008e 3B       		.uleb128 0x3b
+ 1026 008f 0B       		.uleb128 0xb
+ 1027 0090 49       		.uleb128 0x49
+ 1028 0091 13       		.uleb128 0x13
+ 1029 0092 02       		.uleb128 0x2
+ 1030 0093 18       		.uleb128 0x18
+ 1031 0094 00       		.byte	0
+ 1032 0095 00       		.byte	0
+ 1033 0096 0B       		.uleb128 0xb
+ 1034 0097 2E       		.uleb128 0x2e
+ 1035 0098 00       		.byte	0
+ 1036 0099 3F       		.uleb128 0x3f
+ 1037 009a 19       		.uleb128 0x19
+ 1038 009b 03       		.uleb128 0x3
+ 1039 009c 0E       		.uleb128 0xe
+ 1040 009d 3A       		.uleb128 0x3a
+ 1041 009e 0B       		.uleb128 0xb
+ 1042 009f 3B       		.uleb128 0x3b
+ 1043 00a0 05       		.uleb128 0x5
+ 1044 00a1 27       		.uleb128 0x27
+ 1045 00a2 19       		.uleb128 0x19
+ 1046 00a3 49       		.uleb128 0x49
+ 1047 00a4 13       		.uleb128 0x13
+ 1048 00a5 11       		.uleb128 0x11
+ 1049 00a6 01       		.uleb128 0x1
+ 1050 00a7 12       		.uleb128 0x12
+ 1051 00a8 06       		.uleb128 0x6
+ 1052 00a9 40       		.uleb128 0x40
+ 1053 00aa 18       		.uleb128 0x18
+ 1054 00ab 9742     		.uleb128 0x2117
+ 1055 00ad 19       		.uleb128 0x19
+ 1056 00ae 00       		.byte	0
+ 1057 00af 00       		.byte	0
+ 1058 00b0 0C       		.uleb128 0xc
+ 1059 00b1 2E       		.uleb128 0x2e
+ 1060 00b2 01       		.byte	0x1
+ 1061 00b3 3F       		.uleb128 0x3f
+ 1062 00b4 19       		.uleb128 0x19
+ 1063 00b5 03       		.uleb128 0x3
+ 1064 00b6 0E       		.uleb128 0xe
+ 1065 00b7 3A       		.uleb128 0x3a
+ 1066 00b8 0B       		.uleb128 0xb
+ 1067 00b9 3B       		.uleb128 0x3b
+ 1068 00ba 05       		.uleb128 0x5
+ 1069 00bb 27       		.uleb128 0x27
+ 1070 00bc 19       		.uleb128 0x19
+ 1071 00bd 11       		.uleb128 0x11
+ 1072 00be 01       		.uleb128 0x1
+ 1073 00bf 12       		.uleb128 0x12
+ 1074 00c0 06       		.uleb128 0x6
+ 1075 00c1 40       		.uleb128 0x40
+ 1076 00c2 18       		.uleb128 0x18
+ 1077 00c3 9742     		.uleb128 0x2117
+ 1078 00c5 19       		.uleb128 0x19
+ 1079 00c6 01       		.uleb128 0x1
+ 1080 00c7 13       		.uleb128 0x13
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 29
 
 
- 1032 0044 3A       		.uleb128 0x3a
- 1033 0045 0B       		.uleb128 0xb
- 1034 0046 3B       		.uleb128 0x3b
- 1035 0047 0B       		.uleb128 0xb
- 1036 0048 27       		.uleb128 0x27
- 1037 0049 19       		.uleb128 0x19
- 1038 004a 11       		.uleb128 0x11
- 1039 004b 01       		.uleb128 0x1
- 1040 004c 12       		.uleb128 0x12
- 1041 004d 06       		.uleb128 0x6
- 1042 004e 40       		.uleb128 0x40
- 1043 004f 18       		.uleb128 0x18
- 1044 0050 9742     		.uleb128 0x2117
- 1045 0052 19       		.uleb128 0x19
- 1046 0053 00       		.byte	0
- 1047 0054 00       		.byte	0
- 1048 0055 07       		.uleb128 0x7
- 1049 0056 2E       		.uleb128 0x2e
- 1050 0057 01       		.byte	0x1
- 1051 0058 3F       		.uleb128 0x3f
- 1052 0059 19       		.uleb128 0x19
- 1053 005a 03       		.uleb128 0x3
- 1054 005b 0E       		.uleb128 0xe
- 1055 005c 3A       		.uleb128 0x3a
- 1056 005d 0B       		.uleb128 0xb
- 1057 005e 3B       		.uleb128 0x3b
- 1058 005f 0B       		.uleb128 0xb
- 1059 0060 27       		.uleb128 0x27
- 1060 0061 19       		.uleb128 0x19
- 1061 0062 11       		.uleb128 0x11
- 1062 0063 01       		.uleb128 0x1
- 1063 0064 12       		.uleb128 0x12
- 1064 0065 06       		.uleb128 0x6
- 1065 0066 40       		.uleb128 0x40
- 1066 0067 18       		.uleb128 0x18
- 1067 0068 9742     		.uleb128 0x2117
- 1068 006a 19       		.uleb128 0x19
- 1069 006b 01       		.uleb128 0x1
- 1070 006c 13       		.uleb128 0x13
- 1071 006d 00       		.byte	0
- 1072 006e 00       		.byte	0
- 1073 006f 08       		.uleb128 0x8
- 1074 0070 0B       		.uleb128 0xb
- 1075 0071 01       		.byte	0x1
- 1076 0072 11       		.uleb128 0x11
- 1077 0073 01       		.uleb128 0x1
- 1078 0074 12       		.uleb128 0x12
- 1079 0075 06       		.uleb128 0x6
- 1080 0076 00       		.byte	0
- 1081 0077 00       		.byte	0
- 1082 0078 09       		.uleb128 0x9
- 1083 0079 34       		.uleb128 0x34
- 1084 007a 00       		.byte	0
- 1085 007b 03       		.uleb128 0x3
- 1086 007c 0E       		.uleb128 0xe
- 1087 007d 3A       		.uleb128 0x3a
- 1088 007e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 30
+ 1081 00c8 00       		.byte	0
+ 1082 00c9 00       		.byte	0
+ 1083 00ca 0D       		.uleb128 0xd
+ 1084 00cb 05       		.uleb128 0x5
+ 1085 00cc 00       		.byte	0
+ 1086 00cd 03       		.uleb128 0x3
+ 1087 00ce 0E       		.uleb128 0xe
+ 1088 00cf 3A       		.uleb128 0x3a
+ 1089 00d0 0B       		.uleb128 0xb
+ 1090 00d1 3B       		.uleb128 0x3b
+ 1091 00d2 05       		.uleb128 0x5
+ 1092 00d3 49       		.uleb128 0x49
+ 1093 00d4 13       		.uleb128 0x13
+ 1094 00d5 02       		.uleb128 0x2
+ 1095 00d6 17       		.uleb128 0x17
+ 1096 00d7 00       		.byte	0
+ 1097 00d8 00       		.byte	0
+ 1098 00d9 0E       		.uleb128 0xe
+ 1099 00da 05       		.uleb128 0x5
+ 1100 00db 00       		.byte	0
+ 1101 00dc 03       		.uleb128 0x3
+ 1102 00dd 0E       		.uleb128 0xe
+ 1103 00de 3A       		.uleb128 0x3a
+ 1104 00df 0B       		.uleb128 0xb
+ 1105 00e0 3B       		.uleb128 0x3b
+ 1106 00e1 0B       		.uleb128 0xb
+ 1107 00e2 49       		.uleb128 0x49
+ 1108 00e3 13       		.uleb128 0x13
+ 1109 00e4 02       		.uleb128 0x2
+ 1110 00e5 17       		.uleb128 0x17
+ 1111 00e6 00       		.byte	0
+ 1112 00e7 00       		.byte	0
+ 1113 00e8 0F       		.uleb128 0xf
+ 1114 00e9 34       		.uleb128 0x34
+ 1115 00ea 00       		.byte	0
+ 1116 00eb 03       		.uleb128 0x3
+ 1117 00ec 0E       		.uleb128 0xe
+ 1118 00ed 3A       		.uleb128 0x3a
+ 1119 00ee 0B       		.uleb128 0xb
+ 1120 00ef 3B       		.uleb128 0x3b
+ 1121 00f0 0B       		.uleb128 0xb
+ 1122 00f1 49       		.uleb128 0x49
+ 1123 00f2 13       		.uleb128 0x13
+ 1124 00f3 02       		.uleb128 0x2
+ 1125 00f4 18       		.uleb128 0x18
+ 1126 00f5 00       		.byte	0
+ 1127 00f6 00       		.byte	0
+ 1128 00f7 10       		.uleb128 0x10
+ 1129 00f8 898201   		.uleb128 0x4109
+ 1130 00fb 00       		.byte	0
+ 1131 00fc 11       		.uleb128 0x11
+ 1132 00fd 01       		.uleb128 0x1
+ 1133 00fe 31       		.uleb128 0x31
+ 1134 00ff 13       		.uleb128 0x13
+ 1135 0100 00       		.byte	0
+ 1136 0101 00       		.byte	0
+ 1137 0102 11       		.uleb128 0x11
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 30
 
 
- 1089 007f 3B       		.uleb128 0x3b
- 1090 0080 0B       		.uleb128 0xb
- 1091 0081 49       		.uleb128 0x49
- 1092 0082 13       		.uleb128 0x13
- 1093 0083 02       		.uleb128 0x2
- 1094 0084 17       		.uleb128 0x17
- 1095 0085 00       		.byte	0
- 1096 0086 00       		.byte	0
- 1097 0087 0A       		.uleb128 0xa
- 1098 0088 05       		.uleb128 0x5
- 1099 0089 00       		.byte	0
- 1100 008a 03       		.uleb128 0x3
- 1101 008b 0E       		.uleb128 0xe
- 1102 008c 3A       		.uleb128 0x3a
- 1103 008d 0B       		.uleb128 0xb
- 1104 008e 3B       		.uleb128 0x3b
- 1105 008f 0B       		.uleb128 0xb
- 1106 0090 49       		.uleb128 0x49
- 1107 0091 13       		.uleb128 0x13
- 1108 0092 02       		.uleb128 0x2
- 1109 0093 18       		.uleb128 0x18
- 1110 0094 00       		.byte	0
- 1111 0095 00       		.byte	0
- 1112 0096 0B       		.uleb128 0xb
- 1113 0097 2E       		.uleb128 0x2e
- 1114 0098 00       		.byte	0
- 1115 0099 3F       		.uleb128 0x3f
- 1116 009a 19       		.uleb128 0x19
- 1117 009b 03       		.uleb128 0x3
- 1118 009c 0E       		.uleb128 0xe
- 1119 009d 3A       		.uleb128 0x3a
- 1120 009e 0B       		.uleb128 0xb
- 1121 009f 3B       		.uleb128 0x3b
- 1122 00a0 05       		.uleb128 0x5
- 1123 00a1 27       		.uleb128 0x27
- 1124 00a2 19       		.uleb128 0x19
- 1125 00a3 49       		.uleb128 0x49
- 1126 00a4 13       		.uleb128 0x13
- 1127 00a5 11       		.uleb128 0x11
- 1128 00a6 01       		.uleb128 0x1
- 1129 00a7 12       		.uleb128 0x12
- 1130 00a8 06       		.uleb128 0x6
- 1131 00a9 40       		.uleb128 0x40
- 1132 00aa 18       		.uleb128 0x18
- 1133 00ab 9742     		.uleb128 0x2117
- 1134 00ad 19       		.uleb128 0x19
- 1135 00ae 00       		.byte	0
- 1136 00af 00       		.byte	0
- 1137 00b0 0C       		.uleb128 0xc
- 1138 00b1 2E       		.uleb128 0x2e
- 1139 00b2 01       		.byte	0x1
- 1140 00b3 3F       		.uleb128 0x3f
- 1141 00b4 19       		.uleb128 0x19
- 1142 00b5 03       		.uleb128 0x3
- 1143 00b6 0E       		.uleb128 0xe
- 1144 00b7 3A       		.uleb128 0x3a
- 1145 00b8 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 31
+ 1138 0103 2E       		.uleb128 0x2e
+ 1139 0104 01       		.byte	0x1
+ 1140 0105 3F       		.uleb128 0x3f
+ 1141 0106 19       		.uleb128 0x19
+ 1142 0107 03       		.uleb128 0x3
+ 1143 0108 0E       		.uleb128 0xe
+ 1144 0109 3A       		.uleb128 0x3a
+ 1145 010a 0B       		.uleb128 0xb
+ 1146 010b 3B       		.uleb128 0x3b
+ 1147 010c 05       		.uleb128 0x5
+ 1148 010d 27       		.uleb128 0x27
+ 1149 010e 19       		.uleb128 0x19
+ 1150 010f 11       		.uleb128 0x11
+ 1151 0110 01       		.uleb128 0x1
+ 1152 0111 12       		.uleb128 0x12
+ 1153 0112 06       		.uleb128 0x6
+ 1154 0113 40       		.uleb128 0x40
+ 1155 0114 18       		.uleb128 0x18
+ 1156 0115 9742     		.uleb128 0x2117
+ 1157 0117 19       		.uleb128 0x19
+ 1158 0118 00       		.byte	0
+ 1159 0119 00       		.byte	0
+ 1160 011a 12       		.uleb128 0x12
+ 1161 011b 34       		.uleb128 0x34
+ 1162 011c 00       		.byte	0
+ 1163 011d 03       		.uleb128 0x3
+ 1164 011e 0E       		.uleb128 0xe
+ 1165 011f 3A       		.uleb128 0x3a
+ 1166 0120 0B       		.uleb128 0xb
+ 1167 0121 3B       		.uleb128 0x3b
+ 1168 0122 05       		.uleb128 0x5
+ 1169 0123 49       		.uleb128 0x49
+ 1170 0124 13       		.uleb128 0x13
+ 1171 0125 02       		.uleb128 0x2
+ 1172 0126 17       		.uleb128 0x17
+ 1173 0127 00       		.byte	0
+ 1174 0128 00       		.byte	0
+ 1175 0129 13       		.uleb128 0x13
+ 1176 012a 34       		.uleb128 0x34
+ 1177 012b 00       		.byte	0
+ 1178 012c 03       		.uleb128 0x3
+ 1179 012d 0E       		.uleb128 0xe
+ 1180 012e 3A       		.uleb128 0x3a
+ 1181 012f 0B       		.uleb128 0xb
+ 1182 0130 3B       		.uleb128 0x3b
+ 1183 0131 05       		.uleb128 0x5
+ 1184 0132 49       		.uleb128 0x49
+ 1185 0133 13       		.uleb128 0x13
+ 1186 0134 02       		.uleb128 0x2
+ 1187 0135 18       		.uleb128 0x18
+ 1188 0136 00       		.byte	0
+ 1189 0137 00       		.byte	0
+ 1190 0138 00       		.byte	0
+ 1191              		.section	.debug_loc,"",%progbits
+ 1192              	.Ldebug_loc0:
+ 1193              	.LLST0:
+ 1194 0000 2A000000 		.4byte	.LVL0
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 31
 
 
- 1146 00b9 3B       		.uleb128 0x3b
- 1147 00ba 05       		.uleb128 0x5
- 1148 00bb 27       		.uleb128 0x27
- 1149 00bc 19       		.uleb128 0x19
- 1150 00bd 11       		.uleb128 0x11
- 1151 00be 01       		.uleb128 0x1
- 1152 00bf 12       		.uleb128 0x12
- 1153 00c0 06       		.uleb128 0x6
- 1154 00c1 40       		.uleb128 0x40
- 1155 00c2 18       		.uleb128 0x18
- 1156 00c3 9742     		.uleb128 0x2117
- 1157 00c5 19       		.uleb128 0x19
- 1158 00c6 01       		.uleb128 0x1
- 1159 00c7 13       		.uleb128 0x13
- 1160 00c8 00       		.byte	0
- 1161 00c9 00       		.byte	0
- 1162 00ca 0D       		.uleb128 0xd
- 1163 00cb 05       		.uleb128 0x5
- 1164 00cc 00       		.byte	0
- 1165 00cd 03       		.uleb128 0x3
- 1166 00ce 0E       		.uleb128 0xe
- 1167 00cf 3A       		.uleb128 0x3a
- 1168 00d0 0B       		.uleb128 0xb
- 1169 00d1 3B       		.uleb128 0x3b
- 1170 00d2 05       		.uleb128 0x5
- 1171 00d3 49       		.uleb128 0x49
- 1172 00d4 13       		.uleb128 0x13
- 1173 00d5 02       		.uleb128 0x2
- 1174 00d6 17       		.uleb128 0x17
- 1175 00d7 00       		.byte	0
- 1176 00d8 00       		.byte	0
- 1177 00d9 0E       		.uleb128 0xe
- 1178 00da 05       		.uleb128 0x5
- 1179 00db 00       		.byte	0
- 1180 00dc 03       		.uleb128 0x3
- 1181 00dd 0E       		.uleb128 0xe
- 1182 00de 3A       		.uleb128 0x3a
- 1183 00df 0B       		.uleb128 0xb
- 1184 00e0 3B       		.uleb128 0x3b
- 1185 00e1 0B       		.uleb128 0xb
- 1186 00e2 49       		.uleb128 0x49
- 1187 00e3 13       		.uleb128 0x13
- 1188 00e4 02       		.uleb128 0x2
- 1189 00e5 17       		.uleb128 0x17
- 1190 00e6 00       		.byte	0
- 1191 00e7 00       		.byte	0
- 1192 00e8 0F       		.uleb128 0xf
- 1193 00e9 34       		.uleb128 0x34
- 1194 00ea 00       		.byte	0
- 1195 00eb 03       		.uleb128 0x3
- 1196 00ec 0E       		.uleb128 0xe
- 1197 00ed 3A       		.uleb128 0x3a
- 1198 00ee 0B       		.uleb128 0xb
- 1199 00ef 3B       		.uleb128 0x3b
- 1200 00f0 0B       		.uleb128 0xb
- 1201 00f1 49       		.uleb128 0x49
- 1202 00f2 13       		.uleb128 0x13
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 32
+ 1195 0004 5A000000 		.4byte	.LVL1
+ 1196 0008 0100     		.2byte	0x1
+ 1197 000a 52       		.byte	0x52
+ 1198 000b 00000000 		.4byte	0
+ 1199 000f 00000000 		.4byte	0
+ 1200              	.LLST1:
+ 1201 0013 00000000 		.4byte	.LVL3
+ 1202 0017 08000000 		.4byte	.LVL4
+ 1203 001b 0100     		.2byte	0x1
+ 1204 001d 50       		.byte	0x50
+ 1205 001e 08000000 		.4byte	.LVL4
+ 1206 0022 14000000 		.4byte	.LFE6
+ 1207 0026 0400     		.2byte	0x4
+ 1208 0028 F3       		.byte	0xf3
+ 1209 0029 01       		.uleb128 0x1
+ 1210 002a 50       		.byte	0x50
+ 1211 002b 9F       		.byte	0x9f
+ 1212 002c 00000000 		.4byte	0
+ 1213 0030 00000000 		.4byte	0
+ 1214              	.LLST2:
+ 1215 0034 00000000 		.4byte	.LVL5
+ 1216 0038 06000000 		.4byte	.LVL6
+ 1217 003c 0100     		.2byte	0x1
+ 1218 003e 50       		.byte	0x50
+ 1219 003f 06000000 		.4byte	.LVL6
+ 1220 0043 18000000 		.4byte	.LFE7
+ 1221 0047 0400     		.2byte	0x4
+ 1222 0049 F3       		.byte	0xf3
+ 1223 004a 01       		.uleb128 0x1
+ 1224 004b 50       		.byte	0x50
+ 1225 004c 9F       		.byte	0x9f
+ 1226 004d 00000000 		.4byte	0
+ 1227 0051 00000000 		.4byte	0
+ 1228              	.LLST3:
+ 1229 0055 00000000 		.4byte	.LVL7
+ 1230 0059 09000000 		.4byte	.LVL8-1
+ 1231 005d 0100     		.2byte	0x1
+ 1232 005f 50       		.byte	0x50
+ 1233 0060 09000000 		.4byte	.LVL8-1
+ 1234 0064 D8000000 		.4byte	.LFE4
+ 1235 0068 0400     		.2byte	0x4
+ 1236 006a F3       		.byte	0xf3
+ 1237 006b 01       		.uleb128 0x1
+ 1238 006c 50       		.byte	0x50
+ 1239 006d 9F       		.byte	0x9f
+ 1240 006e 00000000 		.4byte	0
+ 1241 0072 00000000 		.4byte	0
+ 1242              	.LLST4:
+ 1243 0076 00000000 		.4byte	.LVL7
+ 1244 007a 09000000 		.4byte	.LVL8-1
+ 1245 007e 0100     		.2byte	0x1
+ 1246 0080 51       		.byte	0x51
+ 1247 0081 09000000 		.4byte	.LVL8-1
+ 1248 0085 D8000000 		.4byte	.LFE4
+ 1249 0089 0400     		.2byte	0x4
+ 1250 008b F3       		.byte	0xf3
+ 1251 008c 01       		.uleb128 0x1
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 32
 
 
- 1203 00f3 02       		.uleb128 0x2
- 1204 00f4 18       		.uleb128 0x18
- 1205 00f5 00       		.byte	0
- 1206 00f6 00       		.byte	0
- 1207 00f7 10       		.uleb128 0x10
- 1208 00f8 898201   		.uleb128 0x4109
- 1209 00fb 00       		.byte	0
- 1210 00fc 11       		.uleb128 0x11
- 1211 00fd 01       		.uleb128 0x1
- 1212 00fe 31       		.uleb128 0x31
- 1213 00ff 13       		.uleb128 0x13
- 1214 0100 00       		.byte	0
- 1215 0101 00       		.byte	0
- 1216 0102 11       		.uleb128 0x11
- 1217 0103 34       		.uleb128 0x34
- 1218 0104 00       		.byte	0
- 1219 0105 03       		.uleb128 0x3
- 1220 0106 0E       		.uleb128 0xe
- 1221 0107 3A       		.uleb128 0x3a
- 1222 0108 0B       		.uleb128 0xb
- 1223 0109 3B       		.uleb128 0x3b
- 1224 010a 05       		.uleb128 0x5
- 1225 010b 49       		.uleb128 0x49
- 1226 010c 13       		.uleb128 0x13
- 1227 010d 02       		.uleb128 0x2
- 1228 010e 17       		.uleb128 0x17
- 1229 010f 00       		.byte	0
- 1230 0110 00       		.byte	0
- 1231 0111 12       		.uleb128 0x12
- 1232 0112 34       		.uleb128 0x34
- 1233 0113 00       		.byte	0
- 1234 0114 03       		.uleb128 0x3
- 1235 0115 0E       		.uleb128 0xe
- 1236 0116 3A       		.uleb128 0x3a
- 1237 0117 0B       		.uleb128 0xb
- 1238 0118 3B       		.uleb128 0x3b
- 1239 0119 05       		.uleb128 0x5
- 1240 011a 49       		.uleb128 0x49
- 1241 011b 13       		.uleb128 0x13
- 1242 011c 02       		.uleb128 0x2
- 1243 011d 18       		.uleb128 0x18
- 1244 011e 00       		.byte	0
- 1245 011f 00       		.byte	0
- 1246 0120 00       		.byte	0
- 1247              		.section	.debug_loc,"",%progbits
- 1248              	.Ldebug_loc0:
- 1249              	.LLST0:
- 1250 0000 2A000000 		.4byte	.LVL0
- 1251 0004 5A000000 		.4byte	.LVL1
- 1252 0008 0100     		.2byte	0x1
- 1253 000a 52       		.byte	0x52
- 1254 000b 00000000 		.4byte	0
- 1255 000f 00000000 		.4byte	0
- 1256              	.LLST1:
- 1257 0013 00000000 		.4byte	.LVL3
- 1258 0017 08000000 		.4byte	.LVL4
- 1259 001b 0100     		.2byte	0x1
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 33
+ 1252 008d 51       		.byte	0x51
+ 1253 008e 9F       		.byte	0x9f
+ 1254 008f 00000000 		.4byte	0
+ 1255 0093 00000000 		.4byte	0
+ 1256              	.LLST5:
+ 1257 0097 1C000000 		.4byte	.LVL11
+ 1258 009b 2A000000 		.4byte	.LVL12
+ 1259 009f 0100     		.2byte	0x1
+ 1260 00a1 52       		.byte	0x52
+ 1261 00a2 34000000 		.4byte	.LVL13
+ 1262 00a6 36000000 		.4byte	.LVL14
+ 1263 00aa 0100     		.2byte	0x1
+ 1264 00ac 52       		.byte	0x52
+ 1265 00ad 36000000 		.4byte	.LVL14
+ 1266 00b1 38000000 		.4byte	.LVL15
+ 1267 00b5 0500     		.2byte	0x5
+ 1268 00b7 73       		.byte	0x73
+ 1269 00b8 00       		.sleb128 0
+ 1270 00b9 31       		.byte	0x31
+ 1271 00ba 1A       		.byte	0x1a
+ 1272 00bb 9F       		.byte	0x9f
+ 1273 00bc 44000000 		.4byte	.LVL16
+ 1274 00c0 A2000000 		.4byte	.LVL18
+ 1275 00c4 0100     		.2byte	0x1
+ 1276 00c6 52       		.byte	0x52
+ 1277 00c7 A4000000 		.4byte	.LVL19
+ 1278 00cb A6000000 		.4byte	.LVL20
+ 1279 00cf 0100     		.2byte	0x1
+ 1280 00d1 52       		.byte	0x52
+ 1281 00d2 B6000000 		.4byte	.LVL21
+ 1282 00d6 C2000000 		.4byte	.LVL22
+ 1283 00da 0100     		.2byte	0x1
+ 1284 00dc 52       		.byte	0x52
+ 1285 00dd 00000000 		.4byte	0
+ 1286 00e1 00000000 		.4byte	0
+ 1287              	.LLST6:
+ 1288 00e5 0C000000 		.4byte	.LVL9
+ 1289 00e9 4E000000 		.4byte	.LVL17
+ 1290 00ed 0100     		.2byte	0x1
+ 1291 00ef 54       		.byte	0x54
+ 1292 00f0 00000000 		.4byte	0
+ 1293 00f4 00000000 		.4byte	0
+ 1294              	.LLST7:
+ 1295 00f8 00000000 		.4byte	.LVL23
+ 1296 00fc 07000000 		.4byte	.LVL24-1
+ 1297 0100 0100     		.2byte	0x1
+ 1298 0102 50       		.byte	0x50
+ 1299 0103 07000000 		.4byte	.LVL24-1
+ 1300 0107 5C000000 		.4byte	.LFE9
+ 1301 010b 0400     		.2byte	0x4
+ 1302 010d F3       		.byte	0xf3
+ 1303 010e 01       		.uleb128 0x1
+ 1304 010f 50       		.byte	0x50
+ 1305 0110 9F       		.byte	0x9f
+ 1306 0111 00000000 		.4byte	0
+ 1307 0115 00000000 		.4byte	0
+ 1308              	.LLST8:
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 33
 
 
- 1260 001d 50       		.byte	0x50
- 1261 001e 08000000 		.4byte	.LVL4
- 1262 0022 14000000 		.4byte	.LFE6
- 1263 0026 0400     		.2byte	0x4
- 1264 0028 F3       		.byte	0xf3
- 1265 0029 01       		.uleb128 0x1
- 1266 002a 50       		.byte	0x50
- 1267 002b 9F       		.byte	0x9f
- 1268 002c 00000000 		.4byte	0
- 1269 0030 00000000 		.4byte	0
- 1270              	.LLST2:
- 1271 0034 00000000 		.4byte	.LVL5
- 1272 0038 06000000 		.4byte	.LVL6
- 1273 003c 0100     		.2byte	0x1
- 1274 003e 50       		.byte	0x50
- 1275 003f 06000000 		.4byte	.LVL6
- 1276 0043 18000000 		.4byte	.LFE7
- 1277 0047 0400     		.2byte	0x4
- 1278 0049 F3       		.byte	0xf3
- 1279 004a 01       		.uleb128 0x1
- 1280 004b 50       		.byte	0x50
- 1281 004c 9F       		.byte	0x9f
- 1282 004d 00000000 		.4byte	0
- 1283 0051 00000000 		.4byte	0
- 1284              	.LLST3:
- 1285 0055 00000000 		.4byte	.LVL7
- 1286 0059 09000000 		.4byte	.LVL8-1
- 1287 005d 0100     		.2byte	0x1
- 1288 005f 50       		.byte	0x50
- 1289 0060 09000000 		.4byte	.LVL8-1
- 1290 0064 D8000000 		.4byte	.LFE4
- 1291 0068 0400     		.2byte	0x4
- 1292 006a F3       		.byte	0xf3
- 1293 006b 01       		.uleb128 0x1
- 1294 006c 50       		.byte	0x50
- 1295 006d 9F       		.byte	0x9f
- 1296 006e 00000000 		.4byte	0
- 1297 0072 00000000 		.4byte	0
- 1298              	.LLST4:
- 1299 0076 00000000 		.4byte	.LVL7
- 1300 007a 09000000 		.4byte	.LVL8-1
- 1301 007e 0100     		.2byte	0x1
- 1302 0080 51       		.byte	0x51
- 1303 0081 09000000 		.4byte	.LVL8-1
- 1304 0085 D8000000 		.4byte	.LFE4
- 1305 0089 0400     		.2byte	0x4
- 1306 008b F3       		.byte	0xf3
- 1307 008c 01       		.uleb128 0x1
- 1308 008d 51       		.byte	0x51
- 1309 008e 9F       		.byte	0x9f
- 1310 008f 00000000 		.4byte	0
- 1311 0093 00000000 		.4byte	0
- 1312              	.LLST5:
- 1313 0097 1C000000 		.4byte	.LVL11
- 1314 009b 2A000000 		.4byte	.LVL12
- 1315 009f 0100     		.2byte	0x1
- 1316 00a1 52       		.byte	0x52
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 34
+ 1309 0119 0A000000 		.4byte	.LVL25
+ 1310 011d 56000000 		.4byte	.LVL29
+ 1311 0121 0100     		.2byte	0x1
+ 1312 0123 55       		.byte	0x55
+ 1313 0124 00000000 		.4byte	0
+ 1314 0128 00000000 		.4byte	0
+ 1315              		.section	.debug_aranges,"",%progbits
+ 1316 0000 6C000000 		.4byte	0x6c
+ 1317 0004 0200     		.2byte	0x2
+ 1318 0006 00000000 		.4byte	.Ldebug_info0
+ 1319 000a 04       		.byte	0x4
+ 1320 000b 00       		.byte	0
+ 1321 000c 0000     		.2byte	0
+ 1322 000e 0000     		.2byte	0
+ 1323 0010 00000000 		.4byte	.LFB0
+ 1324 0014 1C000000 		.4byte	.LFE0-.LFB0
+ 1325 0018 00000000 		.4byte	.LFB1
+ 1326 001c 1C000000 		.4byte	.LFE1-.LFB1
+ 1327 0020 00000000 		.4byte	.LFB2
+ 1328 0024 6C000000 		.4byte	.LFE2-.LFB2
+ 1329 0028 00000000 		.4byte	.LFB3
+ 1330 002c 20000000 		.4byte	.LFE3-.LFB3
+ 1331 0030 00000000 		.4byte	.LFB5
+ 1332 0034 0C000000 		.4byte	.LFE5-.LFB5
+ 1333 0038 00000000 		.4byte	.LFB6
+ 1334 003c 14000000 		.4byte	.LFE6-.LFB6
+ 1335 0040 00000000 		.4byte	.LFB7
+ 1336 0044 18000000 		.4byte	.LFE7-.LFB7
+ 1337 0048 00000000 		.4byte	.LFB8
+ 1338 004c 10000000 		.4byte	.LFE8-.LFB8
+ 1339 0050 00000000 		.4byte	.LFB10
+ 1340 0054 10000000 		.4byte	.LFE10-.LFB10
+ 1341 0058 00000000 		.4byte	.LFB4
+ 1342 005c D8000000 		.4byte	.LFE4-.LFB4
+ 1343 0060 00000000 		.4byte	.LFB9
+ 1344 0064 5C000000 		.4byte	.LFE9-.LFB9
+ 1345 0068 00000000 		.4byte	0
+ 1346 006c 00000000 		.4byte	0
+ 1347              		.section	.debug_ranges,"",%progbits
+ 1348              	.Ldebug_ranges0:
+ 1349 0000 00000000 		.4byte	.LFB0
+ 1350 0004 1C000000 		.4byte	.LFE0
+ 1351 0008 00000000 		.4byte	.LFB1
+ 1352 000c 1C000000 		.4byte	.LFE1
+ 1353 0010 00000000 		.4byte	.LFB2
+ 1354 0014 6C000000 		.4byte	.LFE2
+ 1355 0018 00000000 		.4byte	.LFB3
+ 1356 001c 20000000 		.4byte	.LFE3
+ 1357 0020 00000000 		.4byte	.LFB5
+ 1358 0024 0C000000 		.4byte	.LFE5
+ 1359 0028 00000000 		.4byte	.LFB6
+ 1360 002c 14000000 		.4byte	.LFE6
+ 1361 0030 00000000 		.4byte	.LFB7
+ 1362 0034 18000000 		.4byte	.LFE7
+ 1363 0038 00000000 		.4byte	.LFB8
+ 1364 003c 10000000 		.4byte	.LFE8
+ 1365 0040 00000000 		.4byte	.LFB10
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 34
 
 
- 1317 00a2 34000000 		.4byte	.LVL13
- 1318 00a6 36000000 		.4byte	.LVL14
- 1319 00aa 0100     		.2byte	0x1
- 1320 00ac 52       		.byte	0x52
- 1321 00ad 36000000 		.4byte	.LVL14
- 1322 00b1 38000000 		.4byte	.LVL15
- 1323 00b5 0500     		.2byte	0x5
- 1324 00b7 73       		.byte	0x73
- 1325 00b8 00       		.sleb128 0
- 1326 00b9 31       		.byte	0x31
- 1327 00ba 1A       		.byte	0x1a
- 1328 00bb 9F       		.byte	0x9f
- 1329 00bc 44000000 		.4byte	.LVL16
- 1330 00c0 A2000000 		.4byte	.LVL18
- 1331 00c4 0100     		.2byte	0x1
- 1332 00c6 52       		.byte	0x52
- 1333 00c7 A4000000 		.4byte	.LVL19
- 1334 00cb A6000000 		.4byte	.LVL20
- 1335 00cf 0100     		.2byte	0x1
- 1336 00d1 52       		.byte	0x52
- 1337 00d2 B6000000 		.4byte	.LVL21
- 1338 00d6 C2000000 		.4byte	.LVL22
- 1339 00da 0100     		.2byte	0x1
- 1340 00dc 52       		.byte	0x52
- 1341 00dd 00000000 		.4byte	0
- 1342 00e1 00000000 		.4byte	0
- 1343              	.LLST6:
- 1344 00e5 0C000000 		.4byte	.LVL9
- 1345 00e9 4E000000 		.4byte	.LVL17
- 1346 00ed 0100     		.2byte	0x1
- 1347 00ef 54       		.byte	0x54
- 1348 00f0 00000000 		.4byte	0
- 1349 00f4 00000000 		.4byte	0
- 1350              	.LLST7:
- 1351 00f8 00000000 		.4byte	.LVL23
- 1352 00fc 07000000 		.4byte	.LVL24-1
- 1353 0100 0100     		.2byte	0x1
- 1354 0102 50       		.byte	0x50
- 1355 0103 07000000 		.4byte	.LVL24-1
- 1356 0107 5C000000 		.4byte	.LFE9
- 1357 010b 0400     		.2byte	0x4
- 1358 010d F3       		.byte	0xf3
- 1359 010e 01       		.uleb128 0x1
- 1360 010f 50       		.byte	0x50
- 1361 0110 9F       		.byte	0x9f
- 1362 0111 00000000 		.4byte	0
- 1363 0115 00000000 		.4byte	0
- 1364              	.LLST8:
- 1365 0119 0A000000 		.4byte	.LVL25
- 1366 011d 56000000 		.4byte	.LVL29
- 1367 0121 0100     		.2byte	0x1
- 1368 0123 55       		.byte	0x55
- 1369 0124 00000000 		.4byte	0
- 1370 0128 00000000 		.4byte	0
- 1371              	.LLST9:
- 1372 012c 00000000 		.4byte	.LVL30
- 1373 0130 04000000 		.4byte	.LVL31
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 35
+ 1366 0044 10000000 		.4byte	.LFE10
+ 1367 0048 00000000 		.4byte	.LFB4
+ 1368 004c D8000000 		.4byte	.LFE4
+ 1369 0050 00000000 		.4byte	.LFB9
+ 1370 0054 5C000000 		.4byte	.LFE9
+ 1371 0058 00000000 		.4byte	0
+ 1372 005c 00000000 		.4byte	0
+ 1373              		.section	.debug_line,"",%progbits
+ 1374              	.Ldebug_line0:
+ 1375 0000 7D010000 		.section	.debug_str,"MS",%progbits,1
+ 1375      02004F00 
+ 1375      00000201 
+ 1375      FB0E0D00 
+ 1375      01010101 
+ 1376              	.LASF18:
+ 1377 0000 566F6C75 		.ascii	"Volume_ADC_theACLK_StopBlock\000"
+ 1377      6D655F41 
+ 1377      44435F74 
+ 1377      68654143 
+ 1377      4C4B5F53 
+ 1378              	.LASF34:
+ 1379 001d 63757272 		.ascii	"currDiv\000"
+ 1379      44697600 
+ 1380              	.LASF15:
+ 1381 0025 72656731 		.ascii	"reg16\000"
+ 1381      3600
+ 1382              	.LASF27:
+ 1383 002b 566F6C75 		.ascii	"Volume_ADC_theACLK_SetDividerRegister\000"
+ 1383      6D655F41 
+ 1383      44435F74 
+ 1383      68654143 
+ 1383      4C4B5F53 
+ 1384              	.LASF2:
+ 1385 0051 73686F72 		.ascii	"short int\000"
+ 1385      7420696E 
+ 1385      7400
+ 1386              	.LASF17:
+ 1387 005b 566F6C75 		.ascii	"Volume_ADC_theACLK_Stop\000"
+ 1387      6D655F41 
+ 1387      44435F74 
+ 1387      68654143 
+ 1387      4C4B5F53 
+ 1388              	.LASF37:
+ 1389 0073 47656E65 		.ascii	"Generated_Source\\PSoC5\\Volume_ADC_theACLK.c\000"
+ 1389      72617465 
+ 1389      645F536F 
+ 1389      75726365 
+ 1389      5C50536F 
+ 1390              	.LASF24:
+ 1391 009f 566F6C75 		.ascii	"Volume_ADC_theACLK_GetDividerRegister\000"
+ 1391      6D655F41 
+ 1391      44435F74 
+ 1391      68654143 
+ 1391      4C4B5F47 
+ 1392              	.LASF10:
+ 1393 00c5 75696E74 		.ascii	"uint16\000"
+ 1393      313600
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 35
 
 
- 1374 0134 0100     		.2byte	0x1
- 1375 0136 50       		.byte	0x50
- 1376 0137 04000000 		.4byte	.LVL31
- 1377 013b 10000000 		.4byte	.LFE11
- 1378 013f 0400     		.2byte	0x4
- 1379 0141 F3       		.byte	0xf3
- 1380 0142 01       		.uleb128 0x1
- 1381 0143 50       		.byte	0x50
- 1382 0144 9F       		.byte	0x9f
- 1383 0145 00000000 		.4byte	0
- 1384 0149 00000000 		.4byte	0
- 1385              		.section	.debug_aranges,"",%progbits
- 1386 0000 7C000000 		.4byte	0x7c
- 1387 0004 0200     		.2byte	0x2
- 1388 0006 00000000 		.4byte	.Ldebug_info0
- 1389 000a 04       		.byte	0x4
- 1390 000b 00       		.byte	0
- 1391 000c 0000     		.2byte	0
- 1392 000e 0000     		.2byte	0
- 1393 0010 00000000 		.4byte	.LFB0
- 1394 0014 1C000000 		.4byte	.LFE0-.LFB0
- 1395 0018 00000000 		.4byte	.LFB1
- 1396 001c 1C000000 		.4byte	.LFE1-.LFB1
- 1397 0020 00000000 		.4byte	.LFB2
- 1398 0024 6C000000 		.4byte	.LFE2-.LFB2
- 1399 0028 00000000 		.4byte	.LFB3
- 1400 002c 20000000 		.4byte	.LFE3-.LFB3
- 1401 0030 00000000 		.4byte	.LFB5
- 1402 0034 0C000000 		.4byte	.LFE5-.LFB5
- 1403 0038 00000000 		.4byte	.LFB6
- 1404 003c 14000000 		.4byte	.LFE6-.LFB6
- 1405 0040 00000000 		.4byte	.LFB7
- 1406 0044 18000000 		.4byte	.LFE7-.LFB7
- 1407 0048 00000000 		.4byte	.LFB8
- 1408 004c 10000000 		.4byte	.LFE8-.LFB8
- 1409 0050 00000000 		.4byte	.LFB10
- 1410 0054 10000000 		.4byte	.LFE10-.LFB10
- 1411 0058 00000000 		.4byte	.LFB4
- 1412 005c D8000000 		.4byte	.LFE4-.LFB4
- 1413 0060 00000000 		.4byte	.LFB9
- 1414 0064 5C000000 		.4byte	.LFE9-.LFB9
- 1415 0068 00000000 		.4byte	.LFB11
- 1416 006c 10000000 		.4byte	.LFE11-.LFB11
- 1417 0070 00000000 		.4byte	.LFB12
- 1418 0074 10000000 		.4byte	.LFE12-.LFB12
- 1419 0078 00000000 		.4byte	0
- 1420 007c 00000000 		.4byte	0
- 1421              		.section	.debug_ranges,"",%progbits
- 1422              	.Ldebug_ranges0:
- 1423 0000 00000000 		.4byte	.LFB0
- 1424 0004 1C000000 		.4byte	.LFE0
- 1425 0008 00000000 		.4byte	.LFB1
- 1426 000c 1C000000 		.4byte	.LFE1
- 1427 0010 00000000 		.4byte	.LFB2
- 1428 0014 6C000000 		.4byte	.LFE2
- 1429 0018 00000000 		.4byte	.LFB3
- 1430 001c 20000000 		.4byte	.LFE3
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 36
+ 1394              	.LASF29:
+ 1395 00cc 72657374 		.ascii	"restart\000"
+ 1395      61727400 
+ 1396              	.LASF35:
+ 1397 00d4 6F6C6453 		.ascii	"oldSrc\000"
+ 1397      726300
+ 1398              	.LASF38:
+ 1399 00db 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
+ 1399      73657273 
+ 1399      5C4C756B 
+ 1399      61732043 
+ 1399      72657574 
+ 1400 0109 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
+ 1400      5F364348 
+ 1400      616D705C 
+ 1400      50536F43 
+ 1400      20576F72 
+ 1401              	.LASF9:
+ 1402 0133 75696E74 		.ascii	"uint8\000"
+ 1402      3800
+ 1403              	.LASF28:
+ 1404 0139 636C6B44 		.ascii	"clkDivider\000"
+ 1404      69766964 
+ 1404      657200
+ 1405              	.LASF19:
+ 1406 0144 566F6C75 		.ascii	"Volume_ADC_theACLK_StandbyPower\000"
+ 1406      6D655F41 
+ 1406      44435F74 
+ 1406      68654143 
+ 1406      4C4B5F53 
+ 1407              	.LASF11:
+ 1408 0164 666C6F61 		.ascii	"float\000"
+ 1408      7400
+ 1409              	.LASF6:
+ 1410 016a 6C6F6E67 		.ascii	"long long int\000"
+ 1410      206C6F6E 
+ 1410      6720696E 
+ 1410      7400
+ 1411              	.LASF4:
+ 1412 0178 6C6F6E67 		.ascii	"long int\000"
+ 1412      20696E74 
+ 1412      00
+ 1413              	.LASF21:
+ 1414 0181 73746174 		.ascii	"state\000"
+ 1414      6500
+ 1415              	.LASF1:
+ 1416 0187 756E7369 		.ascii	"unsigned char\000"
+ 1416      676E6564 
+ 1416      20636861 
+ 1416      7200
+ 1417              	.LASF22:
+ 1418 0195 6D6F6465 		.ascii	"modeBitMask\000"
+ 1418      4269744D 
+ 1418      61736B00 
+ 1419              	.LASF20:
+ 1420 01a1 566F6C75 		.ascii	"Volume_ADC_theACLK_SetModeRegister\000"
+ 1420      6D655F41 
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 36
 
 
- 1431 0020 00000000 		.4byte	.LFB5
- 1432 0024 0C000000 		.4byte	.LFE5
- 1433 0028 00000000 		.4byte	.LFB6
- 1434 002c 14000000 		.4byte	.LFE6
- 1435 0030 00000000 		.4byte	.LFB7
- 1436 0034 18000000 		.4byte	.LFE7
- 1437 0038 00000000 		.4byte	.LFB8
- 1438 003c 10000000 		.4byte	.LFE8
- 1439 0040 00000000 		.4byte	.LFB10
- 1440 0044 10000000 		.4byte	.LFE10
- 1441 0048 00000000 		.4byte	.LFB4
- 1442 004c D8000000 		.4byte	.LFE4
- 1443 0050 00000000 		.4byte	.LFB9
- 1444 0054 5C000000 		.4byte	.LFE9
- 1445 0058 00000000 		.4byte	.LFB11
- 1446 005c 10000000 		.4byte	.LFE11
- 1447 0060 00000000 		.4byte	.LFB12
- 1448 0064 10000000 		.4byte	.LFE12
- 1449 0068 00000000 		.4byte	0
- 1450 006c 00000000 		.4byte	0
- 1451              		.section	.debug_line,"",%progbits
- 1452              	.Ldebug_line0:
- 1453 0000 A0010000 		.section	.debug_str,"MS",%progbits,1
- 1453      02004F00 
- 1453      00000201 
- 1453      FB0E0D00 
- 1453      01010101 
- 1454              	.LASF18:
- 1455 0000 566F6C75 		.ascii	"Volume_ADC_theACLK_StopBlock\000"
- 1455      6D655F41 
- 1455      44435F74 
- 1455      68654143 
- 1455      4C4B5F53 
- 1456              	.LASF35:
- 1457 001d 63757272 		.ascii	"currDiv\000"
- 1457      44697600 
- 1458              	.LASF15:
- 1459 0025 72656731 		.ascii	"reg16\000"
- 1459      3600
- 1460              	.LASF27:
- 1461 002b 566F6C75 		.ascii	"Volume_ADC_theACLK_SetDividerRegister\000"
- 1461      6D655F41 
- 1461      44435F74 
- 1461      68654143 
- 1461      4C4B5F53 
- 1462              	.LASF2:
- 1463 0051 73686F72 		.ascii	"short int\000"
- 1463      7420696E 
- 1463      7400
- 1464              	.LASF17:
- 1465 005b 566F6C75 		.ascii	"Volume_ADC_theACLK_Stop\000"
- 1465      6D655F41 
- 1465      44435F74 
- 1465      68654143 
- 1465      4C4B5F53 
- 1466              	.LASF41:
- 1467 0073 47656E65 		.ascii	"Generated_Source\\PSoC5\\Volume_ADC_theACLK.c\000"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 37
+ 1420      44435F74 
+ 1420      68654143 
+ 1420      4C4B5F53 
+ 1421              	.LASF0:
+ 1422 01c4 7369676E 		.ascii	"signed char\000"
+ 1422      65642063 
+ 1422      68617200 
+ 1423              	.LASF7:
+ 1424 01d0 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1424      206C6F6E 
+ 1424      6720756E 
+ 1424      7369676E 
+ 1424      65642069 
+ 1425              	.LASF26:
+ 1426 01e7 566F6C75 		.ascii	"Volume_ADC_theACLK_GetSourceRegister\000"
+ 1426      6D655F41 
+ 1426      44435F74 
+ 1426      68654143 
+ 1426      4C4B5F47 
+ 1427              	.LASF8:
+ 1428 020c 756E7369 		.ascii	"unsigned int\000"
+ 1428      676E6564 
+ 1428      20696E74 
+ 1428      00
+ 1429              	.LASF23:
+ 1430 0219 566F6C75 		.ascii	"Volume_ADC_theACLK_ClearModeRegister\000"
+ 1430      6D655F41 
+ 1430      44435F74 
+ 1430      68654143 
+ 1430      4C4B5F43 
+ 1431              	.LASF3:
+ 1432 023e 73686F72 		.ascii	"short unsigned int\000"
+ 1432      7420756E 
+ 1432      7369676E 
+ 1432      65642069 
+ 1432      6E7400
+ 1433              	.LASF13:
+ 1434 0251 63686172 		.ascii	"char\000"
+ 1434      00
+ 1435              	.LASF36:
+ 1436 0256 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1436      4320342E 
+ 1436      392E3320 
+ 1436      32303135 
+ 1436      30333033 
+ 1437 0289 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1437      20726576 
+ 1437      6973696F 
+ 1437      6E203232 
+ 1437      31323230 
+ 1438 02bc 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1438      66756E63 
+ 1438      74696F6E 
+ 1438      2D736563 
+ 1438      74696F6E 
+ 1439              	.LASF33:
+ 1440 02e4 636C6B53 		.ascii	"clkSource\000"
+ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\cc8639Ao.s 			page 37
 
 
- 1467      72617465 
- 1467      645F536F 
- 1467      75726365 
- 1467      5C50536F 
- 1468              	.LASF24:
- 1469 009f 566F6C75 		.ascii	"Volume_ADC_theACLK_GetDividerRegister\000"
- 1469      6D655F41 
- 1469      44435F74 
- 1469      68654143 
- 1469      4C4B5F47 
- 1470              	.LASF10:
- 1471 00c5 75696E74 		.ascii	"uint16\000"
- 1471      313600
- 1472              	.LASF29:
- 1473 00cc 72657374 		.ascii	"restart\000"
- 1473      61727400 
- 1474              	.LASF36:
- 1475 00d4 6F6C6453 		.ascii	"oldSrc\000"
- 1475      726300
- 1476              	.LASF42:
- 1477 00db 433A5C55 		.ascii	"C:\\Users\\Lukas Creutzburg\\Documents\\GitHub\\fre"
- 1477      73657273 
- 1477      5C4C756B 
- 1477      61732043 
- 1477      72657574 
- 1478 0109 65445350 		.ascii	"eDSP_6CHamp\\PSoC Workspace\\Controls.cydsn\000"
- 1478      5F364348 
- 1478      616D705C 
- 1478      50536F43 
- 1478      20576F72 
- 1479              	.LASF9:
- 1480 0133 75696E74 		.ascii	"uint8\000"
- 1480      3800
- 1481              	.LASF28:
- 1482 0139 636C6B44 		.ascii	"clkDivider\000"
- 1482      69766964 
- 1482      657200
- 1483              	.LASF19:
- 1484 0144 566F6C75 		.ascii	"Volume_ADC_theACLK_StandbyPower\000"
- 1484      6D655F41 
- 1484      44435F74 
- 1484      68654143 
- 1484      4C4B5F53 
- 1485              	.LASF11:
- 1486 0164 666C6F61 		.ascii	"float\000"
- 1486      7400
- 1487              	.LASF6:
- 1488 016a 6C6F6E67 		.ascii	"long long int\000"
- 1488      206C6F6E 
- 1488      6720696E 
- 1488      7400
- 1489              	.LASF4:
- 1490 0178 6C6F6E67 		.ascii	"long int\000"
- 1490      20696E74 
- 1490      00
- 1491              	.LASF21:
- 1492 0181 73746174 		.ascii	"state\000"
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 38
-
-
- 1492      6500
- 1493              	.LASF38:
- 1494 0187 636C6B50 		.ascii	"clkPhase\000"
- 1494      68617365 
- 1494      00
- 1495              	.LASF1:
- 1496 0190 756E7369 		.ascii	"unsigned char\000"
- 1496      676E6564 
- 1496      20636861 
- 1496      7200
- 1497              	.LASF22:
- 1498 019e 6D6F6465 		.ascii	"modeBitMask\000"
- 1498      4269744D 
- 1498      61736B00 
- 1499              	.LASF20:
- 1500 01aa 566F6C75 		.ascii	"Volume_ADC_theACLK_SetModeRegister\000"
- 1500      6D655F41 
- 1500      44435F74 
- 1500      68654143 
- 1500      4C4B5F53 
- 1501              	.LASF0:
- 1502 01cd 7369676E 		.ascii	"signed char\000"
- 1502      65642063 
- 1502      68617200 
- 1503              	.LASF7:
- 1504 01d9 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1504      206C6F6E 
- 1504      6720756E 
- 1504      7369676E 
- 1504      65642069 
- 1505              	.LASF26:
- 1506 01f0 566F6C75 		.ascii	"Volume_ADC_theACLK_GetSourceRegister\000"
- 1506      6D655F41 
- 1506      44435F74 
- 1506      68654143 
- 1506      4C4B5F47 
- 1507              	.LASF8:
- 1508 0215 756E7369 		.ascii	"unsigned int\000"
- 1508      676E6564 
- 1508      20696E74 
- 1508      00
- 1509              	.LASF23:
- 1510 0222 566F6C75 		.ascii	"Volume_ADC_theACLK_ClearModeRegister\000"
- 1510      6D655F41 
- 1510      44435F74 
- 1510      68654143 
- 1510      4C4B5F43 
- 1511              	.LASF3:
- 1512 0247 73686F72 		.ascii	"short unsigned int\000"
- 1512      7420756E 
- 1512      7369676E 
- 1512      65642069 
- 1512      6E7400
- 1513              	.LASF13:
- 1514 025a 63686172 		.ascii	"char\000"
- 1514      00
- 1515              	.LASF40:
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 39
-
-
- 1516 025f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1516      4320342E 
- 1516      392E3320 
- 1516      32303135 
- 1516      30333033 
- 1517 0292 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1517      20726576 
- 1517      6973696F 
- 1517      6E203232 
- 1517      31323230 
- 1518 02c5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1518      66756E63 
- 1518      74696F6E 
- 1518      2D736563 
- 1518      74696F6E 
- 1519              	.LASF34:
- 1520 02ed 636C6B53 		.ascii	"clkSource\000"
- 1520      6F757263 
- 1520      6500
- 1521              	.LASF32:
- 1522 02f7 63757272 		.ascii	"currSrc\000"
- 1522      53726300 
- 1523              	.LASF30:
- 1524 02ff 6F6C6444 		.ascii	"oldDivider\000"
- 1524      69766964 
- 1524      657200
- 1525              	.LASF14:
- 1526 030a 72656738 		.ascii	"reg8\000"
- 1526      00
- 1527              	.LASF5:
- 1528 030f 6C6F6E67 		.ascii	"long unsigned int\000"
- 1528      20756E73 
- 1528      69676E65 
- 1528      6420696E 
- 1528      7400
- 1529              	.LASF12:
- 1530 0321 646F7562 		.ascii	"double\000"
- 1530      6C6500
- 1531              	.LASF31:
- 1532 0328 656E6162 		.ascii	"enabled\000"
- 1532      6C656400 
- 1533              	.LASF39:
- 1534 0330 566F6C75 		.ascii	"Volume_ADC_theACLK_GetPhaseRegister\000"
- 1534      6D655F41 
- 1534      44435F74 
- 1534      68654143 
- 1534      4C4B5F47 
- 1535              	.LASF33:
- 1536 0354 566F6C75 		.ascii	"Volume_ADC_theACLK_SetSourceRegister\000"
- 1536      6D655F41 
- 1536      44435F74 
- 1536      68654143 
- 1536      4C4B5F53 
- 1537              	.LASF25:
- 1538 0379 566F6C75 		.ascii	"Volume_ADC_theACLK_GetModeRegister\000"
- 1538      6D655F41 
- 1538      44435F74 
-ARM GAS  C:\Users\LUKASC~1\AppData\Local\Temp\ccHAvmXf.s 			page 40
-
-
- 1538      68654143 
- 1538      4C4B5F47 
- 1539              	.LASF16:
- 1540 039c 566F6C75 		.ascii	"Volume_ADC_theACLK_Start\000"
- 1540      6D655F41 
- 1540      44435F74 
- 1540      68654143 
- 1540      4C4B5F53 
- 1541              	.LASF37:
- 1542 03b5 566F6C75 		.ascii	"Volume_ADC_theACLK_SetPhaseRegister\000"
- 1542      6D655F41 
- 1542      44435F74 
- 1542      68654143 
- 1542      4C4B5F53 
- 1543              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1440      6F757263 
+ 1440      6500
+ 1441              	.LASF32:
+ 1442 02ee 63757272 		.ascii	"currSrc\000"
+ 1442      53726300 
+ 1443              	.LASF30:
+ 1444 02f6 6F6C6444 		.ascii	"oldDivider\000"
+ 1444      69766964 
+ 1444      657200
+ 1445              	.LASF14:
+ 1446 0301 72656738 		.ascii	"reg8\000"
+ 1446      00
+ 1447              	.LASF5:
+ 1448 0306 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1448      20756E73 
+ 1448      69676E65 
+ 1448      6420696E 
+ 1448      7400
+ 1449              	.LASF12:
+ 1450 0318 646F7562 		.ascii	"double\000"
+ 1450      6C6500
+ 1451              	.LASF31:
+ 1452 031f 656E6162 		.ascii	"enabled\000"
+ 1452      6C656400 
+ 1453              	.LASF39:
+ 1454 0327 566F6C75 		.ascii	"Volume_ADC_theACLK_SetSourceRegister\000"
+ 1454      6D655F41 
+ 1454      44435F74 
+ 1454      68654143 
+ 1454      4C4B5F53 
+ 1455              	.LASF25:
+ 1456 034c 566F6C75 		.ascii	"Volume_ADC_theACLK_GetModeRegister\000"
+ 1456      6D655F41 
+ 1456      44435F74 
+ 1456      68654143 
+ 1456      4C4B5F47 
+ 1457              	.LASF16:
+ 1458 036f 566F6C75 		.ascii	"Volume_ADC_theACLK_Start\000"
+ 1458      6D655F41 
+ 1458      44435F74 
+ 1458      68654143 
+ 1458      4C4B5F53 
+ 1459              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

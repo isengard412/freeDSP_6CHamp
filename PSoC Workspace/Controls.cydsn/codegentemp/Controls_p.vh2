@@ -1,5 +1,5 @@
 -- Project:   Controls
--- Generated: 11/18/2016 18:00:55
+-- Generated: 11/26/2016 13:58:40
 -- PSoC Creator  4.0
 
 ENTITY Controls IS
@@ -90,9 +90,14 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     SIGNAL Net_311 : bit;
     SIGNAL Net_65 : bit;
     SIGNAL Net_69 : bit;
-    SIGNAL Net_827 : bit;
     SIGNAL Net_843 : bit;
     SIGNAL Net_849 : bit;
+    SIGNAL Net_854 : bit;
+    SIGNAL Net_857 : bit;
+    SIGNAL Net_858 : bit;
+    ATTRIBUTE udbclken_assigned OF Net_858 : SIGNAL IS "True";
+    ATTRIBUTE global_signal OF Net_858 : SIGNAL IS true;
+    SIGNAL Net_858_local : bit;
     SIGNAL Power_LED(0)__PA : bit;
     SIGNAL Power_SW(0)__PA : bit;
     SIGNAL Protection_CLK(0)__PA : bit;
@@ -137,28 +142,37 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     SIGNAL \USBUART:ep_int_6\ : bit;
     SIGNAL \USBUART:ep_int_7\ : bit;
     SIGNAL \USBUART:ep_int_8\ : bit;
-    SIGNAL \Volume_ADC:Net_245_0\ : bit;
-    SIGNAL \Volume_ADC:Net_245_1\ : bit;
-    SIGNAL \Volume_ADC:Net_245_2\ : bit;
-    SIGNAL \Volume_ADC:Net_245_3\ : bit;
-    SIGNAL \Volume_ADC:Net_245_4\ : bit;
-    SIGNAL \Volume_ADC:Net_245_5\ : bit;
-    SIGNAL \Volume_ADC:Net_245_6\ : bit;
-    SIGNAL \Volume_ADC:Net_245_7\ : bit;
-    SIGNAL \Volume_ADC:Net_488\ : bit;
-    ATTRIBUTE global_signal OF \Volume_ADC:Net_488\ : SIGNAL IS true;
-    SIGNAL \Volume_ADC:Net_488_adig\ : bit;
-    SIGNAL \Volume_ADC:Net_488_adig_local\ : bit;
-    SIGNAL \Volume_ADC:Net_488_local\ : bit;
-    SIGNAL \Volume_ADC:Net_93\ : bit;
-    ATTRIBUTE global_signal OF \Volume_ADC:Net_93\ : SIGNAL IS true;
-    SIGNAL \Volume_ADC:Net_93_local\ : bit;
-    SIGNAL \Volume_ADC:aclock\ : bit;
-    SIGNAL \Volume_ADC:mod_dat_0\ : bit;
-    SIGNAL \Volume_ADC:mod_dat_1\ : bit;
-    SIGNAL \Volume_ADC:mod_dat_2\ : bit;
-    SIGNAL \Volume_ADC:mod_dat_3\ : bit;
-    SIGNAL \Volume_ADC:mod_reset\ : bit;
+    SIGNAL \Volume_ADC:Net_207_0\ : bit;
+    SIGNAL \Volume_ADC:Net_207_10\ : bit;
+    SIGNAL \Volume_ADC:Net_207_11\ : bit;
+    SIGNAL \Volume_ADC:Net_207_1\ : bit;
+    SIGNAL \Volume_ADC:Net_207_2\ : bit;
+    SIGNAL \Volume_ADC:Net_207_3\ : bit;
+    SIGNAL \Volume_ADC:Net_207_4\ : bit;
+    SIGNAL \Volume_ADC:Net_207_5\ : bit;
+    SIGNAL \Volume_ADC:Net_207_6\ : bit;
+    SIGNAL \Volume_ADC:Net_207_7\ : bit;
+    SIGNAL \Volume_ADC:Net_207_8\ : bit;
+    SIGNAL \Volume_ADC:Net_207_9\ : bit;
+    SIGNAL \Volume_ADC:Net_252\ : bit;
+    SIGNAL \Volume_ADC:Net_376\ : bit;
+    ATTRIBUTE global_signal OF \Volume_ADC:Net_376\ : SIGNAL IS true;
+    SIGNAL \Volume_ADC:Net_376_local\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_0\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_1\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_2\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_3\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_4\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_5\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_6\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:control_7\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:per_zero\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:run_mode\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:status_2\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:status_3\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:status_tc\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:timer_enable\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:trig_disable\ : bit;
     SIGNAL __ONE__ : bit;
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
@@ -167,8 +181,20 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     ATTRIBUTE POWER OF tmpOE__Up_SW_net_0 : SIGNAL IS true;
     SIGNAL zero : bit;
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
-    SIGNAL \ClockBlock.aclk_glb_ff_0__sig\ : bit;
-    SIGNAL \ClockBlock.dclk_glb_ff_1__sig\ : bit;
+    SIGNAL \ClockBlock.dclk_glb_ff_2__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.ce0__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.cl0__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.z0__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.ff0__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.ce1__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.cl1__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.z1__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.ff1__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.co_msb__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.sol_msb__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u0.cfbo__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u1.sor__sig\ : bit;
+    SIGNAL \Volume_Timer:TimerUDB:sT16:timerdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF Up_SW(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF Up_SW(0) : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF Power_LED(0) : LABEL IS "iocell2";
@@ -243,9 +269,17 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     ATTRIBUTE Location OF Protection_CLR(0) : LABEL IS "P0[0]";
     ATTRIBUTE lib_model OF Protection_CLK(0) : LABEL IS "iocell37";
     ATTRIBUTE Location OF Protection_CLK(0) : LABEL IS "P0[1]";
-    ATTRIBUTE Location OF \Volume_ADC:DSM\ : LABEL IS "F(DSM,0)";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell1";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:status_tc\ : LABEL IS "macrocell1";
     ATTRIBUTE Location OF \USBUART:USB\ : LABEL IS "F(USB,0)";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell2";
+    ATTRIBUTE Location OF \Volume_ADC:ADC_SAR\ : LABEL IS "F(SAR,1)";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell1";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell1";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell2";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:run_mode\ : LABEL IS "macrocell3";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:timer_enable\ : LABEL IS "macrocell4";
+    ATTRIBUTE lib_model OF \Volume_Timer:TimerUDB:trig_disable\ : LABEL IS "macrocell5";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -326,39 +360,124 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
             dclk_glb_ff_6 : OUT std_ulogic;
             dclk_glb_ff_7 : OUT std_ulogic);
     END COMPONENT;
-    COMPONENT decimatorcell
+    COMPONENT controlcell
         PORT (
-            aclock : IN std_ulogic;
-            mod_dat_0 : IN std_ulogic;
-            mod_dat_1 : IN std_ulogic;
-            mod_dat_2 : IN std_ulogic;
-            mod_dat_3 : IN std_ulogic;
-            ext_start : IN std_ulogic;
-            modrst : OUT std_ulogic;
-            interrupt : OUT std_ulogic);
+            control_0 : OUT std_ulogic;
+            control_1 : OUT std_ulogic;
+            control_2 : OUT std_ulogic;
+            control_3 : OUT std_ulogic;
+            control_4 : OUT std_ulogic;
+            control_5 : OUT std_ulogic;
+            control_6 : OUT std_ulogic;
+            control_7 : OUT std_ulogic;
+            clock : IN std_ulogic;
+            reset : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            busclk : IN std_ulogic);
     END COMPONENT;
-    COMPONENT dsmodcell
+    ATTRIBUTE udb_clk OF controlcell : COMPONENT IS "clock";
+    ATTRIBUTE udb_clken OF controlcell : COMPONENT IS "clk_en";
+    ATTRIBUTE udb_reset OF controlcell : COMPONENT IS "reset";
+    COMPONENT datapathcell
         PORT (
-            aclock : IN std_ulogic;
-            modbitin_udb : IN std_ulogic;
-            reset_udb : IN std_ulogic;
-            reset_dec : IN std_ulogic;
-            dec_clock : OUT std_ulogic;
-            mod_dat_0 : OUT std_ulogic;
-            mod_dat_1 : OUT std_ulogic;
-            mod_dat_2 : OUT std_ulogic;
-            mod_dat_3 : OUT std_ulogic;
-            dout_udb_0 : OUT std_ulogic;
-            dout_udb_1 : OUT std_ulogic;
-            dout_udb_2 : OUT std_ulogic;
-            dout_udb_3 : OUT std_ulogic;
-            dout_udb_4 : OUT std_ulogic;
-            dout_udb_5 : OUT std_ulogic;
-            dout_udb_6 : OUT std_ulogic;
-            dout_udb_7 : OUT std_ulogic;
-            extclk_cp_udb : IN std_ulogic;
-            clk_udb : IN std_ulogic);
+            clock : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            reset : IN std_ulogic;
+            cs_addr_0 : IN std_ulogic;
+            cs_addr_1 : IN std_ulogic;
+            cs_addr_2 : IN std_ulogic;
+            route_si : IN std_ulogic;
+            route_ci : IN std_ulogic;
+            f0_load : IN std_ulogic;
+            f1_load : IN std_ulogic;
+            d0_load : IN std_ulogic;
+            d1_load : IN std_ulogic;
+            ce0_reg : OUT std_ulogic;
+            cl0_reg : OUT std_ulogic;
+            z0_reg : OUT std_ulogic;
+            f0_reg : OUT std_ulogic;
+            ce1_reg : OUT std_ulogic;
+            cl1_reg : OUT std_ulogic;
+            z1_reg : OUT std_ulogic;
+            f1_reg : OUT std_ulogic;
+            ov_msb_reg : OUT std_ulogic;
+            co_msb_reg : OUT std_ulogic;
+            cmsb_reg : OUT std_ulogic;
+            so_reg : OUT std_ulogic;
+            f0_bus_stat_reg : OUT std_ulogic;
+            f0_blk_stat_reg : OUT std_ulogic;
+            f1_bus_stat_reg : OUT std_ulogic;
+            f1_blk_stat_reg : OUT std_ulogic;
+            ce0_comb : OUT std_ulogic;
+            cl0_comb : OUT std_ulogic;
+            z0_comb : OUT std_ulogic;
+            f0_comb : OUT std_ulogic;
+            ce1_comb : OUT std_ulogic;
+            cl1_comb : OUT std_ulogic;
+            z1_comb : OUT std_ulogic;
+            f1_comb : OUT std_ulogic;
+            ov_msb_comb : OUT std_ulogic;
+            co_msb_comb : OUT std_ulogic;
+            cmsb_comb : OUT std_ulogic;
+            so_comb : OUT std_ulogic;
+            f0_bus_stat_comb : OUT std_ulogic;
+            f0_blk_stat_comb : OUT std_ulogic;
+            f1_bus_stat_comb : OUT std_ulogic;
+            f1_blk_stat_comb : OUT std_ulogic;
+            ce0 : OUT std_ulogic;
+            ce0i : IN std_ulogic;
+            p_in_0 : IN std_ulogic;
+            p_in_1 : IN std_ulogic;
+            p_in_2 : IN std_ulogic;
+            p_in_3 : IN std_ulogic;
+            p_in_4 : IN std_ulogic;
+            p_in_5 : IN std_ulogic;
+            p_in_6 : IN std_ulogic;
+            p_in_7 : IN std_ulogic;
+            p_out_0 : OUT std_ulogic;
+            p_out_1 : OUT std_ulogic;
+            p_out_2 : OUT std_ulogic;
+            p_out_3 : OUT std_ulogic;
+            p_out_4 : OUT std_ulogic;
+            p_out_5 : OUT std_ulogic;
+            p_out_6 : OUT std_ulogic;
+            p_out_7 : OUT std_ulogic;
+            cl0i : IN std_ulogic;
+            cl0 : OUT std_ulogic;
+            z0i : IN std_ulogic;
+            z0 : OUT std_ulogic;
+            ff0i : IN std_ulogic;
+            ff0 : OUT std_ulogic;
+            ce1i : IN std_ulogic;
+            ce1 : OUT std_ulogic;
+            cl1i : IN std_ulogic;
+            cl1 : OUT std_ulogic;
+            z1i : IN std_ulogic;
+            z1 : OUT std_ulogic;
+            ff1i : IN std_ulogic;
+            ff1 : OUT std_ulogic;
+            cap0i : IN std_ulogic;
+            cap0 : OUT std_ulogic;
+            cap1i : IN std_ulogic;
+            cap1 : OUT std_ulogic;
+            ci : IN std_ulogic;
+            co_msb : OUT std_ulogic;
+            sir : IN std_ulogic;
+            sol_msb : OUT std_ulogic;
+            cfbi : IN std_ulogic;
+            cfbo : OUT std_ulogic;
+            sil : IN std_ulogic;
+            sor : OUT std_ulogic;
+            cmsbi : IN std_ulogic;
+            cmsbo : OUT std_ulogic;
+            busclk : IN std_ulogic);
     END COMPONENT;
+    ATTRIBUTE udb_clk OF datapathcell : COMPONENT IS "clock";
+    ATTRIBUTE udb_clken OF datapathcell : COMPONENT IS "clk_en";
+    ATTRIBUTE udb_reset OF datapathcell : COMPONENT IS "reset";
+    ATTRIBUTE udb_chain OF datapathcell : COMPONENT IS "ce0i,ce0,cl0i,cl0,z0i,z0,ff0i,ff0,ce1i,ce1,cl1i,cl1,z1i,z1,ff1i,ff1,cap0i,cap0,cap1i,cap1,ci,co_msb,sir,sol_msb,cfbi,cfbo,sil,sor,cmsbi,cmsbo";
+    ATTRIBUTE chain_lsb OF datapathcell : COMPONENT IS "ce0i,cl0i,z0i,ff0i,ce1i,cl1i,z1i,ff1i,cap0i,cap1i,ci,sir,cfbi,sor,cmsbo";
+    ATTRIBUTE chain_msb OF datapathcell : COMPONENT IS "ce0,cl0,z0,ff0,ce1,cl1,z1,ff1,cap0,cap1,co_msb,sol_msb,cfbo,sil,cmsbi";
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
@@ -446,6 +565,53 @@ ARCHITECTURE __DEFAULT__ OF Controls IS
     ATTRIBUTE udb_chain OF macrocell : COMPONENT IS "cin,cout";
     ATTRIBUTE chain_lsb OF macrocell : COMPONENT IS "cin";
     ATTRIBUTE chain_msb OF macrocell : COMPONENT IS "cout";
+    COMPONENT sarcell
+        PORT (
+            clock : IN std_ulogic;
+            pump_clock : IN std_ulogic;
+            clk_udb : IN std_ulogic;
+            sof_udb : IN std_ulogic;
+            vp_ctl_udb_0 : IN std_ulogic;
+            vp_ctl_udb_1 : IN std_ulogic;
+            vp_ctl_udb_2 : IN std_ulogic;
+            vp_ctl_udb_3 : IN std_ulogic;
+            vn_ctl_udb_0 : IN std_ulogic;
+            vn_ctl_udb_1 : IN std_ulogic;
+            vn_ctl_udb_2 : IN std_ulogic;
+            vn_ctl_udb_3 : IN std_ulogic;
+            data_out_udb_0 : OUT std_ulogic;
+            data_out_udb_1 : OUT std_ulogic;
+            data_out_udb_2 : OUT std_ulogic;
+            data_out_udb_3 : OUT std_ulogic;
+            data_out_udb_4 : OUT std_ulogic;
+            data_out_udb_5 : OUT std_ulogic;
+            data_out_udb_6 : OUT std_ulogic;
+            data_out_udb_7 : OUT std_ulogic;
+            data_out_udb_8 : OUT std_ulogic;
+            data_out_udb_9 : OUT std_ulogic;
+            data_out_udb_10 : OUT std_ulogic;
+            data_out_udb_11 : OUT std_ulogic;
+            eof_udb : OUT std_ulogic;
+            irq : OUT std_ulogic;
+            next : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT statusicell
+        PORT (
+            status_0 : IN std_ulogic;
+            status_1 : IN std_ulogic;
+            status_2 : IN std_ulogic;
+            status_3 : IN std_ulogic;
+            status_4 : IN std_ulogic;
+            status_5 : IN std_ulogic;
+            status_6 : IN std_ulogic;
+            clock : IN std_ulogic;
+            reset : IN std_ulogic;
+            interrupt : OUT std_ulogic;
+            clk_en : IN std_ulogic);
+    END COMPONENT;
+    ATTRIBUTE udb_clk OF statusicell : COMPONENT IS "clock";
+    ATTRIBUTE udb_clken OF statusicell : COMPONENT IS "clk_en";
+    ATTRIBUTE udb_reset OF statusicell : COMPONENT IS "reset";
     COMPONENT timercell
         PORT (
             clock : IN std_ulogic;
@@ -499,16 +665,13 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => \Volume_ADC:Net_93\,
-            dclk_0 => \Volume_ADC:Net_93_local\,
-            aclk_glb_0 => \Volume_ADC:Net_488\,
-            aclk_0 => \Volume_ADC:Net_488_local\,
-            clk_a_dig_glb_0 => \Volume_ADC:Net_488_adig\,
-            clk_a_dig_0 => \Volume_ADC:Net_488_adig_local\,
-            dclk_glb_1 => Net_10,
-            dclk_1 => Net_10_local,
-            aclk_glb_ff_0 => \ClockBlock.aclk_glb_ff_0__sig\,
-            dclk_glb_ff_1 => \ClockBlock.dclk_glb_ff_1__sig\);
+            dclk_glb_0 => \Volume_ADC:Net_376\,
+            dclk_0 => \Volume_ADC:Net_376_local\,
+            dclk_glb_1 => Net_858,
+            dclk_1 => Net_858_local,
+            dclk_glb_2 => Net_10,
+            dclk_2 => Net_10_local,
+            dclk_glb_ff_2 => \ClockBlock.dclk_glb_ff_2__sig\);
 
     Up_SW:logicalport
         GENERIC MAP(
@@ -3848,6 +4011,16 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
+    \Volume_Timer:TimerUDB:status_tc\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_1)",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => \Volume_Timer:TimerUDB:status_tc\,
+            main_0 => \Volume_Timer:TimerUDB:run_mode\,
+            main_1 => \Volume_Timer:TimerUDB:per_zero\);
+
     i_Up:interrupt
         GENERIC MAP(
             int_type => "00",
@@ -3879,59 +4052,6 @@ BEGIN
         PORT MAP(
             interrupt => Net_311,
             clock => ClockBlock_BUS_CLK);
-
-    \Volume_ADC:DSM\:dsmodcell
-        GENERIC MAP(
-            cy_registers => "",
-            resolution => 16)
-        PORT MAP(
-            aclock => \ClockBlock.aclk_glb_ff_0__sig\,
-            modbitin_udb => open,
-            reset_udb => open,
-            reset_dec => \Volume_ADC:mod_reset\,
-            extclk_cp_udb => \Volume_ADC:Net_93_local\,
-            dec_clock => \Volume_ADC:aclock\,
-            mod_dat_3 => \Volume_ADC:mod_dat_3\,
-            mod_dat_2 => \Volume_ADC:mod_dat_2\,
-            mod_dat_1 => \Volume_ADC:mod_dat_1\,
-            mod_dat_0 => \Volume_ADC:mod_dat_0\,
-            dout_udb_7 => \Volume_ADC:Net_245_7\,
-            dout_udb_6 => \Volume_ADC:Net_245_6\,
-            dout_udb_5 => \Volume_ADC:Net_245_5\,
-            dout_udb_4 => \Volume_ADC:Net_245_4\,
-            dout_udb_3 => \Volume_ADC:Net_245_3\,
-            dout_udb_2 => \Volume_ADC:Net_245_2\,
-            dout_udb_1 => \Volume_ADC:Net_245_1\,
-            dout_udb_0 => \Volume_ADC:Net_245_0\);
-
-    \Volume_ADC:IRQ\:interrupt
-        GENERIC MAP(
-            int_type => "10",
-            is_nmi => 0)
-        PORT MAP(
-            interrupt => Net_827,
-            clock => ClockBlock_BUS_CLK);
-
-    \Volume_ADC:DEC\:decimatorcell
-        GENERIC MAP(
-            cy_registers => "")
-        PORT MAP(
-            aclock => \Volume_ADC:aclock\,
-            mod_dat_3 => \Volume_ADC:mod_dat_3\,
-            mod_dat_2 => \Volume_ADC:mod_dat_2\,
-            mod_dat_1 => \Volume_ADC:mod_dat_1\,
-            mod_dat_0 => \Volume_ADC:mod_dat_0\,
-            ext_start => __ONE__,
-            modrst => \Volume_ADC:mod_reset\,
-            interrupt => Net_827);
-
-    __ONE__:macrocell
-        GENERIC MAP(
-            eqn_main => "1'b0",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => __ONE__);
 
     \USBUART:dp_int\:interrupt
         GENERIC MAP(
@@ -4076,7 +4196,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.dclk_glb_ff_1__sig\,
+            clock => \ClockBlock.dclk_glb_ff_2__sig\,
             kill => open,
             enable => __ONE__,
             capture => open,
@@ -4085,6 +4205,14 @@ BEGIN
             cmp => \Button_Timer:Net_261\,
             irq => \Button_Timer:Net_57\);
 
+    __ONE__:macrocell
+        GENERIC MAP(
+            eqn_main => "1'b0",
+            regmode => 0,
+            clken_mode => 1)
+        PORT MAP(
+            q => __ONE__);
+
     Button_Timer_Interrupt:interrupt
         GENERIC MAP(
             int_type => "10",
@@ -4092,5 +4220,216 @@ BEGIN
         PORT MAP(
             interrupt => Net_843,
             clock => ClockBlock_BUS_CLK);
+
+    \Volume_ADC:IRQ\:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_854,
+            clock => ClockBlock_BUS_CLK);
+
+    \Volume_ADC:ADC_SAR\:sarcell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            clk_udb => \Volume_ADC:Net_376_local\,
+            sof_udb => open,
+            vp_ctl_udb_3 => open,
+            vp_ctl_udb_2 => open,
+            vp_ctl_udb_1 => open,
+            vp_ctl_udb_0 => open,
+            vn_ctl_udb_3 => open,
+            vn_ctl_udb_2 => open,
+            vn_ctl_udb_1 => open,
+            vn_ctl_udb_0 => open,
+            irq => \Volume_ADC:Net_252\,
+            next => Net_857,
+            data_out_udb_11 => \Volume_ADC:Net_207_11\,
+            data_out_udb_10 => \Volume_ADC:Net_207_10\,
+            data_out_udb_9 => \Volume_ADC:Net_207_9\,
+            data_out_udb_8 => \Volume_ADC:Net_207_8\,
+            data_out_udb_7 => \Volume_ADC:Net_207_7\,
+            data_out_udb_6 => \Volume_ADC:Net_207_6\,
+            data_out_udb_5 => \Volume_ADC:Net_207_5\,
+            data_out_udb_4 => \Volume_ADC:Net_207_4\,
+            data_out_udb_3 => \Volume_ADC:Net_207_3\,
+            data_out_udb_2 => \Volume_ADC:Net_207_2\,
+            data_out_udb_1 => \Volume_ADC:Net_207_1\,
+            data_out_udb_0 => \Volume_ADC:Net_207_0\,
+            eof_udb => Net_854);
+
+    \Volume_Timer:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "11111111",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000000",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_858,
+            control_7 => \Volume_Timer:TimerUDB:control_7\,
+            control_6 => \Volume_Timer:TimerUDB:control_6\,
+            control_5 => \Volume_Timer:TimerUDB:control_5\,
+            control_4 => \Volume_Timer:TimerUDB:control_4\,
+            control_3 => \Volume_Timer:TimerUDB:control_3\,
+            control_2 => \Volume_Timer:TimerUDB:control_2\,
+            control_1 => \Volume_Timer:TimerUDB:control_1\,
+            control_0 => \Volume_Timer:TimerUDB:control_0\,
+            busclk => ClockBlock_BUS_CLK);
+
+    \Volume_Timer:TimerUDB:rstSts:stsreg\:statusicell
+        GENERIC MAP(
+            cy_force_order => 1,
+            cy_int_mask => "1111111",
+            cy_md_select => "0000011",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_858,
+            status_6 => open,
+            status_5 => open,
+            status_4 => open,
+            status_3 => \Volume_Timer:TimerUDB:status_3\,
+            status_2 => \Volume_Timer:TimerUDB:status_2\,
+            status_1 => open,
+            status_0 => \Volume_Timer:TimerUDB:status_tc\);
+
+    \Volume_Timer:TimerUDB:sT16:timerdp:u0\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_858,
+            cs_addr_1 => \Volume_Timer:TimerUDB:timer_enable\,
+            cs_addr_0 => \Volume_Timer:TimerUDB:per_zero\,
+            busclk => ClockBlock_BUS_CLK,
+            ce0 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ce0__sig\,
+            cl0 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.cl0__sig\,
+            z0 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.z0__sig\,
+            ff0 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ff0__sig\,
+            ce1 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ce1__sig\,
+            cl1 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.cl1__sig\,
+            z1 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.z1__sig\,
+            ff1 => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ff1__sig\,
+            co_msb => \Volume_Timer:TimerUDB:sT16:timerdp:u0.co_msb__sig\,
+            sol_msb => \Volume_Timer:TimerUDB:sT16:timerdp:u0.sol_msb__sig\,
+            cfbo => \Volume_Timer:TimerUDB:sT16:timerdp:u0.cfbo__sig\,
+            sil => \Volume_Timer:TimerUDB:sT16:timerdp:u1.sor__sig\,
+            cmsbi => \Volume_Timer:TimerUDB:sT16:timerdp:u1.cmsbo__sig\);
+
+    \Volume_Timer:TimerUDB:sT16:timerdp:u1\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_858,
+            cs_addr_1 => \Volume_Timer:TimerUDB:timer_enable\,
+            cs_addr_0 => \Volume_Timer:TimerUDB:per_zero\,
+            z0_comb => \Volume_Timer:TimerUDB:per_zero\,
+            f0_bus_stat_comb => \Volume_Timer:TimerUDB:status_3\,
+            f0_blk_stat_comb => \Volume_Timer:TimerUDB:status_2\,
+            busclk => ClockBlock_BUS_CLK,
+            ce0i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ce0__sig\,
+            cl0i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.cl0__sig\,
+            z0i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.z0__sig\,
+            ff0i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ff0__sig\,
+            ce1i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ce1__sig\,
+            cl1i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.cl1__sig\,
+            z1i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.z1__sig\,
+            ff1i => \Volume_Timer:TimerUDB:sT16:timerdp:u0.ff1__sig\,
+            ci => \Volume_Timer:TimerUDB:sT16:timerdp:u0.co_msb__sig\,
+            sir => \Volume_Timer:TimerUDB:sT16:timerdp:u0.sol_msb__sig\,
+            cfbi => \Volume_Timer:TimerUDB:sT16:timerdp:u0.cfbo__sig\,
+            sor => \Volume_Timer:TimerUDB:sT16:timerdp:u1.sor__sig\,
+            cmsbo => \Volume_Timer:TimerUDB:sT16:timerdp:u1.cmsbo__sig\);
+
+    \Volume_Timer:TimerUDB:run_mode\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \Volume_Timer:TimerUDB:run_mode\,
+            clock_0 => Net_858,
+            main_0 => \Volume_Timer:TimerUDB:control_7\);
+
+    \Volume_Timer:TimerUDB:timer_enable\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * !main_1 * !main_4) + (main_0 * !main_2 * !main_4) + (main_0 * !main_3 * !main_4)",
+            regmode => 1,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \Volume_Timer:TimerUDB:timer_enable\,
+            clock_0 => Net_858,
+            main_0 => \Volume_Timer:TimerUDB:control_7\,
+            main_1 => \Volume_Timer:TimerUDB:timer_enable\,
+            main_2 => \Volume_Timer:TimerUDB:run_mode\,
+            main_3 => \Volume_Timer:TimerUDB:per_zero\,
+            main_4 => \Volume_Timer:TimerUDB:trig_disable\);
+
+    \Volume_Timer:TimerUDB:trig_disable\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_1 * main_2 * !main_3)",
+            regmode => 2,
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            q => \Volume_Timer:TimerUDB:trig_disable\,
+            clock_0 => Net_858,
+            main_0 => \Volume_Timer:TimerUDB:timer_enable\,
+            main_1 => \Volume_Timer:TimerUDB:run_mode\,
+            main_2 => \Volume_Timer:TimerUDB:per_zero\,
+            main_3 => \Volume_Timer:TimerUDB:trig_disable\);
 
 END __DEFAULT__;

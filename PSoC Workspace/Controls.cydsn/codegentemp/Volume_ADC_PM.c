@@ -1,10 +1,9 @@
 /*******************************************************************************
 * File Name: Volume_ADC_PM.c
-* Version 3.20
+* Version 3.0
 *
 * Description:
-*  This file provides the power manager source code to the API for the
-*  Delta-Sigma ADC Component.
+*  This file provides Sleep/WakeUp APIs functionality.
 *
 * Note:
 *
@@ -17,10 +16,14 @@
 
 #include "Volume_ADC.h"
 
-static Volume_ADC_BACKUP_STRUCT Volume_ADC_backup =
+
+/***************************************
+* Local data allocation
+***************************************/
+
+static Volume_ADC_BACKUP_STRUCT  Volume_ADC_backup =
 {
-    Volume_ADC_DISABLED,
-    Volume_ADC_CFG1_DEC_CR
+    Volume_ADC_DISABLED
 };
 
 
@@ -29,23 +32,18 @@ static Volume_ADC_BACKUP_STRUCT Volume_ADC_backup =
 ********************************************************************************
 *
 * Summary:
-*  Save the register configuration which are not retention.
+*  Saves the current user configuration.
 *
 * Parameters:
-*  None
+*  None.
 *
 * Return:
-*  None
-*
-* Global variables:
-*  Volume_ADC_backup:  This global structure variable is used to store
-*  configuration registers which are non retention whenever user wants to go
-*  sleep mode by calling Sleep() API.
+*  None.
 *
 *******************************************************************************/
-void Volume_ADC_SaveConfig(void) 
+void Volume_ADC_SaveConfig(void)
 {
-    Volume_ADC_backup.deccr = Volume_ADC_DEC_CR_REG;
+    /* All configuration registers are marked as [reset_all_retention] */
 }
 
 
@@ -54,23 +52,18 @@ void Volume_ADC_SaveConfig(void)
 ********************************************************************************
 *
 * Summary:
-*  Restore the register configurations which are not retention.
+*  Restores the current user configuration.
 *
 * Parameters:
-*  None
+*  None.
 *
 * Return:
-*  None
-*
-* Global variables:
-*  Volume_ADC_backup:  This global structure variable is used to restore
-*  configuration registers which are non retention whenever user wants to switch
-*  to active power mode by calling Wakeup() API.
+*  None.
 *
 *******************************************************************************/
-void Volume_ADC_RestoreConfig(void) 
+void Volume_ADC_RestoreConfig(void)
 {
-    Volume_ADC_DEC_CR_REG = Volume_ADC_backup.deccr;
+    /* All congiguration registers are marked as [reset_all_retention] */
 }
 
 
@@ -79,44 +72,39 @@ void Volume_ADC_RestoreConfig(void)
 ********************************************************************************
 *
 * Summary:
-*  Stops the operation of the block and saves the user configuration.
+*  This is the preferred routine to prepare the component for sleep.
+*  The Volume_ADC_Sleep() routine saves the current component state,
+*  then it calls the ADC_Stop() function.
 *
 * Parameters:
-*  None
+*  None.
 *
 * Return:
-*  None
+*  None.
 *
-* Global variables:
-*  Volume_ADC_backup:  The structure field 'enableState' is modified
+* Global Variables:
+*  Volume_ADC_backup - The structure field 'enableState' is modified
 *  depending on the enable state of the block before entering to sleep mode.
 *
 *******************************************************************************/
-void Volume_ADC_Sleep(void) 
+void Volume_ADC_Sleep(void)
 {
-    /* Save ADC enable state */
-    if((Volume_ADC_ACT_PWR_DEC_EN == (Volume_ADC_PWRMGR_DEC_REG & Volume_ADC_ACT_PWR_DEC_EN)) &&
-       (Volume_ADC_ACT_PWR_DSM_EN == (Volume_ADC_PWRMGR_DSM_REG & Volume_ADC_ACT_PWR_DSM_EN)))
+    if((Volume_ADC_PWRMGR_SAR_REG  & Volume_ADC_ACT_PWR_SAR_EN) != 0u)
     {
-        /* Component is enabled */
-        Volume_ADC_backup.enableState = Volume_ADC_ENABLED;
-        if((Volume_ADC_DEC_CR_REG & Volume_ADC_DEC_START_CONV) != 0u)
-        {   
-            /* Conversion is started */
-            Volume_ADC_backup.enableState |= Volume_ADC_STARTED;
+        if((Volume_ADC_SAR_CSR0_REG & Volume_ADC_SAR_SOF_START_CONV) != 0u)
+        {
+            Volume_ADC_backup.enableState = Volume_ADC_ENABLED | Volume_ADC_STARTED;
         }
-		
-        /* Stop the configuration */
+        else
+        {
+            Volume_ADC_backup.enableState = Volume_ADC_ENABLED;
+        }
         Volume_ADC_Stop();
     }
     else
     {
-        /* Component is disabled */
         Volume_ADC_backup.enableState = Volume_ADC_DISABLED;
     }
-
-    /* Save the user configuration */
-    Volume_ADC_SaveConfig();
 }
 
 
@@ -125,33 +113,34 @@ void Volume_ADC_Sleep(void)
 ********************************************************************************
 *
 * Summary:
-*  Restores the user configuration and enables the power to the block.
+*  This is the preferred routine to restore the component to the state when
+*  Volume_ADC_Sleep() was called. If the component was enabled before the
+*  Volume_ADC_Sleep() function was called, the
+*  Volume_ADC_Wakeup() function also re-enables the component.
 *
 * Parameters:
-*  None
+*  None.
 *
 * Return:
-*  None
+*  None.
 *
-* Global variables:
-*  Volume_ADC_backup:  The structure field 'enableState' is used to
+* Global Variables:
+*  Volume_ADC_backup - The structure field 'enableState' is used to
 *  restore the enable state of block after wakeup from sleep mode.
 *
 *******************************************************************************/
-void Volume_ADC_Wakeup(void) 
+void Volume_ADC_Wakeup(void)
 {
-    /* Restore the configuration */
-    Volume_ADC_RestoreConfig();
-
-    /* Enables the component operation */
     if(Volume_ADC_backup.enableState != Volume_ADC_DISABLED)
     {
         Volume_ADC_Enable();
-        if((Volume_ADC_backup.enableState & Volume_ADC_STARTED) != 0u)
-        {
-            Volume_ADC_StartConvert();
-        }
-    } /* Do nothing if component was disable before */
+        #if(Volume_ADC_DEFAULT_CONV_MODE != Volume_ADC__HARDWARE_TRIGGER)
+            if((Volume_ADC_backup.enableState & Volume_ADC_STARTED) != 0u)
+            {
+                Volume_ADC_StartConvert();
+            }
+        #endif /* End Volume_ADC_DEFAULT_CONV_MODE != Volume_ADC__HARDWARE_TRIGGER */
+    }
 }
 
 

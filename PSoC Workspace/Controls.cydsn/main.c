@@ -59,6 +59,9 @@ CY_ISR_PROTO(E_Handler);
 CY_ISR_PROTO(Button_Timer_Handler);
 int protection_clear();
 int protection_set();
+int volume_zero();
+int set_volume(uint8 vol);
+int change_volume(int change);
 int set_input(uint8 input);
 
 /* Variables */
@@ -76,6 +79,7 @@ int main()
     Volume_1_Write(0u);
     Volume_2_Write(0u);
     Volume_ADC_Start();
+    Volume_ADC_StartConvert();
     /* Set initial state for Protection */
     Protection_CLK_Write(0u);
     Protection_CLR_Write(1u);
@@ -221,6 +225,7 @@ int main()
                             }
 
                             /* Send data back to host. */
+                            
                             USBUART_PutData(buffer, count);
 
                             /* If the last sent packet is exactly the maximum packet 
@@ -282,6 +287,77 @@ int protection_set()
         CyDelay(1);
     }
     return 0;
+}
+
+/* reset volume */
+int volume_zero()
+{
+    Volume_1_Write(1u);
+    CyDelay(200);
+    char8 endvalue=0;
+    while(endvalue<121)
+    {
+        endvalue=(Volume_ADC_GetResult8() + Volume_ADC_GetResult8())/2;
+        CyDelay(5);
+    }
+    USBUART_PutChar(endvalue);
+    Volume_1_Write(0u);
+    return 0;
+}
+
+/* set volume in percent */
+int set_volume(uint8 vol)
+{
+    //16 sec for a 100% turn
+    if(vol > 100)
+    {
+        globalstate=255;
+        return 1;
+    }
+    volume_zero();
+    Volume_2_Write(1u);
+    CyDelay(vol*160);
+    Volume_2_Write(0u);
+    return 0;
+}
+
+/* changes the volume relativ to position in percent */
+int change_volume(int change)
+{
+    //16 sec for a 100% turn
+    if(change > 100 || change < -100 || change == 0)
+    {
+        globalstate=255;
+        return 1;
+    }
+    if(change > 0)
+    {
+        Volume_2_Write(1u);
+        CyDelay(change*160);
+        Volume_2_Write(0u);
+    }
+    else
+    {
+        Volume_1_Write(1u);
+        CyDelay(change*160);
+        Volume_1_Write(0u);
+    }
+    
+    return 0;
+}
+
+/* gets volume */
+int get_volume()
+{
+    uint16 value;
+    Volume_Timer_Start();
+    Volume_Timer_WriteCounter(0x270F);
+    volume_zero();
+    value = Volume_Timer_ReadCounter();
+    Volume_Timer_Stop();
+    if(value==0x270F) return 100; //timer was 0 and has been reset
+    else value = (10000 - (value+1)) / 100;
+    return value;
 }
 
 int set_input(uint8 input)
@@ -389,7 +465,7 @@ CY_ISR(Right_Handler)
     i_Right_Disable();
     if(Right_SW_Read())
     {
-        U4_LED_Write(!U4_LED_Read());
+        USBUART_PutString("blabla");
     }
     //wait for button no longer pressed
     while(Right_SW_Read()){
@@ -403,7 +479,7 @@ CY_ISR(Down_Handler)
     i_Down_Disable();
     if(Down_SW_Read())
     {
-        U5_LED_Write(!U5_LED_Read());
+        get_volume();
     }
     //wait for button no longer pressed
     while(Down_SW_Read()){
@@ -417,7 +493,7 @@ CY_ISR(Up_Handler)
     i_Up_Disable();
     if(Up_SW_Read())
     {
-        U6_LED_Write(!U6_LED_Read());
+        set_volume(100);
     }
     //wait for button no longer pressed
     while(Up_SW_Read()){
@@ -431,13 +507,6 @@ CY_ISR(Left_Handler)
     i_Left_Disable();
     if(Left_SW_Read())
     {
-        Volume_1_Write(1u);
-        CyDelay(200);
-        int adcval = Volume_ADC_Read16();
-        while(adcval < Volume_ADC_Read16()+0xFF) {}
-        Volume_1_Write(0u);
-        
-        CyDelay(1000);
         
     }
     //wait for button no longer pressed
@@ -468,7 +537,7 @@ CY_ISR(E_Handler)
     i_Enter_Disable();
     if(Enter_SW_Read())
     {
-        D1_LED_Write(!D1_LED_Read());
+        volume_zero();
     }
     //wait for button no longer pressed
     while(Enter_SW_Read()){
