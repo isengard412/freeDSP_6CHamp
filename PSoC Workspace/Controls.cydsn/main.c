@@ -83,7 +83,7 @@ int main()
     /* Set initial state for Protection */
     Protection_CLK_Write(0u);
     Protection_CLR_Write(1u);
-    Protection_IN_Write(1u);
+    Protection_IN_Write(0u);
     /* Set initial state for Input selection */
     set_input(input);
     /* Set initial state for LEDs */
@@ -158,8 +158,6 @@ int main()
             //Powering ON
             case 1:
                 Power_LED_Write(0u);
-                //enable input
-                set_input(input);
                 //enable controls
                 i_Input_2_Enable();
                 i_Input_1_Enable();
@@ -171,17 +169,19 @@ int main()
                 i_Enter_Enable();
                 //enable modules
                 protection_set();
+                //enable input
+                set_input(input);
                 //switch to ON state
                 globalstate=3;
                 break;
             //Powering OFF
             case 2:
                 Power_LED_Write(1u);
-                //disable modules
-                protection_clear();
                 //disable inputs
                 muted=0;
                 set_input(0u);
+                //disable modules
+                protection_clear();
                 //disable controls
                 i_Input_2_Disable();
                 i_Input_1_Disable();
@@ -268,7 +268,8 @@ int main()
 /* helper functions */
 int protection_clear()
 {
-    Protection_CLR_Write(1u);
+    Protection_CLR_Write(0u);
+    Protection_IN_Write(0u);
     Protection_CLK_Write(0u);
     return 0;
 }
@@ -276,10 +277,25 @@ int protection_clear()
 int protection_set()
 {
     Protection_CLK_Write(0u);
-    Protection_CLR_Write(0u);
+    Protection_CLR_Write(1u);
     Protection_IN_Write(1u);
+    //Enable amplifiers
+    Protection_CLK_Write(1u);
+    CyDelay(1);
+    Protection_CLK_Write(0u);
+    CyDelay(1);
+    //wait for init
+    CyDelay(1000);
+    //Enable DSP
+    Protection_CLK_Write(1u);
+    CyDelay(1);
+    Protection_CLK_Write(0u);
+    CyDelay(1);
+    //wait for DSP to start
+    CyDelay(200);
+    //connect speakers
     int i;
-    for(i=0;i<8;i++)
+    for(i=0;i<6;i++)
     {
         Protection_CLK_Write(1u);
         CyDelay(1);
@@ -294,13 +310,12 @@ int volume_zero()
 {
     Volume_1_Write(1u);
     CyDelay(200);
-    char8 endvalue=0;
-    while(endvalue<121)
+    uint16 endvalue=0;
+    while(endvalue<1943)
     {
-        endvalue=(Volume_ADC_GetResult8() + Volume_ADC_GetResult8())/2;
+        endvalue=(Volume_ADC_GetResult16() + Volume_ADC_GetResult16())/2;
         CyDelay(5);
     }
-    USBUART_PutChar(endvalue);
     Volume_1_Write(0u);
     return 0;
 }
@@ -417,6 +432,7 @@ CY_ISR(Input_2_Handler)
         if(input < 0b10000000) input = input << 1;
         else input = 0b00000001;
         set_input(input);
+        USBUART_PutChar('j');
     }
     //wait for button no longer pressed
     while(Input_2_SW_Read()){
@@ -452,6 +468,7 @@ CY_ISR(Input_1_Handler)
         if(input > 0b00000001) input = input >> 1;
         else input = 0b10000000;
         set_input(input);
+        USBUART_PutChar('i');
     }
     //wait for button no longer pressed
     while(Input_1_SW_Read()){
@@ -465,7 +482,7 @@ CY_ISR(Right_Handler)
     i_Right_Disable();
     if(Right_SW_Read())
     {
-        USBUART_PutString("blabla");
+        USBUART_PutChar('r');
     }
     //wait for button no longer pressed
     while(Right_SW_Read()){
@@ -479,7 +496,7 @@ CY_ISR(Down_Handler)
     i_Down_Disable();
     if(Down_SW_Read())
     {
-        get_volume();
+        USBUART_PutChar('d');
     }
     //wait for button no longer pressed
     while(Down_SW_Read()){
@@ -493,7 +510,7 @@ CY_ISR(Up_Handler)
     i_Up_Disable();
     if(Up_SW_Read())
     {
-        set_volume(100);
+        USBUART_PutChar('u');
     }
     //wait for button no longer pressed
     while(Up_SW_Read()){
@@ -507,7 +524,7 @@ CY_ISR(Left_Handler)
     i_Left_Disable();
     if(Left_SW_Read())
     {
-        
+        USBUART_PutChar('l');
     }
     //wait for button no longer pressed
     while(Left_SW_Read()){
@@ -524,6 +541,7 @@ CY_ISR(Mute_Handler)
         if(muted) muted=0;
         else muted=1;
         set_input(input);
+        USBUART_PutChar('m');
     }
     //wait for button no longer pressed
     while(Mute_SW_Read()){
@@ -537,7 +555,7 @@ CY_ISR(E_Handler)
     i_Enter_Disable();
     if(Enter_SW_Read())
     {
-        volume_zero();
+        USBUART_PutChar('e');
     }
     //wait for button no longer pressed
     while(Enter_SW_Read()){

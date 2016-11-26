@@ -164,13 +164,13 @@ extern volatile int16 Volume_ADC_shift;
 **************************************/
 
 /* Default config values from user parameters */
-#define Volume_ADC_DEFAULT_RESOLUTION     (8u)   /* ADC resolution selected with parameters.*/
+#define Volume_ADC_DEFAULT_RESOLUTION     (12u)   /* ADC resolution selected with parameters.*/
 #define Volume_ADC_DEFAULT_CONV_MODE      (0u)        /* Default conversion method */
 #define Volume_ADC_DEFAULT_INTERNAL_CLK   (1u)             /* Default clock selection */
 #define Volume_ADC_DEFAULT_REFERENCE      (0u)         /* Default reference */
 #define Volume_ADC_DEFAULT_RANGE          (0u)       /* ADC Input Range selection */
-#define Volume_ADC_CLOCK_FREQUENCY        (1200000u)   /* Clock frequency */
-#define Volume_ADC_NOMINAL_CLOCK_FREQ     (1200000)  /* Nominal Clock Frequency */
+#define Volume_ADC_CLOCK_FREQUENCY        (1600000u)   /* Clock frequency */
+#define Volume_ADC_NOMINAL_CLOCK_FREQ     (1600000)  /* Nominal Clock Frequency */
 #define Volume_ADC_HIGH_POWER_PULSE       (1u)        /* Not zero when clock pulse > 50 ns */
 #define Volume_ADC_IRQ_REMOVE             (0u)                /* Removes internal interrupt */
 

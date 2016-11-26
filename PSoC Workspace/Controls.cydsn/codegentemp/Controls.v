@@ -1,6 +1,6 @@
 // ======================================================================
 // Controls.v generated from TopDesign.cysch
-// 11/26/2016 at 13:58
+// 11/26/2016 at 14:31
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -610,7 +610,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v"
 `endif
 
-// ADC_SAR_v3_0(ADC_Clock=1, ADC_Clock_Frequency=1200000, ADC_Input_Range=0, ADC_Power=0, ADC_Reference=0, ADC_Resolution=8, ADC_SampleMode=0, Enable_next_out=false, Ref_Voltage=1.024, Ref_Voltage_mV=1024, rm_int=false, Sample_Precharge=4, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ADC_SAR_v3_0, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Volume_ADC, CY_INSTANCE_SHORT_NAME=Volume_ADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.0, INSTANCE_NAME=Volume_ADC, )
+// ADC_SAR_v3_0(ADC_Clock=1, ADC_Clock_Frequency=1600000, ADC_Input_Range=0, ADC_Power=0, ADC_Reference=0, ADC_Resolution=12, ADC_SampleMode=0, Enable_next_out=false, Ref_Voltage=1.024, Ref_Voltage_mV=1024, rm_int=false, Sample_Precharge=4, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ADC_SAR_v3_0, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Volume_ADC, CY_INSTANCE_SHORT_NAME=Volume_ADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.0, INSTANCE_NAME=Volume_ADC, )
 module ADC_SAR_v3_0_2 (
     vplus,
     vminus,
@@ -695,7 +695,7 @@ module ADC_SAR_v3_0_2 (
 		#(.id("09407a78-929d-49da-8938-71880eb27d59/696a0979-21fc-4185-bf38-6c79febcde7a"),
 		  .source_clock_id(""),
 		  .divisor(0),
-		  .period("833333333.333333"),
+		  .period("625000000"),
 		  .is_direct(0),
 		  .is_digital(1))
 		theACLK

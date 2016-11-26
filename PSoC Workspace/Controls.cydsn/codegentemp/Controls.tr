@@ -24,8 +24,8 @@ Clock: CyILO                        | N/A                   | Target: 0.10 MHz  
 Clock: CyIMO                        | N/A                   | Target: 24.00 MHz  | 
 Clock: CyMASTER_CLK                 | N/A                   | Target: 24.00 MHz  | 
 Clock: CyPLL_OUT                    | N/A                   | Target: 24.00 MHz  | 
-Clock: Volume_ADC_theACLK           | N/A                   | Target: 1.20 MHz   | 
-Clock: Volume_ADC_theACLK(routed)   | N/A                   | Target: 1.20 MHz   | 
+Clock: Volume_ADC_theACLK           | N/A                   | Target: 1.60 MHz   | 
+Clock: Volume_ADC_theACLK(routed)   | N/A                   | Target: 1.60 MHz   | 
 Clock: timer_clock                  | N/A                   | Target: 0.00 MHz   | 
 Clock: timer_clock(fixed-function)  | N/A                   | Target: 0.00 MHz   | 
 Clock: timer_clock_1                | Frequency: 63.50 MHz  | Target: 0.00 MHz   | 

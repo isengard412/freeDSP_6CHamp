@@ -253,6 +253,53 @@
 <file name=".\Generated_Source\PSoC5\timer_clock_1.h" />
 <file name=".\cyapicallbacks.h" />
 <file name=".\main.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Volume_ADC.c" />
+<dep name=".\Generated_Source\PSoC5\Volume_ADC.h" />
+<dep name=".\Generated_Source\PSoC5\Volume_ADC_theACLK.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Volume_ADC.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC_INT.o">
+<dep name=".\Generated_Source\PSoC5\Volume_ADC.h" />
+<dep name=".\Generated_Source\PSoC5\Volume_ADC_INT.c" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Volume_ADC_INT.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC_PM.o">
+<dep name=".\Generated_Source\PSoC5\Volume_ADC.h" />
+<dep name=".\Generated_Source\PSoC5\Volume_ADC_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Volume_ADC_PM.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\Volume_Timer.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -279,20 +326,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Volume_Timer_PM.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\Button_Timer.o">
 <dep name=".\Generated_Source\PSoC5\Button_Timer.c" />
 <dep name=".\Generated_Source\PSoC5\Button_Timer.h" />
@@ -1083,30 +1116,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Volume_2.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\Volume_ADC.c" />
-<dep name=".\Generated_Source\PSoC5\Volume_ADC.h" />
-<dep name=".\Generated_Source\PSoC5\Volume_ADC_theACLK.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Volume_ADC.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC_INT.o">
-<dep name=".\Generated_Source\PSoC5\Volume_ADC.h" />
-<dep name=".\Generated_Source\PSoC5\Volume_ADC_INT.c" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Volume_ADC_INT.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC_IRQ.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -1121,15 +1130,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Volume_ADC_IRQ.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC_PM.o">
-<dep name=".\Generated_Source\PSoC5\Volume_ADC.h" />
-<dep name=".\Generated_Source\PSoC5\Volume_ADC_PM.c" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Volume_ADC_PM.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\Volume_ADC_theACLK.o">
 <dep name=".\Generated_Source\PSoC5\Volume_ADC_theACLK.c" />
 <dep name=".\Generated_Source\PSoC5\Volume_ADC_theACLK.h" />
@@ -4539,7 +4539,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="131246387269802009" />
+<deps_time v="131246406890215224" />
 <top_block v="TopDesign" />
 <last_generation v="12" />
 <pdl_path v="C:\Users\Lukas Creutzburg\Documents\Cypress\PDL\2.1.0" />
@@ -4547,14 +4547,12 @@
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131246393944573863" />
+<deps_time v="131246504126177964" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
 <CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
-<debugger_breakpoint_list>
-<CyGuid_76464711-0ae1-4583-b869-f07a0403fc6e type_name="CyDesigner.Common.Debugger.CyFileLineBreakpoint" version="1" hitcount="0" condition="" enabled="True" hardware="True" temparary="False" filename=".\main.c" linenumber="360" />
-</debugger_breakpoint_list>
+<debugger_breakpoint_list />
 </CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 <dataGuid v="237c8ed1-e161-4c9d-af97-582eda6d6952">

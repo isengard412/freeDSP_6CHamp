@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Amplifier Workspace\Controls">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Amplifier Workspace">
 <ExpandedNodeIds>
 <v>Amplifier Workspace</v>
 <v>Amplifier Workspace\Controls</v>
@@ -298,372 +298,6 @@
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\cyfitterrv.inc</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\cymetadata.c</v>
 <v>Amplifier Workspace\Controls\Generated_Source\PSoC5\project.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\TopDesign</v>
-<v>Amplifier Workspace\Protection_Register_Control\Protection_Register_Control.cydwr</v>
-<v>Amplifier Workspace\Protection_Register_Control\Header Files</v>
-<v>Amplifier Workspace\Protection_Register_Control\Header Files\cyapicallbacks.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Header Files\device.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Source Files</v>
-<v>Amplifier Workspace\Protection_Register_Control\Source Files\main.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cypins.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLK</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLK\Protection_CLK.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLK\Protection_CLK.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLK\Protection_CLK_aliases.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLR</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLR\Protection_CLR.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLR\Protection_CLR.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_CLR\Protection_CLR_aliases.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_IN</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_IN\Protection_IN.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_IN\Protection_IN.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\Protection_IN\Protection_IN_aliases.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydevice.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cyfitter.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cyfitteriar.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cyfitterrv.inc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\cymetadata.c</v>
-<v>Amplifier Workspace\Protection_Register_Control\Generated_Source\PSoC5\project.h</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\TopDesign</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Pins</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Analog</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Clocks</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Interrupts</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\DMA</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\System</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Directives</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Flash Security</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\EEPROM</v>
-<v>Amplifier Workspace\Timer01\Header Files</v>
-<v>Amplifier Workspace\Timer01\Header Files\cyapicallbacks.h</v>
-<v>Amplifier Workspace\Timer01\Source Files</v>
-<v>Amplifier Workspace\Timer01\Source Files\main.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_1</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_1\clock_1.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_1\clock_1.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_2</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_2\clock_2.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_2\clock_2.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cypins.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD\LCD.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD\LCD.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD\LCD_PM.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD_LCDPort</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort_aliases.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_0</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_0\P0_0.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_0\P0_0.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_0\P0_0_aliases.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_1</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_1\P0_1.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_1\P0_1.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\P0_1\P0_1_aliases.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\Timer_1</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\Timer_1\Timer_1.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\Timer_1\Timer_1.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\Timer_1\Timer_1_PM.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\TimerISR</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\TimerISR\TimerISR.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\TimerISR\TimerISR.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydevice.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cyfitter.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cyfitteriar.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cyfitterrv.inc</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cymetadata.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\project.h</v>
-<v>Amplifier Workspace\Timer01\Timer.pdf</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\Pins</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\Analog</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\Clocks</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\Interrupts</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\DMA</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\System</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\Directives</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\Flash Security</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.cydwr\EEPROM</v>
-<v>Amplifier Workspace\USBFS_UART01\Source Files</v>
-<v>Amplifier Workspace\USBFS_UART01\Source Files\main.c</v>
-<v>Amplifier Workspace\USBFS_UART01\cyapicallbacks.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cypins.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\CyScBoostClk</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\CyScBoostClk\CyScBoostClk.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\CyScBoostClk\CyScBoostClk.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD\LCD.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD\LCD.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD\LCD_PM.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD_LCDPort</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort_aliases.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_audio.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_audio.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_boot.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_cdc.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_cdc.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_cdc.inf</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_cls.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_cydmac.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_descr.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_drv.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_episr.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_hid.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_hid.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_midi.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_midi.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_msc.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_msc.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_pm.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_pvt.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_std.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART\USBUART_vnd.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dm</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dm\USBUART_Dm.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dm\USBUART_Dm.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dm\USBUART_Dm_aliases.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dp</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dp\USBUART_Dp.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dp\USBUART_Dp.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\USBUART_Dp\USBUART_Dp_aliases.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydevice.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cyfitter.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cyfitteriar.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cyfitterrv.inc</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\cymetadata.c</v>
-<v>Amplifier Workspace\USBFS_UART01\Generated_Source\PSoC5\project.h</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART.pdf</v>
-<v>Amplifier Workspace\USBFS_UART01\USBUART_cdc.inf</v>
-<v>Amplifier Workspace\Volume_Control\TopDesign</v>
-<v>Amplifier Workspace\Volume_Control\Volume_Control.cydwr</v>
-<v>Amplifier Workspace\Volume_Control\Header Files</v>
-<v>Amplifier Workspace\Volume_Control\Header Files\cyapicallbacks.h</v>
-<v>Amplifier Workspace\Volume_Control\Header Files\device.h</v>
-<v>Amplifier Workspace\Volume_Control\Source Files</v>
-<v>Amplifier Workspace\Volume_Control\Source Files\main.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Clock</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Clock\ADC_Clock.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Clock\ADC_Clock.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Timer</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Timer\ADC_Timer.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Timer\ADC_Timer.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\ADC_Timer\ADC_Timer_PM.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cypins.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_0</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_0\Volume_0.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_0\Volume_0.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_0\Volume_0_aliases.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_1</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_1\Volume_1.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_1\Volume_1.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_1\Volume_1_aliases.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC\Volume_ADC.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC\Volume_ADC.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC\Volume_ADC_INT.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC\Volume_ADC_PM.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_Ext_CP_Clk</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_Ext_CP_Clk\Volume_ADC_Ext_CP_Clk.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_Ext_CP_Clk\Volume_ADC_Ext_CP_Clk.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_IRQ</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_IRQ\Volume_ADC_IRQ.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_IRQ\Volume_ADC_IRQ.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_theACLK</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_theACLK\Volume_ADC_theACLK.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_ADC_theACLK\Volume_ADC_theACLK.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Control</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Control\Volume_Control.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Control\Volume_Control.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Control\Volume_Control_PM.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung1</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung1\Volume_Messung1.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung1\Volume_Messung1.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung1\Volume_Messung1_aliases.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung2</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung2\Volume_Messung2.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung2\Volume_Messung2.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\Volume_Messung2\Volume_Messung2_aliases.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cycodeshareimport.scat</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydevice.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydevice_trm.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydevicegnu.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cyfitter.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cyfitteriar.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cyfitterrv.inc</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\cymetadata.c</v>
-<v>Amplifier Workspace\Volume_Control\Generated_Source\PSoC5\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Amplifier Workspace</v>
@@ -676,37 +310,6 @@
 <v>Amplifier Workspace\Controls\Source Files</v>
 <v>Amplifier Workspace\Controls\Source Files\main.c</v>
 <v>Amplifier Workspace\Controls\Generated_Source</v>
-<v>Amplifier Workspace\Protection_Register_Control</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\TopDesign</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Pins</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Analog</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Clocks</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Interrupts</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\DMA</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\System</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Directives</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\Flash Security</v>
-<v>Amplifier Workspace\Timer01\Timer01.cydwr\EEPROM</v>
-<v>Amplifier Workspace\Timer01\Header Files</v>
-<v>Amplifier Workspace\Timer01\Header Files\cyapicallbacks.h</v>
-<v>Amplifier Workspace\Timer01\Source Files</v>
-<v>Amplifier Workspace\Timer01\Source Files\main.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_1</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_1\clock_1.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_1\clock_1.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_2</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_2\clock_2.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\clock_2\clock_2.h</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>Amplifier Workspace\Timer01\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -742,27 +345,6 @@
 <v>Amplifier Workspace\Controls\TopDesign\PSoC5</v>
 <v>Amplifier Workspace\Controls\TopDesign\PSoC5\TopDesign.ctl</v>
 <v>Amplifier Workspace\Controls\TopDesign\TopDesign.cysch</v>
-<v>Amplifier Workspace\Protection_Register_Control</v>
-<v>Amplifier Workspace\Protection_Register_Control\TopDesign</v>
-<v>Amplifier Workspace\Protection_Register_Control\TopDesign\TopDesign.cysch</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\TopDesign</v>
-<v>Amplifier Workspace\Timer01\TopDesign\TopDesign.cysch</v>
-<v>Amplifier Workspace\USBFS_UART01</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC3</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC3\TopDesign.ctl</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC3\TopDesign.cysch</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC4</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC4\PSoC 4200L</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC4\PSoC 4200L\TopDesign.ctl</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC4\PSoC 4200L\TopDesign.cysch</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC5</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC5\TopDesign.ctl</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC5\TopDesign.cysch</v>
-<v>Amplifier Workspace\Volume_Control</v>
-<v>Amplifier Workspace\Volume_Control\TopDesign</v>
-<v>Amplifier Workspace\Volume_Control\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Amplifier Workspace</v>
@@ -796,16 +378,6 @@
 <v>Amplifier Workspace\Controls\TopDesign\PSoC5</v>
 <v>Amplifier Workspace\Controls\TopDesign\PSoC5\TopDesign.ctl</v>
 <v>Amplifier Workspace\Controls\TopDesign\TopDesign.cysch</v>
-<v>Amplifier Workspace\Protection_Register_Control</v>
-<v>Amplifier Workspace\Protection_Register_Control\TopDesign</v>
-<v>Amplifier Workspace\Protection_Register_Control\TopDesign\TopDesign.cysch</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\TopDesign</v>
-<v>Amplifier Workspace\Timer01\TopDesign\TopDesign.cysch</v>
-<v>Amplifier Workspace\USBFS_UART01</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC3</v>
-<v>Amplifier Workspace\USBFS_UART01\TopDesign\PSoC3\TopDesign.ctl</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -905,142 +477,6 @@
 <v>Amplifier Workspace\Controls\Controls.gpdsc</v>
 <v>Amplifier Workspace\Controls\Controls.rpt</v>
 <v>Amplifier Workspace\Controls\Controls_timing.html</v>
-<v>Amplifier Workspace\Protection_Register_Control</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Protection_CLK.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Protection_CLR.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Protection_IN.lst</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Protection_Register_Control.elf</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Protection_Register_Control.hex</v>
-<v>Amplifier Workspace\Protection_Register_Control\CortexM3\ARM_GCC_493\Debug\Protection_Register_Control.map</v>
-<v>Amplifier Workspace\Protection_Register_Control\Protection_Register_Control.gpdsc</v>
-<v>Amplifier Workspace\Protection_Register_Control\Protection_Register_Control.rpt</v>
-<v>Amplifier Workspace\Protection_Register_Control\Protection_Register_Control_timing.html</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\CortexM3</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_1.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\clock_2.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_LCDPort.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_PM.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_0.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\P0_1.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_1.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_1_PM.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Listing Files\TimerISR.lst</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Timer01.elf</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Timer01.hex</v>
-<v>Amplifier Workspace\Timer01\CortexM3\ARM_GCC_493\Debug\Timer01.map</v>
-<v>Amplifier Workspace\Timer01\Timer01.gpdsc</v>
-<v>Amplifier Workspace\Timer01\Timer01.rpt</v>
-<v>Amplifier Workspace\Timer01\Timer01_timing.html</v>
-<v>Amplifier Workspace\USBFS_UART01</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\CyScBoostClk.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_LCDPort.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_PM.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_audio.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_boot.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_cdc.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_cls.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_descr.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_Dm.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_Dp.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_drv.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_episr.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_hid.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_midi.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_msc.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_pm.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_std.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_vnd.lst</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\USBFS_UART01.elf</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\USBFS_UART01.hex</v>
-<v>Amplifier Workspace\USBFS_UART01\CortexM3\ARM_GCC_493\Debug\USBFS_UART01.map</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.gpdsc</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01.rpt</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_UART01_timing.html</v>
-<v>Amplifier Workspace\Volume_Control</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_Clock.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_Timer.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_Timer_PM.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_0.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_1.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_ADC.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_ADC_Ext_CP_Clk.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_ADC_INT.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_ADC_IRQ.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_ADC_PM.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_ADC_theACLK.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_Control.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_Control_PM.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_Messung1.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Listing Files\Volume_Messung2.lst</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Volume_Control.elf</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Volume_Control.hex</v>
-<v>Amplifier Workspace\Volume_Control\CortexM3\ARM_GCC_493\Debug\Volume_Control.map</v>
-<v>Amplifier Workspace\Volume_Control\Volume_Control.gpdsc</v>
-<v>Amplifier Workspace\Volume_Control\Volume_Control.rpt</v>
-<v>Amplifier Workspace\Volume_Control\Volume_Control_timing.html</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Amplifier Workspace</v>
@@ -1084,6 +520,7 @@
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_3.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_4.lst</v>
 <v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_5.lst</v>
+<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_6.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -1120,46 +557,6 @@
 <v>Amplifier Workspace\Controls\USBFS_v3_10.pdf</v>
 <v>Amplifier Workspace\Controls\ZeroTerminal</v>
 <v>Amplifier Workspace\Controls\ZeroTerminal\ZeroTerminal.pdf</v>
-<v>Amplifier Workspace\Protection_Register_Control</v>
-<v>Amplifier Workspace\Protection_Register_Control\PSoC 5LP Architecture TRM</v>
-<v>Amplifier Workspace\Protection_Register_Control\CY8C58LP Family Datasheet</v>
-<v>Amplifier Workspace\Protection_Register_Control\System Reference Guides</v>
-<v>Amplifier Workspace\Protection_Register_Control\System Reference Guides\cy_boot_v5_50</v>
-<v>Amplifier Workspace\Protection_Register_Control\cy_pins_v2_20</v>
-<v>Amplifier Workspace\Protection_Register_Control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\PSoC 5LP Architecture TRM</v>
-<v>Amplifier Workspace\Timer01\CY8C58LP Family Datasheet</v>
-<v>Amplifier Workspace\Timer01\System Reference Guides</v>
-<v>Amplifier Workspace\Timer01\System Reference Guides\cy_boot_v5_50</v>
-<v>Amplifier Workspace\Timer01\CharLCD_v2_20.pdf</v>
-<v>Amplifier Workspace\Timer01\cy_clock_v2_20</v>
-<v>Amplifier Workspace\Timer01\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>Amplifier Workspace\Timer01\cy_isr_v1_70.pdf</v>
-<v>Amplifier Workspace\Timer01\cy_pins_v2_20</v>
-<v>Amplifier Workspace\Timer01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Amplifier Workspace\Timer01\cy_sync_v1_0.pdf</v>
-<v>Amplifier Workspace\Timer01\Timer_v2_70.pdf</v>
-<v>Amplifier Workspace\Timer01\ZeroTerminal.pdf</v>
-<v>Amplifier Workspace\USBFS_UART01</v>
-<v>Amplifier Workspace\USBFS_UART01\PSoC 5LP Architecture TRM</v>
-<v>Amplifier Workspace\USBFS_UART01\CY8C58LP Family Datasheet</v>
-<v>Amplifier Workspace\USBFS_UART01\System Reference Guides</v>
-<v>Amplifier Workspace\USBFS_UART01\System Reference Guides\cy_boot_v5_50</v>
-<v>Amplifier Workspace\USBFS_UART01\CharLCD_v2_20.pdf</v>
-<v>Amplifier Workspace\USBFS_UART01\USBFS_v3_10.pdf</v>
-<v>Amplifier Workspace\Volume_Control</v>
-<v>Amplifier Workspace\Volume_Control\PSoC 5LP Architecture TRM</v>
-<v>Amplifier Workspace\Volume_Control\CY8C58LP Family Datasheet</v>
-<v>Amplifier Workspace\Volume_Control\System Reference Guides</v>
-<v>Amplifier Workspace\Volume_Control\System Reference Guides\cy_boot_v5_50</v>
-<v>Amplifier Workspace\Volume_Control\ADC_DelSig_v3_20.pdf</v>
-<v>Amplifier Workspace\Volume_Control\cy_clock_v2_20.pdf</v>
-<v>Amplifier Workspace\Volume_Control\cy_constant_v1_0.pdf</v>
-<v>Amplifier Workspace\Volume_Control\cy_pins_v2_20</v>
-<v>Amplifier Workspace\Volume_Control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Amplifier Workspace\Volume_Control\CyControlReg_v1_80.pdf</v>
-<v>Amplifier Workspace\Volume_Control\Timer_v2_70.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Amplifier Workspace</v>
@@ -1189,20 +586,6 @@
 <v>Amplifier Workspace\Controls\USBFS_v3_10.pdf</v>
 <v>Amplifier Workspace\Controls\ZeroTerminal</v>
 <v>Amplifier Workspace\Controls\ZeroTerminal\ZeroTerminal.pdf</v>
-<v>Amplifier Workspace\Protection_Register_Control</v>
-<v>Amplifier Workspace\Protection_Register_Control\PSoC 5LP Architecture TRM</v>
-<v>Amplifier Workspace\Protection_Register_Control\CY8C58LP Family Datasheet</v>
-<v>Amplifier Workspace\Protection_Register_Control\System Reference Guides</v>
-<v>Amplifier Workspace\Protection_Register_Control\System Reference Guides\cy_boot_v5_50</v>
-<v>Amplifier Workspace\Protection_Register_Control\cy_pins_v2_20</v>
-<v>Amplifier Workspace\Protection_Register_Control\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Amplifier Workspace\Timer01</v>
-<v>Amplifier Workspace\Timer01\PSoC 5LP Architecture TRM</v>
-<v>Amplifier Workspace\Timer01\CY8C58LP Family Datasheet</v>
-<v>Amplifier Workspace\Timer01\System Reference Guides</v>
-<v>Amplifier Workspace\Timer01\System Reference Guides\cy_boot_v5_50</v>
-<v>Amplifier Workspace\Timer01\CharLCD_v2_20.pdf</v>
-<v>Amplifier Workspace\Timer01\cy_clock_v2_20</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -1218,11 +601,7 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Controls.cydsn\main.c" />
-<name v=".\Controls.cydsn\Controls.cydwr" />
 <name v=".\Controls.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\USBFS_UART01.cydsn\TopDesign\PSoC5\TopDesign.cysch" />
-<name v=".\USBFS_UART01.cydsn\main.c" />
-<name v=".\USBFS_UART01.cydsn\USBFS_UART01.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -1230,7 +609,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 598" SelectedTabbedMdiWindow="ccace7ff-be47-4345-8af1-9fe9afea5027"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5c640187-2d4e-4644-b5ba-0f07f745e6a5" /><DocumentWindow Key="28d6075b-eceb-49f6-a765-cbafaedcf5b0" Guid="fc485353-b38b-4b74-a7f1-2e3a93d20c9e" /><DocumentWindow Key="3806aba4-2395-4805-ad7f-e2e1bb4361a0" Guid="1d9ed30d-6801-4473-8661-67b2c1f3739c" /><DocumentWindow Key="bc4d8651-e84b-4540-8934-bd68735761a8" Guid="ad6f8307-3fb3-46f6-8c68-955a929b6df5" /><DocumentWindow Key="dd151d9a-bac2-4db3-b2b2-96a4b5e84582" Guid="c475851f-a36d-4ac6-b79a-8bc67ad55542" /><DocumentWindow Key="11460069-a3eb-4ec1-8835-2463abbc6a59" Guid="44387839-3584-4fde-a669-de151ca37c98" /><DocumentWindow Key="004306fc-67a3-46da-9c81-9cd33c3db257" Guid="ccace7ff-be47-4345-8af1-9fe9afea5027" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 598" SelectedTabbedMdiWindow="151466c7-ad47-456c-b83a-64d163751de0"><DocumentWindow Key="304b749a-8b38-47a0-9c90-a2cfce6daddf" Guid="151466c7-ad47-456c-b83a-64d163751de0" /><DocumentWindow Key="86a23162-b5ab-465d-8970-16ab1d1b36b0" Guid="eefd3b17-1ca7-4be5-b1ee-64ac1dc9bc3a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
