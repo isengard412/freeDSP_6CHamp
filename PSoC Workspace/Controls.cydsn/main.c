@@ -284,15 +284,14 @@ int protection_set()
     CyDelay(1);
     Protection_CLK_Write(0u);
     CyDelay(1);
-    //wait for init
-    CyDelay(1000);
+    //ca. 700ms for trafo soft start!
     //Enable DSP
     Protection_CLK_Write(1u);
     CyDelay(1);
     Protection_CLK_Write(0u);
     CyDelay(1);
-    //wait for DSP to start
-    CyDelay(200);
+    //wait for DSP and amps to start
+    CyDelay(2000);
     //connect speakers
     int i;
     for(i=0;i<6;i++)

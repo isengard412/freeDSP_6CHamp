@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Amplifier Workspace">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Amplifier Workspace\Controls\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Amplifier Workspace</v>
 <v>Amplifier Workspace\Controls</v>
@@ -481,46 +481,6 @@
 <VisibleNodeIds>
 <v>Amplifier Workspace</v>
 <v>Amplifier Workspace\Controls</v>
-<v>Amplifier Workspace\Controls\CortexM3</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Button_Timer.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Button_Timer_Interrupt.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Button_Timer_PM.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\D1_LED.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\D2_LED.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\D3_LED.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Down_SW.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Enter_SW.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Down.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Enter.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Input_1.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Input_2.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Left.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Mute.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Power.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Right.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\i_Up.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_1_SW.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_2_SW.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_0.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_1.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_2.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_3.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_4.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_5.lst</v>
-<v>Amplifier Workspace\Controls\CortexM3\ARM_GCC_493\Debug\Listing Files\Input_Relais_6.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -602,6 +562,7 @@
 <OpenDocs>
 <name v=".\Controls.cydsn\main.c" />
 <name v=".\Controls.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Controls.cydsn\Controls.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -609,7 +570,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 598" SelectedTabbedMdiWindow="151466c7-ad47-456c-b83a-64d163751de0"><DocumentWindow Key="304b749a-8b38-47a0-9c90-a2cfce6daddf" Guid="151466c7-ad47-456c-b83a-64d163751de0" /><DocumentWindow Key="86a23162-b5ab-465d-8970-16ab1d1b36b0" Guid="eefd3b17-1ca7-4be5-b1ee-64ac1dc9bc3a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1094, 598" SelectedTabbedMdiWindow="b574e6e0-9463-408a-9dcb-6a8318f949eb"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5c640187-2d4e-4644-b5ba-0f07f745e6a5" /><DocumentWindow Key="955e4424-1acb-48ec-8ac6-308ae2222782" Guid="b574e6e0-9463-408a-9dcb-6a8318f949eb" /><DocumentWindow Key="a830cc27-0acd-4c6a-866d-6bf4630fa859" Guid="2a7c2b3f-964d-4bce-a5bf-3275abedb4a3" /><DocumentWindow Key="7a609989-46c4-4ac5-8028-2984a97c1095" Guid="0748c4f5-3fb4-416d-ad9b-bcb6483a9f8a" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
